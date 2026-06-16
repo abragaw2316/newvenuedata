@@ -2,7 +2,7 @@
 
 > **Single source of truth for cross-session memory. READ THIS FIRST.**
 > Folder: `C:\Users\abrag\Desktop\Claude\Public-Data-API-Business`
-> Created 2026-06-14 (founding research). Last updated **2026-06-15** (full website + live data pipeline built; **TODO-A done — API now serves the full ~59k-record dataset**).
+> Created 2026-06-14 (founding research). Last updated **2026-06-15** — the site is **LIVE at https://newvenuedata.com** (deployed on Vercel), rebranded LicenseSignal → New Venue Data, full FL (~59k) + TX (~125k) data, real API + key auth, ~1,040 SEO pages. **The one remaining gate is buyer validation / outreach (TODO-C) — nothing else blocks revenue.**
 >
 > **How to use this file:** Read it top-to-bottom at the start of every session. Part I = the business/decision (stable). Part II = the build (what actually exists in code now). Part III = exactly what to do next. The `# Session Handoff (snapshot)` at the very bottom is the fast-resume block.
 
@@ -10,17 +10,18 @@
 
 ## ⚠️ STATUS AT A GLANCE (2026-06-15)
 
-- **Brand/domain:** ✅ REBRANDED to **New Venue Data** on **`newvenuedata.com`** (2026-06-15, was LicenseSignal/licensesignal.com; repo-wide sweep, 0 old refs remain). ⚠️ The repo folder + npm package + Vercel Root Directory stay **`licensesignal/`** (lowercase) on purpose — do NOT rename. Domain is registered (user owns newvenuedata.com); site not yet deployed.
+- **Brand/domain:** ✅ LIVE — rebranded to **New Venue Data**, deployed at **https://newvenuedata.com** (Vercel, 2026-06-15, was LicenseSignal/licensesignal.com; repo-wide sweep, 0 old refs remain). ⚠️ The repo folder + npm package + Vercel Root Directory stay **`licensesignal/`** (lowercase) on purpose — do NOT rename. ⚠️ The logo wordmark renders as **split spans** (`New Venue <span>Data</span>`, accent on "Data") in navbar/footer/og/email/auth — a blind "LicenseSignal" find-replace misses it (it bit us once; already fixed in `de937ab`, but remember the pattern if rebranding again).
 - **Research engagement:** ✅ COMPLETE (8 phases, in `research/`).
-- **Product:** ✅ A full venture-grade B2B SaaS website (**New Venue Data**) is BUILT at `licensesignal/` — ~381 static pages, light/dark mode, marketing + docs + dashboard + programmatic-SEO surface.
+- **Product:** ✅ A full venture-grade B2B SaaS website (**New Venue Data**) is BUILT + LIVE at `licensesignal/` — **~1,040 static pages** (FL + TX coverage), light/dark mode, marketing + docs + dashboard + programmatic-SEO surface.
 - **Real data:** ✅ A standalone live ingestion pipeline (`data-pipeline/`) pulls real Florida public records (52k+ liquor licensees, 6k+ new restaurants, 51k+ FDACS retail-food, daily change feed, Orlando permits, Sunbiz registrations) and regenerates the site's data files.
 - **Folder rooting:** ✅ RESOLVED — this session IS rooted in `Public-Data-API-Business` (the old `life-expenses` mis-root is gone).
-- **Git:** ✅ NOW a single root repo (`git init -b main` at the project root, 2026-06-15). Root `.gitignore` added (excludes node_modules/`.next`/`data-pipeline/data` but **keeps** `licensesignal/data/*.json`). The old scaffold-only `licensesignal/.git` (create-next-app initial commit, no remote) was removed so the site + pipeline live in one repo. **Staged but NOT committed** (per "no commit without go-ahead") — run the Step-1 commands in `DEPLOY.md`.
-- **Deploy:** 🟡 READY TO DEPLOY (not yet hosted — needs the user's GitHub + Vercel accounts). `licensesignal/vercel.json` (`framework: nextjs`) + root **`DEPLOY.md`** (exact push/import/deploy commands) added. Prod build + `next start` verified locally. Deploy via Vercel with **Root Directory = `licensesignal`**.
-- **Buyer validation:** ❌ Not started (the original pre-build buyer test was never run — we built first). **← only remaining TODO (C).**
+- **Git:** ✅ Committed + pushed. Single root repo on branch **`main`** → **github.com/abragaw2316/newvenuedata** (remote `origin` set; GitHub user `abragaw2316`). Commits: `7ef4f67` (initial) + `de937ab` (logo wordmark fix). Root `.gitignore` keeps `licensesignal/data/*.json`, ignores `node_modules`/`.next`/`data-pipeline/data`. **To ship any change: `git push` → Vercel auto-builds** (push needs the user's interactive GitHub sign-in; runs from their terminal).
+- **Deploy:** ✅ LIVE on **Vercel** — project imported from the GitHub repo, **Root Directory = `licensesignal`**, auto-deploys on push to `main`. Domain **`newvenuedata.com`** connected (apex A record → `76.76.21.21`); SSL auto. Full detail in `DEPLOY.md`. The nightly `data-refresh.yml` is now active (repo is on GitHub). **Cache note:** after a deploy, hard-refresh (Ctrl+Shift+R) / incognito to bypass browser cache.
+- **Buyer validation:** ❌ NOT started — **this is now THE single remaining gate and the money step.** Kit is ready in `validation/`; ≥2 of 5 FL liquor-liability agents say "I'd pay weekly" = green light. Only the founder can send/close.
 - **API → full dataset:** ✅ DONE (2026-06-15). `/api/licenses*`, `/api/stats`, `/api/signals` now serve the **full normalized universe** (59,004 license records + 2,202 signals) from runtime flat files, not the 270-record curated sample. UI pages still render from the curated `lib/real-data.ts`.
 - **API auth layer:** ✅ DONE (2026-06-15). Real API-key auth (`Authorization: Bearer ls_live_…`, matching the OpenAPI contract) on the 4 data routes: anonymous = open **demo tier** (keeps the marketing site/playground working), invalid key → 401, valid key → plan rate limit. `lib/api-keys.ts` (hashed keys + seeded public sandbox key `ls_test_sandbox`) + `lib/api-auth.ts` + `npm run mint-key`. `/api/stats` left public. Rate-limit enforcement is per-instance/best-effort (needs a shared store for production).
 - **Demo-credibility:** ✅ audited + fixed (2026-06-15) — removed the stale "73 filings today" hero number, fixed a dead "Book a demo" link (→ mailto), refreshed the 2024 API example to 2026. Site otherwise binds to real data throughout.
+- **Pricing:** ✅ researched + realigned (2026-06-15). 4 cited research agents benchmarked the market → finding: **we're priced LOW, not high** (a FL agent pays **$75–$175 per single commercial lead**; our whole month ≈ one lead; no direct FL competitor exists; closest analog Data Axle/Salesgenie sits at $99/$149/$299; trigger-data feeds like Bombora/ZoomInfo run $15k–$100k/yr). **Decision: do NOT cut list price** — instead remove *risk* (2-week free trial) + add *urgency* (Founding-Member: first 10 agents lock **$99/mo for life** for a testimonial). Realigned the **website /pricing** ladder from the old API tiers ($299/$999) to the actual sellable concierge ladder — **County $149 / South Florida $299 / Statewide·Feed&API from $499 (Custom)** — so it matches the outreach (`lib/mock-data.ts` PRICING_PLANS + PRICING_FEATURES; founding banner + fixed FAQ in `components/pricing/pricing-content.tsx`). Founding offer + "cost of one lead" framing woven into `validation/sell-sheet.md`, `outreach-sequence.md` (all emails + objections + close), `first-dollar-playbook.md`. **NOT yet committed/pushed** (verified: tsc clean, 43 tests, build clean).
 - **Self-serve product layer:** ❌ NOT built — no real signup/login, in-app billing, authenticated dashboard, or automated delivery (all mocked). See **TODO-D**. Strategy: stay concierge (sell the weekly lead list by hand, `validation/first-dollar-playbook.md`) until paying customers justify building it.
 
 ---
@@ -70,7 +71,7 @@ Five research agents gathered cited facts; full sourcing is woven into the site 
 # PART II — THE BUILD (what exists in code now)
 
 ## 5. The website — `licensesignal/`
-A production-grade B2B SaaS site. **Stack:** Next.js **16.2.9** App Router · TypeScript · Tailwind **v4** · **Base UI** (shadcn-style, NOT Radix) · Framer Motion v12 · Recharts v3 · Lucide. **Last verified build: ~381 static pages, `tsc` clean, 34 Vitest tests pass, 0 console errors.**
+A production-grade B2B SaaS site. **Stack:** Next.js **16.2.9** App Router · TypeScript · Tailwind **v4** · **Base UI** (shadcn-style, NOT Radix) · Framer Motion v12 · Recharts v3 · Lucide. **Last verified build: ~1,040 static pages, `tsc` clean, 43 Vitest tests pass, deployed live on Vercel.**
 
 ### Surface (routes)
 - **Marketing:** `/` (9-section homepage), `/use-cases`, `/data-coverage`, `/pricing`, `/about`, `/contact`, `/security`, `/integrations`, `/compare`, `/customers` (+ `/customers/[slug]` case studies).
@@ -92,7 +93,7 @@ A production-grade B2B SaaS site. **Stack:** Next.js **16.2.9** App Router · Ty
 - **`licensesignal/lib/real-data.ts`** — generated by `data-pipeline/src/build-app-data.mjs`. **270 curated, geocoded real records** (120 liquor + 90 food + 60 FDACS-with-phone) + real aggregates (`DAILY_VOLUME`, `STAT_CARDS`, `COUNTY_VOLUME`, `DATA_AS_OF`).
 - **`licensesignal/lib/signals.ts`** — generated by `data-pipeline/src/build-signals.mjs`. **~150 unified `BusinessSignal`** (40 license + 40 registration + 30 permit + 40 retail_food) + `SIGNAL_UNIVERSE = {licenseesTracked: 52061, retailFoodTracked: 51885, newBusinessesPerWorkday: 586, permitFeed: 'live'}`.
 - **`licensesignal/lib/mock-data.ts`** — now just re-exports the above as `MOCK_LICENSES`/`DAILY_VOLUME`/`STAT_CARDS`/`COUNTY_VOLUME` (PRICING_PLANS/FEATURES stay hand-authored).
-- **`licensesignal/lib/types.ts`** — `LicenseRecord`, `BusinessSignal`, `SignalSource = 'license'|'registration'|'permit'|'retail_food'`, `LicenseAddress` (state:'FL', lat/lng nullable), `LicenseEnrichment` (carries `phone`).
+- **`licensesignal/lib/types.ts`** — `LicenseRecord`, `BusinessSignal`, `SignalSource = 'license'|'registration'|'permit'|'retail_food'`, `LicenseAddress` (state: `'FL'|'TX'`, lat/lng nullable), `LicenseEnrichment` (carries `phone`). NOTE: `licenseType` stays the FL `LicenseType` union — TX records carry native TABC codes at runtime (cast), served only via `/api/licenses?state=TX`.
 - **`licensesignal/data/licenses.json` (~35 MB, 59,004 recs) + `signals.json` (~733 KB, 2,202 recs)** — AUTO-GENERATED by `data-pipeline/src/build-full-data.mjs`; the FULL universe the **API** serves at runtime (read via `lib/server-data.ts`). NOT bundled into JS, NOT read by UI pages. **Must be committed for deploy (do NOT gitignore `licensesignal/data/`).** Compact JSON.
 - **`licensesignal/lib/server-data.ts`** — server-only memoized `fs` loader: `getAllLicenses()` / `getAllSignals()`. Reads `process.cwd()/data/*.json`.
 - **`licensesignal/lib/county-stats.ts`** (AUTO-GENERATED by `build-coverage-stats.mjs`) — REAL per-county AND per-city aggregates (`COUNTY_STATS` + `CITY_STATS`: total, `byType`, top cities) from the 59k dataset; powers the programmatic `/coverage` pages. **`lib/coverage.ts`** gates which `/coverage/[county]/[type]` (≥3 records) and `/coverage/[county]/city/[city]` (≥25 records) pages exist (`dynamicParams=false`) — single source of truth for page params AND the sitemap.
@@ -127,7 +128,7 @@ Standalone **zero-dependency** Node ESM (one dep: `ssh2-sftp-client`). **NOT par
 `config.mjs` (URLs, USER_AGENT, delays, Sunbiz creds, PATHS) · `lookups.mjs` (county codes, series→type, status, date helpers) · `normalize-abt.mjs` / `-food.mjs` / `-fdacs.mjs` · `fetch-fdacs.mjs` · `fetch-daily.mjs` · `fetch-permits-orlando.mjs` · `fetch-sunbiz.mjs` · `build-app-data.mjs` (→ curated `real-data.ts`) · `build-signals.mjs` (→ curated `signals.ts`) · **`build-full-data.mjs` (→ FULL `licensesignal/data/licenses.json` + `signals.json`; `npm run full-data`)** · **`build-coverage-stats.mjs` (→ `lib/county-stats.ts` real per-county aggregates; `npm run coverage`)** · `build-lead-list.mjs` (`npm run leads`) · `orchestrate.mjs` (nightly: runs all fetchers tolerant of failure, then regenerates the curated AND full data files + coverage stats; `npm run refresh`). Scripts in `package.json`: `run, fetch, geocode, refresh, signals, fdacs, daily, permits, sunbiz, app-data, full-data, coverage, leads`.
 
 ### Full normalized data on disk (`data-pipeline/data/out/`)
-`normalized-abt_retail.json` **44 MB** · `normalized-food_new.json` **4.7 MB** · `normalized-fdacs.json` **762 KB** · plus `daily-events.json`, `normalized-permits-orlando.json`, `sunbiz-new.json`, `website-sample.json`. **These full files are NOT yet served by the API** — that's TODO-A.
+`normalized-abt_retail.json` **44 MB** · `normalized-food_new.json` **4.7 MB** · `normalized-fdacs.json` **762 KB** · `normalized-tabc.json` **72 MB** (TX, full) · plus `daily-events.json`, `normalized-permits-orlando.json`, `sunbiz-new.json`, `website-sample.json`. **All gitignored** (regenerated by the pipeline); they feed `build-full-data`/`build-coverage-stats`/`fetch-tabc-full` → the committed `licensesignal/data/*.json` + `lib/*-stats.ts` the API/pages actually use.
 
 ### Pipeline gotchas (hard-won — don't relearn)
 - **DBPR county code = (alphabetical rank of county) + 10** (Alachua=11 … Dade=23). Full table in `lookups.mjs`. Validated vs real volumes (Miami-Dade 6,565, Broward 4,337).
@@ -138,7 +139,7 @@ Standalone **zero-dependency** Node ESM (one dep: `ssh2-sftp-client`). **NOT par
 - App data forces `eventType: 'new_filing'` (raw snapshots have empty eventType, which over-counts).
 
 ### Scheduler
-`.github/workflows/data-refresh.yml` — daily cron `0 9 * * *` + `workflow_dispatch`; runs `node src/orchestrate.mjs`, commits regenerated `real-data.ts` + `signals.ts`. (Won't actually run until the repo is on GitHub — see TODO-B.) Last local orchestrator run: **7/8 OK** (Sunbiz optional skipped).
+`.github/workflows/data-refresh.yml` — daily cron `0 9 * * *` + `workflow_dispatch`; runs `node src/orchestrate.mjs`, commits regenerated `real-data.ts` + `signals.ts` + `data/*.json` + coverage stats. **Now active** (repo is on GitHub); each auto-commit triggers a Vercel redeploy. Last local orchestrator run: **7/8 OK** (Sunbiz optional skipped).
 
 ## 7. Compliance posture (the legal guardrails)
 Reselling Florida **PUBLIC** records (Ch. 119) as **B2B business-entity** intelligence — FCRA-safe (data about venues, not consumer eligibility). Must: respect robots.txt + each source's ToS + rate limits; pull only public business-entity records; ship an **"as-is / not affiliated with DBPR"** disclaimer (`DataDisclaimer` in footer); **ToS must bar FCRA-purpose use**. **OSM/Overpass data carries ODbL share-alike** (attribute + keep separable). DBPR/FDACS/Sunbiz/Socrata sources are 🟢 green to download+resell; OSM is 🟡 yellow (conditions). See `data-pipeline/SOURCES.md`.
@@ -157,15 +158,15 @@ Chose the **flat-file stopgap** (per the recommendation below). All steps comple
 
 **Long-term:** the honest answer is still a real database (Postgres/SQLite) once volume/query patterns grow — the 35 MB flat file is the documented stopgap. Filtering/search currently scans the full array per request (fine at this volume).
 
-## TODO-B — Set up deploy ✅ DONE / READY (2026-06-15)
-All "ready to deploy" steps complete; the actual hosted deploy needs the user's GitHub + Vercel accounts (commands handed off in `DEPLOY.md`).
+## TODO-B — Deploy ✅ DONE — SITE IS LIVE (2026-06-15)
+Built, committed, pushed, and **deployed live on Vercel at https://newvenuedata.com**. The scaffolding steps below are complete and the hosted deploy was executed with the user. To ship future changes: `git push` → Vercel auto-builds.
 1. ✅ **Single root repo:** `git init -b main` at the project root. Removed the unused nested `licensesignal/.git` (create-next-app scaffold, 1 commit, no remote — all real work was uncommitted) so the site + `data-pipeline` + the root `.github/workflows/data-refresh.yml` are one repo (required for the nightly refresh→commit→redeploy loop). **User chose this topology.**
 2. ✅ Root **`.gitignore`** — ignores `node_modules/`, `.next/`, `out/`, `*.tsbuildinfo`, `next-env.d.ts`, `.vercel/`, playwright artifacts, `data-pipeline/data/`, env-local, `**/settings.local.json`. **Keeps** `licensesignal/data/*.json` + generated `lib/real-data.ts`/`signals.ts`. Verified: `git add -A` stages 316 files, 0 from node_modules/`.next`/`data-pipeline/data`, no secrets.
 3. ✅ **`licensesignal/vercel.json`** (`framework: nextjs`) — lives in the app root, not repo root, because Vercel resolves config relative to the project **Root Directory** and has no `rootDirectory` field (explained in `DEPLOY.md`).
 4. ✅ Root **`DEPLOY.md`** — monorepo layout, why Root Directory = `licensesignal`, exact push/import/deploy commands (dashboard + CLI), nightly-refresh note, flat-file tradeoff.
 5. ✅ Prod build verified (clean, 5 dynamic API routes, JSON traced into function bundles) + `next start` live-checked.
 
-**NOT committed** — staged only. To deploy, the user runs `DEPLOY.md` Step 1 (`git commit` + add GitHub remote + push) then Step 2 (Vercel import, Root Directory = `licensesignal`).
+✅ **Executed (2026-06-15):** committed (`7ef4f67` initial + `de937ab` wordmark fix) → pushed to **github.com/abragaw2316/newvenuedata** (branch `main`) → Vercel project imported (**Root Directory = `licensesignal`**) → domain **newvenuedata.com** connected (apex A → `76.76.21.21`, auto-SSL). Auto-redeploys on every `git push`. (Gotcha hit live: the GitHub repo had to be created at github.com/new first — Vercel can't create it; and the logo wordmark needed the `de937ab` fix.)
 
 ## TODO-C — Buyer validation (materials BUILT 2026-06-15; execution = the user's job)
 The original Phase-8 first action. **≥2 of 5 FL liquor-liability agents say "I'd pay weekly" = green light.** This is the real de-risking step (we built before validating).
@@ -187,7 +188,10 @@ The website is a full marketing/docs/SEO surface + a real, now-keyed API — but
 ## Lessons / working rules
 - **A subagent can return a success string while writing NO files** (its result counts truthy via `.filter(Boolean)`). ALWAYS verify expected files exist on disk + run `npm run build` after any workflow/agent. (The resources-hub agent silently no-op'd once.)
 - **Workflow tool** requires explicit opt-in; its validator REJECTS scripts containing the literal substrings `Date.now` / `Math.random` / `new Date` (even inside prompt strings) — reword.
-- **User prefs:** brief/direct; do the work, keep status concise; **don't `git commit` without explicit go-ahead**; prefers JS/TS, no extra toolchain.
+- **Deploy / Git (learned at go-live 2026-06-15):** Vercel only *imports* existing GitHub repos — it can't create one; create it at **github.com/new** first, then `git push`. Pushing needs the user's interactive GitHub sign-in (runs in THEIR terminal — I can't auth non-interactively; `"Repository not found"` = unauthenticated/private or wrong repo name). The Next app is in a subfolder so set Vercel **Root Directory = `licensesignal`** (the repo root has no `package.json` → "no framework" → Deploy button disabled until set). Use the **apex** `newvenuedata.com` as canonical (matches the site's URLs) → do NOT check Vercel's "redirect apex to www." After a deploy, the browser caches the old page → **hard-refresh / incognito**.
+- **Brand-sweep gotcha:** the logo wordmark is split into spans (`Word<span>Word2</span>`), so a contiguous-string find-replace of the brand misses it — handle the split pattern.
+- **Domain availability:** check via RDAP — `https://rdap.verisign.com/com/v1/domain/<name>.com` (HTTP 404 = available, 200 = taken). Nearly all short/clean `.com`s are gone; coined compounds are likeliest free.
+- **User prefs:** brief/direct; do the work, keep status concise; **don't `git commit` without explicit go-ahead** (the user says "commit it"); prefers JS/TS, no extra toolchain; tends to want to keep building — gently steer to shipping/selling once the build is sufficient.
 - **handoff.md = single source of truth.** Update it after every meaningful task.
 
 ## File map (top level)
@@ -219,9 +223,10 @@ Public-Data-API-Business/
 
 # Session Handoff (snapshot)
 
-## Last completed (2026-06-15 — TODO-A + TODO-B + website hardening session)
+## Last completed (2026-06-15 — TODO-A/B, website hardening, programmatic SEO, Texas, REBRAND + GO-LIVE)
+- **🚀 REBRAND + GO-LIVE (the big one):** rebranded LicenseSignal → **New Venue Data**, bought **newvenuedata.com**, created the GitHub repo (**github.com/abragaw2316/newvenuedata**), pushed, and **deployed live on Vercel** (Root Directory `licensesignal`, domain connected). Site is up. Fixed the split-span logo wordmark (`de937ab`) after the headline/copyright rebrand. Lessons: had to create the GitHub repo manually first (Vercel can't); the logo was two spans so "LicenseSignal" wasn't a contiguous string; after deploy, browser cache made the old name linger → hard-refresh.
 - **TODO-A DONE:** full-dataset API (flat-file stopgap). `build-full-data.mjs` → `data/licenses.json` (59,004) + `signals.json` (2,202); `lib/server-data.ts` loader; `outputFileTracingIncludes`; `''→'renewal'` eventType, county dedup → 67.
-- **TODO-B DONE (ready to deploy):** single root git repo (`git init -b main`; removed unused scaffold `licensesignal/.git`). Root `.gitignore` + `licensesignal/vercel.json` + `DEPLOY.md`. Staged, **NOT committed**. Deploy needs user's GitHub+Vercel (Root Directory = `licensesignal`).
+- **TODO-B DONE — DEPLOYED LIVE:** single root git repo → committed (`7ef4f67` + `de937ab`) → pushed to github.com/abragaw2316/newvenuedata → Vercel (Root Directory=`licensesignal`) → **live at https://newvenuedata.com**. Auto-redeploys on `git push`. Root `.gitignore` + `licensesignal/vercel.json` + `DEPLOY.md`.
 - **Website #2/#3/#4 DONE this session:**
   - **#2 demo-credibility audit + fixes** — Explore-agent audit (site binds to real data throughout); fixed stale "73 filings today" hero, dead "Book a demo" link (→ mailto support@), 2024→2026 API example.
   - **#3 first-dollar / concierge kit** — `validation/first-dollar-playbook.md` (sell the weekly lead list by hand via Stripe Payment Link, no product code).
@@ -237,14 +242,13 @@ Public-Data-API-Business/
 - **Research fleet + site content (2026-06-15):** ran 5 cited research agents (dram-shop law, liquor-liability market, FL hospitality stats, competitors, expansion sources) and integrated the *sourced* findings into the site — new glossary section "Liquor Liability & Dram-Shop Law" (5 terms w/ statute/case links), a cited blog post (`/blog/florida-dram-shop-law-why-new-licenses-are-insurance-leads`), a new generic `/alternatives/national-license-feeds` entry, enriched Texas/Georgia + new North Carolina `/expansion` pages, and the expansion source catalog in `SOURCES.md`. Build → **380 pages**, tsc clean, 43 tests. (Held to a no-fabrication rule: only facts with a real source URL were added; named-competitor intel kept in §4a, not on public pages, per the site's generic-alternatives convention. Durable intel in §4a above.)
 
 ## Current state
-- Product BUILT, type-safe; **API serves the full ~59k universe + real key auth**; UI from curated `lib/real-data.ts`.
-- **Git-tracked** (single root repo, staged not committed); **ready to deploy** (not hosted); buyer test **not** run; self-serve SaaS layer (TODO-D) **not** built (by design).
+- **LIVE at https://newvenuedata.com** (Vercel). Product BUILT + deployed; API serves full FL (~59k) + TX (~125k sample) data + real key auth; ~1,040 SEO pages; UI renders from curated `lib/real-data.ts`.
+- **Committed + pushed** (github.com/abragaw2316/newvenuedata, branch `main`); auto-redeploys on `git push`. **Buyer test NOT run — the only gate left.** Self-serve SaaS layer (TODO-D) NOT built (by design).
 
 ## Next steps (ordered, exact)
-1. **SELL (the real gate + the money step)** — the full outreach machine is built in `validation/`: work `prospect-list.csv` top-down, attach the fresh `.xlsx`, send `outreach-sequence.md` Segment-A email + the `sell-sheet.md`, book 15-min calls, close with a Stripe Payment Link (`first-dollar-playbook.md`). ~20 contacts → ~5 talks → ≥2 paying = green light. Only the founder can send/close. Regenerate "this week's" list first (`npm run leads` + `make-xlsx.py`).
-2. **Deploy** (any time) — `DEPLOY.md`: commit + push + Vercel import (Root Directory = `licensesignal`). Needs user's accounts.
-3. **TODO-D** — build the self-serve product layer **only after** paying customers justify it (see TODO-D order; needs Stripe/email/DB accounts + a stack decision).
-4. Keep `data-pipeline/SOURCES.md` + this file updated.
+1. **SELL — the only thing between here and revenue.** Work `validation/prospect-list.csv` top-down. The 3 verified-contact prospects have **ready-to-send first emails in `validation/outreach-sequence.md`** (Royal — call 954-764-1414; Prestige — email info@prestigeinsurancegrp.com; Red Zone — call 561-717-6623). Regenerate this week's list (`cd data-pipeline && npm run leads && python ../validation/make-xlsx.py`), attach the `.xlsx`, send, follow up, book 15-min calls, close with a Stripe Payment Link (`first-dollar-playbook.md`). ~20 contacts → ~5 talks → **≥2 "I'd pay weekly" = green light.** Only the founder can send/close.
+2. **TODO-D** — build the self-serve product layer (real auth / in-app billing / live dashboard / automated delivery / DB) **only after** ~3+ paying agents justify it. Needs Stripe/email/DB accounts + a stack decision.
+3. To ship any site/data change: `git push` (Vercel auto-builds; push from the user's terminal). Keep `data-pipeline/SOURCES.md` + this file updated.
 
 ## Recommended starting point for a fresh session
-Read `handoff.md` top-to-bottom, then `data-pipeline/SOURCES.md` + `memory/licensesignal-conventions.md`. Product + API (+ key auth) + deploy scaffolding are DONE. Real remaining work: **TODO-C buyer validation** (gate), then deploy, then **TODO-D** product layer once there's revenue.
+Read `handoff.md` top-to-bottom, then `data-pipeline/SOURCES.md` + `memory/licensesignal-conventions.md`. **The site is LIVE and the build phase is essentially done — resist the urge to keep building.** The ONE thing that makes money now is **TODO-C: outreach to FL liquor-liability agents** (kit + ready-to-send emails in `validation/`). Build TODO-D only after paying customers. Ship changes with `git push`.

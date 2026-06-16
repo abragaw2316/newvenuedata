@@ -16,8 +16,10 @@ your counties — the venues that need coverage *right now*:
 sample is attached (`south-fl-new-liquor-leads.xlsx`). All filed within the last two weeks.
 Sourced live from the FL DBPR Division of Alcoholic Beverages & Tobacco.
 
-**Why it pays for itself.** One new liquor-liability policy you write from this list covers
-the subscription for a year. The rest is upside.
+**Why it pays for itself.** One exclusive commercial-insurance lead from EverQuote or
+QuoteWizard runs **$75–$175**. This is a *whole month* of fresh, exclusive new-venue leads
+for about the price of one — and a single liquor-liability policy you write off the list
+covers the subscription for a year. The rest is upside.
 
 ---
 
@@ -31,6 +33,11 @@ the subscription for a year. The rest is upside.
 | **Feed / API** | Wholesalers, MGAs, programs (data feed or API into your systems) | Custom |
 
 Month-to-month. Cancel anytime. **First two weeks free** — see the leads before you pay.
+
+> 🏆 **Founding-member offer (first 10 agents).** Be one of my first 10 Florida subscribers
+> and lock in **$99/mo for life** (County or South Florida coverage) — in exchange for a
+> short testimonial once the leads pay off. The rate is yours for as long as you stay.
+> *Limited to 10 spots.*
 
 ---
 

@@ -24,7 +24,7 @@ const FAQ = [
   },
   {
     q: 'Do you cover counties outside Florida?',
-    a: "We're Florida-only today. Texas and Georgia are on the roadmap for Q3 2025. Enterprise customers can request priority expansion.",
+    a: "Florida is our focus today. Texas license data is already ingested and Georgia is next — ask us about early access if you cover those markets.",
   },
   {
     q: 'What counts as a "trigger event"?',
@@ -36,7 +36,11 @@ const FAQ = [
   },
   {
     q: 'Is there a free trial?',
-    a: "Yes. All plans include a 7-day trial with full access to your selected plan's features. No credit card required to start.",
+    a: 'Yes. Every plan starts with a 2-week free trial — you get two weekly lists before you pay, no credit card required to start.',
+  },
+  {
+    q: 'What is the founding-member offer?',
+    a: 'The first 10 Florida agents who sign on lock in $99/mo for life (instead of $149–$299), in exchange for a short testimonial once the leads pay off. Month-to-month, cancel anytime — the rate is yours for as long as you stay subscribed.',
   },
   {
     q: 'How long does integration take?',
@@ -62,9 +66,15 @@ export function PricingContent() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-8">
           <SectionHeading
             eyebrow="Pricing"
-            heading="Simple Pricing for Serious Data Teams"
-            subtext="No seat fees. No hidden limits. One plan per organization, priced on data access."
+            heading="Fresh Florida Leads, Priced by Coverage"
+            subtext="Month-to-month, cancel anytime. One new liquor-liability policy you write pays for the year — the rest is upside."
           />
+
+          {/* Founding-member banner */}
+          <div className="flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-sm text-amber-300">
+            <span className="font-semibold">Founding offer:</span>
+            <span className="text-amber-200/90">first 10 Florida agents lock in <strong>$99/mo for life</strong> — ask us for a spot.</span>
+          </div>
 
           {/* Toggle */}
           <div className="flex items-center gap-3">

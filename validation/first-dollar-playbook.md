@@ -11,15 +11,22 @@ counties — i.e. fresh dram-shop prospects before competitors reach them.
 
 - **Deliverable:** the `south-fl-new-liquor-leads.xlsx` (+ CSV), regenerated weekly.
 - **Cadence:** every Monday morning.
-- **Price to start:** **$149/month** per agent (one county or all of South FL). Anchor:
-  one new liquor-liability policy's commission pays for ~a year. Adjust from what you
-  heard in the validation calls (`buyer-validation-plan.md`).
+- **Price to start:** **$149/month** per agent (one county; $299 for all of South FL).
+  Anchors: one exclusive commercial lead elsewhere runs **$75–$175** (this is a whole month
+  for ~the price of one), and one liquor-liability policy's commission pays for ~a year.
+  **Don't discount the list price** — the market research says you're already cheap vs. what
+  agents pay per lead; cutting further signals low value and caps the business.
+- **Founding-member lever (use this to close fast, not a price cut):** offer the **first 10
+  agents $99/mo locked for life** in exchange for a short testimonial. It's scarce, rewards
+  early believers, and earns the testimonials/logos that close everyone after them at full
+  price. Lead with the **2-week free trial** to kill risk; use the founding rate on fence-sitters.
 - **Term:** month-to-month, cancel anytime. Removes risk; you want the *recurring yes*.
 
 ## Take payment with a Stripe Payment Link (no code, ~10 min)
 You do **not** need the website's billing built. In the Stripe Dashboard:
 1. **Product catalog → Add product** → name "New Venue Data — Weekly South FL Liquor
-   Leads", price **$149**, **recurring / monthly**.
+   Leads", price **$149**, **recurring / monthly**. (Add a second **$99/mo** price on the
+   same product for founding members, and a **$299/mo** price for full South FL.)
 2. **Payment Links → New** → select that product → **Create link**. (Optionally turn on
    "collect customer address" and a promo field.)
 3. Copy the URL (e.g. `https://buy.stripe.com/xxxx`). Send it to any agent who says yes.
