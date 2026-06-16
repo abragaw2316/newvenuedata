@@ -1,0 +1,35 @@
+{
+  "name": "licensesignal-data-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Ingestion pipeline for live Florida DBPR license data (ABT liquor + Hotels & Restaurants food service). Fetches official public-records bulk extracts, parses, normalizes, detects new filings, geocodes, and enriches.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "run": "node src/run.mjs",
+    "fetch": "node src/run.mjs --fetch-only",
+    "geocode": "node src/geocode.mjs",
+    "sources": "node -e \"console.log(require('fs').readFileSync('SOURCES.md','utf8'))\"",
+    "refresh": "node src/orchestrate.mjs",
+    "signals": "node src/build-signals.mjs",
+    "fdacs": "node src/fetch-fdacs.mjs",
+    "daily": "node src/fetch-daily.mjs",
+    "permits": "node src/fetch-permits-orlando.mjs",
+    "sunbiz": "node src/fetch-sunbiz.mjs",
+    "tabc": "node src/fetch-tabc.mjs",
+    "tabc-full": "node src/fetch-tabc-full.mjs",
+    "app-data": "node src/build-app-data.mjs",
+    "full-data": "node src/build-full-data.mjs",
+    "coverage": "node src/build-coverage-stats.mjs",
+    "leads": "node src/build-lead-list.mjs"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ssh2-sftp-client": "^12.1.1"
+  }
+}

@@ -1,0 +1,44 @@
+name: Daily data refresh
+
+# Pulls the latest Florida public records (liquor + food licenses, FDACS retail
+# food, the AB&T daily change feed, Orlando commercial permits, Sunbiz new
+# registrations), regenerates the site dataset + unified signal feed, and commits
+# the result so the deployed site always serves fresh data.
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # 09:00 UTC daily (~5am ET)
+  workflow_dispatch: {} # allow manual runs
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install pipeline deps
+        working-directory: data-pipeline
+        run: npm ci || npm install
+
+      - name: Run daily refresh
+        working-directory: data-pipeline
+        run: node src/orchestrate.mjs
+
+      - name: Commit regenerated data
+        run: |
+          git config user.name "licensesignal-bot"
+          git config user.email "data@newvenuedata.com"
+          git add licensesignal/lib/real-data.ts licensesignal/lib/signals.ts
+          if git diff --staged --quiet; then
+            echo "No data changes today."
+          else
+            git commit -m "chore(data): daily refresh $(date -u +%F)"
+            git push
+          fi

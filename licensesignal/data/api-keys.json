@@ -1,0 +1,4 @@
+{
+  "_comment": "Issued API keys (SHA-256 hashes only — raw keys are shown once at mint time). Mint with `npm run mint-key -- <plan> \"<name>\"`. The public sandbox key (ls_test_sandbox) is seeded in lib/api-keys.ts, not here. Real key management belongs in a database (handoff.md TODO-A).",
+  "keys": []
+}

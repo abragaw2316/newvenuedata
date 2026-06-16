@@ -1,0 +1,8 @@
+# Downloaded raw extracts and large normalized outputs are reproducible — don't commit.
+data/raw/
+data/out/*.json
+data/snapshots/
+node_modules/
+
+# Keep curated, small sample artifacts:
+!data/out/website-sample.json

@@ -1,0 +1,30 @@
+# New Venue Data
+
+> Real-time Florida liquor and food-service license intelligence. New Venue Data monitors Florida DBPR public records daily and delivers new-business "opening" signals to sales, distribution, and intelligence teams via REST API, webhooks, and data exports.
+
+New Venue Data helps B2B teams reach new restaurants and bars before competitors — the moment a license is filed, not months after the business opens. Data covers all 67 Florida counties and 15+ license types (SRX, COP, BEV, APS, FOOD_SERVICE, and more). It is FCRA-safe: the data describes business entities only, not individual consumers.
+
+## Core Pages
+- [Home](https://newvenuedata.com/): Product overview and live license feed.
+- [Use Cases](https://newvenuedata.com/use-cases): How beverage distributors, restaurant suppliers, POS companies, payroll providers, CRE, and PE firms use the data.
+- [Data Coverage](https://newvenuedata.com/data-coverage): Counties, license types, refresh cadence, and normalization methodology.
+- [Pricing](https://newvenuedata.com/pricing): Starter ($299/mo), Pro ($999/mo), and Enterprise (custom).
+- [About](https://newvenuedata.com/about): Mission, data pipeline, and compliance posture.
+- [Contact](https://newvenuedata.com/contact): Request API access.
+
+## Developers
+- [Documentation](https://newvenuedata.com/docs): REST API reference, authentication, filtering, pagination, and webhooks.
+- [Authentication](https://newvenuedata.com/docs/authentication): API key setup and request signing.
+- [List Licenses](https://newvenuedata.com/docs/list-licenses): The primary GET /v1/licenses endpoint.
+- [Webhooks](https://newvenuedata.com/docs/webhooks): Registration, HMAC-signed payloads, and retries.
+- [Rate Limits](https://newvenuedata.com/docs/rate-limits): Per-tier request limits.
+- [Glossary](https://newvenuedata.com/glossary): Definitions of Florida license types, statuses, and API terms.
+
+## Resources
+- [Integrations](https://newvenuedata.com/integrations): Salesforce, HubSpot, Snowflake, Slack, Zapier, and more.
+- [Security](https://newvenuedata.com/security): Encryption, access controls, and compliance.
+- [Changelog](https://newvenuedata.com/changelog): Product updates and release history.
+
+## Contact
+- Sales & API access: support@newvenuedata.com
+- Security: security@newvenuedata.com

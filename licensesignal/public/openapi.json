@@ -1,0 +1,143 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "New Venue Data API",
+    "version": "1.0.0",
+    "description": "Real-time Florida liquor and food-service license intelligence. Query new business filings, status changes, and ownership transfers across all 67 Florida counties.",
+    "contact": {
+      "name": "New Venue Data Support",
+      "email": "support@newvenuedata.com",
+      "url": "https://newvenuedata.com/docs"
+    },
+    "license": { "name": "Commercial", "url": "https://newvenuedata.com/terms" }
+  },
+  "servers": [
+    { "url": "https://api.newvenuedata.com/v1", "description": "Production" }
+  ],
+  "security": [{ "bearerAuth": [] }],
+  "paths": {
+    "/licenses": {
+      "get": {
+        "summary": "List licenses",
+        "description": "Returns a cursor-paginated list of Florida license records, newest first. Filter by county, license type, event type, status, or free-text query.",
+        "operationId": "listLicenses",
+        "parameters": [
+          { "name": "county", "in": "query", "description": "Filter by county (case-insensitive).", "schema": { "type": "string", "example": "Miami-Dade" } },
+          { "name": "license_type", "in": "query", "description": "Filter by license type.", "schema": { "type": "string", "enum": ["SRX", "COP", "BEV", "APS", "FOOD_SERVICE", "SEATING", "MOBILE_FOOD"] } },
+          { "name": "event_type", "in": "query", "description": "Filter by event type.", "schema": { "type": "string", "enum": ["new_filing", "renewal", "ownership_transfer", "status_change", "cancellation"] } },
+          { "name": "status", "in": "query", "description": "Filter by record status.", "schema": { "type": "string", "example": "active" } },
+          { "name": "q", "in": "query", "description": "Free-text search across business name, city, and county.", "schema": { "type": "string" } },
+          { "name": "limit", "in": "query", "description": "Page size (1-50).", "schema": { "type": "integer", "default": 10, "minimum": 1, "maximum": 50 } },
+          { "name": "cursor", "in": "query", "description": "Opaque pagination cursor from the previous page.", "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "A page of license records.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": { "type": "array", "items": { "$ref": "#/components/schemas/License" } },
+                    "pagination": { "$ref": "#/components/schemas/Pagination" }
+                  }
+                }
+              }
+            }
+          },
+          "401": { "$ref": "#/components/responses/Unauthorized" },
+          "429": { "$ref": "#/components/responses/RateLimited" }
+        }
+      }
+    },
+    "/licenses/{id}": {
+      "get": {
+        "summary": "Get a license",
+        "description": "Retrieve a single license record by its id or license number.",
+        "operationId": "getLicense",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "description": "The license id or license number.", "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "200": {
+            "description": "The license record.",
+            "content": { "application/json": { "schema": { "type": "object", "properties": { "data": { "$ref": "#/components/schemas/License" } } } } }
+          },
+          "404": {
+            "description": "No matching license.",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+          },
+          "401": { "$ref": "#/components/responses/Unauthorized" }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": { "type": "http", "scheme": "bearer", "bearerFormat": "API Key", "description": "Pass your secret key as a Bearer token: `Authorization: Bearer ls_live_...`" }
+    },
+    "responses": {
+      "Unauthorized": {
+        "description": "Missing or invalid API key.",
+        "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+      },
+      "RateLimited": {
+        "description": "Rate limit exceeded for your plan tier.",
+        "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } }
+      }
+    },
+    "schemas": {
+      "License": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "example": "lic_01HZ8XQ9P2WKRN4M5YJVD3B" },
+          "licenseNumber": { "type": "string", "example": "BEV-2024-0045821" },
+          "licenseType": { "type": "string", "enum": ["SRX", "COP", "BEV", "APS", "FOOD_SERVICE", "SEATING", "MOBILE_FOOD"] },
+          "status": { "type": "string", "example": "active" },
+          "businessName": { "type": "string", "example": "The Copper Still Bar & Kitchen" },
+          "legalName": { "type": "string" },
+          "dbaName": { "type": "string" },
+          "address": { "$ref": "#/components/schemas/Address" },
+          "filedDate": { "type": "string", "format": "date" },
+          "effectiveDate": { "type": "string", "format": "date" },
+          "eventType": { "type": "string", "enum": ["new_filing", "renewal", "ownership_transfer", "status_change", "cancellation"] },
+          "eventTimestamp": { "type": "string", "format": "date-time" },
+          "sourceUrl": { "type": "string", "format": "uri" }
+        }
+      },
+      "Address": {
+        "type": "object",
+        "properties": {
+          "street": { "type": "string" },
+          "city": { "type": "string" },
+          "county": { "type": "string" },
+          "state": { "type": "string", "example": "FL" },
+          "zip": { "type": "string" },
+          "lat": { "type": "number" },
+          "lng": { "type": "number" }
+        }
+      },
+      "Pagination": {
+        "type": "object",
+        "properties": {
+          "cursor": { "type": ["string", "null"], "description": "Cursor for the next page, or null if this is the last page." },
+          "hasMore": { "type": "boolean" },
+          "total": { "type": "integer" },
+          "limit": { "type": "integer" }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string", "example": "not_found" },
+              "message": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
