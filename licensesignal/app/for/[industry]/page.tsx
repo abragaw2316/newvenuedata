@@ -145,7 +145,7 @@ export default async function IndustryPage({ params }: PageProps) {
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
-              href="/signup"
+              href="/pricing"
               className="inline-flex items-center justify-center rounded-md bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium px-5 py-2.5 shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] transition-all"
             >
               Get API Access <ArrowRight className="ml-2 h-4 w-4" />
@@ -278,7 +278,7 @@ export default async function IndustryPage({ params }: PageProps) {
               </div>
               <div className="flex flex-shrink-0 flex-col gap-3 sm:flex-row lg:flex-col">
                 <Link
-                  href="/signup"
+                  href="/pricing"
                   className="inline-flex items-center justify-center rounded-md bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium px-5 py-2.5 transition-colors"
                 >
                   Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />

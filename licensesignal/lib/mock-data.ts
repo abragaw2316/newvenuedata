@@ -23,6 +23,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     price: 149,
     annualPrice: 124,
     description: 'One Florida county — ideal for a solo agent working a single territory.',
+    paymentLink: 'https://buy.stripe.com/5kQ8wPb7sbTE5sA0UvbfO01',
     features: [
       '1 Florida county',
       'Weekly new-license list (every Monday)',
@@ -41,6 +42,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     price: 299,
     annualPrice: 249,
     description: 'Broward, Miami-Dade & Palm Beach — the tri-county metro, all in one feed.',
+    paymentLink: 'https://buy.stripe.com/14AfZh8Zk2j47AI46HbfO02',
     features: [
       'Everything in County, plus:',
       'All three South-FL counties',

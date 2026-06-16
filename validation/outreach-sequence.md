@@ -107,9 +107,14 @@ the whole pitch.
 - **"Can I see more?"** → Send the full week's list + offer a 2-week free trial to close.
 
 ## The close
-Yes → send the **Stripe Payment Link** (see `first-dollar-playbook.md`) + start the Monday
-sends. Maybe → 2-week free trial (send 2 weekly lists), then ask for the card. Track it all
-in `prospect-list.csv`.
+Yes → send the matching **Stripe Payment Link** (live; each includes a 14-day free trial —
+card captured, first charge in 2 weeks) + start the Monday sends:
+- **Founding** ($99/mo, locked for life): https://buy.stripe.com/14A8wP7VgbTE2gogTtbfO00
+- **County** ($149/mo): https://buy.stripe.com/5kQ8wPb7sbTE5sA0UvbfO01
+- **South Florida** ($299/mo): https://buy.stripe.com/14AfZh8Zk2j47AI46HbfO02
+
+Maybe → the link's 14-day trial does the work (cancel before it bills if they bail). Track it
+all in `prospect-list.csv`.
 
 **Founding-member lever (use it to create urgency).** The first 10 subscribers lock in
 **$99/mo for life** (vs $149 county / $299 South FL) in exchange for a short testimonial.

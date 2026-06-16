@@ -136,7 +136,13 @@ export function PricingContent() {
                 )}
 
                 <Button
-                  render={<Link href={plan.id === 'enterprise' ? '/contact?type=sales' : '/contact'} />}
+                  render={
+                    plan.paymentLink ? (
+                      <a href={plan.paymentLink} target="_blank" rel="noopener noreferrer" />
+                    ) : (
+                      <Link href={plan.id === 'enterprise' ? '/contact?type=sales' : '/contact'} />
+                    )
+                  }
                   nativeButton={false}
                   className={
                     plan.highlighted

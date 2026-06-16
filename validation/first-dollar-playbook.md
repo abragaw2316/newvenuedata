@@ -22,19 +22,20 @@ counties — i.e. fresh dram-shop prospects before competitors reach them.
   price. Lead with the **2-week free trial** to kill risk; use the founding rate on fence-sitters.
 - **Term:** month-to-month, cancel anytime. Removes risk; you want the *recurring yes*.
 
-## Take payment with a Stripe Payment Link (no code, ~10 min)
-You do **not** need the website's billing built. In the Stripe Dashboard:
-1. **Product catalog → Add product** → name "New Venue Data — Weekly South FL Liquor
-   Leads", price **$149**, **recurring / monthly**. (Add a second **$99/mo** price on the
-   same product for founding members, and a **$299/mo** price for full South FL.)
-2. **Payment Links → New** → select that product → **Create link**. (Optionally turn on
-   "collect customer address" and a promo field.)
-3. Copy the URL (e.g. `https://buy.stripe.com/xxxx`). Send it to any agent who says yes.
-   Stripe emails them receipts and runs the monthly charge automatically.
-4. (Later, when the SaaS billing is built, you migrate these to real subscriptions.)
+## Take payment — Stripe Payment Links (✅ LIVE, created 2026-06-16)
+The product, three recurring prices, and three Payment Links are already set up in Stripe
+(live mode), **each with a 14-day free trial built in** (card captured, first charge in 2
+weeks). Just send the matching link to anyone who says yes — Stripe emails receipts and runs
+the monthly charge automatically:
 
-No Stripe account yet? A first invoice via PayPal/Wise/Stripe Invoicing works the same
-way for the first customer — the goal is a **real charge**, not perfect billing.
+| Tier | Price | Payment Link |
+|---|---|---|
+| **Founding member** (first 10, locked for life) | $99/mo | https://buy.stripe.com/14A8wP7VgbTE2gogTtbfO00 |
+| **County** (one county) | $149/mo | https://buy.stripe.com/5kQ8wPb7sbTE5sA0UvbfO01 |
+| **South Florida** (tri-county) | $299/mo | https://buy.stripe.com/14AfZh8Zk2j47AI46HbfO02 |
+
+Stripe product `prod_UiFvFNRJXAe8fB`. (Later, when the SaaS billing is built, migrate these
+to in-app subscriptions.)
 
 ## Weekly delivery SOP (~5 min/week, per agent)
 1. `cd data-pipeline && npm run refresh` (or just `npm run leads` if data is current) —

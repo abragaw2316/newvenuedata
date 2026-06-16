@@ -26,7 +26,7 @@ export function StickyCta({
   position = 'bottom',
   message = 'Start tracking new Florida filings in real time.',
   ctaLabel = 'Get API access',
-  href = '/signup',
+  href = '/pricing',
 }: StickyCtaProps) {
   const [visible, setVisible] = useState(false)
   const [dismissed, setDismissed] = useState(false)

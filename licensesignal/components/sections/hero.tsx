@@ -89,7 +89,7 @@ export function Hero() {
           {/* CTAs */}
           <motion.div {...fadeUp(0.3)} className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Button
-              render={<Link href="/contact" />}
+              render={<Link href="/pricing" />}
               nativeButton={false}
               size="lg"
               className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] transition-all px-6"

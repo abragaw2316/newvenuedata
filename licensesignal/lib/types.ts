@@ -151,6 +151,8 @@ export interface PricingPlan {
   features: string[]
   cta: string
   highlighted: boolean
+  /** Stripe Payment Link for self-serve checkout (omit for "talk to sales" tiers). */
+  paymentLink?: string
 }
 
 export interface DocsNavItem {
