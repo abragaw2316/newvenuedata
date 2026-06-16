@@ -51,7 +51,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Feedback',
     blocks: [
       {
-        p: 'We welcome your feedback on the accessibility of New Venue Data. If you encounter accessibility barriers, please email accessibility@newvenuedata.com with the page URL and a description of the issue. We aim to respond within 3 business days.',
+        p: 'We welcome your feedback on the accessibility of New Venue Data. If you encounter accessibility barriers, please email austin@newvenuedata.com with the page URL and a description of the issue. We aim to respond within 3 business days.',
       },
     ],
   },

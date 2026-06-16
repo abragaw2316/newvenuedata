@@ -317,10 +317,10 @@ export default function IntegrationsPage() {
                 Request an integration
               </Link>
               <a
-                href="mailto:integrations@newvenuedata.com"
+                href="mailto:austin@newvenuedata.com"
                 className="text-sm font-medium text-indigo-400 hover:text-indigo-300 transition-colors"
               >
-                integrations@newvenuedata.com
+                austin@newvenuedata.com
               </a>
             </div>
           </GlowCard>

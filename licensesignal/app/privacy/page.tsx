@@ -82,7 +82,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Your Rights',
     blocks: [
       {
-        p: 'Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict the processing of your personal information. To exercise these rights, email privacy@newvenuedata.com. We will respond within the timeframes required by applicable law (including GDPR and CCPA where they apply).',
+        p: 'Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict the processing of your personal information. To exercise these rights, email austin@newvenuedata.com. We will respond within the timeframes required by applicable law (including GDPR and CCPA where they apply).',
       },
     ],
   },

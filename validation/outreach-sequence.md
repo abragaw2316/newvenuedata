@@ -29,8 +29,8 @@ the whole pitch.
 > cost of a single commercial lead). I'm also locking in my first 10 agents at a founding
 > rate. Could I get 15 minutes this week to show you how it works?
 >
-> {Your name}
-> {phone} · newvenuedata.com
+> Austin Bragaw
+> austin@newvenuedata.com · {phone} · newvenuedata.com
 
 ### Email 2 — follow-up (Day 3, reply to Email 1)
 > Subject: re: 25 brand-new {County} bars…
@@ -63,7 +63,7 @@ the whole pitch.
 > in-territory. I've attached a 25-row South-FL sample. Could we find 20 minutes to talk
 > about a feed/API for your network (by county or statewide)?
 >
-> {Your name} · newvenuedata.com
+> Austin Bragaw, New Venue Data · austin@newvenuedata.com · newvenuedata.com
 
 ### Follow-up (Day 4)
 > Subject: re: New-venue trigger data…
@@ -133,18 +133,18 @@ Paste into your email client, add your name/phone, attach `south-fl-new-liquor-l
 > Hi — I track Florida's public liquor-license filings and turn them into a weekly list of venues that *just* got licensed to serve alcohol in Broward — i.e. businesses that need dram-shop coverage right now, before a competitor reaches them.
 > I put together a free 25-venue sample for South Florida (attached) — all filed in the last two weeks, with address and license type. Worth a quick look?
 > If it's useful, I send a fresh batch every Monday — $149/mo for Broward, about what one commercial lead costs. I'm also locking my first 10 agents in at a founding rate ($99/mo for life). Could I grab 15 minutes this week to show you how it works?
-> — {Your name}, New Venue Data · newvenuedata.com · {your phone}
+> — Austin Bragaw, New Venue Data · austin@newvenuedata.com · {your phone}
 
 **2. Prestige Insurance Group** — Miami-Dade / Miami. Email **info@prestigeinsurancegrp.com** (phone 305-969-8776).
 > **Subject:** 25 brand-new Miami-Dade venues that need liquor liability (this month)
 >
 > Hi — I turn Florida's public liquor-license filings into a weekly list of venues that just got licensed to serve alcohol in Miami-Dade — businesses that need dram-shop coverage now, before your competitors call them.
 > Attached is a free 25-venue South Florida sample (filed in the last two weeks, with address + license type). If it's useful I send a fresh batch every Monday — $149/mo for Miami-Dade (about the cost of one commercial lead), and my first 10 agents lock in $99/mo for life. Could I get 15 minutes this week to walk you through it?
-> — {Your name}, New Venue Data · newvenuedata.com · {your phone}
+> — Austin Bragaw, New Venue Data · austin@newvenuedata.com · {your phone}
 
 **3. Red Zone Insurance** — Palm Beach / WPB (+ Miami). Call **561-717-6623**.
 > **Subject:** 25 brand-new Palm Beach venues that need liquor liability (this month)
 >
 > Hi — I track new Florida liquor-license filings and turn them into a weekly list of venues that just got licensed to serve alcohol in Palm Beach — the ones that need dram-shop coverage right away, before anyone else reaches them.
 > Free 25-venue South Florida sample attached (last two weeks, address + license type). If it lands, I send a fresh list every Monday — $149/mo for Palm Beach, roughly what a single commercial lead runs, and I'm locking my first 10 agents in at $99/mo for life. Worth 15 minutes this week?
-> — {Your name}, New Venue Data · newvenuedata.com · {your phone}
+> — Austin Bragaw, New Venue Data · austin@newvenuedata.com · {your phone}

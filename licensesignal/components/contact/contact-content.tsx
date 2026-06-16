@@ -230,7 +230,7 @@ export function ContactContent() {
                   call, and set up a test key on the spot.
                 </p>
                 <a
-                  href="mailto:support@newvenuedata.com?subject=Book%20a%2020-minute%20demo"
+                  href="mailto:austin@newvenuedata.com?subject=Book%20a%2020-minute%20demo"
                   className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors font-medium"
                 >
                   Book a 20-min demo →
@@ -248,10 +248,10 @@ export function ContactContent() {
                   For support, data questions, or enterprise inquiries:
                 </p>
                 <a
-                  href="mailto:support@newvenuedata.com"
+                  href="mailto:austin@newvenuedata.com"
                   className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
                 >
-                  support@newvenuedata.com
+                  austin@newvenuedata.com
                 </a>
               </div>
 

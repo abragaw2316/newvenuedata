@@ -86,7 +86,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Corrections & Removal',
     blocks: [
       {
-        p: 'Because our data originates from public records, the authoritative correction path is with the source agency. If you believe a record we distribute is inaccurate, contact data@newvenuedata.com and we will investigate, annotate, or re-sync the record from source as appropriate.',
+        p: 'Because our data originates from public records, the authoritative correction path is with the source agency. If you believe a record we distribute is inaccurate, contact austin@newvenuedata.com and we will investigate, annotate, or re-sync the record from source as appropriate.',
       },
     ],
   },

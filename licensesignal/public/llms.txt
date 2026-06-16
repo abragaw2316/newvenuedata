@@ -26,5 +26,5 @@ New Venue Data helps B2B teams reach new restaurants and bars before competitors
 - [Changelog](https://newvenuedata.com/changelog): Product updates and release history.
 
 ## Contact
-- Sales & API access: support@newvenuedata.com
-- Security: security@newvenuedata.com
+- Sales & API access: austin@newvenuedata.com
+- Security: austin@newvenuedata.com

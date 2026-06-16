@@ -29,7 +29,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Accounts & API Keys',
     blocks: [
       {
-        p: 'You are responsible for maintaining the confidentiality of your API keys and account credentials, and for all activity that occurs under them. Notify us immediately at security@newvenuedata.com if you suspect unauthorized use. We may suspend or revoke keys that we reasonably believe are compromised or used in violation of these Terms.',
+        p: 'You are responsible for maintaining the confidentiality of your API keys and account credentials, and for all activity that occurs under them. Notify us immediately at austin@newvenuedata.com if you suspect unauthorized use. We may suspend or revoke keys that we reasonably believe are compromised or used in violation of these Terms.',
       },
     ],
   },

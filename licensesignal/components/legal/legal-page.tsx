@@ -67,10 +67,10 @@ export function LegalPage({ title, lastUpdated, intro, sections }: LegalPageProp
             <p className="text-sm text-[var(--ls-fg-2)] leading-relaxed">
               Questions about this policy? Contact us at{' '}
               <a
-                href="mailto:legal@newvenuedata.com"
+                href="mailto:austin@newvenuedata.com"
                 className="text-indigo-400 hover:text-indigo-300 transition-colors"
               >
-                legal@newvenuedata.com
+                austin@newvenuedata.com
               </a>{' '}
               or visit our{' '}
               <Link href="/contact" className="text-indigo-400 hover:text-indigo-300 transition-colors">

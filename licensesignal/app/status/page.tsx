@@ -81,8 +81,8 @@ export default function StatusPage() {
 
           <p className="text-xs text-[var(--ls-fg-3)]">
             Subscribe to status updates by emailing{' '}
-            <a href="mailto:status@newvenuedata.com" className="text-indigo-400 hover:text-indigo-300 transition-colors">
-              status@newvenuedata.com
+            <a href="mailto:austin@newvenuedata.com" className="text-indigo-400 hover:text-indigo-300 transition-colors">
+              austin@newvenuedata.com
             </a>
             .
           </p>

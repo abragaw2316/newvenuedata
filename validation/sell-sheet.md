@@ -47,4 +47,4 @@ FCRA. Use it for prospecting and outreach. (New Venue Data is an independent dat
 not affiliated with or endorsed by the State of Florida or DBPR.)
 
 **Start this week:** reply to this email or call, and I'll send your first weekly list.
-📧 support@newvenuedata.com · 🌐 newvenuedata.com
+📧 austin@newvenuedata.com · 🌐 newvenuedata.com

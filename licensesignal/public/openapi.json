@@ -6,7 +6,7 @@
     "description": "Real-time Florida liquor and food-service license intelligence. Query new business filings, status changes, and ownership transfers across all 67 Florida counties.",
     "contact": {
       "name": "New Venue Data Support",
-      "email": "support@newvenuedata.com",
+      "email": "austin@newvenuedata.com",
       "url": "https://newvenuedata.com/docs"
     },
     "license": { "name": "Commercial", "url": "https://newvenuedata.com/terms" }

@@ -118,7 +118,7 @@ export default function SecurityPage() {
                 Talk to Security <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
               <a
-                href="mailto:security@newvenuedata.com"
+                href="mailto:austin@newvenuedata.com"
                 className="inline-flex items-center justify-center rounded-md border border-[var(--ls-border-2)] bg-transparent text-[var(--ls-fg-2)] hover:border-[#6366f1] hover:text-[var(--ls-fg)] text-sm font-medium px-5 py-2.5 transition-colors"
               >
                 Report a vulnerability
@@ -209,10 +209,10 @@ export default function SecurityPage() {
               researchers who follow good-faith disclosure.
             </p>
             <a
-              href="mailto:security@newvenuedata.com"
+              href="mailto:austin@newvenuedata.com"
               className="text-sm font-medium text-indigo-400 hover:text-[#818cf8] transition-colors"
             >
-              security@newvenuedata.com
+              austin@newvenuedata.com
             </a>
           </div>
         </div>
