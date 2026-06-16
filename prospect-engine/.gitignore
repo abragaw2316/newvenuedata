@@ -1,0 +1,8 @@
+# The prospect database holds business-contact data + outreach state — never commit it.
+data/
+*.db
+*.db-journal
+*.db-wal
+node_modules/
+.env
+.env.local

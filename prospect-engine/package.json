@@ -1,0 +1,20 @@
+{
+  "name": "new-venue-data-prospect-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Lean AI-assisted outbound prospecting engine for New Venue Data. Zero-dependency Node ESM (uses built-in node:sqlite + fetch). Discovers FL insurance-agency buyers, scores fit, drafts personalized outreach for human review + manual send.",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "seed": "node src/discover/seed-import.mjs",
+    "discover": "node src/discover/run.mjs",
+    "enrich": "node src/enrich/run.mjs",
+    "score": "node src/score.mjs",
+    "agents": "node src/agents/run.mjs",
+    "pipeline": "node src/pipeline.mjs",
+    "review": "node src/weekly-review.mjs",
+    "export": "node src/export-json.mjs"
+  }
+}
