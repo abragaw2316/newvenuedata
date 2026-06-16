@@ -73,7 +73,7 @@ export function Footer() {
                 <Zap className="h-4 w-4 text-indigo-400" />
               </div>
               <span className="text-sm font-semibold tracking-tight text-[var(--ls-fg)]">
-                License<span className="text-indigo-400">Signal</span>
+                New Venue <span className="text-indigo-400">Data</span>
               </span>
             </Link>
             <p className="text-xs text-[var(--ls-fg-3)] leading-relaxed max-w-[180px]">

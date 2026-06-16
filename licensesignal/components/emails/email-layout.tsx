@@ -144,7 +144,7 @@ export function EmailLayout({ preview, children }: EmailLayoutProps) {
                         </td>
                         <td style={{ verticalAlign: 'middle' }}>
                           <p style={wordmarkStyle}>
-                            License<span style={{ color: BRAND.indigo }}>Signal</span>
+                            New Venue <span style={{ color: BRAND.indigo }}>Data</span>
                           </p>
                         </td>
                       </tr>

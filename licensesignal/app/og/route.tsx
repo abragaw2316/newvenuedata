@@ -53,7 +53,7 @@ export async function GET(req: NextRequest) {
             </svg>
           </div>
           <span style={{ fontSize: 22, fontWeight: 600, color: '#fafafa', letterSpacing: '-0.02em' }}>
-            License<span style={{ color: '#818cf8' }}>Signal</span>
+            New Venue <span style={{ color: '#818cf8' }}>Data</span>
           </span>
         </div>
 

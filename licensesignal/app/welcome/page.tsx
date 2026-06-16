@@ -68,7 +68,7 @@ export default function WelcomePage() {
             <Zap className="h-4 w-4 text-indigo-400" />
           </div>
           <span className="text-sm font-semibold tracking-tight text-[var(--ls-fg)]">
-            License<span className="text-indigo-400">Signal</span>
+            New Venue <span className="text-indigo-400">Data</span>
           </span>
         </div>
 
