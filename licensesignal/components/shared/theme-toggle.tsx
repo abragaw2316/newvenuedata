@@ -4,25 +4,31 @@ import { useEffect, useState } from 'react'
 import { Sun, Moon } from 'lucide-react'
 
 /**
- * Toggles between the dark (default) and light themes by adding/removing the
- * `light` class on <html>. The no-flash script in the root layout sets the
- * initial class before paint; this component only mirrors and updates it.
+ * Toggles between the light (default) and dark themes by swapping the mutually
+ * exclusive `light`/`dark` classes on <html>. The no-flash script in the root
+ * layout sets the initial class before paint; this component mirrors and updates
+ * it. (`dark` also drives Tailwind's dark: variant — see globals.css.)
  */
 export function ThemeToggle({ className = '' }: { className?: string }) {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+  const [theme, setTheme] = useState<'dark' | 'light'>('light')
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
     setMounted(true)
-    setTheme(document.documentElement.classList.contains('light') ? 'light' : 'dark')
+    setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light')
   }, [])
 
   const toggle = () => {
     const next = theme === 'dark' ? 'light' : 'dark'
     setTheme(next)
     const root = document.documentElement
-    if (next === 'light') root.classList.add('light')
-    else root.classList.remove('light')
+    if (next === 'dark') {
+      root.classList.add('dark')
+      root.classList.remove('light')
+    } else {
+      root.classList.add('light')
+      root.classList.remove('dark')
+    }
     try {
       localStorage.setItem('ls-theme', next)
     } catch {

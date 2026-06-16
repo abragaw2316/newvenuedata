@@ -8,13 +8,15 @@ import { ScrollProgress } from '@/components/shared/scroll-progress'
 import { CommandPalette } from '@/components/shared/command-palette'
 import { MarketingCro } from '@/components/cro/marketing-cro'
 
-// Applied before paint so there is no theme flash. Honors an explicit choice in
-// localStorage, otherwise falls back to the OS preference (dark by default).
-const themeScript = `(function(){try{var t=localStorage.getItem('ls-theme');var d=document.documentElement;if(t==='light'){d.classList.add('light')}else if(!t&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches){d.classList.add('light')}}catch(e){}})();`
+// Applied before paint so there is no theme flash. Defaults to LIGHT; switches to
+// dark only when the visitor has explicitly chosen it (persisted in localStorage).
+// Keeps the `light`/`dark` classes mutually exclusive (dark also drives Tailwind's
+// dark: variant via @custom-variant in globals.css).
+const themeScript = `(function(){try{var t=localStorage.getItem('ls-theme');var d=document.documentElement;if(t==='dark'){d.classList.add('dark');d.classList.remove('light')}else{d.classList.add('light');d.classList.remove('dark')}}catch(e){}})();`
 
 export const viewport: Viewport = {
-  themeColor: '#09090b',
-  colorScheme: 'dark',
+  themeColor: '#fafafb',
+  colorScheme: 'light',
 }
 
 const inter = Inter({
@@ -74,7 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html
       lang="en"
       suppressHydrationWarning
-      className={`dark ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`light ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[var(--ls-bg)] text-[var(--ls-fg)]">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
