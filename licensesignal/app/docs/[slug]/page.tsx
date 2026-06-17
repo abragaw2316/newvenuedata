@@ -218,10 +218,11 @@ const key = process.env.LICENSESIGNAL_API_KEY`}
   "pagination": { "cursor": "cur_eyJpZCI6Im...", "hasMore": true, "total": 412, "limit": 5 }
 }`}
           />
-          <Heading level={2}>3. Set up a webhook (optional)</Heading>
+          <Heading level={2}>3. Set up a webhook (planned)</Heading>
           <P>
-            Instead of polling, register a webhook endpoint to receive events the moment new records
-            appear. See the Webhooks guide for setup instructions.
+            Webhook delivery is on the roadmap and not yet available. For now, poll the API on a
+            schedule, or use the weekly lead list / CSV export. We&apos;ll announce webhooks in the
+            changelog when they ship.
           </P>
         </div>
       )
@@ -369,9 +370,14 @@ do {
       return (
         <div>
           <Heading level={1}>Webhooks</Heading>
+          <div className="rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-700 dark:text-amber-300 mb-4">
+            <strong>Planned — not yet available.</strong> Webhook delivery is on the roadmap. The
+            endpoints and payloads below describe the planned design; today, poll the API or use the
+            weekly list / CSV export. We&apos;ll announce it in the changelog when it ships.
+          </div>
           <P>
-            Register a webhook to receive HTTP POST notifications the moment a new license record
-            appears or an existing record is updated. No polling required.
+            Once available, you&apos;ll register a webhook to receive HTTP POST notifications the moment a
+            new license record appears or an existing record is updated — no polling required.
           </P>
           <Heading level={2}>Register an Endpoint</Heading>
           <CodeBlock

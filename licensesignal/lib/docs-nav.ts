@@ -25,7 +25,7 @@ export const DOCS_NAV: DocsNavItem[] = [
     slug: 'pagination',
   },
   {
-    title: 'Webhooks',
+    title: 'Webhooks (Planned)',
     children: [
       { title: 'Setup', slug: 'webhooks' },
       { title: 'Payload Schema', slug: 'webhook-payload' },
@@ -41,7 +41,7 @@ export const DOCS_NAV: DocsNavItem[] = [
     slug: 'errors',
   },
   {
-    title: 'SDKs',
+    title: 'SDKs (Planned)',
     slug: 'sdks',
   },
   {
