@@ -11,6 +11,7 @@
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import path from 'node:path'
+import { sql, ensureSchema, dbConfigured } from './db'
 
 export type ApiKeyPlan = 'sandbox' | 'starter' | 'pro' | 'enterprise'
 
@@ -70,10 +71,42 @@ function allKeys(): Promise<ApiKeyRecord[]> {
   return keysPromise
 }
 
-/** Return the active key record for a raw token, or null if invalid/revoked. */
+// Map account plans (DB) onto the rate-limit tiers used by the API.
+const ACCOUNT_PLAN_TIER: Record<string, ApiKeyPlan> = {
+  trial: 'starter',
+  county: 'starter',
+  south_fl: 'pro',
+  statewide: 'enterprise',
+}
+
+/** Return the active key record for a raw token, or null if invalid/revoked.
+ *  Checks the seeded/file keys first, then real account keys in Postgres. */
 export async function verifyApiKey(rawToken: string): Promise<ApiKeyRecord | null> {
   if (!rawToken) return null
   const h = hashKey(rawToken)
+
   const keys = await allKeys()
-  return keys.find((k) => k.active && k.hashedKey === h) ?? null
+  const fileKey = keys.find((k) => k.active && k.hashedKey === h)
+  if (fileKey) return fileKey
+
+  // Real per-user account keys live in the database (issued at signup / rotation).
+  if (dbConfigured()) {
+    try {
+      await ensureSchema()
+      const { rows } = await sql`SELECT id, plan FROM api_keys WHERE key_hash = ${h} AND revoked = false LIMIT 1`
+      const row = rows[0] as { id: string; plan: string } | undefined
+      if (row) {
+        const plan = ACCOUNT_PLAN_TIER[row.plan] ?? 'starter'
+        // Best-effort last-used stamp; never block the request on it.
+        sql`UPDATE api_keys SET last_used_at = now() WHERE id = ${row.id}`.catch(() => {})
+        return {
+          id: row.id, name: 'account key', plan, hashedKey: h,
+          rateLimitPerMin: PLAN_RATE_LIMITS[plan], active: true, createdAt: '',
+        }
+      }
+    } catch {
+      /* DB unavailable → fall through to "not found" (401), demo tier still open */
+    }
+  }
+  return null
 }

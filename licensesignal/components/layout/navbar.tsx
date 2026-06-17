@@ -166,7 +166,7 @@ export function Navbar() {
             Sign In
           </Link>
           <Button
-            render={<Link href="/pricing" />}
+            render={<Link href="/signup" />}
             nativeButton={false}
             size="sm"
             className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 transition-all"
@@ -237,7 +237,7 @@ export function Navbar() {
                   Sign In
                 </Link>
                 <Button
-                  render={<Link href="/pricing" onClick={() => setMobileOpen(false)} />}
+                  render={<Link href="/signup" onClick={() => setMobileOpen(false)} />}
                   nativeButton={false}
                   className="w-full bg-indigo-500 hover:bg-indigo-600 text-white border-0"
                 >
