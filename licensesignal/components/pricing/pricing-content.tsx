@@ -71,9 +71,9 @@ export function PricingContent() {
           />
 
           {/* Founding-member banner */}
-          <div className="flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-sm text-amber-300">
+          <div className="flex items-center gap-2 rounded-full border border-indigo-600/30 bg-indigo-500/10 px-4 py-1.5 text-sm text-indigo-700 dark:text-indigo-300">
             <span className="font-semibold">Founding offer:</span>
-            <span className="text-amber-200/90">first 10 Florida agents lock in <strong>$99/mo for life</strong> — ask us for a spot.</span>
+            <span>first 10 Florida agents lock in <strong>$99/mo for life</strong> — ask us for a spot.</span>
           </div>
 
           {/* Toggle */}
