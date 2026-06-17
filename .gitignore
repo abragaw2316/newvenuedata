@@ -23,7 +23,10 @@ next-env.d.ts
 .vercel/
 
 # Test artifacts
-coverage/
+# NOTE: anchored to repo root so it does NOT swallow licensesignal/app/coverage/
+# (the programmatic-SEO route). Test-coverage output in the app is ignored by
+# licensesignal/.gitignore's own /coverage rule.
+/coverage/
 test-results/
 playwright-report/
 playwright/.cache/
