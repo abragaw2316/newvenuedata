@@ -68,12 +68,6 @@ export const SEARCH_INDEX: SearchEntry[] = [
     keywords: ['compare', 'comparison', 'alternatives', 'vs', 'competitors', 'versus'],
   },
   {
-    title: 'Customers',
-    href: '/customers',
-    section: 'Pages',
-    keywords: ['customers', 'case studies', 'testimonials', 'stories', 'who uses', 'logos'],
-  },
-  {
     title: 'Status',
     href: '/status',
     section: 'Pages',

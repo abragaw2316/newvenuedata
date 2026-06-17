@@ -4,11 +4,11 @@ import { PricingContent } from '@/components/pricing/pricing-content'
 export const metadata: Metadata = {
   title: 'Pricing',
   description:
-    'Simple, transparent pricing for Florida license intelligence. Starter from $299/mo. No seat fees, no hidden limits.',
+    'Simple, transparent pricing for Florida license intelligence. County from $149/mo, South Florida $299/mo. Month-to-month, cancel anytime.',
   alternates: { canonical: 'https://newvenuedata.com/pricing' },
   openGraph: {
-    title: 'New Venue Data Pricing — Starter from $299/mo',
-    description: 'Simple pricing for serious data teams. API + webhooks + CSV exports.',
+    title: 'New Venue Data Pricing — County from $149/mo',
+    description: 'Weekly new-venue lead lists + REST API. Month-to-month, cancel anytime.',
     url: 'https://newvenuedata.com/pricing',
   },
 }

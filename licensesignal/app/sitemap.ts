@@ -3,7 +3,6 @@ import { DOCS_NAV } from '@/lib/docs-nav'
 import { BLOG_POSTS } from '@/lib/blog-posts'
 import { FL_COUNTIES } from '@/lib/fl-counties'
 import { LICENSE_TYPES } from '@/lib/license-type-info'
-import { CASE_STUDIES } from '@/lib/case-studies'
 import { EXPANSION_STATES } from '@/lib/expansion-states'
 import { INDUSTRIES } from '@/lib/industries'
 import { HELP_ARTICLES } from '@/lib/help-articles'
@@ -31,7 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${BASE_URL}/coverage`, priority: 0.7, changeFrequency: 'monthly' },
       { url: `${BASE_URL}/license-types`, priority: 0.7, changeFrequency: 'monthly' },
       { url: `${BASE_URL}/compare`, priority: 0.6, changeFrequency: 'monthly' },
-      { url: `${BASE_URL}/customers`, priority: 0.6, changeFrequency: 'monthly' },
       { url: `${BASE_URL}/webhook-events`, priority: 0.6, changeFrequency: 'monthly' },
       { url: `${BASE_URL}/methodology`, priority: 0.7, changeFrequency: 'monthly' },
       { url: `${BASE_URL}/reports/florida-2026`, priority: 0.7, changeFrequency: 'monthly' },
@@ -60,7 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...BLOG_POSTS.map((p) => ({ url: `${BASE_URL}/blog/${p.slug}`, priority: 0.6, changeFrequency: 'monthly' as const })),
     ...FL_COUNTIES.map((c) => ({ url: `${BASE_URL}/coverage/${c.slug}`, priority: 0.5, changeFrequency: 'monthly' as const })),
     ...LICENSE_TYPES.map((t) => ({ url: `${BASE_URL}/license-types/${t.slug}`, priority: 0.5, changeFrequency: 'monthly' as const })),
-    ...CASE_STUDIES.map((s) => ({ url: `${BASE_URL}/customers/${s.slug}`, priority: 0.5, changeFrequency: 'monthly' as const })),
     ...EXPANSION_STATES.map((s) => ({ url: `${BASE_URL}/expansion/${s.slug}`, priority: 0.4, changeFrequency: 'monthly' as const })),
     ...INDUSTRIES.map((i) => ({ url: `${BASE_URL}/for/${i.slug}`, priority: 0.6, changeFrequency: 'monthly' as const })),
     ...HELP_ARTICLES.map((a) => ({ url: `${BASE_URL}/help/${a.slug}`, priority: 0.5, changeFrequency: 'monthly' as const })),

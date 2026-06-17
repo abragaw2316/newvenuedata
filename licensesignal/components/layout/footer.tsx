@@ -45,7 +45,6 @@ const FOOTER_LINKS = {
   ],
   Company: [
     { href: '/about', label: 'About' },
-    { href: '/customers', label: 'Customers' },
     { href: '/compare', label: 'Compare' },
     { href: '/webinars', label: 'Webinars' },
     { href: '/podcast', label: 'Podcast' },

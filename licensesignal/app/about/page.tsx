@@ -11,22 +11,10 @@ export const metadata: Metadata = {
 
 const TEAM = [
   {
-    name: 'Alex Rivera',
-    title: 'Founder & CEO',
-    bio: 'Former data infrastructure lead at a regional beverage distribution company. Spent 4 years watching sales reps find out about new accounts 90 days too late.',
-    initials: 'AR',
-  },
-  {
-    name: 'Sam Chen',
-    title: 'CTO',
-    bio: 'Previously built public records processing pipelines at a legal data SaaS. Architected New Venue Data\'s entity resolution and normalization engine.',
-    initials: 'SC',
-  },
-  {
-    name: 'Jordan Patel',
-    title: 'Head of Data',
-    bio: 'Background in DBPR data procurement and state regulatory systems. Ensures 99.8% coverage and daily refresh SLAs across all 67 Florida counties.',
-    initials: 'JP',
+    name: 'Austin Bragaw',
+    title: 'Founder',
+    bio: 'Solo founder. I build the pipeline that turns Florida\'s public license records into a clean daily feed, and I work directly with every early customer. Reach me at austin@newvenuedata.com.',
+    initials: 'AB',
   },
 ]
 
@@ -69,8 +57,9 @@ export default function AboutPage() {
             </p>
             <p className="text-lg text-[var(--ls-fg-2)] leading-relaxed mt-4">
               New Venue Data was built to deliver that signal to the teams that need it. We pull Florida DBPR
-              public records daily, normalize them into structured events, and deliver them via API, webhooks,
-              and data exports to distributors, suppliers, POS companies, payroll providers, and PE firms.
+              public records daily, normalize them into structured events, and make them available as a weekly
+              lead list and a REST API — built for distributors, suppliers, POS companies, payroll providers,
+              and investors.
             </p>
           </div>
         </div>
@@ -114,7 +103,7 @@ export default function AboutPage() {
               employment screening, tenant screening, or credit decisions affecting individual consumers.
             </p>
             <p className="text-sm text-[var(--ls-fg-2)] leading-relaxed mt-3">
-              Our customers are B2B teams using business-entity data for sales prospecting, market
+              New Venue Data is built for B2B teams using business-entity data for sales prospecting, market
               intelligence, and distribution intelligence — all legitimate FCRA-safe use cases.
             </p>
           </div>
@@ -147,7 +136,7 @@ export default function AboutPage() {
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col gap-10">
           <SectionHeading eyebrow="Team" heading="Who We Are" />
-          <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto w-full">
+          <div className="flex justify-center w-full">
             {TEAM.map((member) => (
               <div key={member.name} className="rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-6 flex flex-col gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/15 border border-indigo-500/20">

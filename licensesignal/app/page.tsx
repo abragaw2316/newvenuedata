@@ -6,7 +6,6 @@ import { ProductOverview } from '@/components/sections/product-overview'
 import { FeatureGrid } from '@/components/sections/feature-grid'
 import { DataPreview } from '@/components/sections/data-preview'
 import { ApiSection } from '@/components/sections/api-section'
-import { Testimonials } from '@/components/sections/testimonials'
 import { CtaBanner } from '@/components/sections/cta-banner'
 
 export const metadata: Metadata = {
@@ -26,8 +25,8 @@ const JSON_LD = {
     'Real-time Florida liquor and food-service license intelligence via API, webhooks, and data exports.',
   url: 'https://newvenuedata.com',
   offers: [
-    { '@type': 'Offer', price: '299', priceCurrency: 'USD', name: 'Starter' },
-    { '@type': 'Offer', price: '999', priceCurrency: 'USD', name: 'Pro' },
+    { '@type': 'Offer', price: '149', priceCurrency: 'USD', name: 'County' },
+    { '@type': 'Offer', price: '299', priceCurrency: 'USD', name: 'South Florida' },
   ],
 }
 
@@ -45,7 +44,6 @@ export default function HomePage() {
       <FeatureGrid />
       <DataPreview />
       <ApiSection />
-      <Testimonials />
       <CtaBanner />
     </>
   )
