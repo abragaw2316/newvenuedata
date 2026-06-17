@@ -17,82 +17,62 @@ export async function GET(req: NextRequest) {
           flexDirection: 'column',
           alignItems: 'flex-start',
           justifyContent: 'flex-end',
-          background: '#09090b',
+          background: '#faf8f3',
           padding: '64px 72px',
           fontFamily: 'system-ui, sans-serif',
         }}
       >
-        {/* Radial glow */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'radial-gradient(ellipse 70% 50% at 50% 0%, rgba(99,102,241,0.25) 0%, transparent 70%)',
-          }}
-        />
-
-        {/* Logo row */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 32 }}>
-          <div
-            style={{
-              width: 40,
-              height: 40,
-              borderRadius: 10,
-              background: 'rgba(99,102,241,0.2)',
-              border: '1px solid rgba(99,102,241,0.4)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" fill="#818cf8" />
-            </svg>
-          </div>
-          <span style={{ fontSize: 22, fontWeight: 600, color: '#fafafa', letterSpacing: '-0.02em' }}>
-            New Venue <span style={{ color: '#818cf8' }}>Data</span>
+        {/* Logo row — awning mark + wordmark */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 36 }}>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+            <g fill="#1c1b17">
+              <rect x="3.4" y="4.6" width="15.6" height="1.9" rx="0.5" />
+              <path d="M4.2 6.5 L4.2 10.4 Q6.3 13.7 8.4 10.4 L8.4 6.5 Z" />
+              <path d="M9 6.5 L9 10.4 Q11.1 13.7 13.2 10.4 L13.2 6.5 Z" />
+              <path d="M13.8 6.5 L13.8 10.4 Q15.9 13.7 18 10.4 L18 6.5 Z" />
+            </g>
+            <circle cx="19.4" cy="4.2" r="1.7" fill="#1f6b4c" />
+          </svg>
+          <span style={{ fontSize: 24, fontWeight: 600, color: '#1c1b17', letterSpacing: '-0.02em' }}>
+            New Venue <span style={{ color: '#1f6b4c' }}>Data</span>
           </span>
         </div>
 
-        {/* Title */}
+        {/* Title — editorial serif */}
         <div
           style={{
-            fontSize: title.length > 60 ? 44 : 52,
-            fontWeight: 700,
-            color: '#fafafa',
-            lineHeight: 1.1,
-            letterSpacing: '-0.03em',
-            maxWidth: 860,
-            marginBottom: 24,
+            fontFamily: 'Georgia, "Times New Roman", serif',
+            fontSize: title.length > 60 ? 50 : 60,
+            fontWeight: 600,
+            color: '#1c1b17',
+            lineHeight: 1.05,
+            letterSpacing: '-0.02em',
+            maxWidth: 940,
+            marginBottom: 26,
           }}
         >
           {title}
         </div>
 
         {/* Tagline */}
-        <div style={{ fontSize: 20, color: '#71717a', letterSpacing: '-0.01em' }}>
-          Real-Time Florida License Intelligence · newvenuedata.com
+        <div style={{ fontSize: 21, color: '#514e45', letterSpacing: '-0.01em' }}>
+          Real-Time Florida License Intelligence ·{' '}
+          <span style={{ color: '#1f6b4c' }}>newvenuedata.com</span>
         </div>
 
-        {/* Bottom border accent */}
+        {/* Bottom accent rule */}
         <div
           style={{
             position: 'absolute',
             bottom: 0,
             left: 0,
             right: 0,
-            height: 3,
-            background: 'linear-gradient(90deg, #6366f1 0%, #8b5cf6 100%)',
+            height: 4,
+            background: '#1f6b4c',
           }}
         />
       </div>
     ),
-    {
-      width: 1200,
-      height: 630,
-    }
+    { width: 1200, height: 630 }
   )
 }

@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect, useRef } from 'react'
-import { Menu, Zap, ChevronDown } from 'lucide-react'
+import { Menu, ChevronDown } from 'lucide-react'
+import { LogoMark } from '@/components/shared/logo-mark'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { ThemeToggle } from '@/components/shared/theme-toggle'
@@ -126,8 +127,8 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-500/20 border border-indigo-500/30">
-            <Zap className="h-4 w-4 text-indigo-400" />
+          <div className="flex h-7 w-7 items-center justify-center">
+            <LogoMark className="h-[18px] w-[18px] text-[var(--ls-fg)]" />
           </div>
           <span className="text-sm font-semibold tracking-tight text-[var(--ls-fg)]">
             New Venue <span className="text-indigo-400">Data</span>
@@ -192,8 +193,8 @@ export function Navbar() {
                 onClick={() => setMobileOpen(false)}
                 className="flex items-center gap-2"
               >
-                <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-500/20 border border-indigo-500/30">
-                  <Zap className="h-4 w-4 text-indigo-400" />
+                <div className="flex h-7 w-7 items-center justify-center">
+                  <LogoMark className="h-[18px] w-[18px] text-[var(--ls-fg)]" />
                 </div>
                 <span className="text-sm font-semibold tracking-tight">
                   New Venue <span className="text-indigo-400">Data</span>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, LayoutDashboard, BarChart2, Webhook, Settings, Zap } from 'lucide-react'
+import { ArrowRight, LayoutDashboard, BarChart2, Webhook, Settings } from 'lucide-react'
+import { LogoMark } from '@/components/shared/logo-mark'
 import { Button } from '@/components/ui/button'
 import { StatCard } from '@/components/dashboard/stat-card'
 import { LazyVolumeChart } from '@/components/dashboard/lazy-charts'
@@ -28,8 +29,8 @@ export default function DashboardPage() {
       <aside className="hidden lg:flex w-60 flex-col border-r border-[var(--ls-border)] bg-[var(--ls-surface-2)]">
         {/* Logo */}
         <div className="flex h-16 items-center gap-2 border-b border-[var(--ls-border)] px-5">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-500/20 border border-indigo-500/30">
-            <Zap className="h-4 w-4 text-indigo-400" />
+          <div className="flex h-7 w-7 items-center justify-center">
+            <LogoMark className="h-[18px] w-[18px] text-[var(--ls-fg)]" />
           </div>
           <span className="text-sm font-semibold tracking-tight text-[var(--ls-fg)]">
             New Venue <span className="text-indigo-400">Data</span>

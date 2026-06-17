@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Zap, Check, Circle, ArrowRight } from 'lucide-react'
+import { Check, Circle, ArrowRight } from 'lucide-react'
+import { LogoMark } from '@/components/shared/logo-mark'
 
 export const metadata: Metadata = {
   title: 'Welcome',
@@ -64,8 +65,8 @@ export default function WelcomePage() {
       <div className="mx-auto max-w-2xl">
         {/* Wordmark */}
         <div className="flex items-center gap-2 mb-8">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-500/20 border border-indigo-500/30">
-            <Zap className="h-4 w-4 text-indigo-400" />
+          <div className="flex h-7 w-7 items-center justify-center">
+            <LogoMark className="h-[18px] w-[18px] text-[var(--ls-fg)]" />
           </div>
           <span className="text-sm font-semibold tracking-tight text-[var(--ls-fg)]">
             New Venue <span className="text-indigo-400">Data</span>

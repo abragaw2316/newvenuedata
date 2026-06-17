@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Zap, Mail, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Mail, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { LogoMark } from '@/components/shared/logo-mark'
 
 const INPUT_CLASS =
   'w-full rounded-md border border-[var(--ls-border-2)] bg-[var(--ls-surface-2)] px-3 py-2 text-sm text-[var(--ls-fg)] placeholder:text-[var(--ls-fg-4)] focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500/50'
@@ -168,8 +169,8 @@ export function LoginContent() {
 function Wordmark({ className = '' }: { className?: string }) {
   return (
     <Link href="/" className={`flex items-center gap-2 ${className}`}>
-      <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-500/20 border border-indigo-500/30">
-        <Zap className="h-4 w-4 text-indigo-400" />
+      <div className="flex h-7 w-7 items-center justify-center">
+        <LogoMark className="h-[18px] w-[18px] text-[var(--ls-fg)]" />
       </div>
       <span className="text-sm font-semibold tracking-tight text-[var(--ls-fg)]">
         New Venue <span className="text-indigo-400">Data</span>
