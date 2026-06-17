@@ -44,6 +44,9 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://newvenuedata.com'),
+  verification: {
+    google: 'eHXZlUf8LNvtVQAfpTs9DPtIZv_pQI-r7IwGLkfcurY',
+  },
   title: {
     default: 'New Venue Data — Real-Time Florida License Intelligence',
     template: '%s | New Venue Data',
