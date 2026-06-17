@@ -15,6 +15,12 @@ from openpyxl.utils import get_column_letter
 HERE = Path(__file__).parent
 leads = json.loads((HERE / "south-fl-new-liquor-leads.json").read_text(encoding="utf-8"))
 
+# Derive the region label from the data so a single-county list reads correctly
+# (e.g. "Palm Beach" instead of a hardcoded tri-county banner).
+_counties = sorted({l.get("county") for l in leads if l.get("county")})
+COUNTY_LABEL = " / ".join(_counties) if _counties else "South Florida"
+REGION = _counties[0] if len(_counties) == 1 else "South Florida"
+
 # Brand palette (matches the New Venue Data indigo accent)
 INDIGO = "4F46E5"
 INDIGO_DK = "3730A3"
@@ -54,7 +60,7 @@ span = f"{filed[0]} to {filed[-1]}" if filed else ""
 # ── banner ───────────────────────────────────────────────────────────────────
 last_col = len(COLS)
 ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=last_col)
-t = ws.cell(1, 1, "New Venue Data — New Liquor License Filings, South Florida")
+t = ws.cell(1, 1, f"New Venue Data — New Liquor License Filings, {REGION}")
 t.font = Font(name=ARIAL, size=15, bold=True, color="FFFFFF")
 t.fill = PatternFill("solid", fgColor=INDIGO)
 t.alignment = Alignment(horizontal="left", vertical="center", indent=1)
@@ -62,7 +68,7 @@ ws.row_dimensions[1].height = 30
 
 ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=last_col)
 s = ws.cell(2, 1, f"Sample lead list · {len(leads)} brand-new venues licensed to serve alcohol "
-                  f"(Broward / Miami-Dade / Palm Beach) · filed {span}")
+                  f"({COUNTY_LABEL}) · filed {span}")
 s.font = Font(name=ARIAL, size=10, color="FFFFFF")
 s.fill = PatternFill("solid", fgColor=INDIGO_DK)
 s.alignment = Alignment(horizontal="left", vertical="center", indent=1)

@@ -70,15 +70,15 @@ export default function DashboardPage() {
         {/* Preview banner */}
         <div className="flex items-center justify-between border-b border-amber-500/20 bg-amber-500/10 px-4 py-2.5">
           <p className="text-xs text-amber-400 font-medium">
-            Preview dashboard — sign up to access live data.
+            Preview — a live dashboard is on the roadmap. Today, New Venue Data is delivered as a weekly email list.
           </p>
           <Button
-            render={<Link href="/contact" />}
+            render={<Link href="/pricing" />}
             nativeButton={false}
             size="sm"
             className="h-7 bg-indigo-500 hover:bg-indigo-600 text-white border-0 text-xs"
           >
-            Get API Access <ArrowRight className="ml-1 h-3 w-3" />
+            See plans <ArrowRight className="ml-1 h-3 w-3" />
           </Button>
         </div>
 

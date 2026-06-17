@@ -5,6 +5,7 @@
 //
 //   node src/build-lead-list.mjs            # default: 25 on-premises South-FL leads
 //   node src/build-lead-list.mjs 40         # custom count
+//   node src/build-lead-list.mjs 25 "Palm Beach"   # ONE county (a single-county subscriber)
 //
 // Output → validation/south-fl-new-liquor-leads.{csv,json}
 // Compliance: Florida Ch. 119 PUBLIC records, B2B business-entity data, FCRA-safe
@@ -17,6 +18,9 @@ import { PATHS } from './config.mjs'
 const out = (n) => fileURLToPath(new URL(n, PATHS.out))
 const VALIDATION_DIR = fileURLToPath(new URL('../../validation/', import.meta.url))
 const LIMIT = Number(process.argv[2]) || 25
+// Optional 3rd arg: restrict to ONE county (for a single-county subscriber).
+// e.g. `node src/build-lead-list.mjs 25 "Palm Beach"`. Default = all of South FL.
+const wantCounty = (process.argv[3] || '').trim().toLowerCase().replace(/^dade$/, 'miami-dade')
 const SOUTH_FL = new Set(['Broward', 'Miami-Dade', 'Palm Beach', 'Dade'])
 const asOf = '2026-06-15'
 
@@ -60,9 +64,12 @@ const pool = abt
     }
   })
 
+// Optionally narrow to a single county (for a one-county subscriber's weekly list).
+const scoped = wantCounty ? pool.filter((r) => r.county.toLowerCase() === wantCounty) : pool
+
 // Prioritize on-premises venues (the agent's real targets), freshest filings first.
-const onPrem = pool.filter((r) => r.onPremises === 'Yes').sort((a, b) => b.filedDate.localeCompare(a.filedDate))
-const offPrem = pool.filter((r) => r.onPremises === 'No').sort((a, b) => b.filedDate.localeCompare(a.filedDate))
+const onPrem = scoped.filter((r) => r.onPremises === 'Yes').sort((a, b) => b.filedDate.localeCompare(a.filedDate))
+const offPrem = scoped.filter((r) => r.onPremises === 'No').sort((a, b) => b.filedDate.localeCompare(a.filedDate))
 const leads = [...onPrem, ...offPrem].slice(0, LIMIT)
 
 // ── emit ──────────────────────────────────────────────────────────────────────
@@ -99,4 +106,4 @@ console.log(`✓ wrote ${leads.length} leads → validation/south-fl-new-liquor-
 console.log(`  counties: ${Object.entries(byCounty).map(([k, v]) => `${k} ${v}`).join(', ')}`)
 console.log(`  on-premises: ${leads.filter((r) => r.onPremises === 'Yes').length}/${leads.length}`)
 console.log(`  filed-date range: ${dates[0]} … ${dates[dates.length - 1]}`)
-console.log(`  pool available (South-FL new filings, real addr): ${pool.length}`)
+console.log(`  scope: ${wantCounty ? process.argv[3] : 'all South FL'} — pool available (new filings, real addr): ${scoped.length}`)

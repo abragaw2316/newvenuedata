@@ -37,15 +37,41 @@ the monthly charge automatically:
 Stripe product `prod_UiFvFNRJXAe8fB`. (Later, when the SaaS billing is built, migrate these
 to in-app subscriptions.)
 
+## When someone says yes → onboard them (2 minutes)
+1. Send the matching **Stripe Payment Link** above (each has the 14-day free trial built in).
+2. When Stripe confirms the trial started (you get a Stripe email), send the **welcome email**
+   below so they know exactly what to expect — then add them to your Monday list.
+
+### Welcome email (copy-paste — send right after they subscribe)
+> **Subject:** You're in — your first New Venue Data list is on the way
+>
+> Hi {First name} —
+>
+> Thanks for subscribing — you're all set. Here's what happens next:
+>
+> • I'll email your first list of brand-new {County} venues (just licensed to serve alcohol —
+>   i.e. fresh liquor-liability prospects) within one business day.
+> • After that, a fresh batch lands in your inbox every Monday morning.
+> • Your 14-day free trial is running now — no charge until it ends, and you can cancel
+>   anytime, no contract.
+>
+> Want me to add a county, focus on bars vs. restaurants, or look into phone numbers? Just
+> reply to this email — a real person (me) reads every one.
+>
+> Austin Bragaw
+> New Venue Data · austin@newvenuedata.com · newvenuedata.com
+
 ## Weekly delivery SOP (~5 min/week, per agent)
-1. `cd data-pipeline && npm run refresh` (or just `npm run leads` if data is current) —
-   pulls the latest filings and regenerates the lead JSON/CSV.
-2. `python validation/make-xlsx.py` — rebuilds the polished `.xlsx`.
-   *(Filter to the agent's county first if they bought one county:*
-   `node src/build-lead-list.mjs 50` *then trim, or add a county arg later.)*
-3. Email the `.xlsx` to the agent with a one-line note: *"This week's new South-FL
-   liquor venues — 25 fresh prospects. Reply if you want me to add a county."*
-4. Log the send + any reply in `buyer-validation-plan.md` so you track retention.
+1. **Refresh the live data** so the list is genuinely "this week's":
+   `cd data-pipeline && node src/run.mjs --source=abt_retail` (re-pulls the live DBPR liquor
+   file). *(`npm run refresh` does this plus every other source — heavier but fine.)*
+2. **Build the agent's list** — pass their county if they bought just one:
+   `node src/build-lead-list.mjs 25 "Palm Beach"`  *(omit the county for all of South FL).*
+3. **Make the polished sheet:** `python ../validation/make-xlsx.py` — the banner now adapts to
+   whatever county(ies) are in the list.
+4. **Email the `.xlsx`** with a one-liner: *"This week's new {County} liquor venues — {N} fresh
+   prospects. Reply if you want another county or phone numbers."*
+5. **Log** the send + any reply in `buyer-validation-plan.md` so you track retention.
 
 ## Why concierge first (don't skip to building)
 - **Proves the recurring yes** — paying once is interest; paying month 2 is a business.

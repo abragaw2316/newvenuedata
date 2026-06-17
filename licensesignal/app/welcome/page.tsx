@@ -1,65 +1,52 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Check, Circle, ArrowRight } from 'lucide-react'
+import { Check, Circle, ArrowRight, Mail } from 'lucide-react'
 import { LogoMark } from '@/components/shared/logo-mark'
 
 export const metadata: Metadata = {
   title: 'Welcome',
   description:
-    'Get started with New Venue Data — create your API key, make your first request, and wire up real-time Florida license alerts.',
+    'Welcome to New Venue Data — your weekly list of newly-licensed Florida venues that need liquor liability, delivered to your inbox.',
   alternates: { canonical: 'https://newvenuedata.com/welcome' },
   robots: { index: false, follow: false },
 }
 
-type OnboardingStep = {
+type Step = {
   title: string
   description: string
-  ctaLabel: string
-  href: string
   done: boolean
 }
 
-const STEPS: OnboardingStep[] = [
+// Concierge onboarding: the product is a weekly emailed lead list, not an app to
+// configure. These are "what happens next" — not action items the customer must do.
+const STEPS: Step[] = [
   {
-    title: 'Create your API key',
-    description: 'Generate a live key so you can authenticate requests against the API.',
-    ctaLabel: 'View key',
-    href: '/dashboard',
+    title: 'Your subscription is active',
+    description:
+      'Your 14-day free trial just started — no charge until it ends, and you can cancel anytime.',
     done: true,
   },
   {
-    title: 'Make your first request',
-    description: 'Pull a page of Florida license records and confirm your integration works end to end.',
-    ctaLabel: 'List licenses',
-    href: '/docs/list-licenses',
+    title: 'Your first list arrives within one business day',
+    description:
+      'We email you a fresh list of venues that just got licensed to serve alcohol in your county — then a new batch every Monday morning.',
     done: false,
   },
   {
-    title: 'Register a webhook',
-    description: 'Get pushed every new filing, renewal, and status change in real time.',
-    ctaLabel: 'Set up webhooks',
-    href: '/docs/webhooks',
+    title: 'Tell us your county and preferences',
+    description:
+      'Just reply to that email to add counties, focus on bars vs. restaurants, or ask about phone-number enrichment. A real person reads every reply.',
     done: false,
   },
   {
-    title: 'Set your county filters',
-    description: 'Narrow your feed to the Florida counties and license types your team cares about.',
-    ctaLabel: 'Configure filters',
-    href: '/dashboard',
-    done: false,
-  },
-  {
-    title: 'Invite your team',
-    description: 'Add teammates so sales, ops, and engineering all work from the same feed.',
-    ctaLabel: 'Invite teammates',
-    href: '/dashboard',
+    title: 'Cancel anytime',
+    description:
+      'Month-to-month, no contract. Manage or cancel your plan straight from your Stripe receipt.',
     done: false,
   },
 ]
 
 export default function WelcomePage() {
-  const completed = STEPS.filter((s) => s.done).length
-
   return (
     <section className="min-h-[80vh] py-16 px-4">
       <div className="mx-auto max-w-2xl">
@@ -74,32 +61,19 @@ export default function WelcomePage() {
         </div>
 
         <h1 className="text-3xl font-bold tracking-tight text-[var(--ls-fg)]">
-          Welcome to New Venue Data
+          You&apos;re in — welcome to New Venue Data
         </h1>
         <p className="mt-3 text-sm text-[var(--ls-fg-2)] leading-relaxed">
-          You&apos;re a few steps away from a live feed of Florida license events. Work through the
-          checklist below — most teams are sending their first request within an hour.
+          Thanks for subscribing. There&apos;s nothing to install and nothing to learn — your
+          new-venue leads come straight to your inbox. Here&apos;s exactly what happens next.
         </p>
 
-        {/* Progress */}
-        <div className="mt-6 flex items-center gap-3">
-          <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-[var(--ls-hover)]">
-            <div
-              className="h-full rounded-full bg-indigo-500 transition-all"
-              style={{ width: `${(completed / STEPS.length) * 100}%` }}
-            />
-          </div>
-          <span className="text-xs font-medium tabular-nums text-[var(--ls-fg-3)]">
-            {completed} of {STEPS.length} done
-          </span>
-        </div>
-
-        {/* Checklist */}
+        {/* What happens next */}
         <ul className="mt-8 flex flex-col gap-3">
           {STEPS.map((step) => (
             <li
               key={step.title}
-              className="flex items-start gap-4 rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-5 transition-colors hover:border-[var(--ls-border-2)]"
+              className="flex items-start gap-4 rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-5"
             >
               <div className="mt-0.5 flex-shrink-0">
                 {step.done ? (
@@ -112,35 +86,37 @@ export default function WelcomePage() {
               </div>
 
               <div className="flex-1">
-                <p
-                  className={`text-sm font-medium ${
-                    step.done ? 'text-[var(--ls-fg-3)] line-through' : 'text-[var(--ls-fg)]'
-                  }`}
-                >
-                  {step.title}
-                </p>
+                <p className="text-sm font-medium text-[var(--ls-fg)]">{step.title}</p>
                 <p className="mt-1 text-xs text-[var(--ls-fg-3)] leading-relaxed">{step.description}</p>
               </div>
-
-              <Link
-                href={step.href}
-                className="mt-0.5 inline-flex flex-shrink-0 items-center gap-1 rounded-md border border-[var(--ls-border-2)] bg-[var(--ls-surface-2)] px-3 py-1.5 text-xs font-medium text-[var(--ls-fg-2)] transition-colors hover:border-indigo-500/40 hover:text-[var(--ls-fg)]"
-              >
-                {step.ctaLabel}
-                <ArrowRight className="h-3 w-3" />
-              </Link>
             </li>
           ))}
         </ul>
 
+        {/* Contact / help */}
+        <div className="mt-8 flex items-start gap-3 rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface-2)] p-5">
+          <Mail className="mt-0.5 h-5 w-5 flex-shrink-0 text-indigo-400" />
+          <div>
+            <p className="text-sm font-medium text-[var(--ls-fg)]">Questions? Just email us.</p>
+            <p className="mt-1 text-xs text-[var(--ls-fg-3)] leading-relaxed">
+              Reach Austin directly at{' '}
+              <a href="mailto:austin@newvenuedata.com" className="text-indigo-400 hover:underline">
+                austin@newvenuedata.com
+              </a>{' '}
+              — you&apos;ll get a real reply, usually the same day. A self-serve dashboard and API
+              are on the way, and as an early customer your feedback decides what we build next.
+            </p>
+          </div>
+        </div>
+
         {/* Footer CTA */}
         <div className="mt-10 flex items-center justify-between border-t border-[var(--ls-border)] pt-6">
-          <p className="text-xs text-[var(--ls-fg-3)]">You can finish these steps anytime from your dashboard.</p>
+          <p className="text-xs text-[var(--ls-fg-3)]">Watch your inbox — your first list is on its way.</p>
           <Link
-            href="/dashboard"
+            href="/"
             className="inline-flex items-center gap-1.5 rounded-md bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium px-5 py-2.5 transition-colors"
           >
-            Go to dashboard
+            Back to newvenuedata.com
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
