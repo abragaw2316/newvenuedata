@@ -4,6 +4,7 @@ import { getCurrentUser } from '@/lib/auth'
 import { sql, ensureSchema } from '@/lib/db'
 import { logout } from './actions'
 import { AccountKey } from '@/components/account/account-content'
+import { VerifyEmailBanner } from '@/components/account/verify-email-banner'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -16,11 +17,17 @@ const PLAN_LABEL: Record<string, string> = {
   statewide: 'Statewide',
 }
 
-export default async function AccountPage() {
+export default async function AccountPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ verified?: string }>
+}) {
   const user = await getCurrentUser()
   if (!user) redirect('/login')
 
+  const { verified: justVerified } = await searchParams
   let prefix: string | null = null
+  let emailVerified = true
   try {
     await ensureSchema()
     const { rows } = await sql`
@@ -28,6 +35,8 @@ export default async function AccountPage() {
       WHERE user_id = ${user.id} AND revoked = false
       ORDER BY created_at DESC LIMIT 1`
     prefix = (rows[0]?.key_prefix as string) ?? null
+    const u = await sql`SELECT email_verified FROM users WHERE id = ${user.id} LIMIT 1`
+    emailVerified = Boolean(u.rows[0]?.email_verified)
   } catch { /* show "no active key" */ }
 
   return (
@@ -44,6 +53,13 @@ export default async function AccountPage() {
             </button>
           </form>
         </header>
+
+        {justVerified === '1' && (
+          <p className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-300">
+            Email confirmed — thanks! Your account is fully set up.
+          </p>
+        )}
+        {justVerified !== '1' && !emailVerified && <VerifyEmailBanner />}
 
         {/* Plan */}
         <section className="rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-5 flex items-center justify-between gap-4">

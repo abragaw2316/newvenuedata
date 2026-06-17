@@ -13,6 +13,14 @@ import {
   TX_DATA_AS_OF,
   TX_SOURCE,
 } from '@/lib/texas-stats'
+import {
+  GA_TOTAL_LICENSES,
+  GA_LICENSE_TYPE_COUNT,
+  GA_RECENT_COMMENCEMENTS,
+  GA_TOP_TYPES,
+  GA_DATA_AS_OF,
+  GA_SOURCE,
+} from '@/lib/georgia-stats'
 
 interface PageProps {
   params: Promise<{ state: string }>
@@ -158,6 +166,64 @@ export default async function ExpansionStatePage({ params }: PageProps) {
               >
                 Explore Texas coverage by county <ArrowRight className="h-4 w-4" />
               </Link>
+            </div>
+          )}
+
+          {/* Real GA DOR data preview (Georgia only) */}
+          {slug === 'georgia' && (
+            <div className="mt-2 flex flex-col gap-5 rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-6">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h2 className="text-sm font-semibold text-[var(--ls-fg)]">
+                  A preview from the live Georgia DOR file
+                </h2>
+                <span className="text-xs text-[var(--ls-fg-3)]">
+                  Source: {GA_SOURCE} · as of {GA_DATA_AS_OF}
+                </span>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-3">
+                <div className="flex flex-col gap-1">
+                  <p className="text-2xl font-bold tabular-nums text-[var(--ls-fg)]">
+                    {GA_TOTAL_LICENSES.toLocaleString()}
+                  </p>
+                  <p className="text-xs text-[var(--ls-fg-3)]">Active alcohol licenses statewide</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-2xl font-bold tabular-nums text-[var(--ls-fg)]">
+                    {GA_RECENT_COMMENCEMENTS.toLocaleString()}
+                  </p>
+                  <p className="text-xs text-[var(--ls-fg-3)]">Commenced in the last 12 months</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <p className="text-2xl font-bold tabular-nums text-[var(--ls-fg)]">
+                    {GA_LICENSE_TYPE_COUNT}
+                  </p>
+                  <p className="text-xs text-[var(--ls-fg-3)]">License types</p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-xs font-medium uppercase tracking-widest text-[var(--ls-fg-3)]">
+                  Top license types
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {GA_TOP_TYPES.slice(0, 8).map((t) => (
+                    <span
+                      key={t.type}
+                      className="inline-flex items-center gap-2 rounded-full border border-[var(--ls-border-2)] bg-[var(--ls-surface-2)] px-3 py-1 text-xs text-[var(--ls-fg)]"
+                    >
+                      {t.type}
+                      <span className="tabular-nums text-[var(--ls-fg-3)]">
+                        {t.count.toLocaleString()}
+                      </span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <p className="text-xs leading-6 text-[var(--ls-fg-3)]">
+                Real, current counts from Georgia&apos;s Department of Revenue alcohol-license file —
+                the same source the Georgia feed will run on at launch. The{' '}
+                {GA_RECENT_COMMENCEMENTS.toLocaleString()} licenses commenced in the last year are
+                exactly the new-venue signal agents want.
+              </p>
             </div>
           )}
 

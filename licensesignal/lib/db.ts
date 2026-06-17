@@ -42,6 +42,17 @@ export function ensureSchema(): Promise<void> {
       )`
       await sql`CREATE INDEX IF NOT EXISTS idx_api_keys_hash ON api_keys(key_hash)`
       await sql`CREATE INDEX IF NOT EXISTS idx_sessions_user ON sessions(user_id)`
+      // Added incrementally (idempotent) for Stripe plan-binding + email verify/reset.
+      await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS stripe_customer_id TEXT`
+      await sql`ALTER TABLE users ADD COLUMN IF NOT EXISTS email_verified BOOLEAN NOT NULL DEFAULT false`
+      await sql`CREATE TABLE IF NOT EXISTS auth_tokens (
+        token TEXT PRIMARY KEY,
+        user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+        kind TEXT NOT NULL,
+        expires_at TIMESTAMPTZ NOT NULL,
+        created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+      )`
+      await sql`CREATE INDEX IF NOT EXISTS idx_auth_tokens_user ON auth_tokens(user_id)`
     })().catch((e) => {
       schemaReady = null // allow retry on next request if it failed
       throw e

@@ -15,11 +15,18 @@ from openpyxl.utils import get_column_letter
 HERE = Path(__file__).parent
 leads = json.loads((HERE / "south-fl-new-liquor-leads.json").read_text(encoding="utf-8"))
 
-# Derive the region label from the data so a single-county list reads correctly
-# (e.g. "Palm Beach" instead of a hardcoded tri-county banner).
+# Derive the region label from the data so the banner matches whatever scope was
+# generated — one county, the South-FL tri-county, or statewide.
 _counties = sorted({l.get("county") for l in leads if l.get("county")})
-COUNTY_LABEL = " / ".join(_counties) if _counties else "South Florida"
-REGION = _counties[0] if len(_counties) == 1 else "South Florida"
+_lc = {c.lower() for c in _counties}
+if len(_counties) == 1:
+    REGION = COUNTY_LABEL = _counties[0]
+elif _lc <= {"broward", "miami-dade", "palm beach"}:
+    REGION = "South Florida"
+    COUNTY_LABEL = " / ".join(_counties)
+else:
+    REGION = "Florida (statewide)"
+    COUNTY_LABEL = f"{len(_counties)} Florida counties"
 
 # Brand palette (matches the New Venue Data indigo accent)
 INDIGO = "4F46E5"

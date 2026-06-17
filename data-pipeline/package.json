@@ -23,7 +23,8 @@
     "app-data": "node src/build-app-data.mjs",
     "full-data": "node src/build-full-data.mjs",
     "coverage": "node src/build-coverage-stats.mjs",
-    "leads": "node src/build-lead-list.mjs"
+    "leads": "node src/build-lead-list.mjs",
+    "ga": "python fetch-ga.py"
   },
   "main": "index.js",
   "keywords": [],

@@ -3,9 +3,10 @@
 // insurance agents (TODO-C). These are brand-new venues that just got licensed
 // to serve alcohol and therefore need dram-shop / liquor-liability coverage NOW.
 //
-//   node src/build-lead-list.mjs            # default: 25 on-premises South-FL leads
-//   node src/build-lead-list.mjs 40         # custom count
-//   node src/build-lead-list.mjs 25 "Palm Beach"   # ONE county (a single-county subscriber)
+//   node src/build-lead-list.mjs                  # default: 25 leads, South Florida tri-county
+//   node src/build-lead-list.mjs 40               # custom count
+//   node src/build-lead-list.mjs 25 "Orange"      # ANY ONE of the 67 FL counties (e.g. Orlando)
+//   node src/build-lead-list.mjs 50 "statewide"   # every county statewide (also: "FL" / "all")
 //
 // Output → validation/south-fl-new-liquor-leads.{csv,json}
 // Compliance: Florida Ch. 119 PUBLIC records, B2B business-entity data, FCRA-safe
@@ -18,10 +19,16 @@ import { PATHS } from './config.mjs'
 const out = (n) => fileURLToPath(new URL(n, PATHS.out))
 const VALIDATION_DIR = fileURLToPath(new URL('../../validation/', import.meta.url))
 const LIMIT = Number(process.argv[2]) || 25
-// Optional 3rd arg: restrict to ONE county (for a single-county subscriber).
-// e.g. `node src/build-lead-list.mjs 25 "Palm Beach"`. Default = all of South FL.
-const wantCounty = (process.argv[3] || '').trim().toLowerCase().replace(/^dade$/, 'miami-dade')
-const SOUTH_FL = new Set(['Broward', 'Miami-Dade', 'Palm Beach', 'Dade'])
+// Optional 3rd arg = SCOPE (what the subscriber bought). The dataset is statewide,
+// so any of these is deliverable:
+//   (omitted)                  → South Florida tri-county (the default outreach region)
+//   "<County>"                 → that ONE Florida county, any of the 67 (e.g. "Orange")
+//   "FL" | "statewide" | "all" → every county statewide
+const scopeArg = (process.argv[3] || '').trim().toLowerCase().replace(/^dade$/, 'miami-dade')
+const STATEWIDE_ALIASES = new Set(['fl', 'florida', 'statewide', 'state', 'all'])
+const isStatewide = STATEWIDE_ALIASES.has(scopeArg)
+const wantCounty = !scopeArg || isStatewide ? '' : scopeArg
+const SOUTH_FL = new Set(['broward', 'miami-dade', 'palm beach'])
 const asOf = '2026-06-15'
 
 function titleCase(s) {
@@ -45,7 +52,6 @@ const abt = JSON.parse(await readFile(out('normalized-abt_retail.json'), 'utf8')
 
 const pool = abt
   .filter((r) => r.eventType === 'new_filing' && realAddr(r))
-  .filter((r) => SOUTH_FL.has(r.address.county))
   .map((r) => {
     const label = r._seriesLabel || r._series || ''
     return {
@@ -64,8 +70,12 @@ const pool = abt
     }
   })
 
-// Optionally narrow to a single county (for a one-county subscriber's weekly list).
-const scoped = wantCounty ? pool.filter((r) => r.county.toLowerCase() === wantCounty) : pool
+// Scope the pool to what the subscriber bought: statewide / one county / South FL (default).
+const scoped = isStatewide
+  ? pool.filter((r) => r.county) // every county; drop the few blank-county records
+  : wantCounty
+    ? pool.filter((r) => r.county.toLowerCase() === wantCounty)
+    : pool.filter((r) => SOUTH_FL.has(r.county.toLowerCase()))
 
 // Prioritize on-premises venues (the agent's real targets), freshest filings first.
 const onPrem = scoped.filter((r) => r.onPremises === 'Yes').sort((a, b) => b.filedDate.localeCompare(a.filedDate))
@@ -106,4 +116,5 @@ console.log(`✓ wrote ${leads.length} leads → validation/south-fl-new-liquor-
 console.log(`  counties: ${Object.entries(byCounty).map(([k, v]) => `${k} ${v}`).join(', ')}`)
 console.log(`  on-premises: ${leads.filter((r) => r.onPremises === 'Yes').length}/${leads.length}`)
 console.log(`  filed-date range: ${dates[0]} … ${dates[dates.length - 1]}`)
-console.log(`  scope: ${wantCounty ? process.argv[3] : 'all South FL'} — pool available (new filings, real addr): ${scoped.length}`)
+const scopeLabel = isStatewide ? 'statewide (all FL)' : wantCounty ? process.argv[3] : 'South Florida tri-county'
+console.log(`  scope: ${scopeLabel} — pool available (new filings, real addr): ${scoped.length}`)

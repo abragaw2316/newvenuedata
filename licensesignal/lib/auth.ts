@@ -61,6 +61,35 @@ export async function destroySession(): Promise<void> {
 export interface AuthResult {
   error?: string
   apiKey?: string
+  sent?: boolean
+  message?: string
+}
+
+/** Canonical site origin for links in emails (override via env if needed). */
+export const siteUrl = (): string =>
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://newvenuedata.com'
+
+// ── One-time tokens (email verification + password reset) ───────────────────────
+export type AuthTokenKind = 'verify' | 'reset'
+
+export async function createAuthToken(userId: string, kind: AuthTokenKind, ttlMs: number): Promise<string> {
+  const token = randomBytes(32).toString('hex')
+  const expires = new Date(Date.now() + ttlMs)
+  await sql`INSERT INTO auth_tokens (token, user_id, kind, expires_at)
+            VALUES (${token}, ${userId}, ${kind}, ${expires.toISOString()})`
+  return token
+}
+
+/** Validate + single-use consume a token; returns the user id or null. */
+export async function consumeAuthToken(token: string, kind: AuthTokenKind): Promise<string | null> {
+  if (!token) return null
+  const { rows } = await sql`
+    SELECT user_id FROM auth_tokens
+    WHERE token = ${token} AND kind = ${kind} AND expires_at > now() LIMIT 1`
+  const r = rows[0] as { user_id: string } | undefined
+  if (!r) return null
+  await sql`DELETE FROM auth_tokens WHERE token = ${token}`
+  return r.user_id
 }
 
 export interface SessionUser {

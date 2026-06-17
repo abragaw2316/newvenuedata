@@ -65,8 +65,10 @@ to in-app subscriptions.)
 1. **Refresh the live data** so the list is genuinely "this week's":
    `cd data-pipeline && node src/run.mjs --source=abt_retail` (re-pulls the live DBPR liquor
    file). *(`npm run refresh` does this plus every other source — heavier but fine.)*
-2. **Build the agent's list** — pass their county if they bought just one:
-   `node src/build-lead-list.mjs 25 "Palm Beach"`  *(omit the county for all of South FL).*
+2. **Build the agent's list** to match what they bought (the data is statewide — any of these):
+   - **One county** (any of the 67): `node src/build-lead-list.mjs 25 "Orange"`
+   - **South Florida** tri-county (default): `node src/build-lead-list.mjs 25`
+   - **Statewide**: `node src/build-lead-list.mjs 100 statewide`
 3. **Make the polished sheet:** `python ../validation/make-xlsx.py` — the banner now adapts to
    whatever county(ies) are in the list.
 4. **Email the `.xlsx`** with a one-liner: *"This week's new {County} liquor venues — {N} fresh

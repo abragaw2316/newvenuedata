@@ -112,8 +112,9 @@ Powers the site's `/expansion/[state]` pages and the next pipeline builds. None 
   - **`src/fetch-tabc.mjs` (`npm run tabc`)** already pulls real statewide aggregates (count + by county + by type) via curl → `licensesignal/lib/texas-stats.ts` (verified **124,619 licenses**, 29 types; top counties Harris/Dallas/Bexar/Tarrant/Travis). Surfaced on `/expansion/texas`. Full per-record ingestion (→ LicenseRecord, geocode, into the API) is the remaining step, and needs the `LicenseRecord.address.state` type widened beyond `'FL'`.
 - **TX Comptroller "Recent Sales Tax Permits"** — **weekly**, the new-business proxy (TX SOS bulk is fee-only). Includes NAICS + first-sales date → filter to food/bev: https://comptroller.texas.gov/transparency/open-data/recent-sales-tax-permits/ ; active base = Socrata `jrea-zgmq`.
 
-### Georgia — state #3 candidate
-- **GA Dept. of Revenue "Active Alcohol Licenses"** — direct **XLSX**, statewide, but only **quarterly** (slower cadence): https://dor.georgia.gov/active-alcohol-licenses
+### Georgia — state #3 (✅ INGESTED 2026-06-17)
+- **GA Dept. of Revenue "Active Alcohol Licenses"** — direct **XLSX**, statewide, **quarterly** (slower cadence): https://dor.georgia.gov/active-alcohol-licenses
+- **Now ingested:** `npm run ga` (`data-pipeline/fetch-ga.py` — Python+openpyxl, standalone, since the zero-dep Node pipeline can't parse XLSX) scrapes the latest quarter's download link, parses it, and emits real statewide aggregates → `licensesignal/lib/georgia-stats.ts` → the **`/expansion/georgia`** preview. Latest pull: **24,895 active licenses, 15 license types, 2,363 commenced in the last 12 months** (as of April 2026). Columns: Account Type, Commence Date, ID, Name, Address, Beer/Wine/Liquor flags, License Type. **No county field** (address is one free-text string) → GA aggregates by license type + recent commencements, not county.
 
 ### North Carolina — evaluating
 - **NC ABC** permit search + Permit Counts (has a download): https://abc2.nc.gov/Search/Permit , https://abc2.nc.gov/Search/PermitCounts — no confirmed statewide bulk export; likely needs scraping or a public-records request to NC ABCC.
