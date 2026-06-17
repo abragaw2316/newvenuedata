@@ -9,9 +9,9 @@ import { ApiSection } from '@/components/sections/api-section'
 import { CtaBanner } from '@/components/sections/cta-banner'
 
 export const metadata: Metadata = {
-  title: 'New Venue Data — Know When Businesses Are Opening Before Everyone Else',
+  title: { absolute: 'New Florida Liquor & Food License Leads | New Venue Data' },
   description:
-    'Real-time Florida liquor and food-service license intelligence via API, webhooks, and data exports. Built for distribution, supply, and intelligence teams.',
+    'See which bars & restaurants just got licensed to serve alcohol in Florida — a weekly feed of new-venue leads for liquor-liability insurance agents.',
   alternates: { canonical: 'https://newvenuedata.com' },
 }
 
@@ -22,7 +22,7 @@ const JSON_LD = {
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web',
   description:
-    'Real-time Florida liquor and food-service license intelligence via API, webhooks, and data exports.',
+    'A weekly feed of newly-licensed Florida bars and restaurants — new-venue leads for liquor-liability insurance agents.',
   url: 'https://newvenuedata.com',
   offers: [
     { '@type': 'Offer', price: '149', priceCurrency: 'USD', name: 'County' },

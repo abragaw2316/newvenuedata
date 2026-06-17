@@ -65,6 +65,7 @@ export function PricingContent() {
       <section className="py-20 lg:py-28 gradient-hero">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-8">
           <SectionHeading
+            as="h1"
             eyebrow="Pricing"
             heading="Fresh Florida Leads, Priced by Coverage"
             subtext="Month-to-month, cancel anytime. One new liquor-liability policy you write pays for the year — the rest is upside."

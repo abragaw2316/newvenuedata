@@ -40,23 +40,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   const url = `https://newvenuedata.com/blog/${post.slug}`
+  // Keep the meta description under ~160 chars so Google doesn't truncate it
+  // mid-sentence. The full excerpt still renders on the page itself.
+  const description =
+    post.excerpt.length > 157
+      ? post.excerpt.slice(0, 157).replace(/\s+\S*$/, '') + '…'
+      : post.excerpt
 
   return {
     title: post.title,
-    description: post.excerpt,
+    description,
     alternates: { canonical: url },
     openGraph: {
       type: 'article',
       url,
       title: post.title,
-      description: post.excerpt,
+      description,
       publishedTime: post.date,
       authors: [post.author],
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
-      description: post.excerpt,
+      description,
     },
   }
 }

@@ -8,6 +8,8 @@ interface SectionHeadingProps {
   subtext?: string
   align?: 'left' | 'center'
   className?: string
+  /** Heading level — use 'h1' for the top-of-page hero, 'h2' (default) for sections. */
+  as?: 'h1' | 'h2'
 }
 
 export function SectionHeading({
@@ -16,6 +18,7 @@ export function SectionHeading({
   subtext,
   align = 'center',
   className,
+  as: Heading = 'h2',
 }: SectionHeadingProps) {
   return (
     <div className={cn('flex flex-col gap-4', align === 'center' && 'items-center text-center', className)}>
@@ -26,7 +29,7 @@ export function SectionHeading({
           {align === 'center' && <span className="h-px w-6 bg-[var(--ls-border-2)]" />}
         </span>
       )}
-      <h2 className="text-display-md text-[var(--ls-fg)] max-w-3xl">{heading}</h2>
+      <Heading className="text-display-md text-[var(--ls-fg)] max-w-3xl">{heading}</Heading>
       {subtext && (
         <p className={cn('text-lg text-[var(--ls-fg-2)] max-w-2xl', align === 'left' && 'max-w-xl')}>
           {subtext}
