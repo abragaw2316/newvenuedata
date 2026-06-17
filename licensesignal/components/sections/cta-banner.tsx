@@ -13,7 +13,7 @@ export function CtaBanner() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 40% 60% at 50% 50%, rgba(99,102,241,0.08) 0%, transparent 70%)',
+            'radial-gradient(ellipse 40% 60% at 50% 50%, rgba(31,107,76,0.08) 0%, transparent 70%)',
         }}
       />
 
@@ -35,7 +35,7 @@ export function CtaBanner() {
             render={<Link href="/pricing" />}
             nativeButton={false}
             size="lg"
-            className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 shadow-[0_0_20px_rgba(99,102,241,0.35)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] transition-all px-6"
+            className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 transition-all px-6"
           >
             Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
@@ -44,7 +44,7 @@ export function CtaBanner() {
             nativeButton={false}
             variant="outline"
             size="lg"
-            className="border-[var(--ls-border-2)] bg-transparent text-[var(--ls-fg-2)] hover:border-[#6366f1] hover:text-[var(--ls-fg)] px-6"
+            className="border-[var(--ls-border-2)] bg-transparent text-[var(--ls-fg-2)] hover:border-[var(--color-indigo-500)] hover:text-[var(--ls-fg)] px-6"
           >
             Talk to Sales
           </Button>

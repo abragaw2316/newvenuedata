@@ -81,7 +81,7 @@ export function DataPreview() {
                   {rows.map(({ record, displayKey }, i) => (
                     <motion.tr
                       key={displayKey}
-                      initial={{ opacity: 0, backgroundColor: 'rgba(99,102,241,0.2)' }}
+                      initial={{ opacity: 0, backgroundColor: 'rgba(31,107,76,0.2)' }}
                       animate={{ opacity: 1, backgroundColor: 'transparent' }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.6 }}

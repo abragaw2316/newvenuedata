@@ -23,7 +23,13 @@ function htmlToText(html) {
     .trim()
 }
 
-function extractEmails(html, domain) {
+function extractEmails(rawHtml, domain) {
+  // De-obfuscate common "info [at] domain [dot] com" / HTML-entity tricks first.
+  const html = rawHtml
+    .replace(/\s*[\[(]\s*at\s*[\])]\s*/gi, '@')
+    .replace(/\s*[\[(]\s*dot\s*[\])]\s*/gi, '.')
+    .replace(/&#0?64;/g, '@')
+    .replace(/&#0?46;/g, '.')
   const found = new Set()
   const re = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g
   for (const m of html.matchAll(re)) {
@@ -119,6 +125,11 @@ export async function enrichOne(db, prospect) {
     if (subRes.ok && subRes.text) { html += '\n' + subRes.text; text += ' ' + htmlToText(subRes.text) }
   }
 
+  // Locate a contact page link on the homepage (used for email + stored).
+  const contactMatch = html.match(/href=["']([^"']*contact[^"']*)["']/i)
+  let contactPage = ''
+  if (contactMatch) { try { contactPage = new URL(contactMatch[1], base).href } catch { /* ignore */ } }
+
   const llCount = countSignals(text, LIQUOR_LIABILITY_SIGNALS)
   const hospCount = countSignals(text, HOSPITALITY_SIGNALS)
   const specCount = countSignals(text, SPECIALIZATION_SIGNALS)
@@ -131,11 +142,14 @@ export async function enrichOne(db, prospect) {
   if (specCount > 0) signals.push('commercial_specialty')
   if (isCaptive) signals.push('captive_brand')
 
-  const email = extractEmails(html, domain)
+  // Email: try homepage + subpage; if still none, fetch the contact page (same domain).
+  let email = extractEmails(html, domain)
+  if (!email && contactPage && normalizeDomain(contactPage) === domain) {
+    await sleep(REQUEST_DELAY_MS)
+    const cRes = await fetchText(contactPage, { retries: 1 })
+    if (cRes.ok && cRes.text) email = extractEmails(cRes.text, domain)
+  }
   const phone = prospect.phone || extractPhone(text)
-  const contactMatch = html.match(/href=["']([^"']*contact[^"']*)["']/i)
-  let contactPage = ''
-  if (contactMatch) { try { contactPage = new URL(contactMatch[1], base).href } catch { /* ignore */ } }
   const description = extractDescription(html, text)
 
   const writesLL = prospect.writes_liquor_liability ? 1 : (llCount > 0 ? 1 : 0)

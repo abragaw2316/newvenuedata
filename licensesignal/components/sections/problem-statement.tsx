@@ -61,7 +61,7 @@ export function ProblemStatement() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="rounded-xl border border-indigo-500/20 bg-[var(--ls-surface)] p-6 lg:p-8 shadow-[0_0_30px_rgba(99,102,241,0.08)]"
+            className="rounded-xl border border-indigo-500/20 bg-[var(--ls-surface)] p-6 lg:p-8 "
           >
             <div className="mb-4 flex items-center gap-2">
               <div className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/15 border border-emerald-500/20">
@@ -99,7 +99,7 @@ export function ProblemStatement() {
                 <div
                   className={`h-8 w-8 rounded-full border-2 flex items-center justify-center text-xs font-bold ${
                     step.active
-                      ? 'border-indigo-500 bg-indigo-500/20 text-indigo-400 shadow-[0_0_12px_rgba(99,102,241,0.4)]'
+                      ? 'border-indigo-500 bg-indigo-500/20 text-indigo-400 '
                       : 'border-[var(--ls-border-2)] bg-[var(--ls-surface)] text-[var(--ls-fg-3)]'
                   }`}
                 >

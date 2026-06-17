@@ -12,12 +12,12 @@ interface GlowCardProps {
 export function GlowCard({ children, className, highlighted = false }: GlowCardProps) {
   return (
     <motion.div
-      whileHover={{ boxShadow: '0 0 40px rgba(99,102,241,0.25)' }}
+      whileHover={{ boxShadow: '0 0 40px rgba(31,107,76,0.25)' }}
       transition={{ duration: 0.2 }}
       className={cn(
         'relative rounded-xl border bg-[var(--ls-surface)] p-6 gradient-card',
         highlighted
-          ? 'border-indigo-500/40 shadow-[0_0_20px_rgba(99,102,241,0.15)]'
+          ? 'border-indigo-500/40 '
           : 'border-[var(--ls-border)]',
         className
       )}

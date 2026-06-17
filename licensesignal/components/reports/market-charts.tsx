@@ -46,8 +46,8 @@ interface TypeDatum {
 
 // Liquor license-type mix across all active licensees.
 const TYPE_DATA: TypeDatum[] = [
-  { code: 'COP', label: 'Consumption On Premises (COP)', count: 28592, color: '#6366f1' },
-  { code: 'APS', label: 'Package Stores (APS)', count: 20861, color: '#818cf8' },
+  { code: 'COP', label: 'Consumption On Premises (COP)', count: 28592, color: 'var(--color-indigo-500)' },
+  { code: 'APS', label: 'Package Stores (APS)', count: 20861, color: 'var(--color-indigo-400)' },
   { code: 'BEV', label: 'Beer & Wine (BEV)', count: 2608, color: '#60a5fa' },
 ]
 
@@ -99,10 +99,10 @@ function CountyBars() {
           axisLine={false}
           width={92}
         />
-        <Tooltip content={<CountyTooltip />} cursor={{ fill: 'rgba(99,102,241,0.08)' }} />
+        <Tooltip content={<CountyTooltip />} cursor={{ fill: 'rgba(31,107,76,0.08)' }} />
         <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={18}>
           {COUNTY_DATA.map((_, i) => (
-            <Cell key={i} fill={i === 0 ? '#6366f1' : i < 4 ? '#818cf8' : '#3f3f7c'} />
+            <Cell key={i} fill={i === 0 ? 'var(--color-indigo-500)' : i < 4 ? 'var(--color-indigo-400)' : '#3f3f7c'} />
           ))}
           <LabelList
             dataKey="count"

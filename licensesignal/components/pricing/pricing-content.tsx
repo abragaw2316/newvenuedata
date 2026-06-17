@@ -101,7 +101,7 @@ export function PricingContent() {
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
                 className={`relative rounded-xl border p-6 flex flex-col gap-5 ${
                   plan.highlighted
-                    ? 'border-indigo-500/40 bg-[var(--ls-surface)] shadow-[0_0_40px_rgba(99,102,241,0.2)]'
+                    ? 'border-indigo-500/40 bg-[var(--ls-surface)] '
                     : 'border-[var(--ls-border)] bg-[var(--ls-surface)]'
                 }`}
               >
@@ -146,7 +146,7 @@ export function PricingContent() {
                   nativeButton={false}
                   className={
                     plan.highlighted
-                      ? 'bg-indigo-500 hover:bg-indigo-600 text-white border-0 shadow-[0_0_15px_rgba(99,102,241,0.3)] w-full'
+                      ? 'bg-indigo-500 hover:bg-indigo-600 text-white border-0  w-full'
                       : 'bg-transparent border border-[var(--ls-border-2)] text-[var(--ls-fg-2)] hover:border-indigo-500/40 hover:text-[var(--ls-fg)] w-full'
                   }
                 >

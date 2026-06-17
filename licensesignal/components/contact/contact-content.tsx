@@ -205,7 +205,7 @@ export function ContactContent() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 shadow-[0_0_20px_rgba(99,102,241,0.3)] w-full"
+                    className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 w-full"
                   >
                     Send Message
                   </Button>

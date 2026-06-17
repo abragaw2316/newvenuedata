@@ -133,7 +133,7 @@ export function ApiSection() {
               </div>
               <CopyButton text={JSON_RESPONSE} />
               <pre className="overflow-x-auto p-4 font-mono text-xs leading-6 text-[var(--ls-fg-2)] max-h-64">
-                <span className="text-[#6366f1]">{'{'}</span>
+                <span className="text-[var(--color-indigo-500)]">{'{'}</span>
                 {JSON_RESPONSE.slice(1, -1)
                   .split('\n')
                   .map((line, i) => {
@@ -143,7 +143,7 @@ export function ApiSection() {
                         <span key={i}>
                           {'\n'}
                           {keyMatch[1]}
-                          <span className="text-[#818cf8]">{keyMatch[2]}</span>
+                          <span className="text-[var(--color-indigo-400)]">{keyMatch[2]}</span>
                           {keyMatch[3]}
                           <span className="text-[var(--ls-fg-2)]">{keyMatch[4]}</span>
                         </span>
@@ -151,7 +151,7 @@ export function ApiSection() {
                     }
                     return <span key={i}>{'\n'}{line}</span>
                   })}
-                <span className="text-[#6366f1]">{'}'}</span>
+                <span className="text-[var(--color-indigo-500)]">{'}'}</span>
               </pre>
             </div>
           </motion.div>
@@ -196,7 +196,7 @@ export function ApiSection() {
                 render={<Link href="/contact" />}
                 nativeButton={false}
                 size="sm"
-                className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 shadow-[0_0_15px_rgba(99,102,241,0.3)]"
+                className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 "
               >
                 Get API key <ArrowRight className="ml-1.5 h-3.5 w-3.5" />
               </Button>

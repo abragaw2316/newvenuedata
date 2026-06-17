@@ -31,6 +31,7 @@ the outcome (reply / trial / etc.).
 | `npm run enrich` | Fetch agency sites → email/phone/contact + liquor-liability signal |
 | `npm run score` | Recompute 0–100 buyer-fit scores |
 | `npm run agents [N]` | Research + draft the top N scored prospects |
+| `npm run send` | Auto-send **approved** drafts + follow-ups (DRY-RUN by default) |
 | `npm run export` | Write `data/prospects.json` snapshot |
 | `npm run review` | Weekly outcome review (replies/trials/wins; tune signals) |
 
@@ -40,6 +41,15 @@ the outcome (reply / trial / etc.).
 2. **(Optional) Better drafts via local AI** — install [Ollama](https://ollama.com), then
    `ollama pull qwen2.5:7b` (or `llama3.2:3b` on lighter hardware). The engine auto-detects it;
    without it, drafts use the high-quality template fallback.
+
+## Auto-send (optional, free) — only when you're ready
+By default you review + send by hand (safest). When you want automation, the engine can send
+for you via the **Resend free tier** from a **sending subdomain** — approval-gated, warmed up,
+capped, business-hours only, suppression-aware, and **dry-run until you opt in**. Full setup
+(Resend account + subdomain DNS + the two-step go-live) is in **`DELIVERABILITY.md`**. Quick check:
+```bash
+npm run send        # dry-run: shows what it WOULD send (safe, no setup needed)
+```
 
 ## Add more prospects (compliant)
 Drop any CSV you gather (FAIA members, chamber rosters, your exports) into

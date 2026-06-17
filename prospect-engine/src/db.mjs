@@ -102,6 +102,20 @@ function migrate(db) {
       at TEXT
     );
 
+    CREATE TABLE IF NOT EXISTS sends (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      prospect_id INTEGER REFERENCES prospects(id) ON DELETE CASCADE,
+      draft_id INTEGER,
+      step INTEGER,
+      to_email TEXT,
+      provider TEXT,
+      provider_msg_id TEXT,
+      status TEXT,                 -- dry-run|sent|delivered|bounced|complained|failed
+      sent_at TEXT,
+      last_checked TEXT
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_sends_prospect ON sends(prospect_id);
     CREATE INDEX IF NOT EXISTS idx_prospects_status ON prospects(status);
     CREATE INDEX IF NOT EXISTS idx_prospects_county ON prospects(county);
     CREATE INDEX IF NOT EXISTS idx_drafts_prospect ON drafts(prospect_id);

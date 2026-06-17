@@ -13,6 +13,7 @@
     "enrich": "node src/enrich/run.mjs",
     "score": "node src/score.mjs",
     "agents": "node src/agents/run.mjs",
+    "send": "node src/send/scheduler.mjs",
     "pipeline": "node src/pipeline.mjs",
     "review": "node src/weekly-review.mjs",
     "export": "node src/export-json.mjs"

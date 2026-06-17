@@ -34,6 +34,18 @@ export const COUNTIES = [
     cities: ['west palm beach', 'boca raton', 'delray beach', 'boynton beach', 'jupiter', 'palm beach gardens', 'wellington'],
     aliases: ['palm beach', 'wpb', 'west palm', 'boca', 'delray'],
   },
+  {
+    name: 'Hillsborough',
+    bbox: [27.64, -82.65, 28.17, -82.05],
+    cities: ['tampa', 'brandon', 'riverview', 'plant city', 'town n country', 'temple terrace'],
+    aliases: ['hillsborough', 'tampa'],
+  },
+  {
+    name: 'Orange',
+    bbox: [28.35, -81.66, 28.79, -80.99],
+    cities: ['orlando', 'winter park', 'apopka', 'ocoee', 'winter garden', 'maitland'],
+    aliases: ['orange county', 'orlando'],
+  },
 ]
 
 // ── ICP fit signals (drive enrichment + scoring) ──────────────────────────────
@@ -99,6 +111,28 @@ export const COMPANY = {
   },
   oneLiner:
     'A weekly list of every brand-new bar/restaurant that just got licensed to serve alcohol in your counties — the venues that need liquor-liability coverage right now, sourced from Florida public records (DBPR).',
+}
+
+// ── Auto-send (FREE: Resend free tier + a sending SUBDOMAIN) ───────────────────
+// Sends ONLY drafts a human marked "approved" (step 0); auto-sends follow-ups when
+// no reply has been logged. Double safety: stays in DRY-RUN unless BOTH
+// RESEND_API_KEY is set AND SEND_LIVE=1. Send from a subdomain so the root domain's
+// reputation stays clean. See DELIVERABILITY.md for the one-time Resend + DNS setup.
+export const SEND = {
+  provider: 'resend',
+  apiKey: process.env.RESEND_API_KEY || '',
+  live: process.env.SEND_LIVE === '1',
+  fromEmail: process.env.SEND_FROM_EMAIL || 'austin@send.newvenuedata.com',
+  fromName: process.env.SEND_FROM_NAME || COMPANY.fromName,
+  replyTo: COMPANY.fromEmail, // replies land in your real Zoho inbox
+  unsubscribeMailto: `mailto:${COMPANY.fromEmail}?subject=unsubscribe`,
+  // Warm-up: daily cap = min(base + step * daysSinceFirstSend, maxDaily).
+  warmup: { base: 8, step: 4, maxDaily: 30 },
+  // Days after the step-0 send to send each follow-up step (index = step number).
+  sequenceDelaysDays: [0, 3, 7],
+  // Only send during ET business hours, Mon–Fri (1=Mon … 5=Fri).
+  sendWindowET: { days: [1, 2, 3, 4, 5], startHour: 9, endHour: 17 },
+  throttleMs: 20000, // ~3/min — human-paced, not a blast
 }
 
 import { fileURLToPath } from 'node:url'

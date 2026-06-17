@@ -191,7 +191,7 @@ export function ExitIntentModal() {
               )}
               <button
                 type="submit"
-                className="mt-1 inline-flex h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-500 px-5 text-sm font-medium text-white shadow-[0_0_20px_rgba(99,102,241,0.3)] transition-colors hover:bg-indigo-600"
+                className="mt-1 inline-flex h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-500 px-5 text-sm font-medium text-white transition-colors hover:bg-indigo-600"
               >
                 <Download className="h-4 w-4" aria-hidden="true" />
                 Send me the sample

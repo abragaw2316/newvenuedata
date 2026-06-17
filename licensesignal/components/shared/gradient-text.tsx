@@ -5,18 +5,8 @@ interface GradientTextProps {
   className?: string
 }
 
+// Accent emphasis for headlines. Styling lives in the `.gradient-text` utility
+// (a solid ledger-green; was a purple gradient — the classic AI-slop tell).
 export function GradientText({ children, className }: GradientTextProps) {
-  return (
-    <span
-      className={cn('gradient-text', className)}
-      style={{
-        background: 'linear-gradient(135deg, #818cf8 0%, #6366f1 40%, #a78bfa 100%)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text',
-      }}
-    >
-      {children}
-    </span>
-  )
+  return <span className={cn('gradient-text', className)}>{children}</span>
 }

@@ -20,8 +20,10 @@ export function SectionHeading({
   return (
     <div className={cn('flex flex-col gap-4', align === 'center' && 'items-center text-center', className)}>
       {eyebrow && (
-        <span className="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-xs font-medium tracking-widest text-indigo-400 uppercase">
+        <span className="inline-flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-indigo-700">
+          {align === 'center' && <span className="h-px w-6 bg-[var(--ls-border-2)]" />}
           {eyebrow}
+          {align === 'center' && <span className="h-px w-6 bg-[var(--ls-border-2)]" />}
         </span>
       )}
       <h2 className="text-display-md text-[var(--ls-fg)] max-w-3xl">{heading}</h2>
