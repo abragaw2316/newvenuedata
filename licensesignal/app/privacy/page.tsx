@@ -13,7 +13,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Overview',
     blocks: [
       {
-        p: 'New Venue Data ("New Venue Data," "we," "us") provides business-intelligence data derived from Florida public records. This Privacy Policy explains how we handle information collected through our website, API, and related services (collectively, the "Services").',
+        p: 'New Venue Data is a sole proprietorship operated by Austin Bragaw in Missouri ("New Venue Data," "we," "us"). We provide business-intelligence data derived from Florida public records. This Privacy Policy explains how we handle information collected through our website, API, and related services (collectively, the "Services").',
       },
       {
         p: 'Our core product describes business entities — not individual consumers. The license data we distribute is sourced from public records published by the Florida Department of Business and Professional Regulation (DBPR) and other government bodies.',

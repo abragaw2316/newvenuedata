@@ -13,7 +13,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Agreement to Terms',
     blocks: [
       {
-        p: 'These Terms of Service ("Terms") govern your access to and use of the New Venue Data website, API, and data services (the "Services") provided by New Venue Data. By accessing or using the Services, you agree to be bound by these Terms. You must be at least 18 years old to use the Services, and you represent that you are. If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization.',
+        p: 'These Terms of Service ("Terms") govern your access to and use of the New Venue Data website, API, and data services (the "Services") provided by New Venue Data, a sole proprietorship operated by Austin Bragaw in Missouri. By accessing or using the Services, you agree to be bound by these Terms. You must be at least 18 years old to use the Services, and you represent that you are. If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization.',
       },
     ],
   },
@@ -92,7 +92,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Governing Law & Changes',
     blocks: [
       {
-        p: 'These Terms are governed by the laws of the State of Florida, without regard to conflict-of-laws principles. We may update these Terms from time to time; material changes will be posted here with a revised "Last updated" date. Continued use after changes take effect constitutes acceptance.',
+        p: 'These Terms are governed by the laws of the State of Missouri, without regard to conflict-of-laws principles. We may update these Terms from time to time; material changes will be posted here with a revised "Last updated" date. Continued use after changes take effect constitutes acceptance.',
       },
     ],
   },
