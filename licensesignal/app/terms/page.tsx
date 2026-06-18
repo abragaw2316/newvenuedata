@@ -13,7 +13,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Agreement to Terms',
     blocks: [
       {
-        p: 'These Terms of Service ("Terms") govern your access to and use of the New Venue Data website, API, and data services (the "Services") provided by New Venue Data, Inc. By accessing or using the Services, you agree to be bound by these Terms. If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization.',
+        p: 'These Terms of Service ("Terms") govern your access to and use of the New Venue Data website, API, and data services (the "Services") provided by New Venue Data. By accessing or using the Services, you agree to be bound by these Terms. You must be at least 18 years old to use the Services, and you represent that you are. If you are using the Services on behalf of an organization, you represent that you have authority to bind that organization.',
       },
     ],
   },
@@ -102,7 +102,7 @@ export default function TermsPage() {
   return (
     <LegalPage
       title="Terms of Service"
-      lastUpdated="June 14, 2026"
+      lastUpdated="June 18, 2026"
       intro="These terms set out the rules for using New Venue Data. Please read them carefully."
       sections={SECTIONS}
     />

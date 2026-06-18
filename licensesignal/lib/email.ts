@@ -9,6 +9,9 @@
 //   EMAIL_FROM=austin@newvenuedata.com   (optional; defaults to this)
 //   EMAIL_FROM_NAME=New Venue Data       (optional)
 //   EMAIL_REPLY_TO=austin@newvenuedata.com (optional)
+//   MAILING_ADDRESS="New Venue Data, 123 Main St, City, FL 33000" (your real
+//     business postal address — appended to every email footer to satisfy the
+//     CAN-SPAM Act's physical-address requirement on marketing email)
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails'
 
@@ -97,7 +100,9 @@ function shell(heading: string, bodyHtml: string): string {
         </td></tr>
       </table>
       <p style="max-width:520px;margin:16px auto 0;font-size:12px;color:#a8a29e;font-family:'Helvetica Neue',Arial,sans-serif;">
-        New Venue Data · Florida public-record business intelligence · newvenuedata.com
+        New Venue Data · Florida public-record business intelligence · newvenuedata.com${
+          process.env.MAILING_ADDRESS ? `<br/>${process.env.MAILING_ADDRESS}` : ''
+        }
       </p>
     </td></tr>
   </table>

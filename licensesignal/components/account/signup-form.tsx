@@ -71,6 +71,12 @@ export function SignupForm() {
         {pending ? 'Creating account…' : 'Create account'}
       </button>
 
+      <p className="text-xs text-[var(--ls-fg-3)] leading-relaxed">
+        By creating an account, you confirm you are at least 18 years old and agree to our{' '}
+        <Link href="/terms" className="text-indigo-700 hover:opacity-80">Terms</Link> and{' '}
+        <Link href="/privacy" className="text-indigo-700 hover:opacity-80">Privacy Policy</Link>.
+      </p>
+
       <p className="text-xs text-[var(--ls-fg-3)]">
         Already have an account?{' '}
         <Link href="/login" className="text-indigo-700 hover:opacity-80">Sign in</Link>

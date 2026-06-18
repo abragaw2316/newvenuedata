@@ -13,7 +13,7 @@ const SECTIONS: LegalSection[] = [
     heading: 'Overview',
     blocks: [
       {
-        p: 'New Venue Data, Inc. ("New Venue Data," "we," "us") provides business-intelligence data derived from Florida public records. This Privacy Policy explains how we handle information collected through our website, API, and related services (collectively, the "Services").',
+        p: 'New Venue Data ("New Venue Data," "we," "us") provides business-intelligence data derived from Florida public records. This Privacy Policy explains how we handle information collected through our website, API, and related services (collectively, the "Services").',
       },
       {
         p: 'Our core product describes business entities — not individual consumers. The license data we distribute is sourced from public records published by the Florida Department of Business and Professional Regulation (DBPR) and other government bodies.',
@@ -74,15 +74,41 @@ const SECTIONS: LegalSection[] = [
     heading: 'Data Retention & Security',
     blocks: [
       {
-        p: 'We retain account and usage information for as long as your account is active and as needed to comply with our legal obligations. We protect information using encryption in transit (TLS 1.3) and at rest (AES-256), least-privilege access controls, and audit logging. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.',
+        p: 'We retain account and usage information for as long as your account is active and as needed to provide the Services and meet our legal obligations; you may ask us to delete your account information at any time. We protect information using industry-standard safeguards: encryption in transit (HTTPS/TLS), storage with reputable cloud providers that encrypt data at rest, and passwords kept only as salted cryptographic hashes — never in plain text. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.',
       },
     ],
   },
   {
-    heading: 'Your Rights',
+    heading: 'Your Privacy Rights',
+    blocks: [
+      { p: 'Depending on where you live, you may have some or all of the following rights regarding your personal information:' },
+      {
+        list: [
+          'Access — request a copy of the personal information we hold about you.',
+          'Correct — ask us to fix inaccurate information.',
+          'Delete — ask us to delete your account information.',
+          'Opt out — unsubscribe from marketing emails, and opt out of any "sale" or "sharing" of personal information (we do not sell your personal account information).',
+          'Portability — request a copy of your information in a portable format.',
+        ],
+      },
+      {
+        p: 'To exercise any of these rights, email austin@newvenuedata.com. We will respond within the timeframe required by applicable law — including the California Consumer Privacy Act (CCPA/CPRA); the Virginia, Colorado, Connecticut, Texas, and other state privacy laws; and the EU/UK GDPR where they apply. We will not discriminate against you for exercising your rights, and if we deny a request you may have the right to appeal.',
+      },
+    ],
+  },
+  {
+    heading: 'Children’s Privacy',
     blocks: [
       {
-        p: 'Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict the processing of your personal information. To exercise these rights, email austin@newvenuedata.com. We will respond within the timeframes required by applicable law (including GDPR and CCPA where they apply).',
+        p: 'New Venue Data is a business-to-business service intended for users who are at least 18 years old. The Services are not directed to children, and we do not knowingly collect personal information from anyone under 13 years of age (or under the minimum age required in your jurisdiction). Consistent with the Children’s Online Privacy Protection Act (COPPA), if we learn that we have collected personal information from a child under 13, we will delete it promptly. If you believe a child has provided us with personal information, contact austin@newvenuedata.com and we will remove it.',
+      },
+    ],
+  },
+  {
+    heading: 'Marketing Communications',
+    blocks: [
+      {
+        p: 'Where permitted by law, we may send business-related emails about our Services. Every marketing email includes a way to opt out, and we honor opt-out requests promptly, as required by the CAN-SPAM Act; our messages identify us and include a valid postal mailing address. You can unsubscribe using the link in any such email or by emailing austin@newvenuedata.com. We will still send essential service and transactional messages (for example, billing notices or security alerts) related to your account.',
       },
     ],
   },
@@ -108,7 +134,7 @@ export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      lastUpdated="June 14, 2026"
+      lastUpdated="June 18, 2026"
       intro="Your trust matters. This policy describes what information we collect, how we use it, and the choices you have."
       sections={SECTIONS}
     />
