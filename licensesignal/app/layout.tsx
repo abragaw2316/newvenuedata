@@ -7,6 +7,7 @@ import { CookieConsent } from '@/components/shared/cookie-consent'
 import { ScrollProgress } from '@/components/shared/scroll-progress'
 import { CommandPalette } from '@/components/shared/command-palette'
 import { MarketingCro } from '@/components/cro/marketing-cro'
+import { Analytics } from '@vercel/analytics/next'
 
 // Applied before paint so there is no theme flash. Defaults to LIGHT; switches to
 // dark only when the visitor has explicitly chosen it (persisted in localStorage).
@@ -107,6 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CommandPalette />
         <MarketingCro />
         <CookieConsent />
+        <Analytics />
       </body>
     </html>
   )

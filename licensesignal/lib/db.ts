@@ -53,6 +53,15 @@ export function ensureSchema(): Promise<void> {
         created_at TIMESTAMPTZ NOT NULL DEFAULT now()
       )`
       await sql`CREATE INDEX IF NOT EXISTS idx_auth_tokens_user ON auth_tokens(user_id)`
+      // Captured marketing leads (waitlist / free-sample / contact form).
+      await sql`CREATE TABLE IF NOT EXISTS leads (
+        id BIGSERIAL PRIMARY KEY,
+        email TEXT NOT NULL,
+        source TEXT,
+        note TEXT,
+        created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+      )`
+      await sql`CREATE INDEX IF NOT EXISTS idx_leads_created ON leads(created_at)`
     })().catch((e) => {
       schemaReady = null // allow retry on next request if it failed
       throw e

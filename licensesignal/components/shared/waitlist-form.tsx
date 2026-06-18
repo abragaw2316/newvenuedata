@@ -13,8 +13,9 @@ export function WaitlistForm({ stateName }: WaitlistFormProps) {
   const [email, setEmail] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
+  const [pending, setPending] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const value = email.trim()
     if (!value) {
@@ -26,7 +27,20 @@ export function WaitlistForm({ stateName }: WaitlistFormProps) {
       return
     }
     setError(null)
-    setSubmitted(true)
+    setPending(true)
+    try {
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: value, source: `waitlist:${stateName}` }),
+      })
+      if (!res.ok) throw new Error('request-failed')
+      setSubmitted(true)
+    } catch {
+      setError('Something went wrong — please try again, or email austin@newvenuedata.com.')
+    } finally {
+      setPending(false)
+    }
   }
 
   if (submitted) {
@@ -68,9 +82,10 @@ export function WaitlistForm({ stateName }: WaitlistFormProps) {
         />
         <button
           type="submit"
-          className="inline-flex h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-500 px-5 text-sm font-medium text-white transition-colors hover:bg-indigo-600"
+          disabled={pending}
+          className="inline-flex h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-500 px-5 text-sm font-medium text-white transition-colors hover:bg-indigo-600 disabled:opacity-60"
         >
-          Join the waitlist
+          {pending ? 'Joining…' : 'Join the waitlist'}
           <ArrowRight className="h-4 w-4" />
         </button>
       </div>

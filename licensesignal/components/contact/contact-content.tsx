@@ -67,6 +67,7 @@ function validate(form: FormState): FieldErrors {
 
 export function ContactContent() {
   const [submitted, setSubmitted] = useState(false)
+  const [pending, setPending] = useState(false)
   const [errors, setErrors] = useState<FieldErrors>({})
   const [form, setForm] = useState<FormState>({
     name: '',
@@ -83,7 +84,7 @@ export function ContactContent() {
     setErrors((e) => (e[field] ? { ...e, [field]: undefined } : e))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const nextErrors = validate(form)
     if (Object.keys(nextErrors).length > 0) {
@@ -91,7 +92,21 @@ export function ContactContent() {
       return
     }
     setErrors({})
-    setSubmitted(true)
+    setPending(true)
+    try {
+      const note = `${form.name}${form.company ? ` (${form.company})` : ''} · role: ${form.role} · use case: ${form.useCase}${form.message ? `\n${form.message}` : ''}`
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: form.email.trim(), source: 'contact', note }),
+      })
+      if (!res.ok) throw new Error('request-failed')
+      setSubmitted(true)
+    } catch {
+      setErrors((er) => ({ ...er, email: 'Something went wrong — please email austin@newvenuedata.com.' }))
+    } finally {
+      setPending(false)
+    }
   }
 
   return (
@@ -205,9 +220,10 @@ export function ContactContent() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 w-full"
+                    disabled={pending}
+                    className="bg-indigo-500 hover:bg-indigo-600 text-white border-0 w-full disabled:opacity-60"
                   >
-                    Send Message
+                    {pending ? 'Sending…' : 'Send Message'}
                   </Button>
                   <p className="text-xs text-[var(--ls-fg-3)] text-center">
                     We'll respond within 1 business day. No sales pressure.

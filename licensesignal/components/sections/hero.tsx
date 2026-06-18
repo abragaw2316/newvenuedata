@@ -46,8 +46,8 @@ export function Hero() {
             className="mt-6 text-lg sm:text-xl text-[var(--ls-fg-2)] max-w-2xl leading-relaxed"
           >
             New Venue Data turns Florida&rsquo;s public liquor and food-service license filings
-            into a clean daily feed of brand-new venues — delivered by list, API, or webhook the
-            week they open.
+            into a clean weekly list of brand-new venues — every bar and restaurant that just got
+            licensed in Florida, delivered as a list or API the week they open.
           </motion.p>
 
           {/* CTAs — solid ink primary + ghost, no glow */}
@@ -72,7 +72,7 @@ export function Hero() {
           </motion.div>
 
           <motion.p {...fadeUp(0.35)} className="mt-4 text-xs text-[var(--ls-fg-3)]">
-            From $149/mo · no contracts · cancel anytime
+            Start with a 14-day free trial · from $149/mo · cancel anytime
           </motion.p>
 
           {/* Live data panel — hairline border, soft shadow, mono numerics */}

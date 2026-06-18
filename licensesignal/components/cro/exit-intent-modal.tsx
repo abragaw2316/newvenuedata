@@ -20,6 +20,7 @@ export function ExitIntentModal() {
   const [email, setEmail] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [submitted, setSubmitted] = useState(false)
+  const [pending, setPending] = useState(false)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
 
   const markShown = useCallback(() => {
@@ -80,7 +81,7 @@ export function ExitIntentModal() {
     }
   }, [open, close])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const value = email.trim()
     if (!value) {
@@ -92,7 +93,20 @@ export function ExitIntentModal() {
       return
     }
     setError(null)
-    setSubmitted(true)
+    setPending(true)
+    try {
+      const res = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: value, source: 'exit-intent-sample' }),
+      })
+      if (!res.ok) throw new Error('request-failed')
+      setSubmitted(true)
+    } catch {
+      setError('Something went wrong — please email austin@newvenuedata.com for the sample.')
+    } finally {
+      setPending(false)
+    }
   }
 
   if (!open) return null
@@ -128,11 +142,12 @@ export function ExitIntentModal() {
               <CheckCircle2 className="h-6 w-6 text-emerald-400" aria-hidden="true" />
             </span>
             <h2 id="exit-intent-title" className="text-lg font-semibold text-[var(--ls-fg)]">
-              Check your inbox
+              Got it — sample on the way
             </h2>
             <p className="text-sm text-[var(--ls-fg-2)]">
-              We&apos;re sending the sample dataset to{' '}
-              <span className="font-medium text-[var(--ls-fg)]">{email.trim()}</span> now.
+              We&apos;ll email a real sample export to{' '}
+              <span className="font-medium text-[var(--ls-fg)]">{email.trim()}</span> shortly. Reply
+              with the counties you care about and we&apos;ll tailor it.
             </p>
             <button
               type="button"
@@ -191,10 +206,11 @@ export function ExitIntentModal() {
               )}
               <button
                 type="submit"
-                className="mt-1 inline-flex h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-500 px-5 text-sm font-medium text-white transition-colors hover:bg-indigo-600"
+                disabled={pending}
+                className="mt-1 inline-flex h-11 items-center justify-center gap-1.5 rounded-md bg-indigo-500 px-5 text-sm font-medium text-white transition-colors hover:bg-indigo-600 disabled:opacity-60"
               >
                 <Download className="h-4 w-4" aria-hidden="true" />
-                Send me the sample
+                {pending ? 'Sending…' : 'Send me the sample'}
               </button>
             </form>
             <p className="mt-3 text-xs text-[var(--ls-fg-3)]">
