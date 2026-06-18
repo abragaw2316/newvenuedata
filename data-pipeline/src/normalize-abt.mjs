@@ -39,9 +39,9 @@ export function normalizeAbtRow(row, opts = {}) {
   const asOf = opts.asOf || todayISO()
   const licenseNumber = row['License Number'] || ''
   const series = row['Series'] || ''
-  // DBPR stores the SFS/SRX modifier in a separate "Rank" column (also called
-  // "Class Modifier" in the published layout). Try both known header names.
-  const rank = row['Rank'] || row['Class Modifier'] || ''
+  // DBPR stores the SFS/SRX modifier in the "Modifier" column (live header
+  // confirmed 2026-06-18). Fallbacks cover layout-doc aliases just in case.
+  const rank = row['Modifier'] || row['Rank'] || row['Class Modifier'] || ''
   const profession = (row['Profession'] || '').trim()
   const dba = row['DBA'] || ''
   const owner = row['Owner Name'] || ''
