@@ -2,12 +2,26 @@
 // from the environment (Vercel injects it when you create the store). Until that
 // env var is set, dbConfigured() is false and the app cleanly falls back to its
 // pre-auth behavior — nothing here runs at build time.
-import { sql } from '@vercel/postgres'
+import { neon, type NeonQueryFunction } from '@neondatabase/serverless'
 
-export { sql }
+const conn = process.env.POSTGRES_URL || process.env.DATABASE_URL
+
+// neon()'s HTTP driver accepts ANY Neon connection string — pooled OR direct —
+// unlike @vercel/postgres's `sql`, which rejects non-pooled strings (the
+// "invalid_connection_string / direct connection" error). `fullResults: true`
+// returns a pg-style { rows } object, so every existing call site works unchanged.
+// Build-safe: with no connection string, `sql` only throws if actually used, and
+// all call sites guard with dbConfigured() first.
+const notConfigured = (() => {
+  throw new Error('Database not configured: POSTGRES_URL is unset')
+}) as unknown as NeonQueryFunction<false, true>
+
+export const sql: NeonQueryFunction<false, true> = conn
+  ? neon(conn, { fullResults: true })
+  : notConfigured
 
 export function dbConfigured(): boolean {
-  return Boolean(process.env.POSTGRES_URL || process.env.DATABASE_URL)
+  return Boolean(conn)
 }
 
 // Idempotent schema creation, run once per server instance on first auth call.
