@@ -21,13 +21,16 @@ export function formatNumber(n: number): string {
 
 export function getLicenseTypeLabel(type: LicenseType): string {
   const labels: Record<LicenseType, string> = {
-    SRX: 'Spirituous Liquor',
+    SRX: 'Special Restaurant',
     COP: 'Consumption On Premises',
     BEV: 'Beer & Wine',
     APS: 'Package Store',
     FOOD_SERVICE: 'Food Service',
     SEATING: 'Seating License',
     MOBILE_FOOD: 'Mobile Food',
+    TEMP_PERMIT: 'Temporary Permit',
+    MANUFACTURER: 'Manufacturer / Distributor',
+    BOTTLE_CLUB: 'Bottle Club',
   }
   return labels[type] ?? type
 }
@@ -41,6 +44,9 @@ export function getLicenseTypeBadgeColor(type: LicenseType): string {
     FOOD_SERVICE: 'bg-emerald-500/15 text-emerald-400 border-emerald-500/20',
     SEATING: 'bg-amber-500/15 text-amber-400 border-amber-500/20',
     MOBILE_FOOD: 'bg-orange-500/15 text-orange-400 border-orange-500/20',
+    TEMP_PERMIT: 'bg-yellow-500/15 text-yellow-400 border-yellow-500/20',
+    MANUFACTURER: 'bg-cyan-500/15 text-cyan-400 border-cyan-500/20',
+    BOTTLE_CLUB: 'bg-rose-500/15 text-rose-400 border-rose-500/20',
   }
   return colors[type] ?? 'bg-zinc-500/15 text-zinc-400 border-zinc-500/20'
 }

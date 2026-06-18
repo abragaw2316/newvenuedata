@@ -5,23 +5,29 @@ import { MOCK_LICENSES } from '@/lib/mock-data'
 import type { LicenseType } from '@/lib/types'
 
 const TYPE_LABELS: Record<LicenseType, string> = {
-  SRX: 'Spirituous (SRX)',
+  SRX: 'Special Restaurant (SRX)',
   COP: 'Consumption (COP)',
   BEV: 'Beer & Wine (BEV)',
-  APS: 'Lounge (APS)',
+  APS: 'Package Store (APS)',
   FOOD_SERVICE: 'Food Service',
   SEATING: 'Seating',
   MOBILE_FOOD: 'Mobile Food',
+  TEMP_PERMIT: 'Temp Permit',
+  MANUFACTURER: 'Manufacturer',
+  BOTTLE_CLUB: 'Bottle Club',
 }
 
 const TYPE_COLORS: Record<LicenseType, string> = {
-  SRX: '#6366f1', // indigo
-  COP: '#818cf8', // violet-indigo
-  BEV: '#60a5fa', // blue
-  FOOD_SERVICE: '#34d399', // emerald
-  APS: '#fbbf24', // amber
-  SEATING: '#fb923c', // orange
-  MOBILE_FOOD: '#f472b6', // pink
+  SRX: '#6366f1',
+  COP: '#818cf8',
+  BEV: '#60a5fa',
+  FOOD_SERVICE: '#34d399',
+  APS: '#fbbf24',
+  SEATING: '#fb923c',
+  MOBILE_FOOD: '#f472b6',
+  TEMP_PERMIT: '#facc15',
+  MANUFACTURER: '#22d3ee',
+  BOTTLE_CLUB: '#fb7185',
 }
 
 interface DonutDatum {

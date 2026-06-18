@@ -39,6 +39,10 @@ export function normalizeAbtRow(row, opts = {}) {
   const asOf = opts.asOf || todayISO()
   const licenseNumber = row['License Number'] || ''
   const series = row['Series'] || ''
+  // DBPR stores the SFS/SRX modifier in a separate "Rank" column (also called
+  // "Class Modifier" in the published layout). Try both known header names.
+  const rank = row['Rank'] || row['Class Modifier'] || ''
+  const profession = (row['Profession'] || '').trim()
   const dba = row['DBA'] || ''
   const owner = row['Owner Name'] || ''
 
@@ -56,10 +60,19 @@ export function normalizeAbtRow(row, opts = {}) {
   else if (filedDate && daysBetween(filedDate, asOf) <= 60) eventType = 'new_filing'
   else if (effectiveDate && daysBetween(effectiveDate, asOf) <= 60) eventType = 'renewal'
 
+  let licenseType = seriesToLicenseType(series, rank)
+  // When Series-based detection falls through to 'BEV', check the Profession
+  // code to correctly classify non-retail ABT file sources.
+  if (licenseType === 'BEV') {
+    if (profession === '4002') licenseType = 'TEMP_PERMIT'
+    else if (profession === '4005') licenseType = 'MANUFACTURER'
+    else if (profession === '4014') licenseType = 'BOTTLE_CLUB'
+  }
+
   return {
     id: stableId(licenseNumber),
     licenseNumber,
-    licenseType: seriesToLicenseType(series),
+    licenseType,
     status,
     businessName: dba || owner,
     legalName: owner,

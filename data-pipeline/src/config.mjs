@@ -48,6 +48,12 @@ export const SOURCES = [
     kind: 'abt',
     description: 'AB&T Temporary permits (1–3 day) — small file, good for validation',
   },
+  {
+    key: 'abt_bottle_clubs',
+    url: `${ABT_BASE}/bd4014lic.csv`,
+    kind: 'abt',
+    description: 'AB&T Bottle club licenses — BYOB establishments, high dram-shop exposure',
+  },
 
   // ── Hotels & Restaurants (food-service licenses) ────────────────────────────
   {

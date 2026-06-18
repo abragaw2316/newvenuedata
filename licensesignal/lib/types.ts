@@ -1,11 +1,14 @@
 export type LicenseType =
-  | 'SRX'           // Spirituous liquor
+  | 'SRX'           // Special Restaurant / Food Service (full liquor, ≥51% food)
   | 'COP'           // Consumption on premises
   | 'BEV'           // Beer & wine
-  | 'APS'           // Adult entertainment / lounge
+  | 'APS'           // Annual Package Store (off-premises retail)
   | 'FOOD_SERVICE'  // Food service establishment
   | 'SEATING'       // Seating license
   | 'MOBILE_FOOD'   // Mobile food dispensing vehicle
+  | 'TEMP_PERMIT'   // Temporary 1/2/3-day event permit (bd4002lic)
+  | 'MANUFACTURER'  // Brewery, winery, distillery, distributor (bd4005lic)
+  | 'BOTTLE_CLUB'   // Bottle club / BYOB establishment (bd4014lic)
 
 export type LicenseStatus =
   | 'approved'

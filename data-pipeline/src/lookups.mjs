@@ -41,13 +41,19 @@ function titleCase(s) {
     .replace(/\bDe\b/g, 'De')
 }
 
-// ── AB&T license SERIES (col "Series") → app LicenseType union ────────────────
+// ── AB&T license SERIES (col "Series") + RANK (col "Rank") → app LicenseType ──
 // app LicenseType: 'SRX'|'COP'|'BEV'|'APS'|'FOOD_SERVICE'|'SEATING'|'MOBILE_FOOD'
-export function seriesToLicenseType(seriesRaw) {
+//                 |'TEMP_PERMIT'|'MANUFACTURER'|'BOTTLE_CLUB'
+//
+// DBPR stores the SFS (Special Food Service, née SRX) modifier in the "Rank"
+// column, NOT the "Series" column. Series for these records is plain "4COP".
+// Pass row['Rank'] as rankRaw so both fields are checked.
+export function seriesToLicenseType(seriesRaw, rankRaw = '') {
   const s = String(seriesRaw || '').toUpperCase().trim()
-  if (!s) return 'BEV'
-  if (s.includes('SRX') || s.includes('SFS') || s === '4COP-SRX') return 'SRX'
-  if (s.includes('COP')) return 'COP' // 1COP/2COP/4COP/6COP and SRX handled above
+  const r = String(rankRaw || '').toUpperCase().trim()
+  if (!s && !r) return 'BEV'
+  if (r.includes('SFS') || r.includes('SRX') || s.includes('SRX') || s.includes('SFS') || s === '4COP-SRX' || s === '4COP-SFS') return 'SRX'
+  if (s.includes('COP')) return 'COP' // 1COP/2COP/4COP/6COP; SRX handled above
   if (s.includes('APS') || /^\d?P?S$/.test(s) || s.startsWith('3P')) return 'APS' // package stores
   return 'BEV'
 }

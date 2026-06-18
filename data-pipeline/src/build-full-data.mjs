@@ -105,8 +105,12 @@ function toLicenseRecord(r) {
 const liquor = await load('normalized-abt_retail.json')
 const food = await load('normalized-food_new.json')
 const fdacs = await load('normalized-fdacs.json')
+// Supplemental ABT sources — loaded gracefully; run after pipeline fixes SRX/SFS.
+const tempPermits = await load('normalized-abt_temp_permits.json')
+const manufacturers = await load('normalized-abt_distributors.json')
+const bottleClubs = await load('normalized-abt_bottle_clubs.json')
 
-const records = [...liquor, ...food, ...fdacs].map(toLicenseRecord)
+const records = [...liquor, ...food, ...fdacs, ...tempPermits, ...manufacturers, ...bottleClubs].map(toLicenseRecord)
 
 // Lead the default listing with the valuable trigger data (new filings), newest
 // first; then the standing/renewal universe, newest first.

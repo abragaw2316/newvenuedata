@@ -21,17 +21,17 @@ export const LICENSE_TYPES: LicenseType[] = [
   {
     slug: 'srx',
     code: 'SRX',
-    name: 'Special Restaurant License',
+    name: 'Special Restaurant / Food Service License',
     category: 'Liquor',
     summary:
-      'The 4COP-SRX special restaurant license lets a qualifying Florida restaurant serve beer, wine, and full liquor for consumption on premises, conditioned on bona fide food service. SRX holders must maintain a minimum seating capacity — generally 150 seats and at least 2,500 square feet — and derive at least 51% of gross revenue from the sale of food and non-alcoholic beverages. Because it is issued outside the county quota system, an SRX is the most common path to a full bar for a sit-down restaurant.',
+      'The Special Restaurant (SRX) license — renamed Special Food Service (SFS) under Florida SB 1262 effective July 2023 — permits a qualifying restaurant or food-service venue to serve beer, wine, and full liquor for consumption on premises, conditioned on bona fide food service. SFS/SRX holders must derive at least 51% of gross revenue from food and non-alcoholic beverages and maintain a minimum seating capacity (120 seats and 2,000 sq ft under the 2023 revision; previously 150 seats / 2,500 sq ft). Because it is issued outside the county quota system, SRX/SFS is the most common path to a full bar for a sit-down restaurant.',
     whoFilesIt:
       'Full-service, sit-down restaurants that want to pour spirits, wine, and beer without buying a scarce quota license. Typical filers are independent restaurateurs, regional chains expanding into Florida, and hospitality groups opening a new dining concept that needs a complete bar program.',
     whatItSignals:
-      'An SRX filing is one of the highest-intent signals in the dataset: a real, food-first restaurant with a full bar is being built. The 51%-food and 150-seat thresholds mean these are substantial, capital-intensive venues — prime net-new accounts for spirits, wine, and beer distributors, POS and reservation platforms, FF&E suppliers, and commercial insurance, all of whom are selected during the buildout window before opening day.',
+      'An SRX/SFS filing is one of the highest-intent signals in the dataset: a real, food-first restaurant with a full bar is being built. The 51%-food and 120-seat thresholds (lowered by SB 1262 in 2023, making SFS more accessible than SRX was) mean these are substantial, capital-intensive venues — prime net-new accounts for spirits, wine, and beer distributors, POS and reservation platforms, FF&E suppliers, and commercial insurance, all selected during the buildout window before opening day.',
     examples: [
-      'A new upscale steakhouse in Brickell filing for a 4COP-SRX to run a full cocktail bar',
-      'A 180-seat farm-to-table restaurant in Tampa applying so it can sell wine pairings and spirits',
+      'A new upscale steakhouse in Brickell filing for a 4COP-SFS to run a full cocktail bar',
+      'A 140-seat farm-to-table restaurant in Tampa qualifying under the new 120-seat SFS threshold',
       'A national casual-dining chain opening its first Orlando location with a full bar',
     ],
     relatedCodes: ['4cop', 'cop', 'seating', 'food-service'],
@@ -161,6 +161,60 @@ export const LICENSE_TYPES: LicenseType[] = [
       'A catering operator adding a second food truck to its fleet',
     ],
     relatedCodes: ['food-service', 'seating'],
+  },
+  {
+    slug: 'temp-permit',
+    code: 'TEMP_PERMIT',
+    name: 'Temporary Alcoholic Beverage Permit',
+    category: 'Liquor',
+    summary:
+      'A temporary alcoholic beverage permit (issued under DBPR profession code 4002) authorizes the sale of alcohol at a specific event for one, two, or three days. Permitted events include festivals, fundraisers, concerts, sporting events, and private functions at licensed or unlicensed venues. These are single-event, non-renewable permits tied to the event location and date range.',
+    whoFilesIt:
+      'Event organizers, nonprofits, promoters, and venue operators running a short-term event where alcohol will be sold. Common filers include charity auction organizers, music festival promoters, sports booster clubs, and pop-up event companies.',
+    whatItSignals:
+      'Temporary permits track every paid alcohol event in Florida, including high-volume events that carry significant liquor-liability exposure and are frequently underinsured. For liquor-liability insurers, each permit represents an account that needs coverage — often from a carrier willing to write event or short-term policies. For distributors and suppliers, permit volume is a leading indicator of event market growth.',
+    examples: [
+      'A charity gala obtaining a one-day permit to sell wine and beer at a museum',
+      'A music festival promoter filing for a three-day permit at an outdoor venue',
+      'A sports booster club getting a two-day permit for a tournament beer garden',
+    ],
+    relatedCodes: ['cop', 'bev'],
+  },
+  {
+    slug: 'manufacturer',
+    code: 'MANUFACTURER',
+    name: 'Manufacturer / Distributor License',
+    category: 'Liquor',
+    summary:
+      'The manufacturer and distributor category (DBPR profession code 4005) covers Florida-licensed breweries, wineries, craft distilleries, importers, exporters, and wholesale distributors of alcoholic beverages. These licenses allow production, blending, bottling, and/or wholesale distribution of beer, wine, or spirits — activities that require a separate license tier from the retail or on-premises consumption licenses.',
+    whoFilesIt:
+      'Craft brewery and taproom operators, boutique winery owners, craft distillery founders, wholesale beer and wine distributors, and importers/exporters of spirits. Many filers are small independent producers entering the Florida market.',
+    whatItSignals:
+      'A new manufacturer license marks a new producer entering the state supply chain — an early signal for hop suppliers, barrel vendors, label printers, compliance consultants, packaging companies, and specialty insurers covering production operations. For distributors, it surfaces potential new brands to carry. The TTB federal license (required before DBPR will issue) often predates the DBPR filing, creating a two-stage early-warning window.',
+    examples: [
+      'A craft brewery in St. Pete filing for a manufacturer license to distribute kegs wholesale',
+      'A boutique distillery in Gainesville obtaining a license to produce and sell spirits on site',
+      'A wine importer obtaining a Florida wholesale distribution license',
+    ],
+    relatedCodes: ['cop', 'bev', 'aps'],
+  },
+  {
+    slug: 'bottle-club',
+    code: 'BOTTLE_CLUB',
+    name: 'Bottle Club License',
+    category: 'Liquor',
+    summary:
+      'A bottle club license (DBPR profession code 4014) authorizes a BYOB (bring-your-own-bottle) establishment where patrons bring their own sealed alcohol and the venue provides setups — mixers, ice, glassware, and service — for a fee. Bottle clubs do not sell alcohol directly and therefore operate outside the quota system, but they are licensed and inspected by DBPR and carry significant dram-shop exposure because the venue profits from the consumption environment.',
+    whoFilesIt:
+      'Private club operators, nightclub owners in quota-constrained counties, and venue operators who want to offer alcohol service without holding a direct sales license. Bottle clubs are more common in counties where quota licenses are scarce or prohibitively expensive.',
+    whatItSignals:
+      'Bottle clubs represent a specialized, high-risk segment: they operate in the gray area between retail and hospitality, often attract late-night or high-volume drinking, and are frequently underserved by standard commercial insurance. For liquor-liability insurers, a new bottle club license is a high-priority lead — these venues need coverage but don\'t always know what product to ask for. For distributors, bottle club patrons are a source of pull-through demand.',
+    examples: [
+      'A private nightclub in Miami obtaining a bottle club license to operate BYOB in a quota-constrained county',
+      'A social club converting to a BYOB model and filing for a bottle club license',
+      'A new venue in a rural county using a bottle club license as an alternative to a scarce quota permit',
+    ],
+    relatedCodes: ['cop', 'bev', 'srx'],
   },
 ]
 

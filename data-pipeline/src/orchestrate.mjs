@@ -19,6 +19,9 @@ const ROOT = fileURLToPath(new URL('..', import.meta.url))
 const STEPS = [
   { name: 'liquor licenses (bd4006lic)', cmd: ['src/run.mjs', '--source=abt_retail'] },
   { name: 'new restaurants (newfood)', cmd: ['src/run.mjs', '--source=food_new'] },
+  { name: 'temp permits (bd4002lic)', cmd: ['src/run.mjs', '--source=abt_temp_permits'], optional: true },
+  { name: 'manufacturers (bd4005lic)', cmd: ['src/run.mjs', '--source=abt_distributors'], optional: true },
+  { name: 'bottle clubs (bd4014lic)', cmd: ['src/run.mjs', '--source=abt_bottle_clubs'], optional: true },
   { name: 'retail food (FDACS)', cmd: ['src/fetch-fdacs.mjs', '600'], optional: true },
   { name: 'daily change feed', cmd: ['src/fetch-daily.mjs'], optional: true },
   { name: 'commercial permits (Orlando)', cmd: ['src/fetch-permits-orlando.mjs', '60'], optional: true },
