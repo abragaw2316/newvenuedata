@@ -30,13 +30,15 @@ export async function POST(req: Request): Promise<Response> {
   if (!EMAIL_RE.test(email)) return json({ ok: false, error: 'invalid-email' }, 400)
 
   let stored = false
-  if (dbConfigured()) {
+  let dbError: string | null = null
+  const configured = dbConfigured()
+  if (configured) {
     try {
       await ensureSchema()
       await sql`INSERT INTO leads (email, source, note) VALUES (${email}, ${source}, ${note})`
       stored = true
-    } catch {
-      /* still try to notify below */
+    } catch (e) {
+      dbError = e instanceof Error ? e.message.slice(0, 140) : 'insert-failed'
     }
   }
 
@@ -54,5 +56,5 @@ export async function POST(req: Request): Promise<Response> {
     /* email is non-critical — the lead is already stored */
   }
 
-  return json({ ok: true, stored })
+  return json({ ok: true, stored, configured, dbError })
 }
