@@ -23,8 +23,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Florida is a limited dram-shop state — but “limited” is not the same as low-risk. Here’s what Statute 768.125 actually says, why new venues still have to insure, and why the license filing is the cleanest buying signal in the market.',
     category: 'Compliance',
-    author: 'Daniel Hsu',
-    authorRole: 'Markets & Compliance',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'June 12, 2026',
     readingMinutes: 8,
     content: [
@@ -93,8 +93,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Florida liquor-liability premiums range from a few hundred dollars to five figures a year. Here is the real spread, the underwriting factors that move it, and why so many bars end up in the surplus-lines market.',
     category: 'Market Intel',
-    author: 'Daniel Hsu',
-    authorRole: 'Markets & Compliance',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'June 10, 2026',
     readingMinutes: 7,
     content: [
@@ -146,8 +146,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Referrals, cold calls, and purchased lists all chase the same accounts. The agents who win new venues do one thing differently: they get there first, on a timing trigger instead of a stale list.',
     category: 'Playbook',
-    author: 'Mara Quinn',
-    authorRole: 'Head of Data Science',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'June 8, 2026',
     readingMinutes: 6,
     content: [
@@ -195,8 +195,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'We tracked the vendor-selection window for 1,400 new Florida food-service operators. The honest answer surprised even our own sales team — most decisions are locked before the doors ever open.',
     category: 'Data',
-    author: 'Mara Quinn',
-    authorRole: 'Head of Data Science',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'May 28, 2026',
     readingMinutes: 9,
     content: [
@@ -261,8 +261,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'A new SRX or COP filing is more than a name and an address. Read it correctly and a single record tells you the business model, the buildout budget, and roughly when the doors open.',
     category: 'Playbook',
-    author: 'Devon Hale',
-    authorRole: 'Founder & CEO',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'May 19, 2026',
     readingMinutes: 8,
     content: [
@@ -320,8 +320,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'A practical architecture for turning raw Florida license filings into scored, routed, CRM-ready leads — using webhooks, enrichment, and a dead-simple scoring model your reps will actually trust.',
     category: 'Engineering',
-    author: 'Priya Nair',
-    authorRole: 'Staff Engineer',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'May 12, 2026',
     readingMinutes: 11,
     content: [
@@ -392,8 +392,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'License filings are public business records, not consumer credit data. Here is the distinction that keeps your prospecting clean, why it matters, and the questions to ask any data vendor before you buy.',
     category: 'Compliance',
-    author: 'Renata Cole',
-    authorRole: 'General Counsel',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'May 6, 2026',
     readingMinutes: 7,
     content: [
@@ -459,8 +459,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Filing velocity through the first half of 2026 points to a record year for Florida hospitality — but the growth is concentrating in places the headlines are not watching. Here is what the data shows.',
     category: 'Market Intel',
-    author: 'Mara Quinn',
-    authorRole: 'Head of Data Science',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'April 30, 2026',
     readingMinutes: 10,
     content: [
@@ -519,8 +519,8 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'We mapped all 52,061 active Florida liquor licensees and 6,243 new food-service openings this fiscal year against the county leaderboard. Here is where the demand actually is — and what the license-type mix tells you about how to sell into it.',
     category: 'Market Intel',
-    author: 'Mara Quinn',
-    authorRole: 'Head of Data Science',
+    author: 'Austin Bragaw',
+    authorRole: 'Founder',
     date: 'June 12, 2026',
     readingMinutes: 11,
     content: [
