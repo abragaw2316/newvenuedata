@@ -42,7 +42,7 @@ const COUNTY_FACETS = [
   'Alachua',
 ] as const
 
-const TYPE_FACETS: readonly LicenseType[] = ['BEV', 'COP', 'SRX', 'FOOD_SERVICE']
+const TYPE_FACETS: readonly LicenseType[] = ['COP', 'BEV', 'APS', 'FOOD_SERVICE']
 
 const STATUS_FACETS = ['approved', 'pending'] as const
 

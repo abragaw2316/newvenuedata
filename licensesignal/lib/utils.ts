@@ -24,7 +24,7 @@ export function getLicenseTypeLabel(type: LicenseType): string {
     SRX: 'Spirituous Liquor',
     COP: 'Consumption On Premises',
     BEV: 'Beer & Wine',
-    APS: 'Adult Entertainment',
+    APS: 'Package Store',
     FOOD_SERVICE: 'Food Service',
     SEATING: 'Seating License',
     MOBILE_FOOD: 'Mobile Food',

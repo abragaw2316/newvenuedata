@@ -19,6 +19,8 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url)
   const q = searchParams.get('q')?.trim().toLowerCase()
   const county = searchParams.get('county')?.toLowerCase()
+  const licenseType = searchParams.get('license_type')?.toUpperCase()
+  const status = searchParams.get('status')?.toLowerCase()
   const rawLimit = Number(searchParams.get('limit') ?? 25)
   const limit = Number.isFinite(rawLimit) ? Math.min(Math.max(Math.trunc(rawLimit), 1), 100) : 25
 
@@ -37,6 +39,8 @@ export async function GET(request: Request) {
   const licenses = await getAllLicenses()
   const matches = licenses.filter((rec) => {
     if (county && rec.address.county.toLowerCase() !== county) return false
+    if (licenseType && rec.licenseType.toUpperCase() !== licenseType) return false
+    if (status && rec.status.toLowerCase() !== status) return false
     const haystack = [
       rec.businessName,
       rec.legalName,
