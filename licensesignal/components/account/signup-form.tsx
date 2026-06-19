@@ -51,17 +51,17 @@ export function SignupForm() {
       <p className="text-sm text-[var(--ls-fg-2)]">Start your 14-day free trial. No card required.</p>
 
       {state.error && (
-        <p className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
+        <p role="alert" aria-live="polite" className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
           {state.error}
         </p>
       )}
 
       <div className="grid grid-cols-2 gap-3">
-        <input name="name" placeholder="Your name" className={inputCls} autoComplete="name" />
-        <input name="company" placeholder="Company (optional)" className={inputCls} autoComplete="organization" />
+        <input name="name" aria-label="Your name" placeholder="Your name" className={inputCls} autoComplete="name" />
+        <input name="company" aria-label="Company (optional)" placeholder="Company (optional)" className={inputCls} autoComplete="organization" />
       </div>
-      <input name="email" type="email" required placeholder="you@company.com" className={inputCls} autoComplete="email" />
-      <input name="password" type="password" required minLength={8} placeholder="Password (8+ characters)" className={inputCls} autoComplete="new-password" />
+      <input name="email" type="email" required aria-label="Email address" placeholder="you@company.com" className={inputCls} autoComplete="email" />
+      <input name="password" type="password" required minLength={8} aria-label="Password (at least 8 characters)" placeholder="Password (8+ characters)" className={inputCls} autoComplete="new-password" />
 
       <button
         type="submit"

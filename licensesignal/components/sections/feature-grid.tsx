@@ -19,15 +19,15 @@ const FEATURES = [
   },
   {
     icon: Webhook,
-    title: 'Webhook Delivery',
+    title: 'Webhook Delivery — on the roadmap',
     description:
-      'HTTP POST to your endpoint the moment a new record appears. HMAC-SHA256 signed, retry-on-failure with exponential backoff.',
+      'Real-time HTTP push to your endpoint is planned, not yet live. Today you get new records via the weekly list, CSV/Excel export, or the REST API.',
   },
   {
     icon: Archive,
-    title: 'Historical Database',
+    title: 'Searchable Dataset & Export',
     description:
-      '2+ years of archived FL DBPR filings, fully searchable and exportable. Backfill your CRM or train your models on the full dataset.',
+      'The full current Florida dataset, searchable and exportable to CSV/Excel. Filing history is included on paid plans (30–90 days; full archive on Statewide).',
   },
   {
     icon: MapPin,

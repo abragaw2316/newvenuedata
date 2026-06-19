@@ -34,10 +34,12 @@ function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
 interface CountyBarChartProps {
   topN?: number
   horizontal?: boolean
+  /** Optional explicit county volumes; defaults to the liquor-licensee COUNTY_VOLUME. */
+  source?: { county: string; count: number }[]
 }
 
-export function CountyBarChart({ topN = 10, horizontal = true }: CountyBarChartProps) {
-  const data = COUNTY_VOLUME.slice(0, topN)
+export function CountyBarChart({ topN = 10, horizontal = true, source }: CountyBarChartProps) {
+  const data = (source ?? COUNTY_VOLUME).slice(0, topN)
 
   if (horizontal) {
     return (

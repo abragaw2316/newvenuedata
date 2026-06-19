@@ -28,14 +28,14 @@ export function ResetPasswordForm({ token }: { token: string }) {
       <h1 className="text-display-sm text-[var(--ls-fg)]">Choose a new password</h1>
 
       {state.error && (
-        <p className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
+        <p role="alert" aria-live="polite" className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
           {state.error}
         </p>
       )}
 
       {state.message ? (
         <>
-          <p className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-300">
+          <p role="status" aria-live="polite" className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-300">
             {state.message}
           </p>
           <Link
@@ -53,6 +53,7 @@ export function ResetPasswordForm({ token }: { token: string }) {
             type="password"
             required
             minLength={8}
+            aria-label="New password (at least 8 characters)"
             placeholder="New password (8+ characters)"
             className={inputCls}
             autoComplete="new-password"

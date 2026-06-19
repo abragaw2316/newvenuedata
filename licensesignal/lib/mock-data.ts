@@ -68,7 +68,7 @@ export const PRICING_PLANS: PricingPlan[] = [
       'Volume & multi-seat pricing',
       'Dedicated support',
     ],
-    cta: 'Talk to Sales',
+    cta: 'Email Austin',
     highlighted: false,
   },
 ]

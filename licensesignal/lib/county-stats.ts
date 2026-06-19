@@ -21,79 +21,44 @@ export interface CityStat {
 }
 
 export const COVERAGE_DATA_AS_OF = '2026-06-15'
-export const COVERAGE_TOTAL_LICENSES = 59004
+export const COVERAGE_TOTAL_LICENSES = 63042
 export const COVERAGE_COUNTIES_WITH_DATA = 67
 
 export const COUNTY_STATS: Record<string, CountyStat> = {
-  "bay": {
-    "total": 847,
-    "newFilings": 128,
-    "byType": {
-      "FOOD_SERVICE": 44,
-      "COP": 437,
-      "SEATING": 32,
-      "MOBILE_FOOD": 25,
-      "APS": 285,
-      "BEV": 24
-    },
-    "topCities": [
-      {
-        "city": "Panama City Beach",
-        "count": 417
-      },
-      {
-        "city": "Panama City",
-        "count": 316
-      },
-      {
-        "city": "Lynn Haven",
-        "count": 41
-      },
-      {
-        "city": "Callaway",
-        "count": 19
-      },
-      {
-        "city": "Mexico Beach",
-        "count": 10
-      },
-      {
-        "city": "Springfield",
-        "count": 10
-      }
-    ]
-  },
   "hillsborough": {
-    "total": 3379,
-    "newFilings": 520,
+    "total": 3547,
+    "newFilings": 530,
     "byType": {
-      "FOOD_SERVICE": 142,
+      "COP": 1033,
       "APS": 1235,
+      "FOOD_SERVICE": 142,
       "MOBILE_FOOD": 246,
       "SEATING": 90,
-      "COP": 1545,
-      "BEV": 121
+      "TEMP_PERMIT": 68,
+      "SRX": 512,
+      "BEV": 121,
+      "MANUFACTURER": 100
     },
     "topCities": [
       {
         "city": "Tampa",
-        "count": 2228
+        "count": 2368
       },
       {
         "city": "Brandon",
-        "count": 214
-      },
-      {
-        "city": "Riverview",
-        "count": 165
+        "count": 215
       },
       {
         "city": "Plant City",
-        "count": 156
+        "count": 167
+      },
+      {
+        "city": "Riverview",
+        "count": 167
       },
       {
         "city": "Lutz",
-        "count": 106
+        "count": 108
       },
       {
         "city": "Seffner",
@@ -101,59 +66,398 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "broward": {
-    "total": 4785,
-    "newFilings": 516,
+  "polk": {
+    "total": 1686,
+    "newFilings": 295,
     "byType": {
+      "COP": 373,
+      "APS": 746,
+      "FOOD_SERVICE": 76,
+      "SRX": 187,
+      "SEATING": 56,
+      "TEMP_PERMIT": 48,
+      "MOBILE_FOOD": 122,
+      "BEV": 42,
+      "MANUFACTURER": 36
+    },
+    "topCities": [
+      {
+        "city": "Lakeland",
+        "count": 602
+      },
+      {
+        "city": "Winter Haven",
+        "count": 291
+      },
+      {
+        "city": "Davenport",
+        "count": 160
+      },
+      {
+        "city": "Haines City",
+        "count": 131
+      },
+      {
+        "city": "Lake Wales",
+        "count": 130
+      },
+      {
+        "city": "Bartow",
+        "count": 74
+      }
+    ]
+  },
+  "orange": {
+    "total": 4345,
+    "newFilings": 747,
+    "byType": {
+      "SRX": 712,
+      "APS": 1151,
+      "TEMP_PERMIT": 121,
+      "FOOD_SERVICE": 269,
+      "MANUFACTURER": 113,
+      "COP": 1464,
+      "SEATING": 115,
+      "MOBILE_FOOD": 271,
+      "BEV": 129
+    },
+    "topCities": [
+      {
+        "city": "Orlando",
+        "count": 3344
+      },
+      {
+        "city": "Winter Park",
+        "count": 241
+      },
+      {
+        "city": "Winter Garden",
+        "count": 185
+      },
+      {
+        "city": "Apopka",
+        "count": 152
+      },
+      {
+        "city": "Ocoee",
+        "count": 105
+      },
+      {
+        "city": "Lake Buena Vista",
+        "count": 97
+      }
+    ]
+  },
+  "st-johns": {
+    "total": 976,
+    "newFilings": 126,
+    "byType": {
+      "APS": 240,
+      "COP": 341,
+      "SRX": 185,
+      "FOOD_SERVICE": 18,
+      "TEMP_PERMIT": 52,
+      "MOBILE_FOOD": 30,
+      "SEATING": 50,
+      "BEV": 42,
+      "MANUFACTURER": 18
+    },
+    "topCities": [
+      {
+        "city": "Saint Augustine",
+        "count": 524
+      },
+      {
+        "city": "St. Johns",
+        "count": 83
+      },
+      {
+        "city": "Ponte Vedra Beach",
+        "count": 83
+      },
+      {
+        "city": "St Augustine",
+        "count": 76
+      },
+      {
+        "city": "Ponte Vedra",
+        "count": 42
+      },
+      {
+        "city": "St. Augustine",
+        "count": 41
+      }
+    ]
+  },
+  "duval": {
+    "total": 2930,
+    "newFilings": 414,
+    "byType": {
+      "COP": 773,
+      "FOOD_SERVICE": 124,
+      "SEATING": 86,
+      "MOBILE_FOOD": 133,
+      "TEMP_PERMIT": 91,
+      "APS": 1103,
+      "SRX": 458,
+      "BEV": 88,
+      "MANUFACTURER": 72,
+      "BOTTLE_CLUB": 2
+    },
+    "topCities": [
+      {
+        "city": "Jacksonville",
+        "count": 2622
+      },
+      {
+        "city": "Jacksonville Beach",
+        "count": 169
+      },
+      {
+        "city": "Atlantic Beach",
+        "count": 70
+      },
+      {
+        "city": "Neptune Beach",
+        "count": 40
+      },
+      {
+        "city": "No City Code",
+        "count": 12
+      },
+      {
+        "city": "Baldwin",
+        "count": 6
+      }
+    ]
+  },
+  "osceola": {
+    "total": 967,
+    "newFilings": 174,
+    "byType": {
+      "COP": 292,
+      "APS": 311,
+      "FOOD_SERVICE": 41,
+      "MOBILE_FOOD": 81,
+      "SRX": 152,
+      "TEMP_PERMIT": 10,
+      "SEATING": 33,
+      "BEV": 30,
+      "MANUFACTURER": 16,
+      "BOTTLE_CLUB": 1
+    },
+    "topCities": [
+      {
+        "city": "Kissimmee",
+        "count": 729
+      },
+      {
+        "city": "St. Cloud",
+        "count": 96
+      },
+      {
+        "city": "Saint Cloud",
+        "count": 42
+      },
+      {
+        "city": "Celebration",
+        "count": 31
+      },
+      {
+        "city": "Davenport",
+        "count": 18
+      },
+      {
+        "city": "Champions Gate",
+        "count": 12
+      }
+    ]
+  },
+  "pasco": {
+    "total": 1192,
+    "newFilings": 163,
+    "byType": {
+      "APS": 465,
+      "COP": 302,
+      "TEMP_PERMIT": 32,
+      "FOOD_SERVICE": 38,
+      "SRX": 162,
+      "MOBILE_FOOD": 53,
+      "SEATING": 47,
+      "BEV": 58,
+      "MANUFACTURER": 35
+    },
+    "topCities": [
+      {
+        "city": "New Port Richey",
+        "count": 284
+      },
+      {
+        "city": "Wesley Chapel",
+        "count": 149
+      },
+      {
+        "city": "Hudson",
+        "count": 129
+      },
+      {
+        "city": "Zephyrhills",
+        "count": 112
+      },
+      {
+        "city": "Dade City",
+        "count": 111
+      },
+      {
+        "city": "Port Richey",
+        "count": 100
+      }
+    ]
+  },
+  "bay": {
+    "total": 908,
+    "newFilings": 145,
+    "byType": {
+      "BEV": 25,
+      "TEMP_PERMIT": 47,
+      "COP": 265,
+      "FOOD_SERVICE": 44,
+      "SEATING": 32,
+      "SRX": 173,
+      "MOBILE_FOOD": 25,
+      "APS": 285,
+      "MANUFACTURER": 11,
+      "BOTTLE_CLUB": 1
+    },
+    "topCities": [
+      {
+        "city": "Panama City Beach",
+        "count": 448
+      },
+      {
+        "city": "Panama City",
+        "count": 342
+      },
+      {
+        "city": "Lynn Haven",
+        "count": 42
+      },
+      {
+        "city": "Callaway",
+        "count": 19
+      },
+      {
+        "city": "Mexico Beach",
+        "count": 12
+      },
+      {
+        "city": "Springfield",
+        "count": 10
+      }
+    ]
+  },
+  "lee": {
+    "total": 2382,
+    "newFilings": 335,
+    "byType": {
+      "APS": 708,
+      "BEV": 140,
+      "COP": 656,
+      "FOOD_SERVICE": 75,
+      "TEMP_PERMIT": 94,
+      "MOBILE_FOOD": 136,
+      "SEATING": 72,
+      "SRX": 457,
+      "MANUFACTURER": 44
+    },
+    "topCities": [
+      {
+        "city": "Fort Myers",
+        "count": 1059
+      },
+      {
+        "city": "Cape Coral",
+        "count": 422
+      },
+      {
+        "city": "Bonita Springs",
+        "count": 227
+      },
+      {
+        "city": "North Fort Myers",
+        "count": 162
+      },
+      {
+        "city": "Estero",
+        "count": 112
+      },
+      {
+        "city": "Lehigh Acres",
+        "count": 101
+      }
+    ]
+  },
+  "broward": {
+    "total": 5094,
+    "newFilings": 544,
+    "byType": {
+      "COP": 1738,
+      "APS": 1734,
+      "SRX": 735,
+      "TEMP_PERMIT": 122,
       "FOOD_SERVICE": 186,
-      "APS": 1733,
-      "COP": 2472,
       "SEATING": 135,
       "MOBILE_FOOD": 127,
-      "BEV": 132
+      "MANUFACTURER": 182,
+      "BEV": 132,
+      "BOTTLE_CLUB": 3
     },
     "topCities": [
       {
         "city": "Fort Lauderdale",
-        "count": 1008
+        "count": 1077
       },
       {
         "city": "Hollywood",
-        "count": 499
+        "count": 525
       },
       {
         "city": "Pompano Beach",
-        "count": 399
+        "count": 433
       },
       {
         "city": "Pembroke Pines",
-        "count": 304
+        "count": 309
       },
       {
         "city": "Coral Springs",
-        "count": 231
+        "count": 239
       },
       {
         "city": "Davie",
-        "count": 223
+        "count": 231
       }
     ]
   },
   "leon": {
-    "total": 751,
-    "newFilings": 86,
+    "total": 826,
+    "newFilings": 94,
     "byType": {
+      "APS": 273,
       "FOOD_SERVICE": 25,
-      "APS": 272,
-      "COP": 375,
+      "SRX": 159,
       "SEATING": 27,
+      "TEMP_PERMIT": 53,
       "MOBILE_FOOD": 22,
-      "BEV": 30
+      "COP": 216,
+      "BEV": 30,
+      "MANUFACTURER": 18,
+      "BOTTLE_CLUB": 3
     },
     "topCities": [
       {
         "city": "Tallahassee",
-        "count": 745
+        "count": 819
       },
       {
         "city": "Woodville",
@@ -168,384 +472,169 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
         "count": 1
       },
       {
-        "city": "No City Code",
+        "city": "Miccosukee",
         "count": 1
       },
       {
-        "city": "Tallahasse",
+        "city": "No City Code",
         "count": 1
       }
     ]
   },
-  "walton": {
-    "total": 479,
-    "newFilings": 58,
+  "martin": {
+    "total": 585,
+    "newFilings": 45,
     "byType": {
-      "FOOD_SERVICE": 10,
-      "COP": 297,
-      "SEATING": 17,
-      "APS": 117,
-      "MOBILE_FOOD": 19,
-      "BEV": 19
+      "APS": 185,
+      "FOOD_SERVICE": 12,
+      "COP": 189,
+      "SEATING": 14,
+      "SRX": 102,
+      "MOBILE_FOOD": 12,
+      "TEMP_PERMIT": 13,
+      "BEV": 46,
+      "MANUFACTURER": 12
     },
     "topCities": [
       {
-        "city": "Santa Rosa Beach",
-        "count": 152
+        "city": "Stuart",
+        "count": 330
       },
       {
-        "city": "Miramar Beach",
-        "count": 94
+        "city": "Jensen Beach",
+        "count": 92
       },
       {
-        "city": "Defuniak Springs",
-        "count": 73
+        "city": "Hobe Sound",
+        "count": 59
       },
       {
-        "city": "Freeport",
-        "count": 39
+        "city": "Palm City",
+        "count": 53
       },
       {
-        "city": "Inlet Beach",
-        "count": 33
+        "city": "Indiantown",
+        "count": 23
       },
       {
-        "city": "Destin",
+        "city": "Tequesta",
+        "count": 8
+      }
+    ]
+  },
+  "sumter": {
+    "total": 320,
+    "newFilings": 36,
+    "byType": {
+      "APS": 134,
+      "FOOD_SERVICE": 5,
+      "SRX": 66,
+      "SEATING": 14,
+      "MANUFACTURER": 5,
+      "MOBILE_FOOD": 7,
+      "COP": 75,
+      "BEV": 8,
+      "TEMP_PERMIT": 6
+    },
+    "topCities": [
+      {
+        "city": "The Villages",
+        "count": 124
+      },
+      {
+        "city": "Wildwood",
+        "count": 68
+      },
+      {
+        "city": "Bushnell",
+        "count": 41
+      },
+      {
+        "city": "Oxford",
+        "count": 18
+      },
+      {
+        "city": "Lake Panasoffkee",
+        "count": 16
+      },
+      {
+        "city": "Lady Lake",
         "count": 16
       }
     ]
   },
-  "pinellas": {
-    "total": 3124,
-    "newFilings": 369,
+  "monroe": {
+    "total": 882,
+    "newFilings": 55,
     "byType": {
-      "FOOD_SERVICE": 155,
-      "SEATING": 89,
-      "MOBILE_FOOD": 77,
-      "COP": 1759,
-      "APS": 932,
-      "BEV": 112
+      "TEMP_PERMIT": 42,
+      "FOOD_SERVICE": 11,
+      "COP": 409,
+      "MOBILE_FOOD": 20,
+      "BEV": 56,
+      "SRX": 132,
+      "SEATING": 8,
+      "APS": 189,
+      "MANUFACTURER": 15
     },
     "topCities": [
       {
-        "city": "St. Petersburg",
-        "count": 803
+        "city": "Key West",
+        "count": 464
       },
       {
-        "city": "Clearwater",
-        "count": 589
+        "city": "Marathon",
+        "count": 98
       },
       {
-        "city": "Largo",
-        "count": 286
+        "city": "Key Largo",
+        "count": 98
       },
       {
-        "city": "Dunedin",
-        "count": 177
+        "city": "Islamorada",
+        "count": 94
       },
       {
-        "city": "Pinellas Park",
-        "count": 169
+        "city": "Tavernier",
+        "count": 34
       },
       {
-        "city": "Palm Harbor",
-        "count": 155
-      }
-    ]
-  },
-  "levy": {
-    "total": 157,
-    "newFilings": 33,
-    "byType": {
-      "FOOD_SERVICE": 13,
-      "MOBILE_FOOD": 11,
-      "APS": 64,
-      "COP": 43,
-      "SEATING": 7,
-      "BEV": 19
-    },
-    "topCities": [
-      {
-        "city": "Chiefland",
-        "count": 45
-      },
-      {
-        "city": "Williston",
-        "count": 42
-      },
-      {
-        "city": "Cedar Key",
-        "count": 19
-      },
-      {
-        "city": "Inglis",
-        "count": 15
-      },
-      {
-        "city": "Bronson",
-        "count": 14
-      },
-      {
-        "city": "Fanning Springs",
-        "count": 7
-      }
-    ]
-  },
-  "duval": {
-    "total": 2764,
-    "newFilings": 391,
-    "byType": {
-      "FOOD_SERVICE": 124,
-      "SEATING": 86,
-      "MOBILE_FOOD": 133,
-      "COP": 1230,
-      "APS": 1103,
-      "BEV": 88
-    },
-    "topCities": [
-      {
-        "city": "Jacksonville",
-        "count": 2479
-      },
-      {
-        "city": "Jacksonville Beach",
-        "count": 152
-      },
-      {
-        "city": "Atlantic Beach",
-        "count": 65
-      },
-      {
-        "city": "Neptune Beach",
-        "count": 39
-      },
-      {
-        "city": "No City Code",
-        "count": 12
-      },
-      {
-        "city": "Baldwin",
-        "count": 6
-      }
-    ]
-  },
-  "lee": {
-    "total": 2243,
-    "newFilings": 318,
-    "byType": {
-      "FOOD_SERVICE": 75,
-      "COP": 1114,
-      "APS": 708,
-      "MOBILE_FOOD": 136,
-      "SEATING": 72,
-      "BEV": 138
-    },
-    "topCities": [
-      {
-        "city": "Fort Myers",
-        "count": 998
-      },
-      {
-        "city": "Cape Coral",
-        "count": 394
-      },
-      {
-        "city": "Bonita Springs",
-        "count": 205
-      },
-      {
-        "city": "North Fort Myers",
-        "count": 150
-      },
-      {
-        "city": "Estero",
-        "count": 110
-      },
-      {
-        "city": "Lehigh Acres",
-        "count": 100
-      }
-    ]
-  },
-  "manatee": {
-    "total": 1096,
-    "newFilings": 158,
-    "byType": {
-      "FOOD_SERVICE": 24,
-      "SEATING": 53,
-      "COP": 548,
-      "MOBILE_FOOD": 68,
-      "APS": 346,
-      "BEV": 57
-    },
-    "topCities": [
-      {
-        "city": "Bradenton",
-        "count": 650
-      },
-      {
-        "city": "Palmetto",
-        "count": 106
-      },
-      {
-        "city": "Sarasota",
-        "count": 62
-      },
-      {
-        "city": "Parrish",
-        "count": 44
-      },
-      {
-        "city": "Lakewood Ranch",
-        "count": 40
-      },
-      {
-        "city": "Ellenton",
-        "count": 39
-      }
-    ]
-  },
-  "charlotte": {
-    "total": 498,
-    "newFilings": 58,
-    "byType": {
-      "FOOD_SERVICE": 8,
-      "MOBILE_FOOD": 21,
-      "COP": 238,
-      "SEATING": 19,
-      "BEV": 40,
-      "APS": 172
-    },
-    "topCities": [
-      {
-        "city": "Port Charlotte",
-        "count": 223
-      },
-      {
-        "city": "Punta Gorda",
-        "count": 165
-      },
-      {
-        "city": "Englewood",
-        "count": 77
-      },
-      {
-        "city": "Rotonda West",
-        "count": 11
-      },
-      {
-        "city": "Placida",
-        "count": 9
-      },
-      {
-        "city": "No City Code",
-        "count": 6
-      }
-    ]
-  },
-  "orange": {
-    "total": 4109,
-    "newFilings": 708,
-    "byType": {
-      "FOOD_SERVICE": 269,
-      "COP": 2175,
-      "SEATING": 115,
-      "MOBILE_FOOD": 271,
-      "APS": 1150,
-      "BEV": 129
-    },
-    "topCities": [
-      {
-        "city": "Orlando",
-        "count": 3153
-      },
-      {
-        "city": "Winter Park",
-        "count": 231
-      },
-      {
-        "city": "Winter Garden",
-        "count": 174
-      },
-      {
-        "city": "Apopka",
-        "count": 147
-      },
-      {
-        "city": "Ocoee",
-        "count": 102
-      },
-      {
-        "city": "Lake Buena Vista",
-        "count": 96
-      }
-    ]
-  },
-  "brevard": {
-    "total": 1694,
-    "newFilings": 211,
-    "byType": {
-      "FOOD_SERVICE": 69,
-      "COP": 829,
-      "SEATING": 53,
-      "APS": 616,
-      "MOBILE_FOOD": 51,
-      "BEV": 76
-    },
-    "topCities": [
-      {
-        "city": "Melbourne",
-        "count": 481
-      },
-      {
-        "city": "Palm Bay",
-        "count": 181
-      },
-      {
-        "city": "Cocoa",
-        "count": 161
-      },
-      {
-        "city": "Titusville",
-        "count": 151
-      },
-      {
-        "city": "Cocoa Beach",
-        "count": 132
-      },
-      {
-        "city": "Merritt Island",
-        "count": 113
+        "city": "Big Pine Key",
+        "count": 29
       }
     ]
   },
   "okaloosa": {
-    "total": 757,
-    "newFilings": 111,
+    "total": 805,
+    "newFilings": 118,
     "byType": {
+      "COP": 224,
       "FOOD_SERVICE": 24,
       "SEATING": 26,
       "MOBILE_FOOD": 35,
       "APS": 254,
-      "COP": 392,
-      "BEV": 26
+      "TEMP_PERMIT": 27,
+      "SRX": 169,
+      "BEV": 26,
+      "MANUFACTURER": 19,
+      "BOTTLE_CLUB": 1
     },
     "topCities": [
       {
-        "city": "Destin",
-        "count": 222
+        "city": "Fort Walton Beach",
+        "count": 239
       },
       {
-        "city": "Fort Walton Beach",
-        "count": 222
+        "city": "Destin",
+        "count": 232
       },
       {
         "city": "Crestview",
-        "count": 112
+        "count": 126
       },
       {
         "city": "Niceville",
-        "count": 87
+        "count": 91
       },
       {
         "city": "Mary Esther",
@@ -553,67 +642,560 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Ft Walton Beach",
-        "count": 20
+        "count": 21
+      }
+    ]
+  },
+  "alachua": {
+    "total": 783,
+    "newFilings": 90,
+    "byType": {
+      "APS": 287,
+      "COP": 237,
+      "FOOD_SERVICE": 20,
+      "SEATING": 27,
+      "MOBILE_FOOD": 26,
+      "SRX": 123,
+      "MANUFACTURER": 20,
+      "TEMP_PERMIT": 24,
+      "BEV": 19
+    },
+    "topCities": [
+      {
+        "city": "Gainesville",
+        "count": 598
+      },
+      {
+        "city": "Alachua",
+        "count": 40
+      },
+      {
+        "city": "Newberry",
+        "count": 39
+      },
+      {
+        "city": "High Springs",
+        "count": 32
+      },
+      {
+        "city": "Hawthorne",
+        "count": 26
+      },
+      {
+        "city": "Waldo",
+        "count": 13
+      }
+    ]
+  },
+  "jackson": {
+    "total": 140,
+    "newFilings": 22,
+    "byType": {
+      "SRX": 10,
+      "FOOD_SERVICE": 5,
+      "APS": 72,
+      "MOBILE_FOOD": 10,
+      "SEATING": 3,
+      "BEV": 16,
+      "COP": 19,
+      "TEMP_PERMIT": 4,
+      "MANUFACTURER": 1
+    },
+    "topCities": [
+      {
+        "city": "Marianna",
+        "count": 66
+      },
+      {
+        "city": "Graceville",
+        "count": 15
+      },
+      {
+        "city": "Cottondale",
+        "count": 14
+      },
+      {
+        "city": "Sneads",
+        "count": 12
+      },
+      {
+        "city": "Alford",
+        "count": 10
+      },
+      {
+        "city": "Campbellton",
+        "count": 8
+      }
+    ]
+  },
+  "lake": {
+    "total": 1058,
+    "newFilings": 184,
+    "byType": {
+      "APS": 354,
+      "FOOD_SERVICE": 57,
+      "TEMP_PERMIT": 44,
+      "COP": 279,
+      "SEATING": 42,
+      "SRX": 150,
+      "MOBILE_FOOD": 66,
+      "BEV": 48,
+      "MANUFACTURER": 18
+    },
+    "topCities": [
+      {
+        "city": "Clermont",
+        "count": 253
+      },
+      {
+        "city": "Leesburg",
+        "count": 172
+      },
+      {
+        "city": "Eustis",
+        "count": 160
+      },
+      {
+        "city": "Mount Dora",
+        "count": 122
+      },
+      {
+        "city": "Tavares",
+        "count": 71
+      },
+      {
+        "city": "Lady Lake",
+        "count": 50
       }
     ]
   },
   "miami-dade": {
-    "total": 7547,
-    "newFilings": 1105,
+    "total": 8156,
+    "newFilings": 1119,
     "byType": {
+      "COP": 2830,
+      "APS": 2707,
       "FOOD_SERVICE": 392,
-      "APS": 2708,
       "SEATING": 182,
       "MOBILE_FOOD": 408,
-      "COP": 3611,
-      "BEV": 246
+      "TEMP_PERMIT": 98,
+      "SRX": 780,
+      "BEV": 245,
+      "MANUFACTURER": 514
     },
     "topCities": [
       {
         "city": "Miami",
-        "count": 3513
+        "count": 3831
       },
       {
         "city": "Hialeah",
-        "count": 693
+        "count": 718
       },
       {
         "city": "Miami Beach",
-        "count": 693
+        "count": 714
       },
       {
         "city": "Md Miami",
-        "count": 398
-      },
-      {
-        "city": "Coral Gables",
-        "count": 236
+        "count": 419
       },
       {
         "city": "Doral",
-        "count": 235
+        "count": 303
+      },
+      {
+        "city": "Coral Gables",
+        "count": 255
+      }
+    ]
+  },
+  "palm-beach": {
+    "total": 3885,
+    "newFilings": 443,
+    "byType": {
+      "SRX": 758,
+      "COP": 1120,
+      "FOOD_SERVICE": 126,
+      "TEMP_PERMIT": 105,
+      "SEATING": 144,
+      "APS": 1235,
+      "MOBILE_FOOD": 98,
+      "MANUFACTURER": 88,
+      "BEV": 207,
+      "BOTTLE_CLUB": 4
+    },
+    "topCities": [
+      {
+        "city": "West Palm Beach",
+        "count": 797
+      },
+      {
+        "city": "Boca Raton",
+        "count": 603
+      },
+      {
+        "city": "Delray Beach",
+        "count": 374
+      },
+      {
+        "city": "Boynton Beach",
+        "count": 326
+      },
+      {
+        "city": "Lake Worth",
+        "count": 289
+      },
+      {
+        "city": "Jupiter",
+        "count": 253
+      }
+    ]
+  },
+  "walton": {
+    "total": 529,
+    "newFilings": 61,
+    "byType": {
+      "COP": 156,
+      "FOOD_SERVICE": 10,
+      "SRX": 142,
+      "SEATING": 17,
+      "APS": 116,
+      "MOBILE_FOOD": 19,
+      "MANUFACTURER": 20,
+      "TEMP_PERMIT": 30,
+      "BEV": 19
+    },
+    "topCities": [
+      {
+        "city": "Santa Rosa Beach",
+        "count": 171
+      },
+      {
+        "city": "Miramar Beach",
+        "count": 105
+      },
+      {
+        "city": "Defuniak Springs",
+        "count": 82
+      },
+      {
+        "city": "Freeport",
+        "count": 46
+      },
+      {
+        "city": "Inlet Beach",
+        "count": 33
+      },
+      {
+        "city": "Destin",
+        "count": 17
+      }
+    ]
+  },
+  "taylor": {
+    "total": 85,
+    "newFilings": 12,
+    "byType": {
+      "APS": 39,
+      "FOOD_SERVICE": 5,
+      "MOBILE_FOOD": 3,
+      "TEMP_PERMIT": 7,
+      "SEATING": 1,
+      "COP": 14,
+      "BEV": 8,
+      "SRX": 8
+    },
+    "topCities": [
+      {
+        "city": "Perry",
+        "count": 56
+      },
+      {
+        "city": "Steinhatchee",
+        "count": 24
+      },
+      {
+        "city": "No City Code",
+        "count": 2
+      },
+      {
+        "city": "Salem",
+        "count": 2
+      },
+      {
+        "city": "Lamont",
+        "count": 1
+      }
+    ]
+  },
+  "gilchrist": {
+    "total": 39,
+    "newFilings": 4,
+    "byType": {
+      "COP": 9,
+      "SEATING": 1,
+      "MOBILE_FOOD": 2,
+      "APS": 20,
+      "SRX": 3,
+      "BEV": 4
+    },
+    "topCities": [
+      {
+        "city": "Trenton",
+        "count": 22
+      },
+      {
+        "city": "Bell",
+        "count": 7
+      },
+      {
+        "city": "Fanning Springs",
+        "count": 5
+      },
+      {
+        "city": "High Springs",
+        "count": 3
+      },
+      {
+        "city": "Branford",
+        "count": 1
+      },
+      {
+        "city": "No City Code",
+        "count": 1
+      }
+    ]
+  },
+  "citrus": {
+    "total": 411,
+    "newFilings": 47,
+    "byType": {
+      "TEMP_PERMIT": 18,
+      "FOOD_SERVICE": 7,
+      "SEATING": 8,
+      "COP": 121,
+      "APS": 151,
+      "MOBILE_FOOD": 21,
+      "BEV": 29,
+      "SRX": 49,
+      "MANUFACTURER": 7
+    },
+    "topCities": [
+      {
+        "city": "Crystal River",
+        "count": 115
+      },
+      {
+        "city": "Homosassa",
+        "count": 87
+      },
+      {
+        "city": "Inverness",
+        "count": 83
+      },
+      {
+        "city": "Hernando",
+        "count": 35
+      },
+      {
+        "city": "Lecanto",
+        "count": 28
+      },
+      {
+        "city": "Floral City",
+        "count": 18
+      }
+    ]
+  },
+  "brevard": {
+    "total": 1813,
+    "newFilings": 225,
+    "byType": {
+      "TEMP_PERMIT": 86,
+      "SRX": 273,
+      "FOOD_SERVICE": 69,
+      "COP": 555,
+      "SEATING": 53,
+      "APS": 615,
+      "MOBILE_FOOD": 51,
+      "BEV": 76,
+      "MANUFACTURER": 34,
+      "BOTTLE_CLUB": 1
+    },
+    "topCities": [
+      {
+        "city": "Melbourne",
+        "count": 510
+      },
+      {
+        "city": "Palm Bay",
+        "count": 191
+      },
+      {
+        "city": "Cocoa",
+        "count": 174
+      },
+      {
+        "city": "Titusville",
+        "count": 159
+      },
+      {
+        "city": "Cocoa Beach",
+        "count": 148
+      },
+      {
+        "city": "Merritt Island",
+        "count": 118
+      }
+    ]
+  },
+  "marion": {
+    "total": 978,
+    "newFilings": 155,
+    "byType": {
+      "TEMP_PERMIT": 32,
+      "FOOD_SERVICE": 37,
+      "MOBILE_FOOD": 75,
+      "APS": 432,
+      "COP": 196,
+      "SEATING": 24,
+      "SRX": 122,
+      "BEV": 44,
+      "MANUFACTURER": 12,
+      "BOTTLE_CLUB": 4
+    },
+    "topCities": [
+      {
+        "city": "Ocala",
+        "count": 693
+      },
+      {
+        "city": "Belleview",
+        "count": 54
+      },
+      {
+        "city": "Dunnellon",
+        "count": 48
+      },
+      {
+        "city": "Summerfield",
+        "count": 40
+      },
+      {
+        "city": "Silver Springs",
+        "count": 23
+      },
+      {
+        "city": "Ocklawaha",
+        "count": 16
+      }
+    ]
+  },
+  "flagler": {
+    "total": 309,
+    "newFilings": 33,
+    "byType": {
+      "COP": 99,
+      "FOOD_SERVICE": 6,
+      "SEATING": 11,
+      "SRX": 53,
+      "TEMP_PERMIT": 18,
+      "MOBILE_FOOD": 6,
+      "APS": 90,
+      "BEV": 18,
+      "MANUFACTURER": 8
+    },
+    "topCities": [
+      {
+        "city": "Palm Coast",
+        "count": 186
+      },
+      {
+        "city": "Flagler Beach",
+        "count": 62
+      },
+      {
+        "city": "Bunnell",
+        "count": 57
+      },
+      {
+        "city": "No City Code",
+        "count": 2
+      },
+      {
+        "city": "Ormond Beach",
+        "count": 1
+      },
+      {
+        "city": "City Palm Coast",
+        "count": 1
+      }
+    ]
+  },
+  "columbia": {
+    "total": 219,
+    "newFilings": 25,
+    "byType": {
+      "COP": 48,
+      "FOOD_SERVICE": 5,
+      "TEMP_PERMIT": 9,
+      "MOBILE_FOOD": 9,
+      "SRX": 20,
+      "SEATING": 6,
+      "BEV": 20,
+      "APS": 99,
+      "MANUFACTURER": 3
+    },
+    "topCities": [
+      {
+        "city": "Lake City",
+        "count": 197
+      },
+      {
+        "city": "Fort White",
+        "count": 14
+      },
+      {
+        "city": "High Springs",
+        "count": 4
+      },
+      {
+        "city": "White Springs",
+        "count": 2
+      },
+      {
+        "city": "No City Code",
+        "count": 1
+      },
+      {
+        "city": "Ellisville",
+        "count": 1
       }
     ]
   },
   "escambia": {
-    "total": 994,
-    "newFilings": 125,
+    "total": 1057,
+    "newFilings": 141,
     "byType": {
+      "COP": 271,
       "FOOD_SERVICE": 41,
       "MOBILE_FOOD": 36,
-      "COP": 424,
+      "TEMP_PERMIT": 44,
       "APS": 424,
+      "MANUFACTURER": 18,
       "SEATING": 34,
-      "BEV": 35
+      "BEV": 35,
+      "SRX": 154
     },
     "topCities": [
       {
         "city": "Pensacola",
-        "count": 864
+        "count": 921
       },
       {
         "city": "Pensacola Beach",
-        "count": 56
+        "count": 62
       },
       {
         "city": "Cantonment",
@@ -633,71 +1215,200 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "polk": {
-    "total": 1599,
-    "newFilings": 285,
+  "pinellas": {
+    "total": 3461,
+    "newFilings": 423,
     "byType": {
-      "FOOD_SERVICE": 76,
-      "COP": 557,
-      "SEATING": 56,
-      "APS": 746,
-      "MOBILE_FOOD": 122,
-      "BEV": 42
+      "COP": 1226,
+      "FOOD_SERVICE": 155,
+      "TEMP_PERMIT": 218,
+      "MANUFACTURER": 117,
+      "SEATING": 89,
+      "MOBILE_FOOD": 77,
+      "SRX": 534,
+      "APS": 931,
+      "BOTTLE_CLUB": 2,
+      "BEV": 112
     },
     "topCities": [
       {
-        "city": "Lakeland",
-        "count": 565
+        "city": "St. Petersburg",
+        "count": 892
       },
       {
-        "city": "Winter Haven",
-        "count": 282
+        "city": "Clearwater",
+        "count": 635
       },
       {
-        "city": "Davenport",
-        "count": 158
+        "city": "Largo",
+        "count": 302
       },
       {
-        "city": "Haines City",
-        "count": 124
+        "city": "Dunedin",
+        "count": 209
       },
       {
-        "city": "Lake Wales",
-        "count": 119
+        "city": "Pinellas Park",
+        "count": 191
       },
       {
-        "city": "Auburndale",
-        "count": 72
+        "city": "Palm Harbor",
+        "count": 173
+      }
+    ]
+  },
+  "levy": {
+    "total": 160,
+    "newFilings": 33,
+    "byType": {
+      "FOOD_SERVICE": 13,
+      "MOBILE_FOOD": 11,
+      "APS": 63,
+      "TEMP_PERMIT": 4,
+      "SEATING": 7,
+      "BEV": 19,
+      "SRX": 8,
+      "COP": 35
+    },
+    "topCities": [
+      {
+        "city": "Chiefland",
+        "count": 45
+      },
+      {
+        "city": "Williston",
+        "count": 41
+      },
+      {
+        "city": "Cedar Key",
+        "count": 19
+      },
+      {
+        "city": "Inglis",
+        "count": 15
+      },
+      {
+        "city": "Bronson",
+        "count": 14
+      },
+      {
+        "city": "Fanning Springs",
+        "count": 8
+      }
+    ]
+  },
+  "manatee": {
+    "total": 1203,
+    "newFilings": 180,
+    "byType": {
+      "FOOD_SERVICE": 24,
+      "TEMP_PERMIT": 74,
+      "SEATING": 53,
+      "COP": 351,
+      "MOBILE_FOOD": 68,
+      "SRX": 197,
+      "APS": 346,
+      "MANUFACTURER": 33,
+      "BEV": 57
+    },
+    "topCities": [
+      {
+        "city": "Bradenton",
+        "count": 694
+      },
+      {
+        "city": "Palmetto",
+        "count": 123
+      },
+      {
+        "city": "Sarasota",
+        "count": 73
+      },
+      {
+        "city": "Parrish",
+        "count": 52
+      },
+      {
+        "city": "Lakewood Ranch",
+        "count": 50
+      },
+      {
+        "city": "Ellenton",
+        "count": 39
+      }
+    ]
+  },
+  "charlotte": {
+    "total": 574,
+    "newFilings": 74,
+    "byType": {
+      "FOOD_SERVICE": 8,
+      "TEMP_PERMIT": 71,
+      "MOBILE_FOOD": 21,
+      "COP": 140,
+      "SEATING": 19,
+      "BEV": 40,
+      "APS": 172,
+      "SRX": 97,
+      "MANUFACTURER": 6
+    },
+    "topCities": [
+      {
+        "city": "Port Charlotte",
+        "count": 255
+      },
+      {
+        "city": "Punta Gorda",
+        "count": 200
+      },
+      {
+        "city": "Englewood",
+        "count": 77
+      },
+      {
+        "city": "Rotonda West",
+        "count": 18
+      },
+      {
+        "city": "Placida",
+        "count": 9
+      },
+      {
+        "city": "No City Code",
+        "count": 6
       }
     ]
   },
   "collier": {
-    "total": 1323,
+    "total": 1394,
     "newFilings": 117,
     "byType": {
       "FOOD_SERVICE": 32,
       "APS": 370,
       "SEATING": 45,
-      "COP": 739,
+      "SRX": 349,
+      "COP": 389,
+      "MANUFACTURER": 19,
       "BEV": 120,
-      "MOBILE_FOOD": 17
+      "MOBILE_FOOD": 17,
+      "TEMP_PERMIT": 53
     },
     "topCities": [
       {
         "city": "Naples",
-        "count": 1093
+        "count": 1141
       },
       {
         "city": "Marco Island",
-        "count": 104
+        "count": 124
       },
       {
         "city": "Immokalee",
-        "count": 71
+        "count": 72
       },
       {
         "city": "Everglades City",
-        "count": 14
+        "count": 15
       },
       {
         "city": "No City Code",
@@ -705,25 +1416,27 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Ave Maria",
-        "count": 9
+        "count": 10
       }
     ]
   },
   "gulf": {
-    "total": 87,
-    "newFilings": 10,
+    "total": 90,
+    "newFilings": 11,
     "byType": {
       "FOOD_SERVICE": 3,
       "SEATING": 4,
-      "COP": 46,
+      "TEMP_PERMIT": 3,
+      "SRX": 15,
       "MOBILE_FOOD": 2,
       "BEV": 4,
-      "APS": 28
+      "APS": 28,
+      "COP": 31
     },
     "topCities": [
       {
         "city": "Port St Joe",
-        "count": 51
+        "count": 53
       },
       {
         "city": "Wewahitchka",
@@ -731,7 +1444,7 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Port Saint Joe",
-        "count": 7
+        "count": 8
       },
       {
         "city": "No City Code",
@@ -743,75 +1456,40 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "palm-beach": {
-    "total": 3690,
-    "newFilings": 425,
-    "byType": {
-      "FOOD_SERVICE": 126,
-      "COP": 1878,
-      "SEATING": 144,
-      "APS": 1236,
-      "MOBILE_FOOD": 98,
-      "BEV": 208
-    },
-    "topCities": [
-      {
-        "city": "West Palm Beach",
-        "count": 760
-      },
-      {
-        "city": "Boca Raton",
-        "count": 571
-      },
-      {
-        "city": "Delray Beach",
-        "count": 348
-      },
-      {
-        "city": "Boynton Beach",
-        "count": 311
-      },
-      {
-        "city": "Lake Worth",
-        "count": 284
-      },
-      {
-        "city": "Jupiter",
-        "count": 225
-      }
-    ]
-  },
   "volusia": {
-    "total": 1666,
-    "newFilings": 192,
+    "total": 1746,
+    "newFilings": 200,
     "byType": {
       "FOOD_SERVICE": 54,
-      "COP": 837,
-      "APS": 589,
+      "COP": 551,
+      "APS": 588,
       "MOBILE_FOOD": 71,
+      "SRX": 283,
       "SEATING": 44,
-      "BEV": 71
+      "BEV": 71,
+      "TEMP_PERMIT": 61,
+      "MANUFACTURER": 23
     },
     "topCities": [
       {
         "city": "Daytona Beach",
-        "count": 409
+        "count": 444
       },
       {
         "city": "Ormond Beach",
-        "count": 222
+        "count": 235
       },
       {
         "city": "New Smyrna Beach",
-        "count": 205
+        "count": 221
       },
       {
         "city": "Deland",
-        "count": 193
+        "count": 200
       },
       {
         "city": "Port Orange",
-        "count": 146
+        "count": 150
       },
       {
         "city": "Deltona",
@@ -820,96 +1498,107 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "sarasota": {
-    "total": 1423,
-    "newFilings": 153,
+    "total": 1578,
+    "newFilings": 159,
     "byType": {
       "FOOD_SERVICE": 42,
-      "COP": 840,
+      "COP": 514,
       "APS": 364,
+      "SRX": 324,
       "MOBILE_FOOD": 45,
       "SEATING": 43,
-      "BEV": 89
+      "TEMP_PERMIT": 122,
+      "BEV": 89,
+      "MANUFACTURER": 34,
+      "BOTTLE_CLUB": 1
     },
     "topCities": [
       {
         "city": "Sarasota",
-        "count": 925
+        "count": 1019
       },
       {
         "city": "Venice",
-        "count": 255
+        "count": 290
       },
       {
         "city": "North Port",
-        "count": 95
+        "count": 101
       },
       {
         "city": "Englewood",
-        "count": 46
+        "count": 58
       },
       {
         "city": "Nokomis",
-        "count": 45
+        "count": 48
       },
       {
         "city": "Osprey",
-        "count": 25
+        "count": 24
       }
     ]
   },
   "seminole": {
-    "total": 1002,
-    "newFilings": 107,
+    "total": 1069,
+    "newFilings": 113,
     "byType": {
       "FOOD_SERVICE": 39,
       "SEATING": 31,
       "MOBILE_FOOD": 27,
-      "COP": 517,
+      "TEMP_PERMIT": 28,
+      "COP": 336,
+      "SRX": 181,
+      "MANUFACTURER": 38,
       "APS": 351,
-      "BEV": 37
+      "BEV": 37,
+      "BOTTLE_CLUB": 1
     },
     "topCities": [
       {
         "city": "Sanford",
-        "count": 263
+        "count": 282
       },
       {
         "city": "Altamonte Springs",
-        "count": 143
-      },
-      {
-        "city": "Oviedo",
-        "count": 140
+        "count": 157
       },
       {
         "city": "Longwood",
-        "count": 138
+        "count": 152
+      },
+      {
+        "city": "Oviedo",
+        "count": 144
       },
       {
         "city": "Lake Mary",
-        "count": 113
+        "count": 115
       },
       {
         "city": "Casselberry",
-        "count": 78
+        "count": 83
       }
     ]
   },
   "suwannee": {
-    "total": 100,
+    "total": 105,
     "newFilings": 14,
     "byType": {
       "FOOD_SERVICE": 6,
       "SEATING": 6,
       "MOBILE_FOOD": 2,
       "APS": 54,
-      "COP": 26,
+      "TEMP_PERMIT": 4,
+      "COP": 18,
+      "SRX": 8,
+      "MANUFACTURER": 1,
       "BEV": 6
     },
     "topCities": [
       {
         "city": "Live Oak",
-        "count": 75
+        "count": 79
       },
       {
         "city": "Branford",
@@ -928,25 +1617,28 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
         "count": 2
       },
       {
-        "city": "Mc Alpin",
+        "city": "Mcalpin",
         "count": 2
       }
     ]
   },
   "hardee": {
-    "total": 51,
+    "total": 53,
     "newFilings": 3,
     "byType": {
       "FOOD_SERVICE": 2,
       "MOBILE_FOOD": 1,
       "APS": 31,
-      "COP": 12,
-      "BEV": 5
+      "TEMP_PERMIT": 1,
+      "COP": 8,
+      "SRX": 4,
+      "BEV": 5,
+      "MANUFACTURER": 1
     },
     "topCities": [
       {
         "city": "Wauchula",
-        "count": 33
+        "count": 34
       },
       {
         "city": "Bowling Green",
@@ -954,7 +1646,7 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Zolfo Springs",
-        "count": 7
+        "count": 8
       },
       {
         "city": "Ona",
@@ -962,63 +1654,28 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "marion": {
-    "total": 931,
-    "newFilings": 152,
-    "byType": {
-      "FOOD_SERVICE": 37,
-      "MOBILE_FOOD": 75,
-      "APS": 432,
-      "COP": 319,
-      "SEATING": 24,
-      "BEV": 44
-    },
-    "topCities": [
-      {
-        "city": "Ocala",
-        "count": 651
-      },
-      {
-        "city": "Belleview",
-        "count": 52
-      },
-      {
-        "city": "Dunnellon",
-        "count": 47
-      },
-      {
-        "city": "Summerfield",
-        "count": 38
-      },
-      {
-        "city": "Silver Springs",
-        "count": 23
-      },
-      {
-        "city": "Ocklawaha",
-        "count": 16
-      }
-    ]
-  },
   "st-lucie": {
-    "total": 777,
-    "newFilings": 131,
+    "total": 829,
+    "newFilings": 135,
     "byType": {
       "FOOD_SERVICE": 38,
-      "COP": 327,
+      "SRX": 105,
       "MOBILE_FOOD": 56,
+      "TEMP_PERMIT": 37,
       "SEATING": 24,
       "APS": 302,
-      "BEV": 30
+      "COP": 222,
+      "BEV": 30,
+      "MANUFACTURER": 15
     },
     "topCities": [
       {
-        "city": "Port St Lucie",
-        "count": 343
+        "city": "Fort Pierce",
+        "count": 361
       },
       {
-        "city": "Fort Pierce",
-        "count": 328
+        "city": "Port St Lucie",
+        "count": 353
       },
       {
         "city": "Port Saint Lucie",
@@ -1026,117 +1683,44 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Ft Pierce",
-        "count": 25
+        "count": 26
       },
       {
         "city": "Jensen Beach",
-        "count": 14
+        "count": 16
       },
       {
         "city": "Port St. Lucie",
-        "count": 7
-      }
-    ]
-  },
-  "monroe": {
-    "total": 825,
-    "newFilings": 50,
-    "byType": {
-      "FOOD_SERVICE": 11,
-      "COP": 541,
-      "MOBILE_FOOD": 20,
-      "BEV": 56,
-      "SEATING": 8,
-      "APS": 189
-    },
-    "topCities": [
-      {
-        "city": "Key West",
-        "count": 432
-      },
-      {
-        "city": "Marathon",
-        "count": 95
-      },
-      {
-        "city": "Key Largo",
-        "count": 94
-      },
-      {
-        "city": "Islamorada",
-        "count": 81
-      },
-      {
-        "city": "Tavernier",
-        "count": 32
-      },
-      {
-        "city": "Big Pine Key",
-        "count": 28
-      }
-    ]
-  },
-  "st-johns": {
-    "total": 904,
-    "newFilings": 109,
-    "byType": {
-      "FOOD_SERVICE": 18,
-      "COP": 525,
-      "APS": 239,
-      "MOBILE_FOOD": 30,
-      "SEATING": 50,
-      "BEV": 42
-    },
-    "topCities": [
-      {
-        "city": "Saint Augustine",
-        "count": 476
-      },
-      {
-        "city": "St. Johns",
-        "count": 83
-      },
-      {
-        "city": "Ponte Vedra Beach",
-        "count": 76
-      },
-      {
-        "city": "St Augustine",
-        "count": 73
-      },
-      {
-        "city": "Ponte Vedra",
-        "count": 40
-      },
-      {
-        "city": "St. Augustine",
-        "count": 33
+        "count": 12
       }
     ]
   },
   "clay": {
-    "total": 370,
+    "total": 383,
     "newFilings": 44,
     "byType": {
       "FOOD_SERVICE": 10,
       "APS": 169,
       "SEATING": 17,
       "MOBILE_FOOD": 12,
-      "COP": 145,
-      "BEV": 17
+      "COP": 83,
+      "SRX": 61,
+      "BEV": 17,
+      "TEMP_PERMIT": 9,
+      "MANUFACTURER": 5
     },
     "topCities": [
       {
         "city": "Orange Park",
-        "count": 167
+        "count": 171
       },
       {
         "city": "Middleburg",
-        "count": 71
+        "count": 76
       },
       {
         "city": "Green Cove Springs",
-        "count": 57
+        "count": 61
       },
       {
         "city": "Fleming Island",
@@ -1152,67 +1736,32 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "osceola": {
-    "total": 939,
-    "newFilings": 169,
-    "byType": {
-      "FOOD_SERVICE": 41,
-      "MOBILE_FOOD": 81,
-      "COP": 444,
-      "APS": 310,
-      "SEATING": 33,
-      "BEV": 30
-    },
-    "topCities": [
-      {
-        "city": "Kissimmee",
-        "count": 710
-      },
-      {
-        "city": "St. Cloud",
-        "count": 91
-      },
-      {
-        "city": "Saint Cloud",
-        "count": 40
-      },
-      {
-        "city": "Celebration",
-        "count": 30
-      },
-      {
-        "city": "Davenport",
-        "count": 18
-      },
-      {
-        "city": "Champions Gate",
-        "count": 12
-      }
-    ]
-  },
   "indian-river": {
-    "total": 469,
-    "newFilings": 42,
+    "total": 532,
+    "newFilings": 46,
     "byType": {
       "FOOD_SERVICE": 6,
       "SEATING": 14,
-      "COP": 234,
+      "COP": 151,
       "APS": 160,
+      "TEMP_PERMIT": 53,
       "MOBILE_FOOD": 17,
-      "BEV": 38
+      "MANUFACTURER": 11,
+      "BEV": 38,
+      "SRX": 82
     },
     "topCities": [
       {
         "city": "Vero Beach",
-        "count": 350
+        "count": 396
       },
       {
         "city": "Sebastian",
-        "count": 85
+        "count": 98
       },
       {
         "city": "Fellsmere",
-        "count": 16
+        "count": 20
       },
       {
         "city": "No City Code",
@@ -1225,44 +1774,6 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       {
         "city": "Orchid",
         "count": 3
-      }
-    ]
-  },
-  "citrus": {
-    "total": 386,
-    "newFilings": 43,
-    "byType": {
-      "FOOD_SERVICE": 7,
-      "SEATING": 8,
-      "COP": 170,
-      "APS": 151,
-      "MOBILE_FOOD": 21,
-      "BEV": 29
-    },
-    "topCities": [
-      {
-        "city": "Crystal River",
-        "count": 108
-      },
-      {
-        "city": "Homosassa",
-        "count": 80
-      },
-      {
-        "city": "Inverness",
-        "count": 76
-      },
-      {
-        "city": "Hernando",
-        "count": 35
-      },
-      {
-        "city": "Lecanto",
-        "count": 26
-      },
-      {
-        "city": "Floral City",
-        "count": 17
       }
     ]
   },
@@ -1282,105 +1793,36 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "alachua": {
-    "total": 737,
-    "newFilings": 81,
-    "byType": {
-      "FOOD_SERVICE": 20,
-      "APS": 286,
-      "SEATING": 27,
-      "COP": 359,
-      "MOBILE_FOOD": 26,
-      "BEV": 19
-    },
-    "topCities": [
-      {
-        "city": "Gainesville",
-        "count": 560
-      },
-      {
-        "city": "Alachua",
-        "count": 39
-      },
-      {
-        "city": "Newberry",
-        "count": 39
-      },
-      {
-        "city": "High Springs",
-        "count": 31
-      },
-      {
-        "city": "Hawthorne",
-        "count": 24
-      },
-      {
-        "city": "No City Code",
-        "count": 10
-      }
-    ]
-  },
-  "flagler": {
-    "total": 282,
-    "newFilings": 26,
-    "byType": {
-      "FOOD_SERVICE": 6,
-      "SEATING": 11,
-      "COP": 151,
-      "MOBILE_FOOD": 6,
-      "APS": 90,
-      "BEV": 18
-    },
-    "topCities": [
-      {
-        "city": "Palm Coast",
-        "count": 171
-      },
-      {
-        "city": "Flagler Beach",
-        "count": 57
-      },
-      {
-        "city": "Bunnell",
-        "count": 51
-      },
-      {
-        "city": "No City Code",
-        "count": 2
-      },
-      {
-        "city": "City Palm Coast",
-        "count": 1
-      }
-    ]
-  },
   "santa-rosa": {
-    "total": 349,
-    "newFilings": 42,
+    "total": 365,
+    "newFilings": 43,
     "byType": {
       "FOOD_SERVICE": 7,
+      "TEMP_PERMIT": 8,
       "MOBILE_FOOD": 20,
       "SEATING": 12,
       "APS": 184,
       "BEV": 10,
-      "COP": 116
+      "COP": 67,
+      "SRX": 49,
+      "MANUFACTURER": 8
     },
     "topCities": [
       {
         "city": "Milton",
-        "count": 115
+        "count": 122
       },
       {
         "city": "Navarre",
-        "count": 82
+        "count": 87
       },
       {
         "city": "Gulf Breeze",
-        "count": 71
+        "count": 74
       },
       {
         "city": "Pace",
-        "count": 62
+        "count": 63
       },
       {
         "city": "Jay",
@@ -1392,139 +1834,73 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "taylor": {
-    "total": 77,
-    "newFilings": 9,
-    "byType": {
-      "FOOD_SERVICE": 5,
-      "MOBILE_FOOD": 3,
-      "SEATING": 1,
-      "APS": 38,
-      "COP": 22,
-      "BEV": 8
-    },
-    "topCities": [
-      {
-        "city": "Perry",
-        "count": 54
-      },
-      {
-        "city": "Steinhatchee",
-        "count": 18
-      },
-      {
-        "city": "No City Code",
-        "count": 2
-      },
-      {
-        "city": "Salem",
-        "count": 2
-      },
-      {
-        "city": "Lamont",
-        "count": 1
-      }
-    ]
-  },
   "putnam": {
-    "total": 220,
-    "newFilings": 26,
+    "total": 237,
+    "newFilings": 30,
     "byType": {
       "FOOD_SERVICE": 8,
-      "COP": 74,
+      "TEMP_PERMIT": 15,
+      "COP": 61,
       "SEATING": 5,
       "APS": 112,
+      "SRX": 13,
       "MOBILE_FOOD": 9,
-      "BEV": 12
+      "BEV": 12,
+      "MANUFACTURER": 2
     },
     "topCities": [
       {
         "city": "Palatka",
-        "count": 95
+        "count": 105
       },
       {
         "city": "Crescent City",
-        "count": 33
+        "count": 34
       },
       {
         "city": "East Palatka",
-        "count": 22
+        "count": 23
+      },
+      {
+        "city": "Melrose",
+        "count": 18
       },
       {
         "city": "Interlachen",
         "count": 17
       },
       {
-        "city": "Melrose",
-        "count": 14
-      },
-      {
-        "city": "Welaka",
+        "city": "Satsuma",
         "count": 7
       }
     ]
   },
-  "pasco": {
-    "total": 1125,
-    "newFilings": 161,
-    "byType": {
-      "FOOD_SERVICE": 38,
-      "APS": 465,
-      "COP": 464,
-      "MOBILE_FOOD": 53,
-      "SEATING": 47,
-      "BEV": 58
-    },
-    "topCities": [
-      {
-        "city": "New Port Richey",
-        "count": 266
-      },
-      {
-        "city": "Wesley Chapel",
-        "count": 145
-      },
-      {
-        "city": "Hudson",
-        "count": 125
-      },
-      {
-        "city": "Zephyrhills",
-        "count": 108
-      },
-      {
-        "city": "Port Richey",
-        "count": 99
-      },
-      {
-        "city": "Dade City",
-        "count": 96
-      }
-    ]
-  },
   "hernando": {
-    "total": 407,
-    "newFilings": 49,
+    "total": 434,
+    "newFilings": 52,
     "byType": {
       "FOOD_SERVICE": 11,
       "APS": 171,
       "MOBILE_FOOD": 24,
       "SEATING": 10,
-      "COP": 165,
-      "BEV": 26
+      "COP": 113,
+      "TEMP_PERMIT": 12,
+      "BEV": 26,
+      "SRX": 52,
+      "MANUFACTURER": 15
     },
     "topCities": [
       {
-        "city": "Spring Hill",
-        "count": 175
+        "city": "Brooksville",
+        "count": 189
       },
       {
-        "city": "Brooksville",
-        "count": 173
+        "city": "Spring Hill",
+        "count": 181
       },
       {
         "city": "Weeki Wachee",
-        "count": 28
+        "count": 31
       },
       {
         "city": "Hernando Beach",
@@ -1532,7 +1908,7 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Masaryktown",
-        "count": 9
+        "count": 10
       },
       {
         "city": "No City Code",
@@ -1541,28 +1917,31 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "highlands": {
-    "total": 278,
-    "newFilings": 33,
+    "total": 308,
+    "newFilings": 38,
     "byType": {
       "FOOD_SERVICE": 5,
-      "COP": 113,
+      "TEMP_PERMIT": 19,
+      "COP": 80,
       "SEATING": 11,
+      "SRX": 33,
       "MOBILE_FOOD": 11,
+      "MANUFACTURER": 11,
       "BEV": 20,
       "APS": 118
     },
     "topCities": [
       {
         "city": "Sebring",
-        "count": 146
-      },
-      {
-        "city": "Avon Park",
-        "count": 63
+        "count": 166
       },
       {
         "city": "Lake Placid",
-        "count": 60
+        "count": 69
+      },
+      {
+        "city": "Avon Park",
+        "count": 64
       },
       {
         "city": "Lorida",
@@ -1579,24 +1958,27 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "hendry": {
-    "total": 139,
+    "total": 146,
     "newFilings": 18,
     "byType": {
       "FOOD_SERVICE": 6,
       "MOBILE_FOOD": 7,
-      "COP": 54,
+      "COP": 43,
       "SEATING": 4,
       "BEV": 10,
-      "APS": 58
+      "APS": 58,
+      "TEMP_PERMIT": 4,
+      "SRX": 11,
+      "MANUFACTURER": 3
     },
     "topCities": [
       {
         "city": "Labelle",
-        "count": 69
+        "count": 75
       },
       {
         "city": "Clewiston",
-        "count": 67
+        "count": 68
       },
       {
         "city": "Felda",
@@ -1616,7 +1998,8 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       "MOBILE_FOOD": 3,
       "APS": 33,
       "BEV": 5,
-      "COP": 13
+      "COP": 8,
+      "SRX": 5
     },
     "topCities": [
       {
@@ -1638,15 +2021,17 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "bradford": {
-    "total": 71,
+    "total": 72,
     "newFilings": 10,
     "byType": {
       "FOOD_SERVICE": 3,
       "MOBILE_FOOD": 5,
       "SEATING": 2,
       "APS": 36,
-      "COP": 18,
-      "BEV": 7
+      "TEMP_PERMIT": 1,
+      "COP": 12,
+      "BEV": 7,
+      "SRX": 6
     },
     "topCities": [
       {
@@ -1680,11 +2065,12 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     "newFilings": 6,
     "byType": {
       "FOOD_SERVICE": 2,
-      "COP": 7,
+      "SRX": 4,
       "SEATING": 2,
       "MOBILE_FOOD": 1,
       "APS": 39,
-      "BEV": 7
+      "BEV": 7,
+      "COP": 3
     },
     "topCities": [
       {
@@ -1710,31 +2096,33 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "washington": {
-    "total": 66,
+    "total": 68,
     "newFilings": 9,
     "byType": {
       "FOOD_SERVICE": 2,
       "MOBILE_FOOD": 4,
-      "COP": 13,
+      "COP": 7,
       "SEATING": 2,
       "APS": 40,
-      "BEV": 5
+      "MANUFACTURER": 2,
+      "BEV": 5,
+      "SRX": 6
     },
     "topCities": [
       {
         "city": "Chipley",
-        "count": 44
+        "count": 45
       },
       {
         "city": "Vernon",
         "count": 10
       },
       {
-        "city": "Caryville",
-        "count": 4
+        "city": "Ebro",
+        "count": 5
       },
       {
-        "city": "Ebro",
+        "city": "Caryville",
         "count": 4
       },
       {
@@ -1747,44 +2135,6 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "lake": {
-    "total": 996,
-    "newFilings": 178,
-    "byType": {
-      "FOOD_SERVICE": 57,
-      "APS": 354,
-      "COP": 429,
-      "SEATING": 42,
-      "MOBILE_FOOD": 66,
-      "BEV": 48
-    },
-    "topCities": [
-      {
-        "city": "Clermont",
-        "count": 240
-      },
-      {
-        "city": "Leesburg",
-        "count": 158
-      },
-      {
-        "city": "Eustis",
-        "count": 153
-      },
-      {
-        "city": "Mount Dora",
-        "count": 114
-      },
-      {
-        "city": "Tavares",
-        "count": 65
-      },
-      {
-        "city": "Lady Lake",
-        "count": 49
-      }
-    ]
-  },
   "calhoun": {
     "total": 30,
     "newFilings": 1,
@@ -1792,7 +2142,8 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       "FOOD_SERVICE": 1,
       "BEV": 2,
       "APS": 20,
-      "COP": 7
+      "SRX": 2,
+      "COP": 5
     },
     "topCities": [
       {
@@ -1813,62 +2164,27 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "jackson": {
-    "total": 134,
-    "newFilings": 21,
-    "byType": {
-      "FOOD_SERVICE": 5,
-      "APS": 72,
-      "MOBILE_FOOD": 10,
-      "SEATING": 3,
-      "BEV": 16,
-      "COP": 28
-    },
-    "topCities": [
-      {
-        "city": "Marianna",
-        "count": 62
-      },
-      {
-        "city": "Graceville",
-        "count": 15
-      },
-      {
-        "city": "Cottondale",
-        "count": 13
-      },
-      {
-        "city": "Sneads",
-        "count": 12
-      },
-      {
-        "city": "Alford",
-        "count": 10
-      },
-      {
-        "city": "Campbellton",
-        "count": 7
-      }
-    ]
-  },
   "jefferson": {
-    "total": 43,
-    "newFilings": 4,
+    "total": 47,
+    "newFilings": 5,
     "byType": {
       "FOOD_SERVICE": 2,
-      "COP": 13,
+      "TEMP_PERMIT": 2,
+      "SRX": 6,
       "SEATING": 1,
+      "COP": 7,
       "BEV": 5,
-      "APS": 22
+      "APS": 22,
+      "MANUFACTURER": 2
     },
     "topCities": [
       {
         "city": "Monticello",
-        "count": 31
+        "count": 34
       },
       {
         "city": "Lamont",
-        "count": 8
+        "count": 9
       },
       {
         "city": "Wacissa",
@@ -1881,32 +2197,35 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "gadsden": {
-    "total": 135,
-    "newFilings": 26,
+    "total": 147,
+    "newFilings": 32,
     "byType": {
       "FOOD_SERVICE": 4,
       "APS": 66,
       "MOBILE_FOOD": 16,
+      "TEMP_PERMIT": 11,
       "SEATING": 5,
-      "COP": 29,
-      "BEV": 15
+      "COP": 21,
+      "BEV": 15,
+      "SRX": 8,
+      "MANUFACTURER": 1
     },
     "topCities": [
       {
         "city": "Quincy",
-        "count": 61
+        "count": 66
       },
       {
         "city": "Havana",
-        "count": 32
+        "count": 36
       },
       {
         "city": "Midway",
-        "count": 16
+        "count": 17
       },
       {
         "city": "Chattahoochee",
-        "count": 14
+        "count": 16
       },
       {
         "city": "Gretna",
@@ -1918,59 +2237,24 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "martin": {
-    "total": 559,
-    "newFilings": 43,
-    "byType": {
-      "FOOD_SERVICE": 12,
-      "COP": 291,
-      "SEATING": 14,
-      "MOBILE_FOOD": 12,
-      "APS": 184,
-      "BEV": 46
-    },
-    "topCities": [
-      {
-        "city": "Stuart",
-        "count": 310
-      },
-      {
-        "city": "Jensen Beach",
-        "count": 91
-      },
-      {
-        "city": "Hobe Sound",
-        "count": 57
-      },
-      {
-        "city": "Palm City",
-        "count": 50
-      },
-      {
-        "city": "Indiantown",
-        "count": 23
-      },
-      {
-        "city": "Tequesta",
-        "count": 8
-      }
-    ]
-  },
   "desoto": {
-    "total": 86,
+    "total": 94,
     "newFilings": 9,
     "byType": {
       "FOOD_SERVICE": 2,
-      "COP": 33,
+      "COP": 28,
       "MOBILE_FOOD": 3,
       "SEATING": 2,
       "BEV": 11,
-      "APS": 35
+      "APS": 35,
+      "TEMP_PERMIT": 7,
+      "SRX": 5,
+      "MANUFACTURER": 1
     },
     "topCities": [
       {
         "city": "Arcadia",
-        "count": 78
+        "count": 86
       },
       {
         "city": "No City Code",
@@ -1986,58 +2270,22 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "columbia": {
-    "total": 206,
-    "newFilings": 22,
-    "byType": {
-      "FOOD_SERVICE": 5,
-      "COP": 67,
-      "MOBILE_FOOD": 9,
-      "SEATING": 6,
-      "BEV": 20,
-      "APS": 99
-    },
-    "topCities": [
-      {
-        "city": "Lake City",
-        "count": 185
-      },
-      {
-        "city": "Fort White",
-        "count": 14
-      },
-      {
-        "city": "High Springs",
-        "count": 3
-      },
-      {
-        "city": "White Springs",
-        "count": 2
-      },
-      {
-        "city": "No City Code",
-        "count": 1
-      },
-      {
-        "city": "Ellisville",
-        "count": 1
-      }
-    ]
-  },
   "madison": {
-    "total": 52,
+    "total": 53,
     "newFilings": 8,
     "byType": {
       "FOOD_SERVICE": 3,
       "APS": 34,
       "MOBILE_FOOD": 3,
       "BEV": 5,
-      "COP": 7
+      "SRX": 4,
+      "COP": 3,
+      "MANUFACTURER": 1
     },
     "topCities": [
       {
         "city": "Madison",
-        "count": 34
+        "count": 35
       },
       {
         "city": "Greenville",
@@ -2067,9 +2315,10 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     "byType": {
       "FOOD_SERVICE": 2,
       "MOBILE_FOOD": 1,
-      "COP": 5,
+      "COP": 4,
       "APS": 12,
-      "BEV": 2
+      "BEV": 2,
+      "SRX": 1
     },
     "topCities": [
       {
@@ -2087,28 +2336,32 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "nassau": {
-    "total": 269,
+    "total": 282,
     "newFilings": 22,
     "byType": {
       "FOOD_SERVICE": 1,
       "MOBILE_FOOD": 6,
-      "COP": 154,
+      "COP": 114,
+      "MANUFACTURER": 9,
       "APS": 77,
+      "TEMP_PERMIT": 3,
       "SEATING": 10,
-      "BEV": 21
+      "BEV": 21,
+      "SRX": 40,
+      "BOTTLE_CLUB": 1
     },
     "topCities": [
       {
         "city": "Fernandina Beach",
-        "count": 146
+        "count": 155
       },
       {
         "city": "Yulee",
-        "count": 64
+        "count": 65
       },
       {
         "city": "Callahan",
-        "count": 25
+        "count": 27
       },
       {
         "city": "Hilliard",
@@ -2116,7 +2369,7 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "Amelia Island",
-        "count": 13
+        "count": 14
       },
       {
         "city": "Fernandina",
@@ -2125,20 +2378,23 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "okeechobee": {
-    "total": 130,
-    "newFilings": 18,
+    "total": 141,
+    "newFilings": 21,
     "byType": {
       "FOOD_SERVICE": 8,
-      "COP": 37,
+      "COP": 24,
+      "TEMP_PERMIT": 10,
       "MOBILE_FOOD": 6,
       "SEATING": 2,
       "APS": 62,
-      "BEV": 15
+      "BEV": 15,
+      "SRX": 13,
+      "MANUFACTURER": 1
     },
     "topCities": [
       {
         "city": "Okeechobee",
-        "count": 129
+        "count": 140
       },
       {
         "city": "No City Code",
@@ -2146,59 +2402,24 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "sumter": {
-    "total": 308,
-    "newFilings": 34,
-    "byType": {
-      "FOOD_SERVICE": 5,
-      "COP": 141,
-      "SEATING": 14,
-      "APS": 133,
-      "MOBILE_FOOD": 7,
-      "BEV": 8
-    },
-    "topCities": [
-      {
-        "city": "The Villages",
-        "count": 123
-      },
-      {
-        "city": "Wildwood",
-        "count": 62
-      },
-      {
-        "city": "Bushnell",
-        "count": 39
-      },
-      {
-        "city": "Oxford",
-        "count": 16
-      },
-      {
-        "city": "Lake Panasoffkee",
-        "count": 16
-      },
-      {
-        "city": "Lady Lake",
-        "count": 16
-      }
-    ]
-  },
   "franklin": {
-    "total": 88,
+    "total": 97,
     "newFilings": 11,
     "byType": {
       "APS": 29,
       "MOBILE_FOOD": 6,
-      "COP": 46,
+      "COP": 33,
       "SEATING": 1,
       "FOOD_SERVICE": 1,
-      "BEV": 5
+      "BEV": 5,
+      "SRX": 13,
+      "TEMP_PERMIT": 4,
+      "MANUFACTURER": 5
     },
     "topCities": [
       {
         "city": "Apalachicola",
-        "count": 30
+        "count": 35
       },
       {
         "city": "Carrabelle",
@@ -2206,11 +2427,11 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       },
       {
         "city": "East Point",
-        "count": 15
+        "count": 16
       },
       {
         "city": "Eastpoint",
-        "count": 7
+        "count": 9
       },
       {
         "city": "St. George Island",
@@ -2223,26 +2444,33 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
     ]
   },
   "dixie": {
-    "total": 47,
-    "newFilings": 6,
+    "total": 54,
+    "newFilings": 8,
     "byType": {
-      "COP": 13,
+      "SRX": 3,
       "APS": 28,
+      "TEMP_PERMIT": 4,
       "MOBILE_FOOD": 2,
       "FOOD_SERVICE": 1,
+      "COP": 10,
+      "MANUFACTURER": 3,
       "BEV": 3
     },
     "topCities": [
       {
         "city": "Old Town",
-        "count": 20
+        "count": 22
       },
       {
         "city": "Cross City",
-        "count": 16
+        "count": 17
       },
       {
         "city": "Suwannee",
+        "count": 6
+      },
+      {
+        "city": "Horseshoe Beach",
         "count": 4
       },
       {
@@ -2250,73 +2478,39 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
         "count": 4
       },
       {
-        "city": "Horseshoe Beach",
-        "count": 2
-      },
-      {
         "city": "Branford",
-        "count": 1
-      }
-    ]
-  },
-  "gilchrist": {
-    "total": 39,
-    "newFilings": 4,
-    "byType": {
-      "SEATING": 1,
-      "COP": 12,
-      "MOBILE_FOOD": 2,
-      "APS": 20,
-      "BEV": 4
-    },
-    "topCities": [
-      {
-        "city": "Trenton",
-        "count": 22
-      },
-      {
-        "city": "Bell",
-        "count": 7
-      },
-      {
-        "city": "Fanning Springs",
-        "count": 5
-      },
-      {
-        "city": "High Springs",
-        "count": 3
-      },
-      {
-        "city": "Branford",
-        "count": 1
-      },
-      {
-        "city": "No City Code",
         "count": 1
       }
     ]
   },
   "wakulla": {
-    "total": 77,
-    "newFilings": 10,
+    "total": 85,
+    "newFilings": 11,
     "byType": {
-      "COP": 30,
+      "TEMP_PERMIT": 7,
+      "COP": 19,
       "MOBILE_FOOD": 6,
       "SEATING": 3,
       "BEV": 9,
-      "APS": 29
+      "APS": 29,
+      "SRX": 11,
+      "MANUFACTURER": 1
     },
     "topCities": [
       {
         "city": "Crawfordville",
-        "count": 49
+        "count": 52
       },
       {
         "city": "Panacea",
-        "count": 13
+        "count": 17
       },
       {
         "city": "Saint Marks",
+        "count": 4
+      },
+      {
+        "city": "Sopchoppy",
         "count": 4
       },
       {
@@ -2324,12 +2518,39 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
         "count": 4
       },
       {
-        "city": "Sopchoppy",
-        "count": 3
+        "city": "No City Code",
+        "count": 2
+      }
+    ]
+  },
+  "hamilton": {
+    "total": 38,
+    "newFilings": 3,
+    "byType": {
+      "TEMP_PERMIT": 1,
+      "MOBILE_FOOD": 1,
+      "SEATING": 1,
+      "APS": 27,
+      "BEV": 4,
+      "SRX": 1,
+      "COP": 3
+    },
+    "topCities": [
+      {
+        "city": "Jasper",
+        "count": 20
+      },
+      {
+        "city": "White Springs",
+        "count": 9
+      },
+      {
+        "city": "Jennings",
+        "count": 8
       },
       {
         "city": "No City Code",
-        "count": 2
+        "count": 1
       }
     ]
   },
@@ -2351,49 +2572,22 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
       }
     ]
   },
-  "hamilton": {
-    "total": 37,
-    "newFilings": 2,
-    "byType": {
-      "MOBILE_FOOD": 1,
-      "SEATING": 1,
-      "APS": 27,
-      "BEV": 4,
-      "COP": 4
-    },
-    "topCities": [
-      {
-        "city": "Jasper",
-        "count": 20
-      },
-      {
-        "city": "White Springs",
-        "count": 8
-      },
-      {
-        "city": "Jennings",
-        "count": 8
-      },
-      {
-        "city": "No City Code",
-        "count": 1
-      }
-    ]
-  },
   "glades": {
-    "total": 33,
+    "total": 34,
     "newFilings": 3,
     "byType": {
       "SEATING": 2,
       "MOBILE_FOOD": 1,
-      "COP": 11,
+      "COP": 10,
       "BEV": 3,
-      "APS": 16
+      "APS": 16,
+      "TEMP_PERMIT": 1,
+      "SRX": 1
     },
     "topCities": [
       {
         "city": "Moore Haven",
-        "count": 20
+        "count": 21
       },
       {
         "city": "Okeechobee",
@@ -2413,111 +2607,84 @@ export const COUNTY_STATS: Record<string, CountyStat> = {
 
 /** Cities (per county slug) with >= 25 records — the city pages that exist. */
 export const CITY_STATS: Record<string, CityStat[]> = {
-  "bay": [
-    {
-      "citySlug": "panama-city-beach",
-      "city": "Panama City Beach",
-      "total": 417,
-      "byType": {
-        "FOOD_SERVICE": 26,
-        "COP": 275,
-        "SEATING": 10,
-        "MOBILE_FOOD": 13,
-        "APS": 84,
-        "BEV": 9
-      }
-    },
-    {
-      "citySlug": "panama-city",
-      "city": "Panama City",
-      "total": 316,
-      "byType": {
-        "FOOD_SERVICE": 16,
-        "COP": 135,
-        "SEATING": 20,
-        "APS": 127,
-        "BEV": 10,
-        "MOBILE_FOOD": 8
-      }
-    },
-    {
-      "citySlug": "lynn-haven",
-      "city": "Lynn Haven",
-      "total": 41,
-      "byType": {
-        "MOBILE_FOOD": 1,
-        "SEATING": 1,
-        "FOOD_SERVICE": 1,
-        "BEV": 2,
-        "APS": 20,
-        "COP": 16
-      }
-    }
-  ],
   "hillsborough": [
     {
       "citySlug": "tampa",
       "city": "Tampa",
-      "total": 2228,
+      "total": 2368,
       "byType": {
+        "APS": 749,
         "FOOD_SERVICE": 85,
         "MOBILE_FOOD": 166,
         "SEATING": 58,
-        "COP": 1093,
-        "APS": 748,
+        "COP": 748,
+        "SRX": 345,
+        "MANUFACTURER": 83,
+        "TEMP_PERMIT": 56,
         "BEV": 78
       }
     },
     {
       "citySlug": "brandon",
       "city": "Brandon",
-      "total": 214,
+      "total": 215,
       "byType": {
         "FOOD_SERVICE": 15,
         "MOBILE_FOOD": 21,
         "SEATING": 4,
-        "COP": 110,
+        "SRX": 53,
         "APS": 60,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "riverview",
-      "city": "Riverview",
-      "total": 165,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "BEV": 7,
-        "COP": 64,
-        "SEATING": 6,
-        "MOBILE_FOOD": 5,
-        "APS": 78
+        "BEV": 4,
+        "COP": 57,
+        "TEMP_PERMIT": 1
       }
     },
     {
       "citySlug": "plant-city",
       "city": "Plant City",
-      "total": 156,
+      "total": 167,
       "byType": {
         "FOOD_SERVICE": 5,
         "APS": 81,
         "MOBILE_FOOD": 11,
-        "COP": 56,
+        "COP": 41,
         "SEATING": 1,
-        "BEV": 2
+        "BEV": 2,
+        "TEMP_PERMIT": 4,
+        "MANUFACTURER": 7,
+        "SRX": 15
+      }
+    },
+    {
+      "citySlug": "riverview",
+      "city": "Riverview",
+      "total": 167,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "BEV": 7,
+        "COP": 40,
+        "TEMP_PERMIT": 1,
+        "SEATING": 6,
+        "MOBILE_FOOD": 5,
+        "APS": 78,
+        "SRX": 24,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "lutz",
       "city": "Lutz",
-      "total": 106,
+      "total": 108,
       "byType": {
         "FOOD_SERVICE": 14,
         "MOBILE_FOOD": 12,
         "APS": 32,
         "SEATING": 5,
         "BEV": 4,
-        "COP": 39
+        "COP": 23,
+        "TEMP_PERMIT": 1,
+        "SRX": 16,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -2528,7 +2695,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "FOOD_SERVICE": 2,
         "SEATING": 1,
         "MOBILE_FOOD": 19,
-        "COP": 16,
+        "SRX": 4,
+        "COP": 12,
         "APS": 27,
         "BEV": 1
       }
@@ -2536,39 +2704,46 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "valrico",
       "city": "Valrico",
-      "total": 62,
+      "total": 64,
       "byType": {
-        "COP": 25,
+        "COP": 17,
         "MOBILE_FOOD": 1,
         "FOOD_SERVICE": 1,
         "SEATING": 1,
         "BEV": 5,
-        "APS": 29
-      }
-    },
-    {
-      "citySlug": "temple-terrace",
-      "city": "Temple Terrace",
-      "total": 54,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "SEATING": 5,
-        "COP": 22,
-        "APS": 24,
-        "BEV": 1
+        "APS": 29,
+        "SRX": 8,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "ruskin",
       "city": "Ruskin",
-      "total": 54,
+      "total": 57,
       "byType": {
         "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 2,
         "SEATING": 2,
         "APS": 24,
         "MOBILE_FOOD": 6,
         "BEV": 3,
-        "COP": 16
+        "SRX": 7,
+        "COP": 9,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "temple-terrace",
+      "city": "Temple Terrace",
+      "total": 55,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "SEATING": 5,
+        "COP": 14,
+        "APS": 24,
+        "BEV": 1,
+        "SRX": 8,
+        "TEMP_PERMIT": 1
       }
     },
     {
@@ -2577,10 +2752,11 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "total": 44,
       "byType": {
         "SEATING": 2,
-        "COP": 21,
+        "SRX": 10,
         "FOOD_SERVICE": 2,
         "APS": 17,
-        "BEV": 2
+        "BEV": 2,
+        "COP": 11
       }
     },
     {
@@ -2595,24 +2771,28 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "gibsonton",
       "city": "Gibsonton",
-      "total": 34,
+      "total": 37,
       "byType": {
         "FOOD_SERVICE": 2,
-        "COP": 9,
+        "MANUFACTURER": 3,
+        "COP": 7,
         "MOBILE_FOOD": 2,
         "SEATING": 1,
         "BEV": 1,
-        "APS": 19
+        "APS": 19,
+        "SRX": 2
       }
     },
     {
       "citySlug": "lithia",
       "city": "Lithia",
-      "total": 30,
+      "total": 31,
       "byType": {
         "FOOD_SERVICE": 2,
-        "COP": 15,
-        "APS": 13
+        "COP": 9,
+        "APS": 13,
+        "SRX": 6,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -2622,7 +2802,21 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "byType": {
         "APS": 11,
         "BEV": 4,
-        "COP": 10
+        "COP": 2,
+        "SRX": 8
+      }
+    },
+    {
+      "citySlug": "wimauma",
+      "city": "Wimauma",
+      "total": 25,
+      "byType": {
+        "SEATING": 3,
+        "MOBILE_FOOD": 2,
+        "APS": 15,
+        "BEV": 1,
+        "SRX": 3,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -2632,8 +2826,855 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "byType": {
         "SEATING": 1,
         "BEV": 3,
-        "COP": 11,
+        "SRX": 3,
+        "COP": 8,
         "APS": 10
+      }
+    }
+  ],
+  "polk": [
+    {
+      "citySlug": "lakeland",
+      "city": "Lakeland",
+      "total": 602,
+      "byType": {
+        "COP": 152,
+        "FOOD_SERVICE": 28,
+        "MOBILE_FOOD": 27,
+        "SEATING": 13,
+        "APS": 251,
+        "TEMP_PERMIT": 18,
+        "BEV": 18,
+        "SRX": 77,
+        "MANUFACTURER": 18
+      }
+    },
+    {
+      "citySlug": "winter-haven",
+      "city": "Winter Haven",
+      "total": 291,
+      "byType": {
+        "COP": 68,
+        "FOOD_SERVICE": 15,
+        "MOBILE_FOOD": 23,
+        "APS": 120,
+        "SRX": 38,
+        "BEV": 10,
+        "SEATING": 9,
+        "TEMP_PERMIT": 5,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "davenport",
+      "city": "Davenport",
+      "total": 160,
+      "byType": {
+        "FOOD_SERVICE": 8,
+        "SRX": 26,
+        "SEATING": 11,
+        "APS": 59,
+        "TEMP_PERMIT": 1,
+        "MOBILE_FOOD": 13,
+        "BEV": 3,
+        "COP": 37,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "haines-city",
+      "city": "Haines City",
+      "total": 131,
+      "byType": {
+        "COP": 22,
+        "FOOD_SERVICE": 13,
+        "TEMP_PERMIT": 5,
+        "MOBILE_FOOD": 29,
+        "APS": 46,
+        "SEATING": 3,
+        "BEV": 3,
+        "SRX": 9,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "lake-wales",
+      "city": "Lake Wales",
+      "total": 130,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "TEMP_PERMIT": 11,
+        "COP": 26,
+        "APS": 58,
+        "MOBILE_FOOD": 12,
+        "SEATING": 7,
+        "BEV": 3,
+        "SRX": 12
+      }
+    },
+    {
+      "citySlug": "bartow",
+      "city": "Bartow",
+      "total": 74,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "TEMP_PERMIT": 6,
+        "MOBILE_FOOD": 4,
+        "APS": 34,
+        "BEV": 3,
+        "COP": 18,
+        "SRX": 6,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "auburndale",
+      "city": "Auburndale",
+      "total": 74,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "APS": 49,
+        "SEATING": 1,
+        "MOBILE_FOOD": 2,
+        "COP": 11,
+        "SRX": 6,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "mulberry",
+      "city": "Mulberry",
+      "total": 38,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SEATING": 3,
+        "MOBILE_FOOD": 2,
+        "BEV": 1,
+        "APS": 25,
+        "TEMP_PERMIT": 1,
+        "SRX": 2,
+        "COP": 1
+      }
+    },
+    {
+      "citySlug": "lake-alfred",
+      "city": "Lake Alfred",
+      "total": 26,
+      "byType": {
+        "SRX": 3,
+        "SEATING": 1,
+        "APS": 10,
+        "COP": 7,
+        "MANUFACTURER": 5
+      }
+    }
+  ],
+  "orange": [
+    {
+      "citySlug": "orlando",
+      "city": "Orlando",
+      "total": 3344,
+      "byType": {
+        "SRX": 531,
+        "APS": 861,
+        "TEMP_PERMIT": 95,
+        "FOOD_SERVICE": 227,
+        "MANUFACTURER": 94,
+        "COP": 1097,
+        "MOBILE_FOOD": 254,
+        "SEATING": 86,
+        "BEV": 99
+      }
+    },
+    {
+      "citySlug": "winter-park",
+      "city": "Winter Park",
+      "total": 241,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "APS": 49,
+        "SEATING": 6,
+        "COP": 106,
+        "TEMP_PERMIT": 4,
+        "MOBILE_FOOD": 4,
+        "BEV": 8,
+        "SRX": 56,
+        "MANUFACTURER": 6
+      }
+    },
+    {
+      "citySlug": "winter-garden",
+      "city": "Winter Garden",
+      "total": 185,
+      "byType": {
+        "TEMP_PERMIT": 7,
+        "FOOD_SERVICE": 5,
+        "COP": 61,
+        "SEATING": 11,
+        "BEV": 4,
+        "APS": 54,
+        "SRX": 38,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "apopka",
+      "city": "Apopka",
+      "total": 152,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SEATING": 7,
+        "SRX": 21,
+        "APS": 81,
+        "MOBILE_FOOD": 3,
+        "COP": 28,
+        "BEV": 4,
+        "TEMP_PERMIT": 4,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "ocoee",
+      "city": "Ocoee",
+      "total": 105,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 1,
+        "MOBILE_FOOD": 2,
+        "APS": 41,
+        "COP": 39,
+        "MANUFACTURER": 2,
+        "SRX": 15,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "lake-buena-vista",
+      "city": "Lake Buena Vista",
+      "total": 97,
+      "byType": {
+        "FOOD_SERVICE": 18,
+        "MOBILE_FOOD": 3,
+        "SRX": 9,
+        "COP": 56,
+        "BEV": 5,
+        "TEMP_PERMIT": 1,
+        "APS": 5
+      }
+    },
+    {
+      "citySlug": "windermere",
+      "city": "Windermere",
+      "total": 50,
+      "byType": {
+        "SRX": 12,
+        "FOOD_SERVICE": 2,
+        "SEATING": 1,
+        "APS": 9,
+        "COP": 20,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 3,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "maitland",
+      "city": "Maitland",
+      "total": 46,
+      "byType": {
+        "SRX": 15,
+        "SEATING": 3,
+        "FOOD_SERVICE": 1,
+        "COP": 18,
+        "APS": 6,
+        "BEV": 1,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "no-city-code",
+      "city": "No City Code",
+      "total": 27,
+      "byType": {
+        "COP": 14,
+        "APS": 13
+      }
+    }
+  ],
+  "st-johns": [
+    {
+      "citySlug": "saint-augustine",
+      "city": "Saint Augustine",
+      "total": 524,
+      "byType": {
+        "COP": 197,
+        "SRX": 84,
+        "FOOD_SERVICE": 11,
+        "TEMP_PERMIT": 35,
+        "MOBILE_FOOD": 20,
+        "SEATING": 18,
+        "APS": 131,
+        "BEV": 16,
+        "MANUFACTURER": 12
+      }
+    },
+    {
+      "citySlug": "st-johns",
+      "city": "St. Johns",
+      "total": 83,
+      "byType": {
+        "SEATING": 9,
+        "APS": 24,
+        "COP": 27,
+        "SRX": 22,
+        "BEV": 1
+      }
+    },
+    {
+      "citySlug": "ponte-vedra-beach",
+      "city": "Ponte Vedra Beach",
+      "total": 83,
+      "byType": {
+        "SEATING": 3,
+        "MOBILE_FOOD": 1,
+        "FOOD_SERVICE": 1,
+        "SRX": 19,
+        "COP": 25,
+        "APS": 14,
+        "BEV": 13,
+        "TEMP_PERMIT": 5,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "st-augustine",
+      "city": "St Augustine",
+      "total": 76,
+      "byType": {
+        "SEATING": 3,
+        "COP": 28,
+        "MOBILE_FOOD": 2,
+        "FOOD_SERVICE": 1,
+        "APS": 15,
+        "BEV": 5,
+        "SRX": 19,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "ponte-vedra",
+      "city": "Ponte Vedra",
+      "total": 42,
+      "byType": {
+        "SEATING": 2,
+        "FOOD_SERVICE": 1,
+        "BEV": 1,
+        "SRX": 15,
+        "COP": 14,
+        "MANUFACTURER": 2,
+        "APS": 7
+      }
+    },
+    {
+      "citySlug": "st-augustine",
+      "city": "St. Augustine",
+      "total": 41,
+      "byType": {
+        "MOBILE_FOOD": 3,
+        "TEMP_PERMIT": 8,
+        "SEATING": 10,
+        "SRX": 5,
+        "FOOD_SERVICE": 1,
+        "COP": 11,
+        "APS": 3
+      }
+    },
+    {
+      "citySlug": "saint-johns",
+      "city": "Saint Johns",
+      "total": 32,
+      "byType": {
+        "SEATING": 1,
+        "FOOD_SERVICE": 1,
+        "APS": 14,
+        "COP": 10,
+        "BEV": 1,
+        "SRX": 5
+      }
+    }
+  ],
+  "duval": [
+    {
+      "citySlug": "jacksonville",
+      "city": "Jacksonville",
+      "total": 2622,
+      "byType": {
+        "FOOD_SERVICE": 116,
+        "SEATING": 80,
+        "MOBILE_FOOD": 129,
+        "TEMP_PERMIT": 84,
+        "COP": 651,
+        "APS": 1042,
+        "SRX": 391,
+        "BEV": 70,
+        "MANUFACTURER": 58,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "jacksonville-beach",
+      "city": "Jacksonville Beach",
+      "total": 169,
+      "byType": {
+        "COP": 67,
+        "FOOD_SERVICE": 6,
+        "TEMP_PERMIT": 6,
+        "SRX": 44,
+        "SEATING": 5,
+        "BEV": 8,
+        "APS": 23,
+        "MANUFACTURER": 10
+      }
+    },
+    {
+      "citySlug": "atlantic-beach",
+      "city": "Atlantic Beach",
+      "total": 70,
+      "byType": {
+        "APS": 15,
+        "SEATING": 1,
+        "MOBILE_FOOD": 1,
+        "COP": 29,
+        "BEV": 9,
+        "BOTTLE_CLUB": 1,
+        "SRX": 10,
+        "MANUFACTURER": 4
+      }
+    },
+    {
+      "citySlug": "neptune-beach",
+      "city": "Neptune Beach",
+      "total": 40,
+      "byType": {
+        "COP": 16,
+        "FOOD_SERVICE": 2,
+        "MOBILE_FOOD": 2,
+        "APS": 7,
+        "TEMP_PERMIT": 1,
+        "SRX": 11,
+        "BEV": 1
+      }
+    }
+  ],
+  "osceola": [
+    {
+      "citySlug": "kissimmee",
+      "city": "Kissimmee",
+      "total": 729,
+      "byType": {
+        "COP": 228,
+        "FOOD_SERVICE": 28,
+        "MOBILE_FOOD": 68,
+        "SRX": 110,
+        "TEMP_PERMIT": 8,
+        "APS": 231,
+        "SEATING": 26,
+        "BEV": 20,
+        "MANUFACTURER": 9,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "st-cloud",
+      "city": "St. Cloud",
+      "total": 96,
+      "byType": {
+        "MOBILE_FOOD": 7,
+        "SRX": 13,
+        "FOOD_SERVICE": 7,
+        "SEATING": 1,
+        "APS": 35,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 4,
+        "COP": 26,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "saint-cloud",
+      "city": "Saint Cloud",
+      "total": 42,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "APS": 16,
+        "COP": 10,
+        "TEMP_PERMIT": 1,
+        "MOBILE_FOOD": 4,
+        "SEATING": 2,
+        "SRX": 2,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "celebration",
+      "city": "Celebration",
+      "total": 31,
+      "byType": {
+        "SEATING": 1,
+        "SRX": 10,
+        "MANUFACTURER": 1,
+        "COP": 12,
+        "BEV": 3,
+        "APS": 4
+      }
+    }
+  ],
+  "pasco": [
+    {
+      "citySlug": "new-port-richey",
+      "city": "New Port Richey",
+      "total": 284,
+      "byType": {
+        "TEMP_PERMIT": 13,
+        "FOOD_SERVICE": 5,
+        "APS": 108,
+        "SRX": 39,
+        "MOBILE_FOOD": 7,
+        "COP": 78,
+        "SEATING": 17,
+        "BEV": 12,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "wesley-chapel",
+      "city": "Wesley Chapel",
+      "total": 149,
+      "byType": {
+        "SRX": 36,
+        "SEATING": 10,
+        "COP": 51,
+        "APS": 43,
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 2,
+        "BEV": 2,
+        "MANUFACTURER": 4
+      }
+    },
+    {
+      "citySlug": "hudson",
+      "city": "Hudson",
+      "total": 129,
+      "byType": {
+        "APS": 63,
+        "SRX": 11,
+        "FOOD_SERVICE": 4,
+        "SEATING": 2,
+        "MOBILE_FOOD": 5,
+        "BEV": 10,
+        "COP": 29,
+        "TEMP_PERMIT": 2,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "zephyrhills",
+      "city": "Zephyrhills",
+      "total": 112,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "MOBILE_FOOD": 3,
+        "COP": 26,
+        "SEATING": 2,
+        "APS": 53,
+        "BEV": 10,
+        "SRX": 11,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "dade-city",
+      "city": "Dade City",
+      "total": 111,
+      "byType": {
+        "COP": 22,
+        "FOOD_SERVICE": 12,
+        "APS": 39,
+        "MOBILE_FOOD": 9,
+        "SRX": 6,
+        "SEATING": 3,
+        "BEV": 6,
+        "TEMP_PERMIT": 11,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "port-richey",
+      "city": "Port Richey",
+      "total": 100,
+      "byType": {
+        "COP": 27,
+        "MOBILE_FOOD": 6,
+        "SEATING": 3,
+        "SRX": 15,
+        "APS": 44,
+        "MANUFACTURER": 1,
+        "BEV": 4
+      }
+    },
+    {
+      "citySlug": "lutz",
+      "city": "Lutz",
+      "total": 76,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "COP": 16,
+        "SEATING": 2,
+        "MOBILE_FOOD": 11,
+        "APS": 20,
+        "BEV": 3,
+        "SRX": 19
+      }
+    },
+    {
+      "citySlug": "holiday",
+      "city": "Holiday",
+      "total": 60,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "MOBILE_FOOD": 4,
+        "SEATING": 2,
+        "BEV": 3,
+        "APS": 33,
+        "COP": 10,
+        "MANUFACTURER": 2,
+        "SRX": 3
+      }
+    },
+    {
+      "citySlug": "land-o-lakes",
+      "city": "Land O' Lakes",
+      "total": 55,
+      "byType": {
+        "SEATING": 2,
+        "COP": 15,
+        "FOOD_SERVICE": 3,
+        "MOBILE_FOOD": 1,
+        "BEV": 1,
+        "TEMP_PERMIT": 2,
+        "APS": 23,
+        "SRX": 6,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "odessa",
+      "city": "Odessa",
+      "total": 31,
+      "byType": {
+        "SEATING": 2,
+        "MOBILE_FOOD": 1,
+        "FOOD_SERVICE": 1,
+        "COP": 5,
+        "BEV": 1,
+        "MANUFACTURER": 5,
+        "SRX": 5,
+        "APS": 11
+      }
+    },
+    {
+      "citySlug": "trinity",
+      "city": "Trinity",
+      "total": 25,
+      "byType": {
+        "MOBILE_FOOD": 1,
+        "COP": 11,
+        "APS": 3,
+        "MANUFACTURER": 2,
+        "SRX": 7,
+        "BEV": 1
+      }
+    }
+  ],
+  "bay": [
+    {
+      "citySlug": "panama-city-beach",
+      "city": "Panama City Beach",
+      "total": 448,
+      "byType": {
+        "BEV": 10,
+        "COP": 160,
+        "FOOD_SERVICE": 26,
+        "SRX": 116,
+        "SEATING": 10,
+        "MOBILE_FOOD": 13,
+        "TEMP_PERMIT": 23,
+        "APS": 84,
+        "MANUFACTURER": 5,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "panama-city",
+      "city": "Panama City",
+      "total": 342,
+      "byType": {
+        "FOOD_SERVICE": 16,
+        "COP": 89,
+        "SEATING": 20,
+        "TEMP_PERMIT": 21,
+        "APS": 127,
+        "SRX": 46,
+        "BEV": 10,
+        "MOBILE_FOOD": 8,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "lynn-haven",
+      "city": "Lynn Haven",
+      "total": 42,
+      "byType": {
+        "TEMP_PERMIT": 1,
+        "MOBILE_FOOD": 1,
+        "SEATING": 1,
+        "FOOD_SERVICE": 1,
+        "BEV": 2,
+        "APS": 20,
+        "COP": 11,
+        "SRX": 5
+      }
+    }
+  ],
+  "lee": [
+    {
+      "citySlug": "fort-myers",
+      "city": "Fort Myers",
+      "total": 1059,
+      "byType": {
+        "APS": 313,
+        "FOOD_SERVICE": 39,
+        "COP": 307,
+        "MOBILE_FOOD": 65,
+        "TEMP_PERMIT": 32,
+        "SEATING": 33,
+        "SRX": 190,
+        "BEV": 52,
+        "MANUFACTURER": 28
+      }
+    },
+    {
+      "citySlug": "cape-coral",
+      "city": "Cape Coral",
+      "total": 422,
+      "byType": {
+        "COP": 120,
+        "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 22,
+        "SRX": 97,
+        "MOBILE_FOOD": 7,
+        "APS": 132,
+        "SEATING": 21,
+        "BEV": 14,
+        "MANUFACTURER": 6
+      }
+    },
+    {
+      "citySlug": "bonita-springs",
+      "city": "Bonita Springs",
+      "total": 227,
+      "byType": {
+        "BEV": 25,
+        "COP": 72,
+        "SEATING": 7,
+        "MANUFACTURER": 8,
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 1,
+        "APS": 51,
+        "SRX": 48,
+        "TEMP_PERMIT": 14
+      }
+    },
+    {
+      "citySlug": "north-fort-myers",
+      "city": "North Fort Myers",
+      "total": 162,
+      "byType": {
+        "TEMP_PERMIT": 12,
+        "COP": 25,
+        "MOBILE_FOOD": 32,
+        "FOOD_SERVICE": 4,
+        "SEATING": 1,
+        "APS": 57,
+        "BEV": 11,
+        "SRX": 20
+      }
+    },
+    {
+      "citySlug": "estero",
+      "city": "Estero",
+      "total": 112,
+      "byType": {
+        "SEATING": 5,
+        "MOBILE_FOOD": 1,
+        "BEV": 10,
+        "SRX": 40,
+        "APS": 25,
+        "TEMP_PERMIT": 1,
+        "COP": 29,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "lehigh-acres",
+      "city": "Lehigh Acres",
+      "total": 101,
+      "byType": {
+        "MOBILE_FOOD": 11,
+        "BEV": 6,
+        "APS": 58,
+        "COP": 18,
+        "SRX": 7,
+        "TEMP_PERMIT": 1
+      }
+    },
+    {
+      "citySlug": "fort-myers-beach",
+      "city": "Fort Myers Beach",
+      "total": 80,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 28,
+        "APS": 19,
+        "SEATING": 2,
+        "MOBILE_FOOD": 1,
+        "BEV": 5,
+        "SRX": 21,
+        "TEMP_PERMIT": 2
+      }
+    },
+    {
+      "citySlug": "sanibel",
+      "city": "Sanibel",
+      "total": 57,
+      "byType": {
+        "APS": 14,
+        "FOOD_SERVICE": 2,
+        "COP": 18,
+        "BEV": 5,
+        "SRX": 14,
+        "TEMP_PERMIT": 4
+      }
+    },
+    {
+      "citySlug": "n-ft-myers",
+      "city": "N Ft Myers",
+      "total": 27,
+      "byType": {
+        "FOOD_SERVICE": 22,
+        "MOBILE_FOOD": 5
       }
     }
   ],
@@ -2641,207 +3682,253 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "fort-lauderdale",
       "city": "Fort Lauderdale",
-      "total": 1008,
+      "total": 1077,
       "byType": {
+        "TEMP_PERMIT": 28,
         "FOOD_SERVICE": 33,
-        "APS": 321,
-        "COP": 580,
+        "APS": 320,
+        "COP": 411,
         "SEATING": 30,
         "MOBILE_FOOD": 16,
-        "BEV": 28
+        "BEV": 28,
+        "SRX": 169,
+        "MANUFACTURER": 40,
+        "BOTTLE_CLUB": 2
       }
     },
     {
       "citySlug": "hollywood",
       "city": "Hollywood",
-      "total": 499,
+      "total": 525,
       "byType": {
+        "COP": 204,
         "FOOD_SERVICE": 18,
-        "COP": 271,
         "SEATING": 8,
+        "SRX": 67,
         "MOBILE_FOOD": 3,
         "BEV": 16,
-        "APS": 183
+        "APS": 183,
+        "TEMP_PERMIT": 9,
+        "MANUFACTURER": 16,
+        "BOTTLE_CLUB": 1
       }
     },
     {
       "citySlug": "pompano-beach",
       "city": "Pompano Beach",
-      "total": 399,
+      "total": 433,
       "byType": {
+        "APS": 155,
         "FOOD_SERVICE": 36,
-        "COP": 154,
+        "TEMP_PERMIT": 9,
+        "COP": 106,
         "SEATING": 10,
         "MOBILE_FOOD": 34,
-        "APS": 154,
+        "MANUFACTURER": 24,
+        "SRX": 48,
         "BEV": 11
       }
     },
     {
       "citySlug": "pembroke-pines",
       "city": "Pembroke Pines",
-      "total": 304,
+      "total": 309,
       "byType": {
         "FOOD_SERVICE": 5,
         "APS": 104,
         "MOBILE_FOOD": 6,
         "SEATING": 10,
         "BEV": 7,
-        "COP": 172
+        "SRX": 66,
+        "COP": 106,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "coral-springs",
       "city": "Coral Springs",
-      "total": 231,
+      "total": 239,
       "byType": {
-        "COP": 126,
+        "SRX": 53,
         "FOOD_SERVICE": 4,
         "SEATING": 9,
+        "COP": 73,
         "APS": 90,
+        "TEMP_PERMIT": 3,
+        "MANUFACTURER": 5,
         "BEV": 2
       }
     },
     {
       "citySlug": "davie",
       "city": "Davie",
-      "total": 223,
+      "total": 231,
       "byType": {
         "FOOD_SERVICE": 8,
-        "COP": 126,
+        "SRX": 37,
         "SEATING": 9,
         "MOBILE_FOOD": 4,
         "APS": 73,
-        "BEV": 3
+        "COP": 88,
+        "BEV": 3,
+        "TEMP_PERMIT": 3,
+        "MANUFACTURER": 6
       }
     },
     {
       "citySlug": "sunrise",
       "city": "Sunrise",
-      "total": 215,
+      "total": 227,
       "byType": {
         "FOOD_SERVICE": 13,
         "SEATING": 5,
         "MOBILE_FOOD": 11,
         "BEV": 6,
-        "COP": 103,
-        "APS": 77
+        "COP": 71,
+        "SRX": 33,
+        "APS": 77,
+        "TEMP_PERMIT": 3,
+        "MANUFACTURER": 8
       }
     },
     {
       "citySlug": "deerfield-beach",
       "city": "Deerfield Beach",
-      "total": 198,
+      "total": 225,
       "byType": {
+        "SRX": 25,
         "FOOD_SERVICE": 4,
-        "COP": 97,
+        "TEMP_PERMIT": 19,
+        "COP": 73,
         "SEATING": 5,
+        "MANUFACTURER": 7,
         "APS": 83,
         "MOBILE_FOOD": 2,
         "BEV": 7
       }
     },
     {
-      "citySlug": "plantation",
-      "city": "Plantation",
-      "total": 173,
-      "byType": {
-        "COP": 99,
-        "APS": 64,
-        "MOBILE_FOOD": 2,
-        "SEATING": 4,
-        "FOOD_SERVICE": 1,
-        "BEV": 3
-      }
-    },
-    {
       "citySlug": "oakland-park",
       "city": "Oakland Park",
-      "total": 170,
+      "total": 185,
       "byType": {
         "FOOD_SERVICE": 8,
         "MOBILE_FOOD": 12,
-        "COP": 68,
+        "MANUFACTURER": 15,
+        "COP": 53,
+        "SRX": 15,
         "SEATING": 8,
         "APS": 66,
         "BEV": 8
       }
     },
     {
+      "citySlug": "plantation",
+      "city": "Plantation",
+      "total": 179,
+      "byType": {
+        "COP": 64,
+        "APS": 64,
+        "MOBILE_FOOD": 2,
+        "SEATING": 4,
+        "FOOD_SERVICE": 1,
+        "SRX": 35,
+        "MANUFACTURER": 6,
+        "BEV": 3
+      }
+    },
+    {
       "citySlug": "miramar",
       "city": "Miramar",
-      "total": 163,
+      "total": 178,
       "byType": {
         "FOOD_SERVICE": 8,
         "SEATING": 5,
-        "COP": 66,
+        "COP": 47,
         "MOBILE_FOOD": 7,
+        "TEMP_PERMIT": 3,
         "APS": 72,
-        "BEV": 5
+        "BEV": 5,
+        "MANUFACTURER": 12,
+        "SRX": 19
       }
     },
     {
       "citySlug": "margate",
       "city": "Margate",
-      "total": 120,
+      "total": 134,
       "byType": {
+        "COP": 44,
+        "SRX": 19,
         "FOOD_SERVICE": 4,
         "APS": 49,
         "MOBILE_FOOD": 1,
         "SEATING": 2,
         "BEV": 3,
-        "COP": 61
+        "TEMP_PERMIT": 11,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "dania-beach",
       "city": "Dania Beach",
-      "total": 107,
+      "total": 118,
       "byType": {
-        "COP": 60,
+        "TEMP_PERMIT": 4,
+        "COP": 42,
         "FOOD_SERVICE": 3,
         "APS": 31,
         "MOBILE_FOOD": 2,
         "SEATING": 6,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "lauderhill",
-      "city": "Lauderhill",
-      "total": 106,
-      "byType": {
-        "FOOD_SERVICE": 7,
-        "COP": 45,
-        "MOBILE_FOOD": 6,
-        "SEATING": 4,
-        "APS": 41,
-        "BEV": 3
+        "SRX": 18,
+        "BEV": 5,
+        "MANUFACTURER": 7
       }
     },
     {
       "citySlug": "weston",
       "city": "Weston",
-      "total": 105,
+      "total": 114,
       "byType": {
-        "COP": 69,
+        "SRX": 19,
+        "MANUFACTURER": 6,
         "FOOD_SERVICE": 8,
         "SEATING": 1,
         "APS": 23,
+        "COP": 50,
+        "TEMP_PERMIT": 3,
         "BEV": 4
+      }
+    },
+    {
+      "citySlug": "lauderhill",
+      "city": "Lauderhill",
+      "total": 113,
+      "byType": {
+        "FOOD_SERVICE": 7,
+        "TEMP_PERMIT": 5,
+        "COP": 24,
+        "MANUFACTURER": 2,
+        "MOBILE_FOOD": 6,
+        "SEATING": 4,
+        "APS": 41,
+        "SRX": 21,
+        "BEV": 3
       }
     },
     {
       "citySlug": "hallandale-beach",
       "city": "Hallandale Beach",
-      "total": 99,
+      "total": 101,
       "byType": {
         "FOOD_SERVICE": 10,
         "APS": 30,
-        "COP": 49,
+        "COP": 31,
         "MOBILE_FOOD": 4,
         "SEATING": 3,
-        "BEV": 3
+        "SRX": 18,
+        "BEV": 3,
+        "MANUFACTURER": 2
       }
     },
     {
@@ -2854,90 +3941,109 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "FOOD_SERVICE": 3,
         "MOBILE_FOOD": 3,
         "BEV": 4,
-        "COP": 34
+        "SRX": 5,
+        "COP": 29
       }
     },
     {
       "citySlug": "wilton-manors",
       "city": "Wilton Manors",
-      "total": 76,
+      "total": 92,
       "byType": {
         "FOOD_SERVICE": 1,
         "APS": 19,
+        "TEMP_PERMIT": 13,
         "SEATING": 1,
-        "COP": 53,
-        "BEV": 2
+        "COP": 44,
+        "MANUFACTURER": 3,
+        "BEV": 2,
+        "SRX": 9
       }
     },
     {
       "citySlug": "coconut-creek",
       "city": "Coconut Creek",
-      "total": 73,
+      "total": 78,
       "byType": {
         "FOOD_SERVICE": 1,
         "SEATING": 2,
         "MOBILE_FOOD": 1,
-        "COP": 35,
+        "SRX": 10,
         "APS": 33,
-        "BEV": 1
+        "BEV": 1,
+        "COP": 24,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "north-lauderdale",
       "city": "North Lauderdale",
-      "total": 58,
+      "total": 59,
       "byType": {
         "APS": 40,
         "SEATING": 1,
         "MOBILE_FOOD": 1,
-        "COP": 15,
+        "COP": 9,
+        "SRX": 6,
+        "MANUFACTURER": 1,
         "BEV": 1
       }
     },
     {
       "citySlug": "cooper-city",
       "city": "Cooper City",
-      "total": 56,
+      "total": 58,
       "byType": {
-        "COP": 31,
+        "COP": 24,
         "SEATING": 2,
         "MOBILE_FOOD": 1,
         "BEV": 2,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 1,
+        "SRX": 7,
         "APS": 20
       }
     },
     {
       "citySlug": "hallandale",
       "city": "Hallandale",
-      "total": 52,
+      "total": 53,
       "byType": {
         "FOOD_SERVICE": 4,
         "MOBILE_FOOD": 1,
         "SEATING": 3,
         "BEV": 2,
         "APS": 17,
-        "COP": 25
+        "COP": 18,
+        "SRX": 7,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "lauderdale-lakes",
       "city": "Lauderdale Lakes",
-      "total": 43,
+      "total": 45,
       "byType": {
         "FOOD_SERVICE": 3,
         "MOBILE_FOOD": 2,
         "SEATING": 1,
         "APS": 28,
-        "COP": 9
+        "COP": 8,
+        "SRX": 1,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "lauderdale-by-the-se",
       "city": "Lauderdale-By-The-Se",
-      "total": 33,
+      "total": 35,
       "byType": {
+        "TEMP_PERMIT": 1,
         "APS": 5,
-        "COP": 26,
+        "SRX": 8,
+        "COP": 18,
+        "MANUFACTURER": 1,
         "BEV": 2
       }
     },
@@ -2947,27 +4053,46 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "total": 32,
       "byType": {
         "FOOD_SERVICE": 1,
-        "COP": 23,
-        "APS": 8
+        "COP": 18,
+        "APS": 8,
+        "SRX": 5
       }
     },
     {
       "citySlug": "pembroke-park",
       "city": "Pembroke Park",
-      "total": 28,
+      "total": 30,
       "byType": {
         "APS": 15,
-        "COP": 13
+        "COP": 12,
+        "MANUFACTURER": 2,
+        "SRX": 1
+      }
+    },
+    {
+      "citySlug": "parkland",
+      "city": "Parkland",
+      "total": 29,
+      "byType": {
+        "COP": 10,
+        "SEATING": 1,
+        "APS": 7,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 2,
+        "SRX": 7,
+        "BEV": 1
       }
     },
     {
       "citySlug": "dania",
       "city": "Dania",
-      "total": 28,
+      "total": 29,
       "byType": {
         "APS": 10,
-        "COP": 15,
-        "BEV": 3
+        "COP": 13,
+        "BEV": 3,
+        "SRX": 2,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -2975,19 +4100,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "city": "No City Code",
       "total": 26,
       "byType": {
-        "COP": 14,
-        "APS": 12
-      }
-    },
-    {
-      "citySlug": "parkland",
-      "city": "Parkland",
-      "total": 26,
-      "byType": {
-        "COP": 17,
-        "SEATING": 1,
-        "APS": 7,
-        "BEV": 1
+        "APS": 13,
+        "COP": 13
       }
     }
   ],
@@ -2995,14 +4109,1175 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "tallahassee",
       "city": "Tallahassee",
-      "total": 745,
+      "total": 819,
       "byType": {
+        "APS": 268,
         "FOOD_SERVICE": 24,
-        "APS": 267,
-        "COP": 375,
+        "SRX": 159,
         "SEATING": 27,
+        "TEMP_PERMIT": 53,
         "MOBILE_FOOD": 22,
-        "BEV": 30
+        "COP": 216,
+        "BEV": 30,
+        "MANUFACTURER": 17,
+        "BOTTLE_CLUB": 3
+      }
+    }
+  ],
+  "martin": [
+    {
+      "citySlug": "stuart",
+      "city": "Stuart",
+      "total": 330,
+      "byType": {
+        "FOOD_SERVICE": 9,
+        "COP": 120,
+        "SEATING": 4,
+        "MOBILE_FOOD": 6,
+        "TEMP_PERMIT": 11,
+        "BEV": 20,
+        "APS": 97,
+        "SRX": 54,
+        "MANUFACTURER": 9
+      }
+    },
+    {
+      "citySlug": "jensen-beach",
+      "city": "Jensen Beach",
+      "total": 92,
+      "byType": {
+        "APS": 32,
+        "SEATING": 2,
+        "COP": 35,
+        "MOBILE_FOOD": 1,
+        "BEV": 6,
+        "SRX": 16
+      }
+    },
+    {
+      "citySlug": "hobe-sound",
+      "city": "Hobe Sound",
+      "total": 59,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 2,
+        "APS": 21,
+        "SEATING": 3,
+        "BEV": 8,
+        "COP": 13,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 1,
+        "SRX": 9
+      }
+    },
+    {
+      "citySlug": "palm-city",
+      "city": "Palm City",
+      "total": 53,
+      "byType": {
+        "SRX": 16,
+        "SEATING": 2,
+        "MOBILE_FOOD": 1,
+        "COP": 8,
+        "BEV": 5,
+        "APS": 18,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 2
+      }
+    }
+  ],
+  "sumter": [
+    {
+      "citySlug": "the-villages",
+      "city": "The Villages",
+      "total": 124,
+      "byType": {
+        "MANUFACTURER": 1,
+        "APS": 40,
+        "SEATING": 3,
+        "SRX": 43,
+        "COP": 33,
+        "BEV": 4
+      }
+    },
+    {
+      "citySlug": "wildwood",
+      "city": "Wildwood",
+      "total": 68,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 4,
+        "COP": 13,
+        "SEATING": 4,
+        "TEMP_PERMIT": 4,
+        "APS": 31,
+        "SRX": 9,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "bushnell",
+      "city": "Bushnell",
+      "total": 41,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 9,
+        "MOBILE_FOOD": 3,
+        "SEATING": 1,
+        "BEV": 2,
+        "APS": 20,
+        "TEMP_PERMIT": 2,
+        "SRX": 2
+      }
+    }
+  ],
+  "monroe": [
+    {
+      "citySlug": "key-west",
+      "city": "Key West",
+      "total": 464,
+      "byType": {
+        "TEMP_PERMIT": 24,
+        "FOOD_SERVICE": 2,
+        "MOBILE_FOOD": 7,
+        "COP": 257,
+        "SEATING": 2,
+        "BEV": 23,
+        "SRX": 67,
+        "APS": 74,
+        "MANUFACTURER": 8
+      }
+    },
+    {
+      "citySlug": "marathon",
+      "city": "Marathon",
+      "total": 98,
+      "byType": {
+        "FOOD_SERVICE": 4,
+        "APS": 27,
+        "MOBILE_FOOD": 4,
+        "SEATING": 2,
+        "SRX": 18,
+        "COP": 30,
+        "BEV": 10,
+        "TEMP_PERMIT": 3
+      }
+    },
+    {
+      "citySlug": "key-largo",
+      "city": "Key Largo",
+      "total": 98,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 34,
+        "TEMP_PERMIT": 2,
+        "APS": 25,
+        "SEATING": 3,
+        "MOBILE_FOOD": 2,
+        "BEV": 9,
+        "SRX": 19,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "islamorada",
+      "city": "Islamorada",
+      "total": 94,
+      "byType": {
+        "TEMP_PERMIT": 10,
+        "BEV": 7,
+        "COP": 44,
+        "MOBILE_FOOD": 2,
+        "SEATING": 1,
+        "FOOD_SERVICE": 1,
+        "APS": 14,
+        "SRX": 12,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "tavernier",
+      "city": "Tavernier",
+      "total": 34,
+      "byType": {
+        "MOBILE_FOOD": 2,
+        "COP": 17,
+        "APS": 8,
+        "SRX": 3,
+        "TEMP_PERMIT": 1,
+        "BEV": 2,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "big-pine-key",
+      "city": "Big Pine Key",
+      "total": 29,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "TEMP_PERMIT": 1,
+        "MOBILE_FOOD": 3,
+        "APS": 14,
+        "BEV": 1,
+        "COP": 7,
+        "SRX": 2
+      }
+    }
+  ],
+  "okaloosa": [
+    {
+      "citySlug": "fort-walton-beach",
+      "city": "Fort Walton Beach",
+      "total": 239,
+      "byType": {
+        "FOOD_SERVICE": 6,
+        "COP": 80,
+        "TEMP_PERMIT": 12,
+        "APS": 72,
+        "SRX": 42,
+        "SEATING": 7,
+        "MOBILE_FOOD": 12,
+        "BEV": 3,
+        "MANUFACTURER": 4,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "destin",
+      "city": "Destin",
+      "total": 232,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SEATING": 13,
+        "COP": 71,
+        "TEMP_PERMIT": 3,
+        "MOBILE_FOOD": 7,
+        "SRX": 72,
+        "APS": 49,
+        "BEV": 7,
+        "MANUFACTURER": 7
+      }
+    },
+    {
+      "citySlug": "crestview",
+      "city": "Crestview",
+      "total": 126,
+      "byType": {
+        "COP": 21,
+        "FOOD_SERVICE": 5,
+        "APS": 53,
+        "TEMP_PERMIT": 10,
+        "SEATING": 2,
+        "MOBILE_FOOD": 8,
+        "SRX": 20,
+        "BEV": 4,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "niceville",
+      "city": "Niceville",
+      "total": 91,
+      "byType": {
+        "FOOD_SERVICE": 7,
+        "APS": 34,
+        "SEATING": 3,
+        "MOBILE_FOOD": 2,
+        "COP": 18,
+        "BEV": 3,
+        "TEMP_PERMIT": 2,
+        "SRX": 20,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "mary-esther",
+      "city": "Mary Esther",
+      "total": 34,
+      "byType": {
+        "SRX": 6,
+        "MOBILE_FOOD": 2,
+        "FOOD_SERVICE": 1,
+        "BEV": 1,
+        "COP": 13,
+        "APS": 11
+      }
+    }
+  ],
+  "alachua": [
+    {
+      "citySlug": "gainesville",
+      "city": "Gainesville",
+      "total": 598,
+      "byType": {
+        "FOOD_SERVICE": 16,
+        "COP": 195,
+        "MOBILE_FOOD": 12,
+        "SEATING": 16,
+        "MANUFACTURER": 16,
+        "APS": 203,
+        "SRX": 100,
+        "TEMP_PERMIT": 22,
+        "BEV": 18
+      }
+    },
+    {
+      "citySlug": "alachua",
+      "city": "Alachua",
+      "total": 40,
+      "byType": {
+        "SEATING": 3,
+        "SRX": 5,
+        "MOBILE_FOOD": 3,
+        "FOOD_SERVICE": 1,
+        "COP": 10,
+        "APS": 16,
+        "BEV": 1,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "newberry",
+      "city": "Newberry",
+      "total": 39,
+      "byType": {
+        "SEATING": 2,
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 3,
+        "COP": 11,
+        "SRX": 10,
+        "APS": 12
+      }
+    },
+    {
+      "citySlug": "high-springs",
+      "city": "High Springs",
+      "total": 32,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "SEATING": 3,
+        "MOBILE_FOOD": 2,
+        "APS": 16,
+        "COP": 4,
+        "MANUFACTURER": 1,
+        "SRX": 4
+      }
+    },
+    {
+      "citySlug": "hawthorne",
+      "city": "Hawthorne",
+      "total": 26,
+      "byType": {
+        "MOBILE_FOOD": 3,
+        "SEATING": 2,
+        "COP": 4,
+        "APS": 14,
+        "MANUFACTURER": 2,
+        "SRX": 1
+      }
+    }
+  ],
+  "jackson": [
+    {
+      "citySlug": "marianna",
+      "city": "Marianna",
+      "total": 66,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "APS": 31,
+        "MOBILE_FOOD": 6,
+        "SEATING": 2,
+        "BEV": 8,
+        "COP": 7,
+        "TEMP_PERMIT": 4,
+        "SRX": 6
+      }
+    }
+  ],
+  "lake": [
+    {
+      "citySlug": "clermont",
+      "city": "Clermont",
+      "total": 253,
+      "byType": {
+        "SEATING": 11,
+        "SRX": 44,
+        "MOBILE_FOOD": 22,
+        "FOOD_SERVICE": 10,
+        "COP": 76,
+        "TEMP_PERMIT": 8,
+        "APS": 71,
+        "BEV": 6,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "leesburg",
+      "city": "Leesburg",
+      "total": 172,
+      "byType": {
+        "FOOD_SERVICE": 4,
+        "TEMP_PERMIT": 12,
+        "COP": 47,
+        "SEATING": 11,
+        "APS": 62,
+        "MOBILE_FOOD": 1,
+        "BEV": 9,
+        "SRX": 24,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "eustis",
+      "city": "Eustis",
+      "total": 160,
+      "byType": {
+        "FOOD_SERVICE": 23,
+        "TEMP_PERMIT": 6,
+        "APS": 46,
+        "MOBILE_FOOD": 27,
+        "SEATING": 4,
+        "COP": 33,
+        "BEV": 6,
+        "MANUFACTURER": 2,
+        "SRX": 13
+      }
+    },
+    {
+      "citySlug": "mount-dora",
+      "city": "Mount Dora",
+      "total": 122,
+      "byType": {
+        "APS": 29,
+        "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 3,
+        "SEATING": 7,
+        "COP": 45,
+        "BEV": 6,
+        "SRX": 25,
+        "MANUFACTURER": 4
+      }
+    },
+    {
+      "citySlug": "tavares",
+      "city": "Tavares",
+      "total": 71,
+      "byType": {
+        "SEATING": 1,
+        "BEV": 6,
+        "APS": 25,
+        "TEMP_PERMIT": 5,
+        "COP": 19,
+        "SRX": 14,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "lady-lake",
+      "city": "Lady Lake",
+      "total": 50,
+      "byType": {
+        "APS": 20,
+        "SEATING": 1,
+        "SRX": 15,
+        "TEMP_PERMIT": 1,
+        "COP": 12,
+        "BEV": 1
+      }
+    },
+    {
+      "citySlug": "groveland",
+      "city": "Groveland",
+      "total": 50,
+      "byType": {
+        "FOOD_SERVICE": 13,
+        "MOBILE_FOOD": 5,
+        "COP": 10,
+        "MANUFACTURER": 1,
+        "APS": 18,
+        "BEV": 2,
+        "SRX": 1
+      }
+    },
+    {
+      "citySlug": "umatilla",
+      "city": "Umatilla",
+      "total": 27,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "TEMP_PERMIT": 4,
+        "SEATING": 3,
+        "MOBILE_FOOD": 3,
+        "SRX": 1,
+        "COP": 2,
+        "APS": 12,
+        "BEV": 1
+      }
+    }
+  ],
+  "miami-dade": [
+    {
+      "citySlug": "miami",
+      "city": "Miami",
+      "total": 3831,
+      "byType": {
+        "COP": 1203,
+        "APS": 1254,
+        "FOOD_SERVICE": 270,
+        "SEATING": 90,
+        "MOBILE_FOOD": 232,
+        "TEMP_PERMIT": 60,
+        "BEV": 129,
+        "MANUFACTURER": 259,
+        "SRX": 334
+      }
+    },
+    {
+      "citySlug": "hialeah",
+      "city": "Hialeah",
+      "total": 718,
+      "byType": {
+        "FOOD_SERVICE": 33,
+        "APS": 371,
+        "MOBILE_FOOD": 86,
+        "SEATING": 6,
+        "COP": 164,
+        "TEMP_PERMIT": 6,
+        "SRX": 24,
+        "BEV": 7,
+        "MANUFACTURER": 21
+      }
+    },
+    {
+      "citySlug": "miami-beach",
+      "city": "Miami Beach",
+      "total": 714,
+      "byType": {
+        "COP": 409,
+        "FOOD_SERVICE": 8,
+        "APS": 140,
+        "BEV": 30,
+        "SEATING": 20,
+        "MOBILE_FOOD": 1,
+        "SRX": 85,
+        "MANUFACTURER": 15,
+        "TEMP_PERMIT": 6
+      }
+    },
+    {
+      "citySlug": "md-miami",
+      "city": "Md Miami",
+      "total": 419,
+      "byType": {
+        "APS": 179,
+        "COP": 175,
+        "MANUFACTURER": 21,
+        "SRX": 39,
+        "BEV": 5
+      }
+    },
+    {
+      "citySlug": "doral",
+      "city": "Doral",
+      "total": 303,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SRX": 45,
+        "SEATING": 15,
+        "MOBILE_FOOD": 4,
+        "APS": 41,
+        "COP": 122,
+        "TEMP_PERMIT": 3,
+        "BEV": 5,
+        "MANUFACTURER": 65
+      }
+    },
+    {
+      "citySlug": "coral-gables",
+      "city": "Coral Gables",
+      "total": 255,
+      "byType": {
+        "COP": 110,
+        "SEATING": 10,
+        "FOOD_SERVICE": 11,
+        "APS": 30,
+        "SRX": 63,
+        "BEV": 12,
+        "TEMP_PERMIT": 3,
+        "MANUFACTURER": 16
+      }
+    },
+    {
+      "citySlug": "homestead",
+      "city": "Homestead",
+      "total": 228,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "MOBILE_FOOD": 16,
+        "TEMP_PERMIT": 6,
+        "BEV": 8,
+        "SRX": 18,
+        "SEATING": 5,
+        "APS": 124,
+        "COP": 45,
+        "MANUFACTURER": 4
+      }
+    },
+    {
+      "citySlug": "miami-gardens",
+      "city": "Miami Gardens",
+      "total": 169,
+      "byType": {
+        "FOOD_SERVICE": 16,
+        "MOBILE_FOOD": 25,
+        "SRX": 6,
+        "SEATING": 3,
+        "APS": 87,
+        "MANUFACTURER": 9,
+        "COP": 19,
+        "BEV": 4
+      }
+    },
+    {
+      "citySlug": "north-miami",
+      "city": "North Miami",
+      "total": 167,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "MOBILE_FOOD": 11,
+        "COP": 49,
+        "APS": 74,
+        "SEATING": 6,
+        "BEV": 5,
+        "SRX": 10,
+        "MANUFACTURER": 7
+      }
+    },
+    {
+      "citySlug": "north-miami-beach",
+      "city": "North Miami Beach",
+      "total": 156,
+      "byType": {
+        "COP": 57,
+        "MOBILE_FOOD": 4,
+        "SEATING": 3,
+        "FOOD_SERVICE": 3,
+        "BEV": 2,
+        "APS": 60,
+        "SRX": 21,
+        "MANUFACTURER": 6
+      }
+    },
+    {
+      "citySlug": "aventura",
+      "city": "Aventura",
+      "total": 123,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "COP": 49,
+        "MANUFACTURER": 9,
+        "SEATING": 8,
+        "APS": 16,
+        "SRX": 32,
+        "BEV": 4
+      }
+    },
+    {
+      "citySlug": "medley",
+      "city": "Medley",
+      "total": 90,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "MOBILE_FOOD": 12,
+        "APS": 13,
+        "COP": 22,
+        "MANUFACTURER": 40,
+        "BEV": 1
+      }
+    },
+    {
+      "citySlug": "no-city-code",
+      "city": "No City Code",
+      "total": 75,
+      "byType": {
+        "APS": 21,
+        "COP": 54
+      }
+    },
+    {
+      "citySlug": "miami-lakes",
+      "city": "Miami Lakes",
+      "total": 73,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 27,
+        "MOBILE_FOOD": 2,
+        "APS": 15,
+        "BEV": 3,
+        "SRX": 16,
+        "TEMP_PERMIT": 4,
+        "MANUFACTURER": 4
+      }
+    },
+    {
+      "citySlug": "sunny-isles-beach",
+      "city": "Sunny Isles Beach",
+      "total": 72,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 30,
+        "APS": 15,
+        "SRX": 17,
+        "BEV": 8
+      }
+    },
+    {
+      "citySlug": "key-biscayne",
+      "city": "Key Biscayne",
+      "total": 60,
+      "byType": {
+        "SEATING": 1,
+        "APS": 11,
+        "BEV": 3,
+        "COP": 35,
+        "TEMP_PERMIT": 1,
+        "SRX": 4,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "opa-locka",
+      "city": "Opa-Locka",
+      "total": 57,
+      "byType": {
+        "APS": 26,
+        "FOOD_SERVICE": 4,
+        "SEATING": 1,
+        "TEMP_PERMIT": 1,
+        "COP": 16,
+        "MANUFACTURER": 7,
+        "BEV": 1,
+        "SRX": 1
+      }
+    },
+    {
+      "citySlug": "florida-city",
+      "city": "Florida City",
+      "total": 56,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "TEMP_PERMIT": 1,
+        "MOBILE_FOOD": 2,
+        "SEATING": 2,
+        "COP": 13,
+        "APS": 32,
+        "BEV": 1,
+        "SRX": 3
+      }
+    },
+    {
+      "citySlug": "hialeah-gardens",
+      "city": "Hialeah Gardens",
+      "total": 54,
+      "byType": {
+        "APS": 27,
+        "SEATING": 1,
+        "COP": 19,
+        "MANUFACTURER": 4,
+        "SRX": 3
+      }
+    },
+    {
+      "citySlug": "south-miami",
+      "city": "South Miami",
+      "total": 53,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "COP": 26,
+        "SRX": 12,
+        "SEATING": 1,
+        "MOBILE_FOOD": 1,
+        "APS": 8,
+        "BEV": 2,
+        "TEMP_PERMIT": 2
+      }
+    },
+    {
+      "citySlug": "cutler-bay",
+      "city": "Cutler Bay",
+      "total": 48,
+      "byType": {
+        "COP": 14,
+        "SEATING": 2,
+        "MOBILE_FOOD": 3,
+        "FOOD_SERVICE": 3,
+        "APS": 21,
+        "BEV": 1,
+        "SRX": 4
+      }
+    },
+    {
+      "citySlug": "miami-springs",
+      "city": "Miami Springs",
+      "total": 43,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "BEV": 2,
+        "SEATING": 1,
+        "MOBILE_FOOD": 4,
+        "APS": 11,
+        "COP": 16,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 1,
+        "SRX": 2
+      }
+    },
+    {
+      "citySlug": "pinecrest",
+      "city": "Pinecrest",
+      "total": 34,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "SRX": 3,
+        "SEATING": 2,
+        "APS": 6,
+        "COP": 19,
+        "TEMP_PERMIT": 1,
+        "BEV": 1,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "sweetwater",
+      "city": "Sweetwater",
+      "total": 31,
+      "byType": {
+        "APS": 11,
+        "COP": 11,
+        "SRX": 7,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "surfside",
+      "city": "Surfside",
+      "total": 28,
+      "byType": {
+        "COP": 17,
+        "SEATING": 3,
+        "FOOD_SERVICE": 1,
+        "SRX": 2,
+        "APS": 4,
+        "BEV": 1
+      }
+    },
+    {
+      "citySlug": "palmetto-bay",
+      "city": "Palmetto Bay",
+      "total": 27,
+      "byType": {
+        "APS": 10,
+        "COP": 13,
+        "SRX": 3,
+        "BEV": 1
+      }
+    }
+  ],
+  "palm-beach": [
+    {
+      "citySlug": "west-palm-beach",
+      "city": "West Palm Beach",
+      "total": 797,
+      "byType": {
+        "FOOD_SERVICE": 35,
+        "COP": 224,
+        "SEATING": 33,
+        "SRX": 137,
+        "APS": 242,
+        "MOBILE_FOOD": 49,
+        "TEMP_PERMIT": 16,
+        "BEV": 40,
+        "MANUFACTURER": 20,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "boca-raton",
+      "city": "Boca Raton",
+      "total": 603,
+      "byType": {
+        "FOOD_SERVICE": 16,
+        "TEMP_PERMIT": 16,
+        "SEATING": 23,
+        "MOBILE_FOOD": 13,
+        "SRX": 150,
+        "COP": 194,
+        "MANUFACTURER": 17,
+        "APS": 135,
+        "BEV": 39
+      }
+    },
+    {
+      "citySlug": "delray-beach",
+      "city": "Delray Beach",
+      "total": 374,
+      "byType": {
+        "SRX": 81,
+        "FOOD_SERVICE": 7,
+        "TEMP_PERMIT": 16,
+        "APS": 107,
+        "SEATING": 9,
+        "COP": 127,
+        "MOBILE_FOOD": 3,
+        "BEV": 15,
+        "MANUFACTURER": 9
+      }
+    },
+    {
+      "citySlug": "boynton-beach",
+      "city": "Boynton Beach",
+      "total": 326,
+      "byType": {
+        "COP": 90,
+        "FOOD_SERVICE": 10,
+        "SRX": 65,
+        "MANUFACTURER": 12,
+        "SEATING": 17,
+        "APS": 111,
+        "MOBILE_FOOD": 4,
+        "BEV": 14,
+        "TEMP_PERMIT": 2,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "lake-worth",
+      "city": "Lake Worth",
+      "total": 289,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "TEMP_PERMIT": 4,
+        "COP": 87,
+        "SRX": 37,
+        "MOBILE_FOOD": 2,
+        "SEATING": 2,
+        "BEV": 16,
+        "APS": 135,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "jupiter",
+      "city": "Jupiter",
+      "total": 253,
+      "byType": {
+        "FOOD_SERVICE": 6,
+        "TEMP_PERMIT": 21,
+        "SEATING": 7,
+        "SRX": 56,
+        "BEV": 20,
+        "COP": 73,
+        "APS": 63,
+        "MANUFACTURER": 7
+      }
+    },
+    {
+      "citySlug": "palm-beach-gardens",
+      "city": "Palm Beach Gardens",
+      "total": 228,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SEATING": 14,
+        "MOBILE_FOOD": 2,
+        "SRX": 63,
+        "APS": 60,
+        "BEV": 19,
+        "COP": 62,
+        "TEMP_PERMIT": 4,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "wellington",
+      "city": "Wellington",
+      "total": 112,
+      "byType": {
+        "COP": 33,
+        "FOOD_SERVICE": 7,
+        "SRX": 33,
+        "TEMP_PERMIT": 9,
+        "SEATING": 8,
+        "MOBILE_FOOD": 1,
+        "APS": 16,
+        "MANUFACTURER": 3,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "royal-palm-beach",
+      "city": "Royal Palm Beach",
+      "total": 90,
+      "byType": {
+        "FOOD_SERVICE": 4,
+        "SEATING": 6,
+        "MOBILE_FOOD": 1,
+        "APS": 33,
+        "SRX": 20,
+        "MANUFACTURER": 2,
+        "COP": 22,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "riviera-beach",
+      "city": "Riviera Beach",
+      "total": 86,
+      "byType": {
+        "MOBILE_FOOD": 3,
+        "TEMP_PERMIT": 3,
+        "SEATING": 1,
+        "FOOD_SERVICE": 3,
+        "APS": 46,
+        "BEV": 3,
+        "SRX": 7,
+        "COP": 17,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "lantana",
+      "city": "Lantana",
+      "total": 70,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "BEV": 2,
+        "SEATING": 3,
+        "MOBILE_FOOD": 1,
+        "SRX": 8,
+        "APS": 39,
+        "COP": 12
+      }
+    },
+    {
+      "citySlug": "belle-glade",
+      "city": "Belle Glade",
+      "total": 70,
+      "byType": {
+        "FOOD_SERVICE": 4,
+        "TEMP_PERMIT": 2,
+        "MOBILE_FOOD": 4,
+        "SEATING": 1,
+        "APS": 45,
+        "BEV": 2,
+        "COP": 9,
+        "SRX": 3
+      }
+    },
+    {
+      "citySlug": "palm-springs",
+      "city": "Palm Springs",
+      "total": 66,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "MOBILE_FOOD": 4,
+        "SEATING": 3,
+        "APS": 35,
+        "BEV": 3,
+        "COP": 14,
+        "SRX": 5
+      }
+    },
+    {
+      "citySlug": "lake-park",
+      "city": "Lake Park",
+      "total": 66,
+      "byType": {
+        "FOOD_SERVICE": 7,
+        "APS": 26,
+        "COP": 11,
+        "MANUFACTURER": 3,
+        "MOBILE_FOOD": 3,
+        "SEATING": 2,
+        "SRX": 10,
+        "BEV": 4
+      }
+    },
+    {
+      "citySlug": "palm-beach",
+      "city": "Palm Beach",
+      "total": 63,
+      "byType": {
+        "SEATING": 2,
+        "COP": 34,
+        "BEV": 9,
+        "APS": 4,
+        "SRX": 14
+      }
+    },
+    {
+      "citySlug": "greenacres",
+      "city": "Greenacres",
+      "total": 49,
+      "byType": {
+        "FOOD_SERVICE": 4,
+        "MOBILE_FOOD": 2,
+        "SEATING": 2,
+        "COP": 16,
+        "APS": 18,
+        "SRX": 6,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "north-palm-beach",
+      "city": "North Palm Beach",
+      "total": 49,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "SEATING": 2,
+        "APS": 13,
+        "BEV": 2,
+        "SRX": 15,
+        "TEMP_PERMIT": 1,
+        "BOTTLE_CLUB": 1,
+        "COP": 10,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "tequesta",
+      "city": "Tequesta",
+      "total": 40,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "SEATING": 1,
+        "BEV": 2,
+        "COP": 10,
+        "APS": 9,
+        "TEMP_PERMIT": 4,
+        "MANUFACTURER": 1,
+        "SRX": 12
+      }
+    },
+    {
+      "citySlug": "no-city-code",
+      "city": "No City Code",
+      "total": 31,
+      "byType": {
+        "APS": 12,
+        "COP": 19
+      }
+    },
+    {
+      "citySlug": "juno-beach",
+      "city": "Juno Beach",
+      "total": 27,
+      "byType": {
+        "COP": 13,
+        "SRX": 8,
+        "APS": 4,
+        "TEMP_PERMIT": 1,
+        "BEV": 1
       }
     }
   ],
@@ -3010,50 +5285,61 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "santa-rosa-beach",
       "city": "Santa Rosa Beach",
-      "total": 152,
+      "total": 171,
       "byType": {
+        "COP": 57,
         "FOOD_SERVICE": 4,
-        "COP": 108,
+        "SRX": 52,
+        "MANUFACTURER": 11,
         "SEATING": 6,
         "BEV": 7,
-        "APS": 27
+        "APS": 27,
+        "TEMP_PERMIT": 7
       }
     },
     {
       "citySlug": "miramar-beach",
       "city": "Miramar Beach",
-      "total": 94,
+      "total": 105,
       "byType": {
         "FOOD_SERVICE": 4,
         "SEATING": 3,
-        "COP": 69,
+        "COP": 37,
         "APS": 15,
+        "TEMP_PERMIT": 11,
         "MOBILE_FOOD": 2,
+        "SRX": 32,
         "BEV": 1
       }
     },
     {
       "citySlug": "defuniak-springs",
       "city": "Defuniak Springs",
-      "total": 73,
+      "total": 82,
       "byType": {
         "FOOD_SERVICE": 2,
-        "APS": 36,
+        "APS": 35,
         "MOBILE_FOOD": 8,
-        "COP": 21,
+        "COP": 15,
+        "TEMP_PERMIT": 7,
         "SEATING": 3,
+        "MANUFACTURER": 3,
+        "SRX": 6,
         "BEV": 3
       }
     },
     {
       "citySlug": "freeport",
       "city": "Freeport",
-      "total": 39,
+      "total": 46,
       "byType": {
         "APS": 16,
         "MOBILE_FOOD": 7,
         "SEATING": 1,
-        "COP": 14,
+        "SRX": 5,
+        "TEMP_PERMIT": 2,
+        "COP": 9,
+        "MANUFACTURER": 5,
         "BEV": 1
       }
     },
@@ -3062,10 +5348,468 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "city": "Inlet Beach",
       "total": 33,
       "byType": {
-        "COP": 25,
+        "SRX": 14,
         "SEATING": 3,
+        "COP": 11,
         "BEV": 1,
         "APS": 4
+      }
+    }
+  ],
+  "taylor": [
+    {
+      "citySlug": "perry",
+      "city": "Perry",
+      "total": 56,
+      "byType": {
+        "APS": 31,
+        "FOOD_SERVICE": 4,
+        "MOBILE_FOOD": 2,
+        "SEATING": 1,
+        "BEV": 5,
+        "TEMP_PERMIT": 1,
+        "COP": 7,
+        "SRX": 5
+      }
+    }
+  ],
+  "citrus": [
+    {
+      "citySlug": "crystal-river",
+      "city": "Crystal River",
+      "total": 115,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "SEATING": 5,
+        "TEMP_PERMIT": 3,
+        "COP": 40,
+        "APS": 33,
+        "MOBILE_FOOD": 8,
+        "SRX": 19,
+        "BEV": 2,
+        "MANUFACTURER": 4
+      }
+    },
+    {
+      "citySlug": "homosassa",
+      "city": "Homosassa",
+      "total": 87,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "TEMP_PERMIT": 5,
+        "COP": 29,
+        "MOBILE_FOOD": 5,
+        "SEATING": 1,
+        "BEV": 7,
+        "APS": 31,
+        "SRX": 5,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "inverness",
+      "city": "Inverness",
+      "total": 83,
+      "byType": {
+        "TEMP_PERMIT": 6,
+        "FOOD_SERVICE": 1,
+        "SEATING": 1,
+        "MOBILE_FOOD": 4,
+        "SRX": 16,
+        "BEV": 5,
+        "APS": 28,
+        "COP": 21,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "hernando",
+      "city": "Hernando",
+      "total": 35,
+      "byType": {
+        "MOBILE_FOOD": 1,
+        "SEATING": 1,
+        "BEV": 4,
+        "APS": 16,
+        "SRX": 1,
+        "COP": 12
+      }
+    },
+    {
+      "citySlug": "lecanto",
+      "city": "Lecanto",
+      "total": 28,
+      "byType": {
+        "MOBILE_FOOD": 1,
+        "FOOD_SERVICE": 1,
+        "BEV": 2,
+        "TEMP_PERMIT": 2,
+        "APS": 14,
+        "SRX": 4,
+        "COP": 4
+      }
+    }
+  ],
+  "brevard": [
+    {
+      "citySlug": "melbourne",
+      "city": "Melbourne",
+      "total": 510,
+      "byType": {
+        "FOOD_SERVICE": 30,
+        "APS": 139,
+        "TEMP_PERMIT": 21,
+        "COP": 168,
+        "MOBILE_FOOD": 24,
+        "SEATING": 19,
+        "SRX": 81,
+        "BEV": 20,
+        "MANUFACTURER": 8
+      }
+    },
+    {
+      "citySlug": "palm-bay",
+      "city": "Palm Bay",
+      "total": 191,
+      "byType": {
+        "TEMP_PERMIT": 9,
+        "FOOD_SERVICE": 8,
+        "MOBILE_FOOD": 14,
+        "SEATING": 7,
+        "APS": 89,
+        "SRX": 15,
+        "BEV": 10,
+        "COP": 38,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "cocoa",
+      "city": "Cocoa",
+      "total": 174,
+      "byType": {
+        "FOOD_SERVICE": 8,
+        "SRX": 22,
+        "SEATING": 3,
+        "TEMP_PERMIT": 7,
+        "APS": 80,
+        "MOBILE_FOOD": 2,
+        "BEV": 7,
+        "COP": 37,
+        "MANUFACTURER": 7,
+        "BOTTLE_CLUB": 1
+      }
+    },
+    {
+      "citySlug": "titusville",
+      "city": "Titusville",
+      "total": 159,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "COP": 42,
+        "SRX": 22,
+        "TEMP_PERMIT": 5,
+        "APS": 70,
+        "SEATING": 4,
+        "BEV": 8,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "cocoa-beach",
+      "city": "Cocoa Beach",
+      "total": 148,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SRX": 34,
+        "TEMP_PERMIT": 14,
+        "MOBILE_FOOD": 3,
+        "APS": 22,
+        "COP": 63,
+        "SEATING": 6,
+        "BEV": 2,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "merritt-island",
+      "city": "Merritt Island",
+      "total": 118,
+      "byType": {
+        "COP": 31,
+        "TEMP_PERMIT": 5,
+        "SRX": 21,
+        "SEATING": 4,
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 1,
+        "BEV": 4,
+        "APS": 51
+      }
+    },
+    {
+      "citySlug": "rockledge",
+      "city": "Rockledge",
+      "total": 91,
+      "byType": {
+        "FOOD_SERVICE": 5,
+        "TEMP_PERMIT": 5,
+        "MOBILE_FOOD": 3,
+        "SEATING": 5,
+        "APS": 30,
+        "COP": 22,
+        "BEV": 4,
+        "SRX": 14,
+        "MANUFACTURER": 3
+      }
+    },
+    {
+      "citySlug": "cape-canaveral",
+      "city": "Cape Canaveral",
+      "total": 82,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SEATING": 2,
+        "COP": 34,
+        "BEV": 4,
+        "APS": 18,
+        "TEMP_PERMIT": 6,
+        "MANUFACTURER": 5,
+        "SRX": 10
+      }
+    },
+    {
+      "citySlug": "west-melbourne",
+      "city": "West Melbourne",
+      "total": 71,
+      "byType": {
+        "SEATING": 2,
+        "FOOD_SERVICE": 1,
+        "COP": 26,
+        "APS": 28,
+        "SRX": 11,
+        "MANUFACTURER": 2,
+        "BEV": 1
+      }
+    },
+    {
+      "citySlug": "satellite-beach",
+      "city": "Satellite Beach",
+      "total": 43,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "MOBILE_FOOD": 1,
+        "BEV": 2,
+        "APS": 11,
+        "COP": 18,
+        "SRX": 10
+      }
+    },
+    {
+      "citySlug": "indialantic",
+      "city": "Indialantic",
+      "total": 39,
+      "byType": {
+        "COP": 22,
+        "MOBILE_FOOD": 3,
+        "APS": 7,
+        "SRX": 6,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "indian-harbour-beach",
+      "city": "Indian Harbour Beach",
+      "total": 35,
+      "byType": {
+        "SRX": 7,
+        "APS": 10,
+        "COP": 16,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "melbourne-beach",
+      "city": "Melbourne Beach",
+      "total": 30,
+      "byType": {
+        "SRX": 6,
+        "FOOD_SERVICE": 3,
+        "APS": 9,
+        "COP": 7,
+        "TEMP_PERMIT": 2,
+        "BEV": 3
+      }
+    }
+  ],
+  "marion": [
+    {
+      "citySlug": "ocala",
+      "city": "Ocala",
+      "total": 693,
+      "byType": {
+        "TEMP_PERMIT": 28,
+        "FOOD_SERVICE": 32,
+        "MOBILE_FOOD": 64,
+        "COP": 138,
+        "SEATING": 20,
+        "SRX": 95,
+        "APS": 276,
+        "BEV": 26,
+        "MANUFACTURER": 10,
+        "BOTTLE_CLUB": 4
+      }
+    },
+    {
+      "citySlug": "belleview",
+      "city": "Belleview",
+      "total": 54,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "SEATING": 2,
+        "MOBILE_FOOD": 2,
+        "BEV": 3,
+        "COP": 11,
+        "SRX": 5,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 1,
+        "APS": 28
+      }
+    },
+    {
+      "citySlug": "dunnellon",
+      "city": "Dunnellon",
+      "total": 48,
+      "byType": {
+        "SEATING": 1,
+        "MOBILE_FOOD": 1,
+        "COP": 14,
+        "BEV": 3,
+        "TEMP_PERMIT": 1,
+        "SRX": 7,
+        "APS": 21
+      }
+    },
+    {
+      "citySlug": "summerfield",
+      "city": "Summerfield",
+      "total": 40,
+      "byType": {
+        "COP": 8,
+        "MOBILE_FOOD": 1,
+        "SRX": 8,
+        "TEMP_PERMIT": 1,
+        "APS": 18,
+        "BEV": 3,
+        "MANUFACTURER": 1
+      }
+    }
+  ],
+  "flagler": [
+    {
+      "citySlug": "palm-coast",
+      "city": "Palm Coast",
+      "total": 186,
+      "byType": {
+        "FOOD_SERVICE": 3,
+        "SEATING": 9,
+        "TEMP_PERMIT": 14,
+        "SRX": 33,
+        "COP": 56,
+        "MOBILE_FOOD": 1,
+        "APS": 57,
+        "BEV": 12,
+        "MANUFACTURER": 1
+      }
+    },
+    {
+      "citySlug": "flagler-beach",
+      "city": "Flagler Beach",
+      "total": 62,
+      "byType": {
+        "COP": 26,
+        "FOOD_SERVICE": 2,
+        "SRX": 16,
+        "APS": 13,
+        "MANUFACTURER": 4,
+        "BEV": 1
+      }
+    },
+    {
+      "citySlug": "bunnell",
+      "city": "Bunnell",
+      "total": 57,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "SEATING": 2,
+        "TEMP_PERMIT": 4,
+        "MOBILE_FOOD": 5,
+        "APS": 18,
+        "COP": 17,
+        "MANUFACTURER": 2,
+        "SRX": 3,
+        "BEV": 5
+      }
+    }
+  ],
+  "columbia": [
+    {
+      "citySlug": "lake-city",
+      "city": "Lake City",
+      "total": 197,
+      "byType": {
+        "COP": 43,
+        "FOOD_SERVICE": 5,
+        "TEMP_PERMIT": 8,
+        "MOBILE_FOOD": 9,
+        "SRX": 19,
+        "SEATING": 5,
+        "BEV": 18,
+        "APS": 87,
+        "MANUFACTURER": 3
+      }
+    }
+  ],
+  "escambia": [
+    {
+      "citySlug": "pensacola",
+      "city": "Pensacola",
+      "total": 921,
+      "byType": {
+        "COP": 227,
+        "FOOD_SERVICE": 36,
+        "MOBILE_FOOD": 34,
+        "TEMP_PERMIT": 38,
+        "APS": 369,
+        "MANUFACTURER": 18,
+        "SEATING": 33,
+        "BEV": 31,
+        "SRX": 135
+      }
+    },
+    {
+      "citySlug": "pensacola-beach",
+      "city": "Pensacola Beach",
+      "total": 62,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 30,
+        "TEMP_PERMIT": 6,
+        "MOBILE_FOOD": 1,
+        "SRX": 15,
+        "APS": 6,
+        "BEV": 2
+      }
+    },
+    {
+      "citySlug": "cantonment",
+      "city": "Cantonment",
+      "total": 33,
+      "byType": {
+        "MOBILE_FOOD": 1,
+        "COP": 3,
+        "SRX": 2,
+        "APS": 25,
+        "BEV": 2
       }
     }
   ],
@@ -3073,48 +5817,61 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "st-petersburg",
       "city": "St. Petersburg",
-      "total": 803,
+      "total": 892,
       "byType": {
-        "COP": 447,
+        "TEMP_PERMIT": 56,
+        "SRX": 146,
         "SEATING": 22,
         "FOOD_SERVICE": 42,
+        "COP": 301,
         "MOBILE_FOOD": 15,
         "BEV": 11,
-        "APS": 266
+        "APS": 266,
+        "MANUFACTURER": 33
       }
     },
     {
       "citySlug": "clearwater",
       "city": "Clearwater",
-      "total": 589,
+      "total": 635,
       "byType": {
         "FOOD_SERVICE": 59,
         "MOBILE_FOOD": 21,
-        "COP": 296,
+        "COP": 201,
         "SEATING": 13,
         "APS": 173,
+        "SRX": 95,
+        "MANUFACTURER": 17,
+        "BOTTLE_CLUB": 1,
+        "TEMP_PERMIT": 28,
         "BEV": 27
       }
     },
     {
       "citySlug": "largo",
       "city": "Largo",
-      "total": 286,
+      "total": 302,
       "byType": {
         "FOOD_SERVICE": 3,
         "SEATING": 9,
-        "COP": 142,
+        "COP": 105,
         "APS": 123,
+        "SRX": 37,
+        "TEMP_PERMIT": 2,
         "MOBILE_FOOD": 3,
-        "BEV": 6
+        "BEV": 6,
+        "MANUFACTURER": 14
       }
     },
     {
       "citySlug": "dunedin",
       "city": "Dunedin",
-      "total": 177,
+      "total": 209,
       "byType": {
-        "COP": 125,
+        "MANUFACTURER": 12,
+        "TEMP_PERMIT": 20,
+        "COP": 92,
+        "SRX": 33,
         "SEATING": 3,
         "MOBILE_FOOD": 2,
         "FOOD_SERVICE": 2,
@@ -3125,134 +5882,167 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "pinellas-park",
       "city": "Pinellas Park",
-      "total": 169,
+      "total": 191,
       "byType": {
-        "COP": 70,
+        "TEMP_PERMIT": 15,
+        "COP": 53,
         "SEATING": 4,
         "MOBILE_FOOD": 13,
         "FOOD_SERVICE": 12,
+        "SRX": 17,
         "BEV": 7,
-        "APS": 63
+        "APS": 63,
+        "MANUFACTURER": 7
       }
     },
     {
       "citySlug": "palm-harbor",
       "city": "Palm Harbor",
-      "total": 155,
+      "total": 173,
       "byType": {
+        "COP": 66,
         "FOOD_SERVICE": 4,
         "MOBILE_FOOD": 4,
-        "COP": 92,
+        "SRX": 27,
+        "TEMP_PERMIT": 12,
         "APS": 48,
         "SEATING": 2,
-        "BEV": 5
+        "BEV": 5,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "tarpon-springs",
       "city": "Tarpon Springs",
-      "total": 126,
+      "total": 155,
       "byType": {
         "FOOD_SERVICE": 3,
         "APS": 26,
-        "COP": 83,
+        "SRX": 30,
+        "COP": 52,
+        "TEMP_PERMIT": 19,
         "SEATING": 4,
         "MOBILE_FOOD": 3,
-        "BEV": 7
+        "BEV": 7,
+        "MANUFACTURER": 11
       }
     },
     {
       "citySlug": "seminole",
       "city": "Seminole",
-      "total": 100,
+      "total": 106,
       "byType": {
         "FOOD_SERVICE": 1,
-        "COP": 49,
+        "COP": 37,
+        "TEMP_PERMIT": 5,
         "SEATING": 4,
         "BEV": 5,
-        "APS": 41
-      }
-    },
-    {
-      "citySlug": "st-pete-beach",
-      "city": "St.Pete Beach",
-      "total": 92,
-      "byType": {
-        "COP": 76,
-        "SEATING": 4,
-        "FOOD_SERVICE": 1,
-        "BEV": 1,
-        "APS": 10
+        "APS": 41,
+        "SRX": 12,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "st-petersburg",
       "city": "St Petersburg",
-      "total": 91,
+      "total": 105,
       "byType": {
+        "TEMP_PERMIT": 12,
         "SEATING": 7,
         "FOOD_SERVICE": 3,
         "MOBILE_FOOD": 3,
         "BEV": 19,
         "APS": 29,
-        "COP": 30
+        "COP": 24,
+        "MANUFACTURER": 2,
+        "SRX": 6
       }
     },
     {
-      "citySlug": "oldsmar",
-      "city": "Oldsmar",
-      "total": 72,
+      "citySlug": "st-pete-beach",
+      "city": "St.Pete Beach",
+      "total": 99,
       "byType": {
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 1,
-        "SEATING": 2,
-        "BEV": 3,
-        "COP": 45,
-        "APS": 19
+        "TEMP_PERMIT": 5,
+        "COP": 51,
+        "SEATING": 4,
+        "FOOD_SERVICE": 1,
+        "BEV": 1,
+        "APS": 10,
+        "SRX": 25,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "madeira-beach",
       "city": "Madeira Beach",
-      "total": 64,
+      "total": 80,
       "byType": {
+        "TEMP_PERMIT": 14,
         "SEATING": 1,
         "APS": 10,
         "BEV": 3,
-        "COP": 50
+        "SRX": 15,
+        "COP": 35,
+        "MANUFACTURER": 2
+      }
+    },
+    {
+      "citySlug": "oldsmar",
+      "city": "Oldsmar",
+      "total": 76,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "TEMP_PERMIT": 3,
+        "MOBILE_FOOD": 1,
+        "SEATING": 2,
+        "BEV": 3,
+        "COP": 26,
+        "SRX": 19,
+        "APS": 19,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "safety-harbor",
       "city": "Safety Harbor",
-      "total": 45,
+      "total": 58,
       "byType": {
-        "APS": 6,
+        "TEMP_PERMIT": 9,
         "SEATING": 2,
         "BEV": 4,
-        "COP": 33
+        "APS": 6,
+        "SRX": 13,
+        "COP": 20,
+        "MANUFACTURER": 4
       }
     },
     {
       "citySlug": "treasure-island",
       "city": "Treasure Island",
-      "total": 42,
+      "total": 43,
       "byType": {
         "FOOD_SERVICE": 1,
         "APS": 12,
         "BEV": 2,
-        "COP": 27
+        "COP": 20,
+        "TEMP_PERMIT": 1,
+        "SRX": 7
       }
     },
     {
       "citySlug": "gulfport",
       "city": "Gulfport",
-      "total": 38,
+      "total": 41,
       "byType": {
+        "MANUFACTURER": 1,
         "SEATING": 1,
         "MOBILE_FOOD": 2,
-        "COP": 25,
-        "APS": 10
+        "COP": 20,
+        "APS": 10,
+        "TEMP_PERMIT": 1,
+        "SRX": 5,
+        "BOTTLE_CLUB": 1
       }
     },
     {
@@ -3260,32 +6050,39 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "city": "Clearwater Beach",
       "total": 38,
       "byType": {
-        "COP": 29,
+        "COP": 21,
         "SEATING": 3,
-        "APS": 5,
+        "APS": 4,
+        "SRX": 9,
         "BEV": 1
       }
     },
     {
       "citySlug": "saint-petersburg",
       "city": "Saint Petersburg",
-      "total": 31,
+      "total": 36,
       "byType": {
         "FOOD_SERVICE": 15,
         "SEATING": 3,
-        "COP": 9,
+        "COP": 8,
         "MOBILE_FOOD": 2,
-        "APS": 2
+        "TEMP_PERMIT": 4,
+        "APS": 2,
+        "SRX": 1,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "indian-rocks-beach",
       "city": "Indian Rocks Beach",
-      "total": 29,
+      "total": 33,
       "byType": {
         "FOOD_SERVICE": 1,
-        "COP": 23,
-        "APS": 5
+        "COP": 13,
+        "SRX": 10,
+        "TEMP_PERMIT": 3,
+        "APS": 5,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -3300,180 +6097,20 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "SEATING": 3,
         "APS": 17,
         "BEV": 7,
-        "COP": 10
+        "COP": 8,
+        "SRX": 2
       }
     },
     {
       "citySlug": "williston",
       "city": "Williston",
-      "total": 42,
+      "total": 41,
       "byType": {
         "FOOD_SERVICE": 6,
         "MOBILE_FOOD": 6,
-        "APS": 20,
+        "APS": 19,
         "COP": 8,
         "BEV": 2
-      }
-    }
-  ],
-  "duval": [
-    {
-      "citySlug": "jacksonville",
-      "city": "Jacksonville",
-      "total": 2479,
-      "byType": {
-        "FOOD_SERVICE": 116,
-        "SEATING": 80,
-        "MOBILE_FOOD": 129,
-        "COP": 1042,
-        "APS": 1042,
-        "BEV": 70
-      }
-    },
-    {
-      "citySlug": "jacksonville-beach",
-      "city": "Jacksonville Beach",
-      "total": 152,
-      "byType": {
-        "FOOD_SERVICE": 6,
-        "COP": 110,
-        "SEATING": 5,
-        "BEV": 8,
-        "APS": 23
-      }
-    },
-    {
-      "citySlug": "atlantic-beach",
-      "city": "Atlantic Beach",
-      "total": 65,
-      "byType": {
-        "APS": 15,
-        "SEATING": 1,
-        "MOBILE_FOOD": 1,
-        "COP": 39,
-        "BEV": 9
-      }
-    },
-    {
-      "citySlug": "neptune-beach",
-      "city": "Neptune Beach",
-      "total": 39,
-      "byType": {
-        "COP": 27,
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 2,
-        "APS": 7,
-        "BEV": 1
-      }
-    }
-  ],
-  "lee": [
-    {
-      "citySlug": "fort-myers",
-      "city": "Fort Myers",
-      "total": 998,
-      "byType": {
-        "FOOD_SERVICE": 39,
-        "COP": 497,
-        "APS": 312,
-        "MOBILE_FOOD": 65,
-        "SEATING": 33,
-        "BEV": 52
-      }
-    },
-    {
-      "citySlug": "cape-coral",
-      "city": "Cape Coral",
-      "total": 394,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "COP": 216,
-        "MOBILE_FOOD": 7,
-        "APS": 133,
-        "SEATING": 21,
-        "BEV": 14
-      }
-    },
-    {
-      "citySlug": "bonita-springs",
-      "city": "Bonita Springs",
-      "total": 205,
-      "byType": {
-        "COP": 121,
-        "SEATING": 7,
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 1,
-        "APS": 51,
-        "BEV": 24
-      }
-    },
-    {
-      "citySlug": "north-fort-myers",
-      "city": "North Fort Myers",
-      "total": 150,
-      "byType": {
-        "COP": 45,
-        "MOBILE_FOOD": 32,
-        "FOOD_SERVICE": 4,
-        "SEATING": 1,
-        "APS": 57,
-        "BEV": 11
-      }
-    },
-    {
-      "citySlug": "estero",
-      "city": "Estero",
-      "total": 110,
-      "byType": {
-        "SEATING": 5,
-        "MOBILE_FOOD": 1,
-        "BEV": 10,
-        "COP": 69,
-        "APS": 25
-      }
-    },
-    {
-      "citySlug": "lehigh-acres",
-      "city": "Lehigh Acres",
-      "total": 100,
-      "byType": {
-        "MOBILE_FOOD": 11,
-        "BEV": 6,
-        "APS": 58,
-        "COP": 25
-      }
-    },
-    {
-      "citySlug": "fort-myers-beach",
-      "city": "Fort Myers Beach",
-      "total": 78,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 49,
-        "APS": 19,
-        "SEATING": 2,
-        "MOBILE_FOOD": 1,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "sanibel",
-      "city": "Sanibel",
-      "total": 53,
-      "byType": {
-        "APS": 14,
-        "FOOD_SERVICE": 2,
-        "COP": 32,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "n-ft-myers",
-      "city": "N Ft Myers",
-      "total": 27,
-      "byType": {
-        "FOOD_SERVICE": 22,
-        "MOBILE_FOOD": 5
       }
     }
   ],
@@ -3481,61 +6118,75 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "bradenton",
       "city": "Bradenton",
-      "total": 650,
+      "total": 694,
       "byType": {
         "FOOD_SERVICE": 13,
+        "TEMP_PERMIT": 29,
         "SEATING": 27,
-        "COP": 313,
+        "COP": 205,
         "MOBILE_FOOD": 52,
+        "SRX": 108,
         "APS": 217,
+        "MANUFACTURER": 15,
         "BEV": 28
       }
     },
     {
       "citySlug": "palmetto",
       "city": "Palmetto",
-      "total": 106,
+      "total": 123,
       "byType": {
+        "TEMP_PERMIT": 12,
         "SEATING": 6,
         "MOBILE_FOOD": 7,
-        "APS": 49,
         "FOOD_SERVICE": 1,
         "BEV": 8,
-        "COP": 35
+        "COP": 21,
+        "SRX": 14,
+        "APS": 49,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "sarasota",
       "city": "Sarasota",
-      "total": 62,
+      "total": 73,
       "byType": {
         "FOOD_SERVICE": 3,
         "MOBILE_FOOD": 2,
+        "TEMP_PERMIT": 4,
         "SEATING": 2,
         "BEV": 5,
         "APS": 20,
-        "COP": 30
+        "COP": 19,
+        "SRX": 11,
+        "MANUFACTURER": 7
       }
     },
     {
       "citySlug": "parrish",
       "city": "Parrish",
-      "total": 44,
+      "total": 52,
       "byType": {
+        "TEMP_PERMIT": 6,
         "SEATING": 13,
-        "COP": 13,
+        "SRX": 8,
+        "COP": 5,
         "APS": 17,
+        "MANUFACTURER": 2,
         "BEV": 1
       }
     },
     {
       "citySlug": "lakewood-ranch",
       "city": "Lakewood Ranch",
-      "total": 40,
+      "total": 50,
       "byType": {
         "MOBILE_FOOD": 2,
+        "TEMP_PERMIT": 10,
         "SEATING": 1,
-        "COP": 27,
+        "COP": 13,
+        "SRX": 14,
         "BEV": 7,
         "APS": 3
       }
@@ -3547,31 +6198,50 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "byType": {
         "MOBILE_FOOD": 3,
         "BEV": 3,
-        "COP": 23,
-        "APS": 10
-      }
-    },
-    {
-      "citySlug": "holmes-beach",
-      "city": "Holmes Beach",
-      "total": 34,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 22,
-        "APS": 9,
-        "BEV": 1
+        "SRX": 10,
+        "APS": 10,
+        "COP": 13
       }
     },
     {
       "citySlug": "bradenton-beach",
       "city": "Bradenton Beach",
-      "total": 33,
+      "total": 35,
       "byType": {
+        "TEMP_PERMIT": 2,
         "MOBILE_FOOD": 1,
         "SEATING": 1,
         "FOOD_SERVICE": 1,
-        "COP": 25,
+        "COP": 16,
         "BEV": 1,
+        "APS": 4,
+        "SRX": 9
+      }
+    },
+    {
+      "citySlug": "holmes-beach",
+      "city": "Holmes Beach",
+      "total": 35,
+      "byType": {
+        "FOOD_SERVICE": 2,
+        "COP": 18,
+        "APS": 9,
+        "BEV": 1,
+        "TEMP_PERMIT": 1,
+        "SRX": 4
+      }
+    },
+    {
+      "citySlug": "anna-maria",
+      "city": "Anna Maria",
+      "total": 26,
+      "byType": {
+        "SEATING": 2,
+        "FOOD_SERVICE": 1,
+        "TEMP_PERMIT": 3,
+        "BEV": 1,
+        "SRX": 3,
+        "COP": 12,
         "APS": 4
       }
     }
@@ -3580,27 +6250,33 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "port-charlotte",
       "city": "Port Charlotte",
-      "total": 223,
+      "total": 255,
       "byType": {
         "FOOD_SERVICE": 3,
-        "COP": 110,
+        "TEMP_PERMIT": 28,
+        "COP": 69,
         "BEV": 12,
         "APS": 86,
         "MOBILE_FOOD": 7,
-        "SEATING": 5
+        "SEATING": 5,
+        "SRX": 40,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "punta-gorda",
       "city": "Punta Gorda",
-      "total": 165,
+      "total": 200,
       "byType": {
         "FOOD_SERVICE": 4,
-        "COP": 82,
+        "COP": 47,
+        "TEMP_PERMIT": 34,
         "SEATING": 8,
         "MOBILE_FOOD": 7,
         "BEV": 17,
-        "APS": 47
+        "APS": 47,
+        "SRX": 35,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -3609,799 +6285,11 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "total": 77,
       "byType": {
         "MOBILE_FOOD": 6,
-        "COP": 34,
         "SEATING": 5,
         "BEV": 3,
-        "APS": 29
-      }
-    }
-  ],
-  "orange": [
-    {
-      "citySlug": "orlando",
-      "city": "Orlando",
-      "total": 3153,
-      "byType": {
-        "FOOD_SERVICE": 227,
-        "COP": 1627,
-        "MOBILE_FOOD": 254,
-        "APS": 860,
-        "SEATING": 86,
-        "BEV": 99
-      }
-    },
-    {
-      "citySlug": "winter-park",
-      "city": "Winter Park",
-      "total": 231,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "APS": 49,
-        "SEATING": 6,
-        "COP": 162,
-        "MOBILE_FOOD": 4,
-        "BEV": 8
-      }
-    },
-    {
-      "citySlug": "winter-garden",
-      "city": "Winter Garden",
-      "total": 174,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "COP": 100,
-        "SEATING": 11,
-        "BEV": 4,
-        "APS": 54
-      }
-    },
-    {
-      "citySlug": "apopka",
-      "city": "Apopka",
-      "total": 147,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 7,
-        "COP": 49,
-        "APS": 81,
-        "MOBILE_FOOD": 3,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "ocoee",
-      "city": "Ocoee",
-      "total": 102,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "COP": 54,
-        "MOBILE_FOOD": 2,
-        "APS": 41,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "lake-buena-vista",
-      "city": "Lake Buena Vista",
-      "total": 96,
-      "byType": {
-        "FOOD_SERVICE": 18,
-        "MOBILE_FOOD": 3,
-        "COP": 65,
-        "BEV": 5,
-        "APS": 5
-      }
-    },
-    {
-      "citySlug": "windermere",
-      "city": "Windermere",
-      "total": 46,
-      "byType": {
-        "COP": 32,
-        "FOOD_SERVICE": 2,
-        "SEATING": 1,
-        "APS": 9,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "maitland",
-      "city": "Maitland",
-      "total": 44,
-      "byType": {
-        "COP": 33,
-        "SEATING": 3,
-        "FOOD_SERVICE": 1,
-        "APS": 6,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "no-city-code",
-      "city": "No City Code",
-      "total": 26,
-      "byType": {
-        "COP": 13,
-        "APS": 13
-      }
-    }
-  ],
-  "brevard": [
-    {
-      "citySlug": "melbourne",
-      "city": "Melbourne",
-      "total": 481,
-      "byType": {
-        "FOOD_SERVICE": 30,
-        "APS": 139,
-        "COP": 249,
-        "MOBILE_FOOD": 24,
-        "SEATING": 19,
-        "BEV": 20
-      }
-    },
-    {
-      "citySlug": "palm-bay",
-      "city": "Palm Bay",
-      "total": 181,
-      "byType": {
-        "FOOD_SERVICE": 8,
-        "MOBILE_FOOD": 14,
-        "SEATING": 7,
-        "APS": 89,
-        "COP": 53,
-        "BEV": 10
-      }
-    },
-    {
-      "citySlug": "cocoa",
-      "city": "Cocoa",
-      "total": 161,
-      "byType": {
-        "FOOD_SERVICE": 8,
-        "COP": 60,
-        "SEATING": 3,
-        "APS": 81,
-        "MOBILE_FOOD": 2,
-        "BEV": 7
-      }
-    },
-    {
-      "citySlug": "titusville",
-      "city": "Titusville",
-      "total": 151,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "COP": 65,
-        "APS": 71,
-        "SEATING": 4,
-        "BEV": 8
-      }
-    },
-    {
-      "citySlug": "cocoa-beach",
-      "city": "Cocoa Beach",
-      "total": 132,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "COP": 97,
-        "MOBILE_FOOD": 3,
-        "SEATING": 6,
-        "BEV": 2,
-        "APS": 21
-      }
-    },
-    {
-      "citySlug": "merritt-island",
-      "city": "Merritt Island",
-      "total": 113,
-      "byType": {
-        "COP": 52,
-        "SEATING": 4,
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 1,
-        "BEV": 4,
-        "APS": 51
-      }
-    },
-    {
-      "citySlug": "rockledge",
-      "city": "Rockledge",
-      "total": 83,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "MOBILE_FOOD": 3,
-        "SEATING": 5,
-        "APS": 30,
-        "COP": 36,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "cape-canaveral",
-      "city": "Cape Canaveral",
-      "total": 71,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 2,
-        "COP": 44,
-        "BEV": 4,
-        "APS": 18
-      }
-    },
-    {
-      "citySlug": "west-melbourne",
-      "city": "West Melbourne",
-      "total": 69,
-      "byType": {
-        "SEATING": 2,
-        "FOOD_SERVICE": 1,
-        "COP": 37,
-        "APS": 28,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "satellite-beach",
-      "city": "Satellite Beach",
-      "total": 43,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 1,
-        "BEV": 2,
-        "APS": 11,
-        "COP": 28
-      }
-    },
-    {
-      "citySlug": "indialantic",
-      "city": "Indialantic",
-      "total": 38,
-      "byType": {
-        "COP": 28,
-        "MOBILE_FOOD": 3,
-        "APS": 7
-      }
-    },
-    {
-      "citySlug": "indian-harbour-beach",
-      "city": "Indian Harbour Beach",
-      "total": 35,
-      "byType": {
-        "COP": 23,
-        "APS": 10,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "melbourne-beach",
-      "city": "Melbourne Beach",
-      "total": 27,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "APS": 9,
-        "COP": 12,
-        "BEV": 3
-      }
-    }
-  ],
-  "okaloosa": [
-    {
-      "citySlug": "destin",
-      "city": "Destin",
-      "total": 222,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 13,
-        "COP": 143,
-        "MOBILE_FOOD": 7,
-        "APS": 49,
-        "BEV": 7
-      }
-    },
-    {
-      "citySlug": "fort-walton-beach",
-      "city": "Fort Walton Beach",
-      "total": 222,
-      "byType": {
-        "FOOD_SERVICE": 6,
-        "COP": 122,
-        "APS": 72,
-        "SEATING": 7,
-        "MOBILE_FOOD": 12,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "crestview",
-      "city": "Crestview",
-      "total": 112,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "APS": 53,
-        "SEATING": 2,
-        "MOBILE_FOOD": 8,
-        "COP": 40,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "niceville",
-      "city": "Niceville",
-      "total": 87,
-      "byType": {
-        "FOOD_SERVICE": 7,
-        "APS": 34,
-        "SEATING": 3,
-        "MOBILE_FOOD": 2,
-        "COP": 38,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "mary-esther",
-      "city": "Mary Esther",
-      "total": 34,
-      "byType": {
-        "COP": 19,
-        "MOBILE_FOOD": 2,
-        "FOOD_SERVICE": 1,
-        "BEV": 1,
-        "APS": 11
-      }
-    }
-  ],
-  "miami-dade": [
-    {
-      "citySlug": "miami",
-      "city": "Miami",
-      "total": 3513,
-      "byType": {
-        "FOOD_SERVICE": 270,
-        "SEATING": 90,
-        "MOBILE_FOOD": 232,
-        "APS": 1252,
-        "BEV": 130,
-        "COP": 1539
-      }
-    },
-    {
-      "citySlug": "hialeah",
-      "city": "Hialeah",
-      "total": 693,
-      "byType": {
-        "FOOD_SERVICE": 33,
-        "APS": 373,
-        "MOBILE_FOOD": 86,
-        "SEATING": 6,
-        "COP": 188,
-        "BEV": 7
-      }
-    },
-    {
-      "citySlug": "miami-beach",
-      "city": "Miami Beach",
-      "total": 693,
-      "byType": {
-        "FOOD_SERVICE": 8,
-        "APS": 140,
-        "BEV": 30,
-        "COP": 494,
-        "SEATING": 20,
-        "MOBILE_FOOD": 1
-      }
-    },
-    {
-      "citySlug": "md-miami",
-      "city": "Md Miami",
-      "total": 398,
-      "byType": {
-        "APS": 179,
-        "COP": 214,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "coral-gables",
-      "city": "Coral Gables",
-      "total": 236,
-      "byType": {
-        "COP": 173,
-        "SEATING": 10,
-        "FOOD_SERVICE": 11,
-        "APS": 30,
-        "BEV": 12
-      }
-    },
-    {
-      "citySlug": "doral",
-      "city": "Doral",
-      "total": 235,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "COP": 167,
-        "SEATING": 15,
-        "MOBILE_FOOD": 4,
-        "APS": 41,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "homestead",
-      "city": "Homestead",
-      "total": 218,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 16,
-        "BEV": 8,
-        "COP": 63,
-        "SEATING": 5,
-        "APS": 124
-      }
-    },
-    {
-      "citySlug": "miami-gardens",
-      "city": "Miami Gardens",
-      "total": 160,
-      "byType": {
-        "FOOD_SERVICE": 16,
-        "MOBILE_FOOD": 25,
-        "COP": 25,
-        "SEATING": 3,
-        "APS": 87,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "north-miami",
-      "city": "North Miami",
-      "total": 160,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "MOBILE_FOOD": 11,
-        "COP": 59,
-        "APS": 74,
-        "SEATING": 6,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "north-miami-beach",
-      "city": "North Miami Beach",
-      "total": 149,
-      "byType": {
-        "MOBILE_FOOD": 4,
-        "SEATING": 3,
-        "FOOD_SERVICE": 3,
-        "COP": 77,
-        "BEV": 2,
-        "APS": 60
-      }
-    },
-    {
-      "citySlug": "aventura",
-      "city": "Aventura",
-      "total": 114,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "COP": 81,
-        "SEATING": 8,
-        "APS": 16,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "no-city-code",
-      "city": "No City Code",
-      "total": 74,
-      "byType": {
-        "APS": 21,
-        "COP": 53
-      }
-    },
-    {
-      "citySlug": "sunny-isles-beach",
-      "city": "Sunny Isles Beach",
-      "total": 73,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 48,
-        "APS": 15,
-        "BEV": 8
-      }
-    },
-    {
-      "citySlug": "miami-lakes",
-      "city": "Miami Lakes",
-      "total": 65,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 43,
-        "MOBILE_FOOD": 2,
-        "APS": 15,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "florida-city",
-      "city": "Florida City",
-      "total": 55,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 2,
-        "SEATING": 2,
-        "COP": 16,
-        "APS": 32,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "key-biscayne",
-      "city": "Key Biscayne",
-      "total": 54,
-      "byType": {
-        "SEATING": 1,
-        "APS": 11,
-        "BEV": 3,
-        "COP": 39
-      }
-    },
-    {
-      "citySlug": "south-miami",
-      "city": "South Miami",
-      "total": 52,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "COP": 38,
-        "SEATING": 1,
-        "MOBILE_FOOD": 1,
-        "APS": 9,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "medley",
-      "city": "Medley",
-      "total": 50,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 12,
-        "APS": 13,
-        "COP": 22,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "hialeah-gardens",
-      "city": "Hialeah Gardens",
-      "total": 50,
-      "byType": {
-        "APS": 27,
-        "SEATING": 1,
-        "COP": 22
-      }
-    },
-    {
-      "citySlug": "opa-locka",
-      "city": "Opa-Locka",
-      "total": 49,
-      "byType": {
-        "APS": 26,
-        "FOOD_SERVICE": 4,
-        "SEATING": 1,
-        "COP": 17,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "cutler-bay",
-      "city": "Cutler Bay",
-      "total": 48,
-      "byType": {
-        "COP": 18,
-        "SEATING": 2,
-        "MOBILE_FOOD": 3,
-        "FOOD_SERVICE": 3,
-        "APS": 21,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "miami-springs",
-      "city": "Miami Springs",
-      "total": 41,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "BEV": 2,
-        "SEATING": 1,
-        "MOBILE_FOOD": 4,
-        "APS": 11,
-        "COP": 18
-      }
-    },
-    {
-      "citySlug": "pinecrest",
-      "city": "Pinecrest",
-      "total": 32,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "COP": 22,
-        "SEATING": 2,
-        "APS": 6,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "sweetwater",
-      "city": "Sweetwater",
-      "total": 29,
-      "byType": {
-        "APS": 11,
-        "COP": 18
-      }
-    },
-    {
-      "citySlug": "surfside",
-      "city": "Surfside",
-      "total": 28,
-      "byType": {
-        "COP": 19,
-        "SEATING": 3,
-        "FOOD_SERVICE": 1,
-        "APS": 4,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "palmetto-bay",
-      "city": "Palmetto Bay",
-      "total": 27,
-      "byType": {
-        "APS": 10,
-        "COP": 16,
-        "BEV": 1
-      }
-    }
-  ],
-  "escambia": [
-    {
-      "citySlug": "pensacola",
-      "city": "Pensacola",
-      "total": 864,
-      "byType": {
-        "FOOD_SERVICE": 36,
-        "MOBILE_FOOD": 34,
-        "COP": 361,
-        "APS": 369,
-        "SEATING": 33,
-        "BEV": 31
-      }
-    },
-    {
-      "citySlug": "pensacola-beach",
-      "city": "Pensacola Beach",
-      "total": 56,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 45,
-        "MOBILE_FOOD": 1,
-        "APS": 6,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "cantonment",
-      "city": "Cantonment",
-      "total": 33,
-      "byType": {
-        "MOBILE_FOOD": 1,
-        "COP": 5,
-        "APS": 25,
-        "BEV": 2
-      }
-    }
-  ],
-  "polk": [
-    {
-      "citySlug": "lakeland",
-      "city": "Lakeland",
-      "total": 565,
-      "byType": {
-        "FOOD_SERVICE": 28,
-        "COP": 228,
-        "MOBILE_FOOD": 27,
-        "SEATING": 13,
-        "APS": 251,
-        "BEV": 18
-      }
-    },
-    {
-      "citySlug": "winter-haven",
-      "city": "Winter Haven",
-      "total": 282,
-      "byType": {
-        "FOOD_SERVICE": 15,
-        "MOBILE_FOOD": 23,
-        "APS": 120,
-        "COP": 105,
-        "BEV": 10,
-        "SEATING": 9
-      }
-    },
-    {
-      "citySlug": "davenport",
-      "city": "Davenport",
-      "total": 158,
-      "byType": {
-        "FOOD_SERVICE": 8,
-        "COP": 63,
-        "SEATING": 11,
-        "APS": 60,
-        "MOBILE_FOOD": 13,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "haines-city",
-      "city": "Haines City",
-      "total": 124,
-      "byType": {
-        "FOOD_SERVICE": 13,
-        "MOBILE_FOOD": 29,
-        "APS": 46,
-        "SEATING": 3,
-        "COP": 30,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "lake-wales",
-      "city": "Lake Wales",
-      "total": 119,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "COP": 38,
-        "APS": 58,
-        "MOBILE_FOOD": 12,
-        "SEATING": 7,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "auburndale",
-      "city": "Auburndale",
-      "total": 72,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "APS": 49,
-        "SEATING": 1,
-        "MOBILE_FOOD": 2,
-        "COP": 17
-      }
-    },
-    {
-      "citySlug": "bartow",
-      "city": "Bartow",
-      "total": 66,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 4,
-        "APS": 34,
-        "BEV": 3,
-        "COP": 24
-      }
-    },
-    {
-      "citySlug": "mulberry",
-      "city": "Mulberry",
-      "total": 37,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 3,
-        "MOBILE_FOOD": 2,
-        "BEV": 1,
-        "APS": 25,
-        "COP": 3
+        "APS": 29,
+        "SRX": 15,
+        "COP": 19
       }
     }
   ],
@@ -4409,38 +6297,46 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "naples",
       "city": "Naples",
-      "total": 1093,
+      "total": 1141,
       "byType": {
         "FOOD_SERVICE": 29,
         "SEATING": 40,
-        "COP": 618,
+        "SRX": 296,
+        "MANUFACTURER": 16,
+        "COP": 321,
         "BEV": 111,
         "MOBILE_FOOD": 12,
-        "APS": 283
+        "APS": 283,
+        "TEMP_PERMIT": 33
       }
     },
     {
       "citySlug": "marco-island",
       "city": "Marco Island",
-      "total": 104,
+      "total": 124,
       "byType": {
         "BEV": 6,
         "MOBILE_FOOD": 1,
-        "COP": 71,
+        "COP": 34,
+        "SRX": 37,
         "SEATING": 3,
-        "APS": 23
+        "APS": 23,
+        "TEMP_PERMIT": 19,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "immokalee",
       "city": "Immokalee",
-      "total": 71,
+      "total": 72,
       "byType": {
         "FOOD_SERVICE": 3,
         "APS": 46,
         "SEATING": 1,
         "MOBILE_FOOD": 3,
-        "COP": 18
+        "COP": 15,
+        "SRX": 3,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -4448,11 +6344,13 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "port-st-joe",
       "city": "Port St Joe",
-      "total": 51,
+      "total": 53,
       "byType": {
         "SEATING": 2,
-        "COP": 36,
+        "SRX": 11,
         "MOBILE_FOOD": 1,
+        "TEMP_PERMIT": 2,
+        "COP": 25,
         "BEV": 1,
         "APS": 11
       }
@@ -4466,256 +6364,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "SEATING": 2,
         "BEV": 1,
         "APS": 15,
-        "COP": 5
-      }
-    }
-  ],
-  "palm-beach": [
-    {
-      "citySlug": "west-palm-beach",
-      "city": "West Palm Beach",
-      "total": 760,
-      "byType": {
-        "FOOD_SERVICE": 35,
-        "COP": 361,
-        "SEATING": 33,
-        "APS": 242,
-        "MOBILE_FOOD": 49,
-        "BEV": 40
-      }
-    },
-    {
-      "citySlug": "boca-raton",
-      "city": "Boca Raton",
-      "total": 571,
-      "byType": {
-        "FOOD_SERVICE": 16,
-        "SEATING": 23,
-        "MOBILE_FOOD": 13,
-        "COP": 344,
-        "APS": 135,
-        "BEV": 40
-      }
-    },
-    {
-      "citySlug": "delray-beach",
-      "city": "Delray Beach",
-      "total": 348,
-      "byType": {
-        "FOOD_SERVICE": 7,
-        "APS": 107,
-        "SEATING": 9,
-        "COP": 207,
-        "MOBILE_FOOD": 3,
-        "BEV": 15
-      }
-    },
-    {
-      "citySlug": "boynton-beach",
-      "city": "Boynton Beach",
-      "total": 311,
-      "byType": {
-        "FOOD_SERVICE": 10,
-        "COP": 155,
-        "SEATING": 17,
-        "APS": 111,
-        "MOBILE_FOOD": 4,
-        "BEV": 14
-      }
-    },
-    {
-      "citySlug": "lake-worth",
-      "city": "Lake Worth",
-      "total": 284,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "COP": 124,
-        "MOBILE_FOOD": 2,
-        "SEATING": 2,
-        "BEV": 16,
-        "APS": 135
-      }
-    },
-    {
-      "citySlug": "jupiter",
-      "city": "Jupiter",
-      "total": 225,
-      "byType": {
-        "FOOD_SERVICE": 6,
-        "SEATING": 7,
-        "COP": 129,
-        "BEV": 20,
-        "APS": 63
-      }
-    },
-    {
-      "citySlug": "palm-beach-gardens",
-      "city": "Palm Beach Gardens",
-      "total": 223,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 14,
-        "MOBILE_FOOD": 2,
-        "COP": 125,
-        "APS": 60,
-        "BEV": 19
-      }
-    },
-    {
-      "citySlug": "wellington",
-      "city": "Wellington",
-      "total": 99,
-      "byType": {
-        "FOOD_SERVICE": 7,
-        "COP": 65,
-        "SEATING": 8,
-        "MOBILE_FOOD": 1,
-        "APS": 16,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "royal-palm-beach",
-      "city": "Royal Palm Beach",
-      "total": 88,
-      "byType": {
-        "FOOD_SERVICE": 4,
-        "SEATING": 6,
-        "MOBILE_FOOD": 1,
-        "APS": 33,
-        "COP": 42,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "riviera-beach",
-      "city": "Riviera Beach",
-      "total": 80,
-      "byType": {
-        "MOBILE_FOOD": 3,
-        "SEATING": 1,
-        "FOOD_SERVICE": 3,
-        "APS": 46,
-        "BEV": 3,
-        "COP": 24
-      }
-    },
-    {
-      "citySlug": "lantana",
-      "city": "Lantana",
-      "total": 70,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "BEV": 2,
-        "SEATING": 3,
-        "MOBILE_FOOD": 1,
-        "COP": 20,
-        "APS": 39
-      }
-    },
-    {
-      "citySlug": "belle-glade",
-      "city": "Belle Glade",
-      "total": 68,
-      "byType": {
-        "FOOD_SERVICE": 4,
-        "MOBILE_FOOD": 4,
-        "SEATING": 1,
-        "APS": 45,
-        "BEV": 2,
-        "COP": 12
-      }
-    },
-    {
-      "citySlug": "palm-springs",
-      "city": "Palm Springs",
-      "total": 66,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 4,
-        "SEATING": 3,
-        "APS": 35,
-        "BEV": 3,
-        "COP": 19
-      }
-    },
-    {
-      "citySlug": "lake-park",
-      "city": "Lake Park",
-      "total": 63,
-      "byType": {
-        "FOOD_SERVICE": 7,
-        "APS": 26,
-        "COP": 21,
-        "MOBILE_FOOD": 3,
-        "SEATING": 2,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "palm-beach",
-      "city": "Palm Beach",
-      "total": 63,
-      "byType": {
-        "SEATING": 2,
-        "COP": 48,
-        "BEV": 9,
-        "APS": 4
-      }
-    },
-    {
-      "citySlug": "greenacres",
-      "city": "Greenacres",
-      "total": 48,
-      "byType": {
-        "FOOD_SERVICE": 4,
-        "MOBILE_FOOD": 2,
-        "SEATING": 2,
-        "COP": 22,
-        "APS": 18
-      }
-    },
-    {
-      "citySlug": "north-palm-beach",
-      "city": "North Palm Beach",
-      "total": 45,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "SEATING": 2,
-        "APS": 13,
-        "BEV": 2,
-        "COP": 26
-      }
-    },
-    {
-      "citySlug": "tequesta",
-      "city": "Tequesta",
-      "total": 35,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "SEATING": 1,
-        "BEV": 2,
-        "COP": 22,
-        "APS": 9
-      }
-    },
-    {
-      "citySlug": "no-city-code",
-      "city": "No City Code",
-      "total": 33,
-      "byType": {
-        "APS": 13,
-        "COP": 20
-      }
-    },
-    {
-      "citySlug": "juno-beach",
-      "city": "Juno Beach",
-      "total": 26,
-      "byType": {
-        "COP": 21,
-        "APS": 4,
-        "BEV": 1
+        "SRX": 1,
+        "COP": 4
       }
     }
   ],
@@ -4723,65 +6373,80 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "daytona-beach",
       "city": "Daytona Beach",
-      "total": 409,
+      "total": 444,
       "byType": {
         "FOOD_SERVICE": 15,
-        "COP": 222,
+        "COP": 143,
         "MOBILE_FOOD": 9,
         "SEATING": 11,
         "APS": 134,
-        "BEV": 18
+        "TEMP_PERMIT": 32,
+        "SRX": 78,
+        "BEV": 18,
+        "MANUFACTURER": 4
       }
     },
     {
       "citySlug": "ormond-beach",
       "city": "Ormond Beach",
-      "total": 222,
+      "total": 235,
       "byType": {
         "FOOD_SERVICE": 9,
-        "COP": 126,
+        "SRX": 50,
         "MOBILE_FOOD": 10,
         "APS": 63,
         "BEV": 9,
-        "SEATING": 5
+        "SEATING": 5,
+        "COP": 76,
+        "MANUFACTURER": 6,
+        "TEMP_PERMIT": 7
       }
     },
     {
       "citySlug": "new-smyrna-beach",
       "city": "New Smyrna Beach",
-      "total": 205,
+      "total": 221,
       "byType": {
-        "COP": 127,
+        "COP": 89,
         "SEATING": 8,
         "MOBILE_FOOD": 4,
         "FOOD_SERVICE": 5,
+        "TEMP_PERMIT": 12,
         "APS": 53,
-        "BEV": 8
+        "BEV": 8,
+        "SRX": 38,
+        "MANUFACTURER": 4
       }
     },
     {
       "citySlug": "deland",
       "city": "Deland",
-      "total": 193,
+      "total": 200,
       "byType": {
         "FOOD_SERVICE": 9,
-        "COP": 90,
+        "COP": 68,
         "MOBILE_FOOD": 9,
         "SEATING": 2,
         "BEV": 10,
-        "APS": 73
+        "APS": 73,
+        "SRX": 22,
+        "TEMP_PERMIT": 5,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "port-orange",
       "city": "Port Orange",
-      "total": 146,
+      "total": 150,
       "byType": {
-        "COP": 81,
+        "SRX": 39,
         "SEATING": 5,
         "APS": 52,
         "MOBILE_FOOD": 4,
-        "BEV": 4
+        "BEV": 4,
+        "COP": 42,
+        "TEMP_PERMIT": 2,
+        "MANUFACTURER": 2
       }
     },
     {
@@ -4793,20 +6458,24 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "SEATING": 2,
         "MOBILE_FOOD": 2,
         "APS": 56,
-        "COP": 20,
+        "COP": 16,
+        "SRX": 4,
         "BEV": 1
       }
     },
     {
       "citySlug": "orange-city",
       "city": "Orange City",
-      "total": 71,
+      "total": 73,
       "byType": {
-        "COP": 38,
+        "SRX": 19,
         "FOOD_SERVICE": 1,
         "MOBILE_FOOD": 1,
         "APS": 29,
-        "BEV": 2
+        "COP": 19,
+        "BEV": 2,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -4819,32 +6488,39 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "FOOD_SERVICE": 6,
         "SEATING": 1,
         "BEV": 6,
-        "COP": 17
+        "COP": 14,
+        "TEMP_PERMIT": 1,
+        "SRX": 2
       }
     },
     {
       "citySlug": "holly-hill",
       "city": "Holly Hill",
-      "total": 56,
+      "total": 57,
       "byType": {
         "FOOD_SERVICE": 2,
         "MOBILE_FOOD": 2,
         "SEATING": 3,
         "BEV": 2,
         "APS": 30,
-        "COP": 17
+        "COP": 14,
+        "SRX": 3,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "debary",
       "city": "Debary",
-      "total": 41,
+      "total": 43,
       "byType": {
+        "TEMP_PERMIT": 1,
         "SEATING": 2,
         "MOBILE_FOOD": 1,
         "APS": 16,
         "BEV": 6,
-        "COP": 16
+        "COP": 10,
+        "SRX": 6,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -4853,9 +6529,10 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "total": 40,
       "byType": {
         "MOBILE_FOOD": 1,
-        "COP": 20,
+        "SRX": 7,
         "SEATING": 2,
         "BEV": 2,
+        "COP": 13,
         "APS": 15
       }
     },
@@ -4868,7 +6545,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "MOBILE_FOOD": 1,
         "SEATING": 1,
         "FOOD_SERVICE": 1,
-        "COP": 25,
+        "SRX": 4,
+        "COP": 21,
         "BEV": 1
       }
     }
@@ -4877,76 +6555,78 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "sarasota",
       "city": "Sarasota",
-      "total": 925,
+      "total": 1019,
       "byType": {
         "FOOD_SERVICE": 35,
         "APS": 207,
-        "COP": 575,
+        "SRX": 223,
+        "COP": 351,
         "SEATING": 27,
         "MOBILE_FOOD": 30,
-        "BEV": 51
+        "TEMP_PERMIT": 67,
+        "BEV": 51,
+        "MANUFACTURER": 27,
+        "BOTTLE_CLUB": 1
       }
     },
     {
       "citySlug": "venice",
       "city": "Venice",
-      "total": 255,
+      "total": 290,
       "byType": {
-        "COP": 155,
+        "COP": 92,
         "MOBILE_FOOD": 6,
         "SEATING": 8,
+        "TEMP_PERMIT": 30,
         "FOOD_SERVICE": 1,
         "APS": 67,
-        "BEV": 18
+        "BEV": 18,
+        "SRX": 63,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "north-port",
       "city": "North Port",
-      "total": 95,
+      "total": 101,
       "byType": {
         "FOOD_SERVICE": 4,
         "SEATING": 3,
         "MOBILE_FOOD": 3,
         "BEV": 6,
         "APS": 42,
-        "COP": 37
+        "TEMP_PERMIT": 4,
+        "COP": 22,
+        "SRX": 15,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "englewood",
       "city": "Englewood",
-      "total": 46,
+      "total": 58,
       "byType": {
         "MOBILE_FOOD": 4,
         "SEATING": 1,
         "BEV": 6,
-        "COP": 25,
+        "COP": 18,
+        "TEMP_PERMIT": 12,
+        "SRX": 7,
         "APS": 10
       }
     },
     {
       "citySlug": "nokomis",
       "city": "Nokomis",
-      "total": 45,
+      "total": 48,
       "byType": {
         "APS": 17,
         "SEATING": 1,
         "MOBILE_FOOD": 1,
         "BEV": 5,
-        "COP": 21
-      }
-    },
-    {
-      "citySlug": "osprey",
-      "city": "Osprey",
-      "total": 25,
-      "byType": {
-        "COP": 14,
-        "SEATING": 1,
-        "MOBILE_FOOD": 1,
-        "FOOD_SERVICE": 1,
-        "APS": 8
+        "COP": 15,
+        "TEMP_PERMIT": 3,
+        "SRX": 6
       }
     }
   ],
@@ -4954,89 +6634,109 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "sanford",
       "city": "Sanford",
-      "total": 263,
+      "total": 282,
       "byType": {
         "FOOD_SERVICE": 6,
         "SEATING": 11,
-        "COP": 126,
+        "TEMP_PERMIT": 5,
+        "COP": 85,
         "APS": 98,
         "MOBILE_FOOD": 10,
-        "BEV": 12
+        "BEV": 12,
+        "SRX": 41,
+        "MANUFACTURER": 14
       }
     },
     {
       "citySlug": "altamonte-springs",
       "city": "Altamonte Springs",
-      "total": 143,
+      "total": 157,
       "byType": {
         "FOOD_SERVICE": 9,
         "SEATING": 5,
-        "COP": 74,
+        "SRX": 32,
+        "COP": 42,
         "APS": 54,
+        "TEMP_PERMIT": 10,
+        "MANUFACTURER": 3,
+        "BOTTLE_CLUB": 1,
         "BEV": 1
-      }
-    },
-    {
-      "citySlug": "oviedo",
-      "city": "Oviedo",
-      "total": 140,
-      "byType": {
-        "COP": 86,
-        "SEATING": 4,
-        "MOBILE_FOOD": 2,
-        "FOOD_SERVICE": 2,
-        "APS": 44,
-        "BEV": 2
       }
     },
     {
       "citySlug": "longwood",
       "city": "Longwood",
-      "total": 138,
+      "total": 152,
       "byType": {
         "MOBILE_FOOD": 12,
         "FOOD_SERVICE": 12,
-        "COP": 58,
+        "COP": 36,
+        "SRX": 22,
+        "MANUFACTURER": 12,
         "SEATING": 6,
         "APS": 41,
-        "BEV": 9
+        "BEV": 9,
+        "TEMP_PERMIT": 2
+      }
+    },
+    {
+      "citySlug": "oviedo",
+      "city": "Oviedo",
+      "total": 144,
+      "byType": {
+        "COP": 54,
+        "SRX": 32,
+        "SEATING": 4,
+        "MOBILE_FOOD": 2,
+        "FOOD_SERVICE": 2,
+        "APS": 44,
+        "MANUFACTURER": 3,
+        "TEMP_PERMIT": 1,
+        "BEV": 2
       }
     },
     {
       "citySlug": "lake-mary",
       "city": "Lake Mary",
-      "total": 113,
+      "total": 115,
       "byType": {
         "FOOD_SERVICE": 1,
         "SEATING": 1,
         "APS": 25,
-        "COP": 85,
+        "SRX": 29,
+        "COP": 56,
+        "MANUFACTURER": 2,
         "BEV": 1
       }
     },
     {
       "citySlug": "casselberry",
       "city": "Casselberry",
-      "total": 78,
+      "total": 83,
       "byType": {
         "FOOD_SERVICE": 4,
-        "COP": 31,
+        "COP": 22,
+        "TEMP_PERMIT": 2,
         "MOBILE_FOOD": 2,
         "SEATING": 1,
+        "SRX": 9,
         "APS": 37,
-        "BEV": 3
+        "BEV": 3,
+        "MANUFACTURER": 3
       }
     },
     {
       "citySlug": "winter-springs",
       "city": "Winter Springs",
-      "total": 59,
+      "total": 64,
       "byType": {
         "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 5,
         "SEATING": 3,
         "BEV": 4,
-        "COP": 26,
-        "APS": 23
+        "COP": 19,
+        "APS": 23,
+        "SRX": 7
       }
     }
   ],
@@ -5044,13 +6744,15 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "live-oak",
       "city": "Live Oak",
-      "total": 75,
+      "total": 79,
       "byType": {
         "FOOD_SERVICE": 4,
         "SEATING": 6,
         "MOBILE_FOOD": 2,
         "APS": 37,
-        "COP": 20,
+        "TEMP_PERMIT": 4,
+        "COP": 14,
+        "SRX": 6,
         "BEV": 6
       }
     }
@@ -5059,92 +6761,49 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "wauchula",
       "city": "Wauchula",
-      "total": 33,
+      "total": 34,
       "byType": {
         "FOOD_SERVICE": 1,
         "MOBILE_FOOD": 1,
         "APS": 18,
-        "COP": 9,
+        "TEMP_PERMIT": 1,
+        "COP": 5,
+        "SRX": 4,
         "BEV": 4
-      }
-    }
-  ],
-  "marion": [
-    {
-      "citySlug": "ocala",
-      "city": "Ocala",
-      "total": 651,
-      "byType": {
-        "FOOD_SERVICE": 32,
-        "MOBILE_FOOD": 64,
-        "COP": 233,
-        "SEATING": 20,
-        "APS": 276,
-        "BEV": 26
-      }
-    },
-    {
-      "citySlug": "belleview",
-      "city": "Belleview",
-      "total": 52,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "SEATING": 2,
-        "MOBILE_FOOD": 2,
-        "BEV": 3,
-        "COP": 16,
-        "APS": 28
-      }
-    },
-    {
-      "citySlug": "dunnellon",
-      "city": "Dunnellon",
-      "total": 47,
-      "byType": {
-        "SEATING": 1,
-        "MOBILE_FOOD": 1,
-        "COP": 21,
-        "BEV": 3,
-        "APS": 21
-      }
-    },
-    {
-      "citySlug": "summerfield",
-      "city": "Summerfield",
-      "total": 38,
-      "byType": {
-        "COP": 16,
-        "MOBILE_FOOD": 1,
-        "APS": 18,
-        "BEV": 3
       }
     }
   ],
   "st-lucie": [
     {
-      "citySlug": "port-st-lucie",
-      "city": "Port St Lucie",
-      "total": 343,
-      "byType": {
-        "COP": 175,
-        "SEATING": 14,
-        "FOOD_SERVICE": 8,
-        "APS": 128,
-        "MOBILE_FOOD": 9,
-        "BEV": 9
-      }
-    },
-    {
       "citySlug": "fort-pierce",
       "city": "Fort Pierce",
-      "total": 328,
+      "total": 361,
       "byType": {
         "FOOD_SERVICE": 26,
         "MOBILE_FOOD": 42,
+        "TEMP_PERMIT": 23,
         "APS": 135,
-        "COP": 110,
+        "SRX": 29,
         "SEATING": 4,
-        "BEV": 11
+        "COP": 81,
+        "BEV": 11,
+        "MANUFACTURER": 10
+      }
+    },
+    {
+      "citySlug": "port-st-lucie",
+      "city": "Port St Lucie",
+      "total": 353,
+      "byType": {
+        "SRX": 66,
+        "SEATING": 14,
+        "COP": 109,
+        "FOOD_SERVICE": 8,
+        "APS": 128,
+        "MOBILE_FOOD": 9,
+        "TEMP_PERMIT": 7,
+        "BEV": 9,
+        "MANUFACTURER": 3
       }
     },
     {
@@ -5155,184 +6814,22 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "FOOD_SERVICE": 3,
         "SEATING": 5,
         "MOBILE_FOOD": 4,
-        "COP": 16,
+        "SRX": 4,
         "APS": 15,
-        "BEV": 2
+        "BEV": 2,
+        "COP": 12
       }
     },
     {
       "citySlug": "ft-pierce",
       "city": "Ft Pierce",
-      "total": 25,
+      "total": 26,
       "byType": {
         "BEV": 4,
-        "COP": 6,
-        "APS": 15
-      }
-    }
-  ],
-  "monroe": [
-    {
-      "citySlug": "key-west",
-      "city": "Key West",
-      "total": 432,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "MOBILE_FOOD": 7,
-        "COP": 324,
-        "SEATING": 2,
-        "APS": 74,
-        "BEV": 23
-      }
-    },
-    {
-      "citySlug": "marathon",
-      "city": "Marathon",
-      "total": 95,
-      "byType": {
-        "FOOD_SERVICE": 4,
-        "APS": 27,
-        "MOBILE_FOOD": 4,
-        "SEATING": 2,
-        "COP": 48,
-        "BEV": 10
-      }
-    },
-    {
-      "citySlug": "key-largo",
-      "city": "Key Largo",
-      "total": 94,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 53,
-        "APS": 25,
-        "SEATING": 3,
-        "MOBILE_FOOD": 2,
-        "BEV": 9
-      }
-    },
-    {
-      "citySlug": "islamorada",
-      "city": "Islamorada",
-      "total": 81,
-      "byType": {
-        "BEV": 7,
-        "COP": 56,
-        "MOBILE_FOOD": 2,
-        "SEATING": 1,
-        "FOOD_SERVICE": 1,
-        "APS": 14
-      }
-    },
-    {
-      "citySlug": "tavernier",
-      "city": "Tavernier",
-      "total": 32,
-      "byType": {
-        "MOBILE_FOOD": 2,
-        "COP": 20,
-        "APS": 8,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "big-pine-key",
-      "city": "Big Pine Key",
-      "total": 28,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 3,
-        "APS": 14,
-        "BEV": 1,
-        "COP": 9
-      }
-    }
-  ],
-  "st-johns": [
-    {
-      "citySlug": "saint-augustine",
-      "city": "Saint Augustine",
-      "total": 476,
-      "byType": {
-        "FOOD_SERVICE": 11,
-        "COP": 280,
-        "MOBILE_FOOD": 20,
-        "SEATING": 18,
-        "APS": 131,
-        "BEV": 16
-      }
-    },
-    {
-      "citySlug": "st-johns",
-      "city": "St. Johns",
-      "total": 83,
-      "byType": {
-        "SEATING": 9,
-        "APS": 24,
-        "COP": 49,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "ponte-vedra-beach",
-      "city": "Ponte Vedra Beach",
-      "total": 76,
-      "byType": {
-        "SEATING": 3,
-        "MOBILE_FOOD": 1,
-        "FOOD_SERVICE": 1,
-        "COP": 44,
-        "APS": 14,
-        "BEV": 13
-      }
-    },
-    {
-      "citySlug": "st-augustine",
-      "city": "St Augustine",
-      "total": 73,
-      "byType": {
-        "SEATING": 3,
-        "COP": 47,
-        "MOBILE_FOOD": 2,
-        "FOOD_SERVICE": 1,
+        "SRX": 1,
         "APS": 15,
-        "BEV": 5
-      }
-    },
-    {
-      "citySlug": "ponte-vedra",
-      "city": "Ponte Vedra",
-      "total": 40,
-      "byType": {
-        "SEATING": 2,
-        "FOOD_SERVICE": 1,
-        "BEV": 1,
-        "COP": 29,
-        "APS": 7
-      }
-    },
-    {
-      "citySlug": "st-augustine",
-      "city": "St. Augustine",
-      "total": 33,
-      "byType": {
-        "MOBILE_FOOD": 3,
-        "SEATING": 10,
-        "COP": 16,
-        "FOOD_SERVICE": 1,
-        "APS": 3
-      }
-    },
-    {
-      "citySlug": "saint-johns",
-      "city": "Saint Johns",
-      "total": 32,
-      "byType": {
-        "SEATING": 1,
-        "FOOD_SERVICE": 1,
-        "APS": 14,
-        "COP": 15,
-        "BEV": 1
+        "COP": 5,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -5340,39 +6837,47 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "orange-park",
       "city": "Orange Park",
-      "total": 167,
+      "total": 171,
       "byType": {
         "FOOD_SERVICE": 3,
         "SEATING": 4,
-        "COP": 75,
+        "SRX": 34,
         "MOBILE_FOOD": 3,
         "BEV": 9,
-        "APS": 73
+        "APS": 73,
+        "COP": 41,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 3
       }
     },
     {
       "citySlug": "middleburg",
       "city": "Middleburg",
-      "total": 71,
+      "total": 76,
       "byType": {
         "FOOD_SERVICE": 1,
         "APS": 42,
-        "COP": 17,
+        "SRX": 5,
         "SEATING": 8,
-        "BEV": 3
+        "BEV": 3,
+        "TEMP_PERMIT": 4,
+        "COP": 12,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "green-cove-springs",
       "city": "Green Cove Springs",
-      "total": 57,
+      "total": 61,
       "byType": {
         "FOOD_SERVICE": 6,
         "MOBILE_FOOD": 6,
         "SEATING": 1,
         "BEV": 3,
         "APS": 27,
-        "COP": 14
+        "TEMP_PERMIT": 4,
+        "SRX": 6,
+        "COP": 8
       }
     },
     {
@@ -5383,7 +6888,9 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "SEATING": 3,
         "MOBILE_FOOD": 1,
         "APS": 6,
-        "COP": 28
+        "COP": 16,
+        "SRX": 11,
+        "MANUFACTURER": 1
       }
     },
     {
@@ -5395,58 +6902,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "SEATING": 1,
         "BEV": 2,
         "APS": 14,
-        "COP": 7
-      }
-    }
-  ],
-  "osceola": [
-    {
-      "citySlug": "kissimmee",
-      "city": "Kissimmee",
-      "total": 710,
-      "byType": {
-        "FOOD_SERVICE": 28,
-        "MOBILE_FOOD": 68,
-        "COP": 337,
-        "APS": 231,
-        "SEATING": 26,
-        "BEV": 20
-      }
-    },
-    {
-      "citySlug": "st-cloud",
-      "city": "St. Cloud",
-      "total": 91,
-      "byType": {
-        "MOBILE_FOOD": 7,
-        "COP": 39,
-        "FOOD_SERVICE": 7,
-        "SEATING": 1,
-        "APS": 35,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "saint-cloud",
-      "city": "Saint Cloud",
-      "total": 40,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "APS": 16,
-        "COP": 13,
-        "MOBILE_FOOD": 4,
-        "SEATING": 2
-      }
-    },
-    {
-      "citySlug": "celebration",
-      "city": "Celebration",
-      "total": 30,
-      "byType": {
-        "SEATING": 1,
-        "COP": 22,
-        "BEV": 3,
-        "APS": 4
+        "COP": 3,
+        "SRX": 4
       }
     }
   ],
@@ -5454,182 +6911,32 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "vero-beach",
       "city": "Vero Beach",
-      "total": 350,
+      "total": 396,
       "byType": {
         "FOOD_SERVICE": 4,
         "SEATING": 14,
-        "COP": 180,
+        "COP": 112,
         "APS": 113,
         "MOBILE_FOOD": 12,
-        "BEV": 27
+        "MANUFACTURER": 9,
+        "TEMP_PERMIT": 38,
+        "BEV": 27,
+        "SRX": 67
       }
     },
     {
       "citySlug": "sebastian",
       "city": "Sebastian",
-      "total": 85,
+      "total": 98,
       "byType": {
+        "TEMP_PERMIT": 11,
         "MOBILE_FOOD": 4,
         "FOOD_SERVICE": 2,
-        "COP": 43,
+        "COP": 31,
+        "SRX": 12,
         "APS": 30,
-        "BEV": 6
-      }
-    }
-  ],
-  "citrus": [
-    {
-      "citySlug": "crystal-river",
-      "city": "Crystal River",
-      "total": 108,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "SEATING": 5,
-        "COP": 59,
-        "APS": 33,
-        "MOBILE_FOOD": 8,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "homosassa",
-      "city": "Homosassa",
-      "total": 80,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 34,
-        "MOBILE_FOOD": 5,
-        "SEATING": 1,
-        "BEV": 7,
-        "APS": 31
-      }
-    },
-    {
-      "citySlug": "inverness",
-      "city": "Inverness",
-      "total": 76,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "SEATING": 1,
-        "MOBILE_FOOD": 4,
-        "COP": 37,
-        "BEV": 5,
-        "APS": 28
-      }
-    },
-    {
-      "citySlug": "hernando",
-      "city": "Hernando",
-      "total": 35,
-      "byType": {
-        "MOBILE_FOOD": 1,
-        "SEATING": 1,
-        "BEV": 4,
-        "APS": 16,
-        "COP": 13
-      }
-    },
-    {
-      "citySlug": "lecanto",
-      "city": "Lecanto",
-      "total": 26,
-      "byType": {
-        "MOBILE_FOOD": 1,
-        "FOOD_SERVICE": 1,
-        "BEV": 2,
-        "APS": 14,
-        "COP": 8
-      }
-    }
-  ],
-  "alachua": [
-    {
-      "citySlug": "gainesville",
-      "city": "Gainesville",
-      "total": 560,
-      "byType": {
-        "FOOD_SERVICE": 16,
-        "COP": 295,
-        "MOBILE_FOOD": 12,
-        "SEATING": 16,
-        "APS": 203,
-        "BEV": 18
-      }
-    },
-    {
-      "citySlug": "alachua",
-      "city": "Alachua",
-      "total": 39,
-      "byType": {
-        "SEATING": 3,
-        "COP": 15,
-        "MOBILE_FOOD": 3,
-        "FOOD_SERVICE": 1,
-        "APS": 16,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "newberry",
-      "city": "Newberry",
-      "total": 39,
-      "byType": {
-        "SEATING": 2,
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 3,
-        "COP": 21,
-        "APS": 12
-      }
-    },
-    {
-      "citySlug": "high-springs",
-      "city": "High Springs",
-      "total": 31,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "SEATING": 3,
-        "MOBILE_FOOD": 2,
-        "APS": 16,
-        "COP": 8
-      }
-    }
-  ],
-  "flagler": [
-    {
-      "citySlug": "palm-coast",
-      "city": "Palm Coast",
-      "total": 171,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 9,
-        "COP": 89,
-        "MOBILE_FOOD": 1,
-        "APS": 57,
-        "BEV": 12
-      }
-    },
-    {
-      "citySlug": "flagler-beach",
-      "city": "Flagler Beach",
-      "total": 57,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 41,
-        "APS": 13,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "bunnell",
-      "city": "Bunnell",
-      "total": 51,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "SEATING": 2,
-        "MOBILE_FOOD": 5,
-        "APS": 18,
-        "COP": 20,
-        "BEV": 5
+        "BEV": 6,
+        "MANUFACTURER": 2
       }
     }
   ],
@@ -5637,67 +6944,63 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "milton",
       "city": "Milton",
-      "total": 115,
+      "total": 122,
       "byType": {
         "FOOD_SERVICE": 2,
+        "TEMP_PERMIT": 4,
         "APS": 70,
         "MOBILE_FOOD": 10,
         "SEATING": 4,
         "BEV": 4,
-        "COP": 25
+        "COP": 17,
+        "MANUFACTURER": 3,
+        "SRX": 8
       }
     },
     {
       "citySlug": "navarre",
       "city": "Navarre",
-      "total": 82,
+      "total": 87,
       "byType": {
         "FOOD_SERVICE": 1,
         "MOBILE_FOOD": 3,
         "SEATING": 4,
+        "TEMP_PERMIT": 2,
         "BEV": 3,
         "APS": 33,
-        "COP": 38
+        "SRX": 16,
+        "COP": 22,
+        "MANUFACTURER": 3
       }
     },
     {
       "citySlug": "gulf-breeze",
       "city": "Gulf Breeze",
-      "total": 71,
+      "total": 74,
       "byType": {
         "MOBILE_FOOD": 5,
         "SEATING": 3,
         "BEV": 2,
         "APS": 33,
-        "COP": 28
+        "SRX": 13,
+        "TEMP_PERMIT": 2,
+        "COP": 15,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "pace",
       "city": "Pace",
-      "total": 62,
+      "total": 63,
       "byType": {
         "FOOD_SERVICE": 2,
         "SEATING": 1,
         "MOBILE_FOOD": 1,
         "APS": 37,
         "BEV": 1,
-        "COP": 20
-      }
-    }
-  ],
-  "taylor": [
-    {
-      "citySlug": "perry",
-      "city": "Perry",
-      "total": 54,
-      "byType": {
-        "FOOD_SERVICE": 4,
-        "MOBILE_FOOD": 2,
-        "SEATING": 1,
-        "APS": 30,
-        "BEV": 5,
-        "COP": 12
+        "SRX": 10,
+        "COP": 10,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -5705,197 +7008,80 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "palatka",
       "city": "Palatka",
-      "total": 95,
+      "total": 105,
       "byType": {
         "FOOD_SERVICE": 2,
+        "TEMP_PERMIT": 8,
         "APS": 46,
         "MOBILE_FOOD": 5,
         "SEATING": 4,
         "BEV": 5,
-        "COP": 33
+        "COP": 25,
+        "SRX": 8,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "crescent-city",
       "city": "Crescent City",
-      "total": 33,
+      "total": 34,
       "byType": {
         "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 1,
         "SEATING": 1,
-        "COP": 10,
+        "SRX": 2,
         "MOBILE_FOOD": 1,
         "BEV": 2,
-        "APS": 16
-      }
-    }
-  ],
-  "pasco": [
-    {
-      "citySlug": "new-port-richey",
-      "city": "New Port Richey",
-      "total": 266,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "APS": 108,
-        "COP": 117,
-        "MOBILE_FOOD": 7,
-        "SEATING": 17,
-        "BEV": 12
-      }
-    },
-    {
-      "citySlug": "wesley-chapel",
-      "city": "Wesley Chapel",
-      "total": 145,
-      "byType": {
-        "COP": 87,
-        "SEATING": 10,
-        "APS": 43,
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 2,
-        "BEV": 2
-      }
-    },
-    {
-      "citySlug": "hudson",
-      "city": "Hudson",
-      "total": 125,
-      "byType": {
-        "APS": 63,
-        "COP": 41,
-        "FOOD_SERVICE": 4,
-        "SEATING": 2,
-        "MOBILE_FOOD": 5,
-        "BEV": 10
-      }
-    },
-    {
-      "citySlug": "zephyrhills",
-      "city": "Zephyrhills",
-      "total": 108,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "MOBILE_FOOD": 3,
-        "COP": 37,
-        "SEATING": 2,
-        "APS": 53,
-        "BEV": 10
-      }
-    },
-    {
-      "citySlug": "port-richey",
-      "city": "Port Richey",
-      "total": 99,
-      "byType": {
-        "COP": 42,
-        "MOBILE_FOOD": 6,
-        "SEATING": 3,
-        "APS": 44,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "dade-city",
-      "city": "Dade City",
-      "total": 96,
-      "byType": {
-        "FOOD_SERVICE": 12,
-        "APS": 39,
-        "MOBILE_FOOD": 9,
-        "COP": 27,
-        "SEATING": 3,
-        "BEV": 6
-      }
-    },
-    {
-      "citySlug": "lutz",
-      "city": "Lutz",
-      "total": 76,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "COP": 35,
-        "SEATING": 2,
-        "MOBILE_FOOD": 11,
-        "APS": 20,
-        "BEV": 3
-      }
-    },
-    {
-      "citySlug": "holiday",
-      "city": "Holiday",
-      "total": 58,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "MOBILE_FOOD": 4,
-        "SEATING": 2,
-        "BEV": 3,
-        "APS": 33,
-        "COP": 13
-      }
-    },
-    {
-      "citySlug": "land-o-lakes",
-      "city": "Land O' Lakes",
-      "total": 51,
-      "byType": {
-        "SEATING": 2,
-        "COP": 21,
-        "FOOD_SERVICE": 3,
-        "MOBILE_FOOD": 1,
-        "BEV": 1,
-        "APS": 23
-      }
-    },
-    {
-      "citySlug": "odessa",
-      "city": "Odessa",
-      "total": 26,
-      "byType": {
-        "SEATING": 2,
-        "MOBILE_FOOD": 1,
-        "FOOD_SERVICE": 1,
-        "COP": 10,
-        "BEV": 1,
-        "APS": 11
+        "APS": 16,
+        "COP": 8
       }
     }
   ],
   "hernando": [
     {
+      "citySlug": "brooksville",
+      "city": "Brooksville",
+      "total": 189,
+      "byType": {
+        "FOOD_SERVICE": 8,
+        "MOBILE_FOOD": 10,
+        "SEATING": 6,
+        "APS": 68,
+        "TEMP_PERMIT": 10,
+        "BEV": 14,
+        "SRX": 24,
+        "COP": 43,
+        "MANUFACTURER": 6
+      }
+    },
+    {
       "citySlug": "spring-hill",
       "city": "Spring Hill",
-      "total": 175,
+      "total": 181,
       "byType": {
         "FOOD_SERVICE": 3,
         "APS": 81,
         "MOBILE_FOOD": 11,
         "SEATING": 3,
         "BEV": 5,
-        "COP": 72
-      }
-    },
-    {
-      "citySlug": "brooksville",
-      "city": "Brooksville",
-      "total": 173,
-      "byType": {
-        "FOOD_SERVICE": 8,
-        "MOBILE_FOOD": 10,
-        "SEATING": 6,
-        "APS": 68,
-        "BEV": 14,
-        "COP": 67
+        "COP": 49,
+        "SRX": 23,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 5
       }
     },
     {
       "citySlug": "weeki-wachee",
       "city": "Weeki Wachee",
-      "total": 28,
+      "total": 31,
       "byType": {
         "MOBILE_FOOD": 1,
-        "COP": 15,
+        "COP": 12,
+        "TEMP_PERMIT": 1,
+        "SRX": 3,
         "APS": 10,
-        "BEV": 2
+        "BEV": 2,
+        "MANUFACTURER": 2
       }
     }
   ],
@@ -5903,38 +7089,46 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "sebring",
       "city": "Sebring",
-      "total": 146,
+      "total": 166,
       "byType": {
-        "COP": 68,
+        "TEMP_PERMIT": 14,
+        "COP": 45,
         "SEATING": 4,
         "MOBILE_FOOD": 6,
+        "SRX": 23,
+        "MANUFACTURER": 6,
         "BEV": 10,
         "APS": 58
       }
     },
     {
-      "citySlug": "avon-park",
-      "city": "Avon Park",
-      "total": 63,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "COP": 23,
-        "SEATING": 5,
-        "BEV": 5,
-        "APS": 29
-      }
-    },
-    {
       "citySlug": "lake-placid",
       "city": "Lake Placid",
-      "total": 60,
+      "total": 69,
       "byType": {
         "FOOD_SERVICE": 3,
+        "TEMP_PERMIT": 4,
         "SEATING": 2,
         "MOBILE_FOOD": 3,
         "BEV": 4,
-        "COP": 21,
-        "APS": 27
+        "COP": 14,
+        "APS": 27,
+        "SRX": 7,
+        "MANUFACTURER": 5
+      }
+    },
+    {
+      "citySlug": "avon-park",
+      "city": "Avon Park",
+      "total": 64,
+      "byType": {
+        "FOOD_SERVICE": 1,
+        "SRX": 3,
+        "COP": 20,
+        "SEATING": 5,
+        "BEV": 5,
+        "TEMP_PERMIT": 1,
+        "APS": 29
       }
     }
   ],
@@ -5942,27 +7136,32 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "labelle",
       "city": "Labelle",
-      "total": 69,
+      "total": 75,
       "byType": {
         "FOOD_SERVICE": 4,
-        "COP": 27,
+        "COP": 19,
         "MOBILE_FOOD": 5,
         "SEATING": 2,
         "BEV": 6,
-        "APS": 25
+        "APS": 25,
+        "TEMP_PERMIT": 4,
+        "SRX": 8,
+        "MANUFACTURER": 2
       }
     },
     {
       "citySlug": "clewiston",
       "city": "Clewiston",
-      "total": 67,
+      "total": 68,
       "byType": {
         "FOOD_SERVICE": 2,
         "MOBILE_FOOD": 1,
         "SEATING": 2,
         "BEV": 4,
         "APS": 32,
-        "COP": 26
+        "COP": 23,
+        "MANUFACTURER": 1,
+        "SRX": 3
       }
     }
   ],
@@ -5976,7 +7175,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "MOBILE_FOOD": 2,
         "APS": 22,
         "BEV": 5,
-        "COP": 9
+        "COP": 5,
+        "SRX": 4
       }
     }
   ],
@@ -5990,7 +7190,8 @@ export const CITY_STATS: Record<string, CityStat[]> = {
         "MOBILE_FOOD": 4,
         "SEATING": 1,
         "APS": 24,
-        "COP": 13,
+        "COP": 8,
+        "SRX": 5,
         "BEV": 4
       }
     }
@@ -6002,11 +7203,12 @@ export const CITY_STATS: Record<string, CityStat[]> = {
       "total": 36,
       "byType": {
         "FOOD_SERVICE": 1,
-        "COP": 7,
+        "SRX": 4,
         "SEATING": 1,
         "MOBILE_FOOD": 1,
         "APS": 22,
-        "BEV": 4
+        "BEV": 4,
+        "COP": 3
       }
     }
   ],
@@ -6014,116 +7216,16 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "chipley",
       "city": "Chipley",
-      "total": 44,
+      "total": 45,
       "byType": {
         "FOOD_SERVICE": 2,
-        "COP": 11,
+        "COP": 5,
         "MOBILE_FOOD": 2,
         "SEATING": 2,
         "APS": 25,
+        "SRX": 6,
+        "MANUFACTURER": 1,
         "BEV": 2
-      }
-    }
-  ],
-  "lake": [
-    {
-      "citySlug": "clermont",
-      "city": "Clermont",
-      "total": 240,
-      "byType": {
-        "SEATING": 11,
-        "COP": 120,
-        "MOBILE_FOOD": 22,
-        "FOOD_SERVICE": 10,
-        "APS": 71,
-        "BEV": 6
-      }
-    },
-    {
-      "citySlug": "leesburg",
-      "city": "Leesburg",
-      "total": 158,
-      "byType": {
-        "FOOD_SERVICE": 4,
-        "COP": 71,
-        "SEATING": 11,
-        "APS": 62,
-        "MOBILE_FOOD": 1,
-        "BEV": 9
-      }
-    },
-    {
-      "citySlug": "eustis",
-      "city": "Eustis",
-      "total": 153,
-      "byType": {
-        "FOOD_SERVICE": 23,
-        "APS": 47,
-        "MOBILE_FOOD": 27,
-        "SEATING": 4,
-        "COP": 46,
-        "BEV": 6
-      }
-    },
-    {
-      "citySlug": "mount-dora",
-      "city": "Mount Dora",
-      "total": 114,
-      "byType": {
-        "FOOD_SERVICE": 3,
-        "SEATING": 7,
-        "COP": 70,
-        "BEV": 6,
-        "APS": 28
-      }
-    },
-    {
-      "citySlug": "tavares",
-      "city": "Tavares",
-      "total": 65,
-      "byType": {
-        "SEATING": 1,
-        "BEV": 6,
-        "APS": 25,
-        "COP": 33
-      }
-    },
-    {
-      "citySlug": "lady-lake",
-      "city": "Lady Lake",
-      "total": 49,
-      "byType": {
-        "APS": 20,
-        "SEATING": 1,
-        "COP": 27,
-        "BEV": 1
-      }
-    },
-    {
-      "citySlug": "groveland",
-      "city": "Groveland",
-      "total": 49,
-      "byType": {
-        "FOOD_SERVICE": 13,
-        "MOBILE_FOOD": 5,
-        "COP": 11,
-        "APS": 18,
-        "BEV": 2
-      }
-    }
-  ],
-  "jackson": [
-    {
-      "citySlug": "marianna",
-      "city": "Marianna",
-      "total": 62,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "APS": 31,
-        "MOBILE_FOOD": 6,
-        "SEATING": 2,
-        "BEV": 8,
-        "COP": 13
       }
     }
   ],
@@ -6131,13 +7233,16 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "monticello",
       "city": "Monticello",
-      "total": 31,
+      "total": 34,
       "byType": {
         "FOOD_SERVICE": 1,
-        "COP": 11,
+        "SRX": 5,
         "SEATING": 1,
+        "COP": 6,
         "BEV": 4,
-        "APS": 14
+        "APS": 14,
+        "TEMP_PERMIT": 1,
+        "MANUFACTURER": 2
       }
     }
   ],
@@ -6145,79 +7250,31 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "quincy",
       "city": "Quincy",
-      "total": 61,
+      "total": 66,
       "byType": {
         "FOOD_SERVICE": 2,
+        "TEMP_PERMIT": 5,
         "SEATING": 3,
         "MOBILE_FOOD": 5,
-        "COP": 15,
+        "COP": 12,
         "APS": 30,
-        "BEV": 6
+        "BEV": 6,
+        "SRX": 3
       }
     },
     {
       "citySlug": "havana",
       "city": "Havana",
-      "total": 32,
+      "total": 36,
       "byType": {
         "FOOD_SERVICE": 1,
+        "TEMP_PERMIT": 4,
         "MOBILE_FOOD": 3,
         "SEATING": 2,
         "APS": 15,
-        "COP": 7,
-        "BEV": 4
-      }
-    }
-  ],
-  "martin": [
-    {
-      "citySlug": "stuart",
-      "city": "Stuart",
-      "total": 310,
-      "byType": {
-        "FOOD_SERVICE": 9,
-        "COP": 174,
-        "SEATING": 4,
-        "MOBILE_FOOD": 6,
-        "BEV": 20,
-        "APS": 97
-      }
-    },
-    {
-      "citySlug": "jensen-beach",
-      "city": "Jensen Beach",
-      "total": 91,
-      "byType": {
-        "SEATING": 2,
-        "COP": 51,
-        "MOBILE_FOOD": 1,
-        "BEV": 6,
-        "APS": 31
-      }
-    },
-    {
-      "citySlug": "hobe-sound",
-      "city": "Hobe Sound",
-      "total": 57,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 2,
-        "APS": 21,
-        "SEATING": 3,
-        "BEV": 8,
-        "COP": 22
-      }
-    },
-    {
-      "citySlug": "palm-city",
-      "city": "Palm City",
-      "total": 50,
-      "byType": {
-        "COP": 24,
-        "SEATING": 2,
-        "MOBILE_FOOD": 1,
-        "BEV": 5,
-        "APS": 18
+        "COP": 5,
+        "BEV": 4,
+        "SRX": 2
       }
     }
   ],
@@ -6225,29 +7282,17 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "arcadia",
       "city": "Arcadia",
-      "total": 78,
+      "total": 86,
       "byType": {
         "FOOD_SERVICE": 2,
-        "COP": 30,
+        "COP": 26,
         "MOBILE_FOOD": 3,
         "SEATING": 2,
         "BEV": 10,
-        "APS": 31
-      }
-    }
-  ],
-  "columbia": [
-    {
-      "citySlug": "lake-city",
-      "city": "Lake City",
-      "total": 185,
-      "byType": {
-        "FOOD_SERVICE": 5,
-        "COP": 61,
-        "MOBILE_FOOD": 9,
-        "SEATING": 5,
-        "BEV": 18,
-        "APS": 87
+        "APS": 31,
+        "TEMP_PERMIT": 7,
+        "SRX": 4,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -6255,13 +7300,15 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "madison",
       "city": "Madison",
-      "total": 34,
+      "total": 35,
       "byType": {
         "FOOD_SERVICE": 3,
         "APS": 21,
         "MOBILE_FOOD": 1,
         "BEV": 3,
-        "COP": 6
+        "SRX": 4,
+        "COP": 2,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -6269,36 +7316,43 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "fernandina-beach",
       "city": "Fernandina Beach",
-      "total": 146,
+      "total": 155,
       "byType": {
-        "COP": 98,
+        "COP": 70,
         "APS": 26,
+        "TEMP_PERMIT": 3,
         "SEATING": 4,
+        "MOBILE_FOOD": 4,
         "BEV": 14,
-        "MOBILE_FOOD": 4
+        "SRX": 28,
+        "MANUFACTURER": 6
       }
     },
     {
       "citySlug": "yulee",
       "city": "Yulee",
-      "total": 64,
+      "total": 65,
       "byType": {
         "APS": 27,
         "SEATING": 5,
         "BEV": 2,
-        "COP": 30
+        "SRX": 6,
+        "COP": 24,
+        "MANUFACTURER": 1
       }
     },
     {
       "citySlug": "callahan",
       "city": "Callahan",
-      "total": 25,
+      "total": 27,
       "byType": {
         "FOOD_SERVICE": 1,
         "MOBILE_FOOD": 1,
+        "MANUFACTURER": 2,
         "SEATING": 1,
         "APS": 13,
-        "COP": 9
+        "SRX": 1,
+        "COP": 8
       }
     }
   ],
@@ -6306,52 +7360,17 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "okeechobee",
       "city": "Okeechobee",
-      "total": 129,
+      "total": 140,
       "byType": {
         "FOOD_SERVICE": 8,
-        "COP": 36,
+        "COP": 23,
+        "TEMP_PERMIT": 10,
         "MOBILE_FOOD": 6,
         "SEATING": 2,
         "APS": 62,
-        "BEV": 15
-      }
-    }
-  ],
-  "sumter": [
-    {
-      "citySlug": "the-villages",
-      "city": "The Villages",
-      "total": 123,
-      "byType": {
-        "APS": 40,
-        "SEATING": 3,
-        "COP": 76,
-        "BEV": 4
-      }
-    },
-    {
-      "citySlug": "wildwood",
-      "city": "Wildwood",
-      "total": 62,
-      "byType": {
-        "FOOD_SERVICE": 1,
-        "MOBILE_FOOD": 4,
-        "COP": 22,
-        "SEATING": 4,
-        "APS": 31
-      }
-    },
-    {
-      "citySlug": "bushnell",
-      "city": "Bushnell",
-      "total": 39,
-      "byType": {
-        "FOOD_SERVICE": 2,
-        "COP": 11,
-        "MOBILE_FOOD": 3,
-        "SEATING": 1,
-        "BEV": 2,
-        "APS": 20
+        "BEV": 15,
+        "SRX": 13,
+        "MANUFACTURER": 1
       }
     }
   ],
@@ -6359,12 +7378,15 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "apalachicola",
       "city": "Apalachicola",
-      "total": 30,
+      "total": 35,
       "byType": {
-        "COP": 16,
+        "COP": 11,
         "MOBILE_FOOD": 2,
         "SEATING": 1,
+        "SRX": 5,
+        "TEMP_PERMIT": 2,
         "BEV": 1,
+        "MANUFACTURER": 3,
         "APS": 10
       }
     }
@@ -6373,13 +7395,15 @@ export const CITY_STATS: Record<string, CityStat[]> = {
     {
       "citySlug": "crawfordville",
       "city": "Crawfordville",
-      "total": 49,
+      "total": 52,
       "byType": {
         "MOBILE_FOOD": 4,
         "SEATING": 3,
         "BEV": 5,
-        "COP": 15,
-        "APS": 22
+        "TEMP_PERMIT": 3,
+        "COP": 10,
+        "APS": 22,
+        "SRX": 5
       }
     }
   ]

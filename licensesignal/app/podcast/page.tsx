@@ -1,14 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Mic, Play, ArrowRight } from 'lucide-react'
+import { Mic, ArrowRight } from 'lucide-react'
 import { SectionHeading } from '@/components/shared/section-heading'
 import { CtaBanner } from '@/components/sections/cta-banner'
-import { PODCAST_EPISODES } from '@/lib/learn-resources'
 
 export const metadata: Metadata = {
   title: 'Podcast',
   description:
-    'The New Venue Data podcast — conversations on B2B timing, public-records data, and the business of being first in the door.',
+    'The New Venue Data podcast — conversations on B2B timing, public-records data, and the business of being first in the door. Coming soon.',
   alternates: { canonical: 'https://newvenuedata.com/podcast' },
 }
 
@@ -26,37 +25,22 @@ export default function PodcastPage() {
       </section>
 
       <section className="py-20">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 flex flex-col gap-4">
-          {PODCAST_EPISODES.map((ep) => (
-            <div
-              key={ep.number}
-              className="flex items-center gap-4 rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-5 transition-colors hover:border-indigo-500/40"
-            >
-              <button
-                type="button"
-                aria-label={`Play episode ${ep.number}`}
-                className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-indigo-500/15 border border-indigo-500/20 text-indigo-400 transition-colors hover:bg-indigo-500/25"
-              >
-                <Play className="h-4 w-4" />
-              </button>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 text-xs text-[var(--ls-fg-3)]">
-                  <Mic className="h-3 w-3" /> Episode {ep.number} · {ep.duration}
-                </div>
-                <h3 className="text-base font-semibold text-[var(--ls-fg)] mt-0.5">{ep.title}</h3>
-                <p className="text-sm text-[var(--ls-fg-2)] mt-1">{ep.description}</p>
-              </div>
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col items-center gap-5 rounded-2xl border border-[var(--ls-border)] bg-[var(--ls-surface)] px-6 py-14 text-center">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-500/15 border border-indigo-500/20">
+              <Mic className="h-5 w-5 text-indigo-400" />
             </div>
-          ))}
-
-          <div className="mt-4 rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface-2)] p-6 text-center">
-            <p className="text-sm text-[var(--ls-fg-2)]">
-              Subscribe wherever you listen, or{' '}
-              <Link href="/contact" className="text-indigo-400 hover:text-indigo-300 transition-colors">
-                get notified of new episodes
-              </Link>
-              .
+            <h2 className="text-display-sm text-[var(--ls-fg)]">Episodes are on the way</h2>
+            <p className="max-w-md text-sm text-[var(--ls-fg-2)] leading-relaxed">
+              The podcast isn&apos;t live yet — we&apos;d rather launch it for real than fill this
+              page with placeholders. Want to know when the first episode drops?
             </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-md bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium px-5 py-2.5 transition-colors"
+            >
+              Get notified <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

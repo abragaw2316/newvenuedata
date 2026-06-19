@@ -28,7 +28,7 @@ const FAQ = [
   },
   {
     q: 'What counts as a "trigger event"?',
-    a: 'A trigger event is any license record change: a new filing, a status update, an ownership transfer, a renewal, or a cancellation. Each event fires one webhook delivery.',
+    a: 'A trigger event is any license record change we track: a new filing, a status update, an ownership transfer, a renewal, or a cancellation. New on-premises filings are the ones most agents care about.',
   },
   {
     q: 'Is this FCRA compliant?',
@@ -43,8 +43,8 @@ const FAQ = [
     a: 'The first 10 Florida agents who sign on lock in $99/mo for life (instead of $149–$299), in exchange for a short testimonial once the leads pay off. Month-to-month, cancel anytime — the rate is yours for as long as you stay subscribed.',
   },
   {
-    q: 'How long does integration take?',
-    a: 'Our API is simple REST with cursor pagination. Most developers complete a working integration in 1–4 hours. We have SDKs and an OpenAPI spec to speed things up further.',
+    q: 'Do I need a developer to use this?',
+    a: 'No. Most agents just open the weekly CSV or Excel list — no setup required. If you do want to pull data into your own systems, the South Florida and Statewide plans include a simple REST API with cursor pagination and filtering.',
   },
 ]
 
@@ -140,8 +140,10 @@ export function PricingContent() {
                   render={
                     plan.paymentLink ? (
                       <a href={plan.paymentLink} target="_blank" rel="noopener noreferrer" />
+                    ) : plan.id === 'enterprise' ? (
+                      <a href="mailto:austin@newvenuedata.com" />
                     ) : (
-                      <Link href={plan.id === 'enterprise' ? '/contact?type=sales' : '/contact'} />
+                      <Link href="/contact" />
                     )
                   }
                   nativeButton={false}

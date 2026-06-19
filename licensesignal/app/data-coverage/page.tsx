@@ -12,7 +12,7 @@ import { TOTAL_LICENSEES, TOTAL_NEW_RESTAURANTS_FY } from '@/lib/real-data'
 export const metadata: Metadata = {
   title: 'Data Coverage',
   description:
-    'New Venue Data tracks 52,061 active Florida liquor licensees across all 67 counties, sourced from official FL DBPR public records and refreshed daily. See coverage stats and methodology.',
+    'New Venue Data tracks Florida liquor and food-service licenses across all 67 counties, sourced from official FL DBPR public records and refreshed daily. See coverage stats and methodology.',
   alternates: { canonical: 'https://newvenuedata.com/data-coverage' },
 }
 
@@ -37,25 +37,29 @@ const SOURCES = [
   },
 ]
 
-// Liquor license-type mix from the live DBPR AB&T extract.
+// Liquor license-type mix from the live DBPR AB&T extract. These four sum to the
+// active retail-liquor total (TOTAL_LICENSEES); SRX is shown separately now that
+// Special Restaurant / Special Food Service licenses are classified correctly.
 const TYPE_MIX = [
-  { code: 'COP', label: 'Consumption on premises', count: 28592, accent: 'text-indigo-400', bar: 'bg-indigo-500/70' },
-  { code: 'APS', label: 'Package stores', count: 20861, accent: 'text-violet-400', bar: 'bg-violet-500/70' },
-  { code: 'BEV', label: 'Beer & wine', count: 2608, accent: 'text-emerald-400', bar: 'bg-emerald-500/70' },
+  { code: 'APS', label: 'Package stores', count: 20863, accent: 'text-violet-400', bar: 'bg-violet-500/70' },
+  { code: 'COP', label: 'Consumption on premises', count: 19049, accent: 'text-indigo-400', bar: 'bg-indigo-500/70' },
+  { code: 'SRX', label: 'Special restaurant (full liquor)', count: 9546, accent: 'text-sky-400', bar: 'bg-sky-500/70' },
+  { code: 'BEV', label: 'Beer & wine', count: 2609, accent: 'text-emerald-400', bar: 'bg-emerald-500/70' },
 ]
 
-// Top counties by active liquor licensees (live DBPR AB&T extract).
+// Top counties by total licenses tracked (all record types). These match the
+// per-county /coverage/[county] pages exactly — same dataset, same counts.
 const COUNTY_LEADERBOARD = [
-  { county: 'Miami-Dade', count: 6565 },
-  { county: 'Broward', count: 4337 },
-  { county: 'Orange', count: 3454 },
-  { county: 'Palm Beach', count: 3322 },
-  { county: 'Hillsborough', count: 2901 },
-  { county: 'Pinellas', count: 2803 },
-  { county: 'Duval', count: 2421 },
-  { county: 'Lee', count: 1960 },
-  { county: 'Brevard', count: 1521 },
-  { county: 'Volusia', count: 1497 },
+  { county: 'Miami-Dade', count: 8156 },
+  { county: 'Broward', count: 5094 },
+  { county: 'Orange', count: 4345 },
+  { county: 'Palm Beach', count: 3885 },
+  { county: 'Hillsborough', count: 3547 },
+  { county: 'Pinellas', count: 3461 },
+  { county: 'Duval', count: 2930 },
+  { county: 'Lee', count: 2382 },
+  { county: 'Brevard', count: 1813 },
+  { county: 'Volusia', count: 1746 },
 ]
 
 const TYPE_MIX_TOTAL = TYPE_MIX.reduce((sum, t) => sum + t.count, 0)
@@ -129,11 +133,11 @@ export default function DataCoveragePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
           <SectionHeading
             eyebrow="By County"
-            heading="Top Counties by Licensee Volume"
-            subtext="Miami-Dade leads with 6,565 active liquor licensees, followed by Broward and Orange — covering all 67 Florida counties."
+            heading="Top Counties by Licenses Tracked"
+            subtext="Miami-Dade leads with 8,156 licenses tracked, followed by Broward and Orange — covering all 67 Florida counties."
           />
           <div className="rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-6">
-            <CountyBarChart topN={15} horizontal={true} />
+            <CountyBarChart topN={10} horizontal={true} source={COUNTY_LEADERBOARD} />
           </div>
 
           {/* County leaderboard (real DBPR figures) */}
@@ -141,8 +145,8 @@ export default function DataCoveragePage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-[var(--ls-border)]">
-                  {['#', 'County', 'Active Liquor Licensees'].map((h) => (
-                    <th key={h} className="px-4 py-3 text-left text-xs font-medium uppercase tracking-widest text-[var(--ls-fg-3)] last:text-right">
+                  {['#', 'County', 'Licenses Tracked'].map((h) => (
+                    <th key={h} scope="col" className="px-4 py-3 text-left text-xs font-medium uppercase tracking-widest text-[var(--ls-fg-3)] last:text-right">
                       {h}
                     </th>
                   ))}

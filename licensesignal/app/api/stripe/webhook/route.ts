@@ -69,12 +69,25 @@ const ack = (extra: Json = {}) =>
     headers: { 'content-type': 'application/json' },
   })
 
+let warnedStripeDisabled = false
+
 export async function POST(req: Request): Promise<Response> {
   const secret = process.env.STRIPE_WEBHOOK_SECRET
   const payload = await req.text()
 
   // Off until configured — acknowledge so Stripe doesn't retry-storm.
-  if (!secret || !dbConfigured()) return ack({ configured: false })
+  if (!secret || !dbConfigured()) {
+    // LOUD in production: a paid checkout will NOT bind the customer to their
+    // plan until this is set. Warn once so it shows up in the Vercel logs.
+    if (process.env.NODE_ENV === 'production' && !warnedStripeDisabled) {
+      warnedStripeDisabled = true
+      console.error(
+        '[stripe] STRIPE_WEBHOOK_SECRET or DB not set — paid checkouts will NOT auto-assign plans. ' +
+          'Set STRIPE_WEBHOOK_SECRET in Vercel and configure the webhook endpoint.'
+      )
+    }
+    return ack({ configured: false })
+  }
 
   if (!verifyStripeSignature(payload, req.headers.get('stripe-signature'), secret)) {
     return new Response('invalid signature', { status: 400 })

@@ -8,24 +8,24 @@ import { GlowCard } from '@/components/shared/glow-card'
 const PRODUCTS = [
   {
     icon: Zap,
-    title: 'Real-Time Trigger Feed',
+    title: 'Weekly New-License List',
     description:
-      'Receive a structured event the moment a new license record appears. Filter by county, license type, or event type. Hook it into your CRM, outbound queue, or data warehouse.',
-    features: ['Sub-24h from source', 'Webhook push delivery', 'HMAC-signed payloads'],
+      'A clean weekly list of brand-new Florida venues, filtered to your county and to on-premises bars and restaurants. Delivered as CSV and Excel, ready to work.',
+    features: ['Refreshed daily from source', 'County + on-premises filtering', 'CSV + Excel delivery'],
   },
   {
     icon: Code2,
     title: 'Developer API',
     description:
-      'REST API with cursor pagination, comprehensive filtering, and sub-second response times. Fully documented with SDKs and a sandbox environment.',
-    features: ['JSON REST API', 'Cursor pagination', 'OpenAPI schema'],
+      'REST API with cursor pagination and filtering by county, type, and status. Fully documented, with a live sandbox you can try right in the docs. Available on South Florida and Statewide plans.',
+    features: ['JSON REST API', 'Cursor pagination', 'Key-authenticated'],
   },
   {
     icon: Database,
-    title: 'Enterprise Data Exports',
+    title: 'Bulk & Enterprise Exports',
     description:
-      'Bulk JSON and CSV delivery on a daily or real-time schedule. Full 2-year historical archive available for enrichment, modeling, and market intelligence.',
-    features: ['Daily CSV/JSON drops', '2-year archive', 'S3 or SFTP delivery'],
+      'Bulk CSV/JSON for agencies, wholesalers, and MGAs — statewide coverage with the full filing archive for enrichment, modeling, and market intelligence.',
+    features: ['Statewide CSV/JSON', 'Full filing archive', 'Custom cadence'],
   },
 ]
 
@@ -41,8 +41,8 @@ export function ProductOverview() {
         >
           <SectionHeading
             eyebrow="The Product"
-            heading="Three Ways to Access the Data"
-            subtext="Whether you need a real-time push, a pull API, or a bulk export — we have the delivery method your stack needs."
+            heading="Three Ways to Get the Data"
+            subtext="A ready-to-work weekly list, a REST API, or a bulk export — pick the delivery that fits how you work."
           />
         </motion.div>
 

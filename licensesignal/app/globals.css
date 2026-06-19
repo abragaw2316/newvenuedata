@@ -138,9 +138,9 @@
   --ls-border: #2a2820;
   --ls-border-2: #3a382e;
   --ls-fg: #f5f2ea;
-  --ls-fg-2: #b8b3a4;
-  --ls-fg-3: #8a8579;
-  --ls-fg-4: #57544b;
+  --ls-fg-2: #c2bdae;
+  --ls-fg-3: #a39e90;  /* raised for WCAG AA contrast on dark surfaces */
+  --ls-fg-4: #807b6f;  /* raised for WCAG AA contrast on dark surfaces */
 }
 
 /* Light theme — overrides the neutral tokens and shadcn surfaces. Accent
@@ -155,8 +155,8 @@
   --ls-border-2: #d8d2c3;
   --ls-fg: #1c1b17;        /* warm ink */
   --ls-fg-2: #514e45;
-  --ls-fg-3: #78746a;
-  --ls-fg-4: #a8a294;
+  --ls-fg-3: #6b6759;      /* darkened for WCAG AA contrast on light surfaces */
+  --ls-fg-4: #857f70;      /* darkened for WCAG AA contrast on light surfaces */
 
   /* shadcn surfaces for light — warm paper + green primary */
   --background: oklch(0.98 0.006 85);

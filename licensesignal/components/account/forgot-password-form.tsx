@@ -17,17 +17,17 @@ export function ForgotPasswordForm() {
       <p className="text-sm text-[var(--ls-fg-2)]">Enter your email and we’ll send you a link to choose a new password.</p>
 
       {state.error && (
-        <p className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
+        <p role="alert" aria-live="polite" className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
           {state.error}
         </p>
       )}
       {state.sent && (
-        <p className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-300">
+        <p role="status" aria-live="polite" className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-700 dark:text-emerald-300">
           If an account exists for that email, a reset link is on its way. Check your inbox.
         </p>
       )}
 
-      <input name="email" type="email" required placeholder="you@company.com" className={inputCls} autoComplete="email" />
+      <input name="email" type="email" required aria-label="Email address" placeholder="you@company.com" className={inputCls} autoComplete="email" />
 
       <button
         type="submit"

@@ -27,7 +27,7 @@ export function Hero() {
             className="flex items-center gap-3 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--ls-fg-3)]"
           >
             <span className="h-px w-7 bg-[var(--ls-border-2)]" />
-            Real-Time Florida License Intelligence
+            Florida New-Venue Leads
             <span className="h-px w-7 bg-[var(--ls-border-2)]" />
           </motion.div>
 
@@ -36,8 +36,8 @@ export function Hero() {
             {...fadeUp(0.1)}
             className="mt-6 text-display-2xl text-[var(--ls-fg)] max-w-4xl text-balance"
           >
-            Know which restaurants and bars are opening{' '}
-            <GradientText className="italic">before your competitors</GradientText>
+            The new Florida bars and restaurants that{' '}
+            <GradientText className="italic">just got licensed</GradientText> — before another agent calls them
           </motion.h1>
 
           {/* Sub */}
@@ -45,34 +45,35 @@ export function Hero() {
             {...fadeUp(0.2)}
             className="mt-6 text-lg sm:text-xl text-[var(--ls-fg-2)] max-w-2xl leading-relaxed"
           >
-            New Venue Data turns Florida&rsquo;s public liquor and food-service license filings
-            into a clean weekly list of brand-new venues — every bar and restaurant that just got
-            licensed in Florida, delivered as a list or API the week they open.
+            New Venue Data turns Florida&rsquo;s public liquor-license filings into a clean weekly
+            spreadsheet of brand-new venues that need liquor-liability coverage — name, address,
+            license type, and filing date — the week they&rsquo;re licensed. Built for insurance
+            agents, and the distributors and suppliers who sell to the same venues.
           </motion.p>
 
-          {/* CTAs — solid ink primary + ghost, no glow */}
+          {/* CTAs — sample first (our strongest asset), pricing second */}
           <motion.div {...fadeUp(0.3)} className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <Button
-              render={<Link href="/pricing" />}
+              render={<Link href="/sample" />}
               nativeButton={false}
               size="lg"
               className="bg-[var(--ls-fg)] text-[var(--ls-bg)] hover:opacity-90 border-0 px-6 transition-opacity"
             >
-              See plans &amp; pricing <ArrowRight className="ml-2 h-4 w-4" />
+              See a sample list <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Button
-              render={<Link href="/data-coverage" />}
+              render={<Link href="/pricing" />}
               nativeButton={false}
               variant="outline"
               size="lg"
               className="border-[var(--ls-border-2)] bg-transparent text-[var(--ls-fg-2)] hover:border-[var(--ls-fg-3)] hover:text-[var(--ls-fg)] px-6"
             >
-              View sample data
+              See plans &amp; pricing
             </Button>
           </motion.div>
 
           <motion.p {...fadeUp(0.35)} className="mt-4 text-xs text-[var(--ls-fg-3)]">
-            Start with a 14-day free trial · from $149/mo · cancel anytime
+            14-day free trial · from $149/mo · cancel anytime · first 10 agents lock in $99/mo for life
           </motion.p>
 
           {/* Live data panel — hairline border, soft shadow, mono numerics */}

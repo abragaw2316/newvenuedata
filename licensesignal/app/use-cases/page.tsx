@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Wine, UtensilsCrossed, MonitorSmartphone, Users, Building2, TrendingUp } from 'lucide-react'
+import { ShieldCheck, Wine, UtensilsCrossed, MonitorSmartphone, Users, Building2 } from 'lucide-react'
 import { SectionHeading } from '@/components/shared/section-heading'
 import { GlowCard } from '@/components/shared/glow-card'
 import { CtaBanner } from '@/components/sections/cta-banner'
@@ -7,64 +7,67 @@ import { CtaBanner } from '@/components/sections/cta-banner'
 export const metadata: Metadata = {
   title: 'Use Cases',
   description:
-    'How beverage distributors, restaurant suppliers, POS companies, payroll providers, and PE firms use New Venue Data to find new business before the competition.',
+    'How liquor-liability insurance agents, beverage distributors, restaurant suppliers, POS companies, and payroll providers use New Venue Data to reach new Florida venues first.',
   alternates: { canonical: 'https://newvenuedata.com/use-cases' },
 }
 
+// "whyItMatters" replaces the old fabricated ROI stats. With no customer base
+// yet, we make no invented performance claims — only true statements about the
+// signal itself.
 const USE_CASES = [
+  {
+    icon: ShieldCheck,
+    title: 'Liquor-Liability Insurance Agents',
+    tagline: 'Florida is a dram-shop state — every new venue needs coverage.',
+    description:
+      'A new on-premises liquor license means a business that is legally exposed and shopping for liquor-liability coverage right now. Reach them in the buildout window, before another agent does.',
+    whyItMatters: 'One policy you write off a single week\'s list can pay for the subscription for a year.',
+    metrics: ['New on-premises filings', 'County-level filtering', 'Name, address, license type'],
+  },
   {
     icon: Wine,
     title: 'Beverage Distributors',
-    tagline: 'Every new liquor license is a net-new account.',
+    tagline: 'Every new on-premises license is a net-new account.',
     description:
-      'Trigger outreach the day they file — before they\'ve called another distributor. New SRX and COP licenses signal a buyer actively selecting spirits, wine, and beer vendors in their first 30 days.',
-    roi: 'Distributors on New Venue Data capture 2–4 new accounts per month per territory rep.',
-    metrics: ['Day-of-filing alerts', 'SRX + COP + BEV events', 'County-level filtering'],
+      'New SRX and COP licenses signal a venue that is about to choose its spirits, wine, and beer vendors. Reach out during the weeks the decisions are actually made.',
+    whyItMatters: 'A venue actively selecting vendors is a warmer prospect than any cold list.',
+    metrics: ['SRX + COP + BEV filings', 'County-level filtering', 'Weekly new-license list'],
   },
   {
     icon: UtensilsCrossed,
     title: 'Restaurant Suppliers',
-    tagline: 'The first 60 days decide every vendor relationship.',
+    tagline: 'The first weeks of buildout decide every vendor relationship.',
     description:
-      'New licenses signal FF&E, smallwares, linen, and food contracts — all vendor decisions made during buildout. New Venue Data puts your reps in the room when the checkbook is open.',
-    roi: 'Suppliers reach new restaurant owners 6–12 weeks before the average cold call.',
-    metrics: ['FOOD_SERVICE event feed', 'Address + city targeting', 'Ownership transfer alerts'],
+      'New food-service licenses precede FF&E, smallwares, linen, and food contracts — vendor decisions made before a restaurant opens. Get in front of owners while those slots are open.',
+    whyItMatters: 'License filing is one of the earliest public signals that a new restaurant is coming.',
+    metrics: ['Food-service filings', 'Address + city targeting', 'CSV + Excel delivery'],
   },
   {
     icon: MonitorSmartphone,
     title: 'POS Companies',
     tagline: 'New hospitality openings need a POS system.',
     description:
-      'Be in their inbox before your competitors call. Restaurants file their license months before opening — giving you a long runway to nurture, demo, and close before grand opening day.',
-    roi: '70%+ of POS decisions are made before a restaurant opens its doors.',
-    metrics: ['New filing events', 'Webhook push delivery', 'CRM integration via API'],
+      'Restaurants file their license well before opening, giving you a runway to nurture, demo, and close ahead of grand opening — and ahead of the competition.',
+    whyItMatters: 'Reaching an operator before they\'ve picked a system beats switching them later.',
+    metrics: ['New filing list', 'County + city filtering', 'API access on South Florida+'],
   },
   {
     icon: Users,
     title: 'Payroll Providers',
     tagline: 'A new restaurant is a new payroll account.',
     description:
-      'Most payroll providers find out 3–6 months after a restaurant opens — when someone finally calls HR. New Venue Data delivers the signal at the license filing, not the first paycheck.',
-    roi: 'The payroll window closes fast. First contact wins 3x more often than second.',
-    metrics: ['All FL license types', 'Daily batch delivery', 'Full historical archive'],
+      'Most payroll providers hear about a restaurant months after it opens. New Venue Data delivers the signal at license filing — not the first paycheck.',
+    whyItMatters: 'Earlier contact means you\'re the incumbent option, not the switch.',
+    metrics: ['All FL license types', 'Weekly delivery', 'Filing history on paid plans'],
   },
   {
     icon: Building2,
-    title: 'Commercial Real Estate',
+    title: 'Commercial Real Estate & Market Intel',
     tagline: 'Track which businesses are entering your market.',
     description:
-      'License filings reveal expansion patterns months before a lease is announced. Track hospitality operators moving into your submarkets and know who\'s growing before they call a broker.',
-    roi: 'CRE teams use filing data to identify tenant prospects before they list their requirements.',
-    metrics: ['Geographic clustering', 'County + city filtering', 'Bulk CSV delivery'],
-  },
-  {
-    icon: TrendingUp,
-    title: 'Private Equity & Market Intel',
-    tagline: 'Monitor Florida\'s hospitality market in real time.',
-    description:
-      'Identify emerging clusters, track competitor rollouts, benchmark market velocity, and surface acquisition targets. New Venue Data is the primary data source for FL hospitality PE due diligence.',
-    roi: 'PE firms use filing velocity as a leading indicator for hospitality market saturation.',
-    metrics: ['Full 2-year archive', 'Raw data delivery', 'Custom data contracts'],
+      'License filings reveal where hospitality operators are moving before a lease is announced — useful for tenant prospecting and for reading market velocity by county.',
+    whyItMatters: 'Filing volume by county is a simple, public leading indicator of market activity.',
+    metrics: ['Geographic filtering', 'County + city breakdowns', 'Bulk CSV delivery'],
   },
 ]
 
@@ -76,8 +79,8 @@ export default function UseCasesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Use Cases"
-            heading="Built for the Teams That Move First"
-            subtext="New Venue Data powers the intelligence workflow for every vertical that sells to Florida's hospitality industry."
+            heading="Built for the Teams That Reach New Venues First"
+            subtext="From liquor-liability agents to distributors and suppliers — anyone who sells to Florida's new bars and restaurants can move sooner with the same weekly signal."
           />
         </div>
       </section>
@@ -99,7 +102,7 @@ export default function UseCasesPage() {
                   </div>
                   <p className="text-sm text-[var(--ls-fg-2)] leading-relaxed flex-1">{uc.description}</p>
                   <div className="rounded-lg bg-emerald-500/5 border border-emerald-500/10 p-3">
-                    <p className="text-xs text-emerald-400">{uc.roi}</p>
+                    <p className="text-xs text-emerald-400">{uc.whyItMatters}</p>
                   </div>
                   <ul className="flex flex-col gap-1.5 border-t border-[var(--ls-border)] pt-4">
                     {uc.metrics.map((m) => (

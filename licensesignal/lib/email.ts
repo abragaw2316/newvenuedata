@@ -53,9 +53,23 @@ export function htmlToText(html: string): string {
     .trim()
 }
 
+let warnedEmailDisabled = false
+
 export async function sendEmail(input: SendEmailInput): Promise<SendEmailResult> {
   const apiKey = process.env.RESEND_API_KEY
-  if (!apiKey) return { ok: false, skipped: true } // not configured yet — no-op
+  if (!apiKey) {
+    // LOUD in production: email silently disabled means verification, password
+    // reset, welcome, and digest emails all no-op. Warn once so it's visible in
+    // the Vercel logs instead of failing invisibly.
+    if (process.env.NODE_ENV === 'production' && !warnedEmailDisabled) {
+      warnedEmailDisabled = true
+      console.error(
+        '[email] RESEND_API_KEY is NOT set — transactional email is DISABLED. ' +
+          'Password resets and email verification will silently fail. Set RESEND_API_KEY in Vercel.'
+      )
+    }
+    return { ok: false, skipped: true } // not configured yet — no-op
+  }
   try {
     const res = await fetch(RESEND_ENDPOINT, {
       method: 'POST',

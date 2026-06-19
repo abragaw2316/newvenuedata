@@ -25,7 +25,7 @@ export function CtaBanner() {
         className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center gap-6"
       >
         <h2 className="text-display-md text-[var(--ls-fg)]">
-          Start monitoring Florida in minutes.
+          Get this week&apos;s new Florida venues.
         </h2>
         <p className="text-lg text-[var(--ls-fg-2)]">
           No contracts. Cancel any time. County plan from $149/month.
@@ -40,13 +40,13 @@ export function CtaBanner() {
             Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
           <Button
-            render={<Link href="/contact?type=sales" />}
+            render={<Link href="mailto:austin@newvenuedata.com" />}
             nativeButton={false}
             variant="outline"
             size="lg"
             className="border-[var(--ls-border-2)] bg-transparent text-[var(--ls-fg-2)] hover:border-[var(--color-indigo-500)] hover:text-[var(--ls-fg)] px-6"
           >
-            Talk to Sales
+            Email Austin
           </Button>
         </div>
       </motion.div>

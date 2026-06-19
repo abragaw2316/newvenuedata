@@ -17,13 +17,13 @@ export function LoginForm() {
       <p className="text-sm text-[var(--ls-fg-2)]">Welcome back. Sign in to manage your API key and plan.</p>
 
       {state.error && (
-        <p className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
+        <p role="alert" aria-live="polite" className="rounded-md border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-700 dark:text-red-300">
           {state.error}
         </p>
       )}
 
-      <input name="email" type="email" required placeholder="you@company.com" className={inputCls} autoComplete="email" />
-      <input name="password" type="password" required placeholder="Password" className={inputCls} autoComplete="current-password" />
+      <input name="email" type="email" required aria-label="Email address" placeholder="you@company.com" className={inputCls} autoComplete="email" />
+      <input name="password" type="password" required aria-label="Password" placeholder="Password" className={inputCls} autoComplete="current-password" />
 
       <button
         type="submit"
