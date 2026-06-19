@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, LayoutDashboard, BarChart2, Webhook, Settings } from 'lucide-react'
+import { ArrowRight, LayoutDashboard, BarChart2, FileText, UserCircle } from 'lucide-react'
 import { LogoMark } from '@/components/shared/logo-mark'
 import { Button } from '@/components/ui/button'
 import { StatCard } from '@/components/dashboard/stat-card'
@@ -8,21 +8,37 @@ import { LazyVolumeChart } from '@/components/dashboard/lazy-charts'
 import { AlertFeed } from '@/components/dashboard/alert-feed'
 import { DashboardContent } from '@/components/dashboard/dashboard-content'
 import { STAT_CARDS } from '@/lib/mock-data'
+import { getCurrentUser } from '@/lib/auth'
+
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Dashboard',
-  description: 'Monitor Florida license filings in real time.',
+  description: 'Browse the live Florida license feed.',
   alternates: { canonical: 'https://newvenuedata.com/dashboard' },
+  robots: { index: false, follow: false },
 }
 
+// Real destinations only — no dead "#" links, no Webhooks (not built yet).
 const SIDEBAR_LINKS = [
-  { href: '#', icon: LayoutDashboard, label: 'Feed', active: true },
-  { href: '#', icon: BarChart2, label: 'Analytics', active: false },
-  { href: '#', icon: Webhook, label: 'Webhooks', active: false },
-  { href: '#', icon: Settings, label: 'Settings', active: false },
+  { href: '/dashboard', icon: LayoutDashboard, label: 'Feed', match: true },
+  { href: '/analytics', icon: BarChart2, label: 'Analytics', match: false },
+  { href: '/docs', icon: FileText, label: 'API Docs', match: false },
+  { href: '/account', icon: UserCircle, label: 'Account', match: false },
 ]
 
-export default function DashboardPage() {
+const PLAN_LABEL: Record<string, { name: string; scope: string }> = {
+  trial: { name: 'Free trial', scope: 'Sample access' },
+  county: { name: 'County', scope: '1 Florida county' },
+  south_fl: { name: 'South Florida', scope: 'Tri-county' },
+  statewide: { name: 'Statewide', scope: 'All 67 counties' },
+}
+
+export default async function DashboardPage() {
+  const user = await getCurrentUser()
+  const plan = user ? (PLAN_LABEL[user.plan] ?? PLAN_LABEL.trial) : null
+
   return (
     <div className="flex min-h-screen bg-[var(--ls-bg)]">
       {/* Sidebar */}
@@ -39,46 +55,64 @@ export default function DashboardPage() {
 
         {/* Nav */}
         <nav className="flex flex-1 flex-col gap-1 p-3">
-          {SIDEBAR_LINKS.map(({ href, icon: Icon, label, active }) => (
-            <a
+          {SIDEBAR_LINKS.map(({ href, icon: Icon, label, match }) => (
+            <Link
               key={label}
               href={href}
               className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
-                active
+                match
                   ? 'bg-indigo-500/15 text-indigo-400'
                   : 'text-[var(--ls-fg-3)] hover:text-[var(--ls-fg-2)] hover:bg-[var(--ls-hover)]'
               }`}
             >
               <Icon className="h-4 w-4" />
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
 
-        {/* Account */}
+        {/* Account — real session, no fabricated demo identity */}
         <div className="border-t border-[var(--ls-border)] p-4 flex flex-col gap-2">
-          <div className="rounded-lg border border-indigo-500/20 bg-indigo-500/10 px-3 py-2">
-            <p className="text-xs font-semibold text-indigo-400">Pro Plan</p>
-            <p className="text-[10px] text-[var(--ls-fg-3)]">All 67 counties</p>
-          </div>
-          <p className="text-[10px] text-[var(--ls-fg-3)] px-1">demo@example.com</p>
+          {user && plan ? (
+            <>
+              <Link
+                href="/account"
+                className="rounded-lg border border-indigo-500/20 bg-indigo-500/10 px-3 py-2 transition-colors hover:border-indigo-500/40"
+              >
+                <p className="text-xs font-semibold text-indigo-400">{plan.name}</p>
+                <p className="text-[10px] text-[var(--ls-fg-3)]">{plan.scope}</p>
+              </Link>
+              <p className="truncate text-[10px] text-[var(--ls-fg-3)] px-1">{user.email}</p>
+            </>
+          ) : (
+            <Link
+              href="/login"
+              className="rounded-lg border border-[var(--ls-border-2)] bg-[var(--ls-surface)] px-3 py-2 text-xs font-medium text-[var(--ls-fg-2)] transition-colors hover:border-indigo-500/40 hover:text-[var(--ls-fg)]"
+            >
+              Sign in to your account →
+            </Link>
+          )}
         </div>
       </aside>
 
       {/* Main */}
       <div className="flex flex-1 flex-col overflow-hidden">
-        {/* Preview banner */}
-        <div className="flex items-center justify-between border-b border-amber-500/20 bg-amber-500/10 px-4 py-2.5">
-          <p className="text-xs text-amber-400 font-medium">
-            Preview — a live dashboard is on the roadmap. Today, New Venue Data is delivered as a weekly email list.
+        {/* Honest context banner — the data below is real; full management is on /account */}
+        <div className="flex items-center justify-between gap-3 border-b border-[var(--ls-border)] bg-[var(--ls-surface-2)] px-4 py-2.5">
+          <p className="text-xs text-[var(--ls-fg-3)]">
+            {user ? (
+              <>Live preview of the Florida feed. Your weekly county list is delivered by email — manage everything in your account.</>
+            ) : (
+              <>A live preview of real Florida filings. Sign in to manage your account, or see plans to get your county&apos;s weekly list.</>
+            )}
           </p>
           <Button
-            render={<Link href="/pricing" />}
+            render={<Link href={user ? '/account' : '/pricing'} />}
             nativeButton={false}
             size="sm"
-            className="h-7 bg-indigo-500 hover:bg-indigo-600 text-white border-0 text-xs"
+            className="h-7 flex-shrink-0 bg-indigo-500 hover:bg-indigo-600 text-white border-0 text-xs"
           >
-            See plans <ArrowRight className="ml-1 h-3 w-3" />
+            {user ? 'Your account' : 'See plans'} <ArrowRight className="ml-1 h-3 w-3" />
           </Button>
         </div>
 
@@ -86,7 +120,7 @@ export default function DashboardPage() {
           {/* Header */}
           <div className="mb-6">
             <h1 className="text-xl font-semibold text-[var(--ls-fg)]">License Feed</h1>
-            <p className="text-sm text-[var(--ls-fg-3)] mt-0.5">All 67 Florida counties · Updated daily</p>
+            <p className="text-sm text-[var(--ls-fg-3)] mt-0.5">Live Florida filings · updated daily from FL DBPR</p>
           </div>
 
           {/* Stat cards */}
