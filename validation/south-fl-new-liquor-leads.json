@@ -1,5 +1,19 @@
 [
   {
+    "businessName": "El Patio Del Chef",
+    "licenseType": "Beer & wine, on premises",
+    "onPremises": "Yes",
+    "licenseNumber": "BEV1625331",
+    "street": "201 N 21st Avenue",
+    "city": "Hollywood",
+    "county": "Broward",
+    "zip": "33020",
+    "filedDate": "2026-06-17",
+    "licenseExpires": "",
+    "licensee": "Two Brothers Fl LLC",
+    "source": "FL DBPR — Alcoholic Beverages & Tobacco"
+  },
+  {
     "businessName": "Soctainer",
     "licenseType": "Beer & wine, on premises",
     "onPremises": "Yes",
@@ -28,20 +42,6 @@
     "source": "FL DBPR — Alcoholic Beverages & Tobacco"
   },
   {
-    "businessName": "G's Kitchen & Bar",
-    "licenseType": "Beer & wine, on premises",
-    "onPremises": "Yes",
-    "licenseNumber": "BEV1625329",
-    "street": "4877 Coconut Creek Pkwy, Store #28",
-    "city": "Margate",
-    "county": "Broward",
-    "zip": "33063",
-    "filedDate": "2026-06-16",
-    "licenseExpires": "",
-    "licensee": "Lacer Trading LLC",
-    "source": "FL DBPR — Alcoholic Beverages & Tobacco"
-  },
-  {
     "businessName": "Daniella's At Village Walk",
     "licenseType": "Beer & wine, on premises",
     "onPremises": "Yes",
@@ -67,6 +67,20 @@
     "filedDate": "2026-06-16",
     "licenseExpires": "",
     "licensee": "Sauce 'em LLC",
+    "source": "FL DBPR — Alcoholic Beverages & Tobacco"
+  },
+  {
+    "businessName": "G's Kitchen & Bar",
+    "licenseType": "Beer & wine, on premises",
+    "onPremises": "Yes",
+    "licenseNumber": "BEV1625329",
+    "street": "4877 Coconut Creek Pkwy, Store #28",
+    "city": "Margate",
+    "county": "Broward",
+    "zip": "33063",
+    "filedDate": "2026-06-16",
+    "licenseExpires": "",
+    "licensee": "Lacer Trading LLC",
     "source": "FL DBPR — Alcoholic Beverages & Tobacco"
   },
   {
@@ -333,20 +347,6 @@
     "filedDate": "2026-06-05",
     "licenseExpires": "",
     "licensee": "La Traila BBQ LLC",
-    "source": "FL DBPR — Alcoholic Beverages & Tobacco"
-  },
-  {
-    "businessName": "Lucky 9 Bartending & Consulting",
-    "licenseType": "Catering",
-    "onPremises": "Yes",
-    "licenseNumber": "BEV2339040",
-    "street": "528 SW 9 Ave",
-    "city": "Miami",
-    "county": "Miami-Dade",
-    "zip": "33130",
-    "filedDate": "2026-06-05",
-    "licenseExpires": "2027-03-31",
-    "licensee": "Lucky 9 Bartending & Consulting INC",
     "source": "FL DBPR — Alcoholic Beverages & Tobacco"
   }
 ]
