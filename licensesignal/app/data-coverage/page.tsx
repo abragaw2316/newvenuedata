@@ -9,6 +9,8 @@ import { CountyBarChart } from '@/components/charts/county-bar-chart'
 import { CtaBanner } from '@/components/sections/cta-banner'
 import { DatasetSchema } from '@/components/seo/dataset-schema'
 import { TOTAL_LICENSEES, TOTAL_NEW_RESTAURANTS_FY } from '@/lib/real-data'
+import { COUNTY_STATS } from '@/lib/county-stats'
+import { FL_COUNTIES } from '@/lib/fl-counties'
 
 export const metadata: Metadata = {
   title: 'Data Coverage',
@@ -38,32 +40,42 @@ const SOURCES = [
   },
 ]
 
-// Liquor license-type mix from the live DBPR AB&T extract. These four sum to the
-// active retail-liquor total (TOTAL_LICENSEES); SRX is shown separately now that
-// Special Restaurant / Special Food Service licenses are classified correctly.
-const TYPE_MIX = [
-  { code: 'APS', label: 'Package stores', count: 20863, accent: 'text-violet-400', bar: 'bg-violet-500/70' },
-  { code: 'COP', label: 'Consumption on premises', count: 19049, accent: 'text-indigo-400', bar: 'bg-indigo-500/70' },
-  { code: 'SRX', label: 'Special restaurant (full liquor)', count: 9546, accent: 'text-sky-400', bar: 'bg-sky-500/70' },
-  { code: 'BEV', label: 'Beer & wine', count: 2609, accent: 'text-emerald-400', bar: 'bg-emerald-500/70' },
-]
+// DERIVED from county-stats.ts (the same source as the /coverage/[county] pages)
+// so these never drift apart as the nightly pipeline refreshes the data.
 
-// Top counties by total licenses tracked (all record types). These match the
+// Liquor license-type mix — sum the four retail-liquor codes across every county.
+const TYPE_META: Record<string, { label: string; accent: string; bar: string }> = {
+  APS: { label: 'Package stores', accent: 'text-violet-400', bar: 'bg-violet-500/70' },
+  COP: { label: 'Consumption on premises', accent: 'text-indigo-400', bar: 'bg-indigo-500/70' },
+  SRX: { label: 'Special restaurant (full liquor)', accent: 'text-sky-400', bar: 'bg-sky-500/70' },
+  BEV: { label: 'Beer & wine', accent: 'text-emerald-400', bar: 'bg-emerald-500/70' },
+}
+const TYPE_TOTALS: Record<string, number> = {}
+for (const stat of Object.values(COUNTY_STATS)) {
+  for (const [code, n] of Object.entries(stat.byType)) {
+    TYPE_TOTALS[code] = (TYPE_TOTALS[code] || 0) + n
+  }
+}
+const TYPE_MIX = ['APS', 'COP', 'SRX', 'BEV'].map((code) => ({
+  code,
+  label: TYPE_META[code].label,
+  count: TYPE_TOTALS[code] || 0,
+  accent: TYPE_META[code].accent,
+  bar: TYPE_META[code].bar,
+}))
+
+// Top counties by total licenses tracked (all record types). Matches the
 // per-county /coverage/[county] pages exactly — same dataset, same counts.
-const COUNTY_LEADERBOARD = [
-  { county: 'Miami-Dade', count: 8156 },
-  { county: 'Broward', count: 5094 },
-  { county: 'Orange', count: 4345 },
-  { county: 'Palm Beach', count: 3885 },
-  { county: 'Hillsborough', count: 3547 },
-  { county: 'Pinellas', count: 3461 },
-  { county: 'Duval', count: 2930 },
-  { county: 'Lee', count: 2382 },
-  { county: 'Brevard', count: 1813 },
-  { county: 'Volusia', count: 1746 },
-]
+const COUNTY_LEADERBOARD = FL_COUNTIES.map((c) => ({
+  county: c.name,
+  count: COUNTY_STATS[c.slug]?.total ?? 0,
+}))
+  .filter((c) => c.count > 0)
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 10)
 
 const TYPE_MIX_TOTAL = TYPE_MIX.reduce((sum, t) => sum + t.count, 0)
+const TOP_COUNTY = COUNTY_LEADERBOARD[0]
 
 const NORMALIZATION_STEPS = [
   { title: 'Entity Resolution', desc: 'Match legal name, DBA name, and address to a single canonical entity record across filings.' },
@@ -143,7 +155,7 @@ export default function DataCoveragePage() {
           <SectionHeading
             eyebrow="By County"
             heading="Top Counties by Licenses Tracked"
-            subtext="Miami-Dade leads with 8,156 licenses tracked, followed by Broward and Orange — covering all 67 Florida counties."
+            subtext={`${TOP_COUNTY.county} leads with ${TOP_COUNTY.count.toLocaleString('en-US')} licenses tracked, followed by ${COUNTY_LEADERBOARD[1]?.county} and ${COUNTY_LEADERBOARD[2]?.county} — covering all 67 Florida counties.`}
           />
           <div className="rounded-xl border border-[var(--ls-border)] bg-[var(--ls-surface)] p-6">
             <CountyBarChart topN={10} horizontal={true} source={COUNTY_LEADERBOARD} />
