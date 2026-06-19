@@ -2,7 +2,7 @@
 
 > **Single source of truth for cross-session memory. READ THIS FIRST.**
 > Folder: `C:\Users\abrag\Desktop\Claude\Public-Data-API-Business`
-> Created 2026-06-14. Last updated **2026-06-18** (Session 3). The site is **LIVE at https://newvenuedata.com**.
+> Created 2026-06-14. Last updated **2026-06-18** (Session 4 — data expansion + full due-diligence audit & remediation + MCP server + real dashboard). The site is **LIVE at https://newvenuedata.com**.
 >
 > **How to use this file:** Read it top-to-bottom at the start of every session. Part I = the business/decision (stable). Part II = the build (what exists now). Part III = what to do next. The `# Session Handoff` block at the bottom is the fast-resume block.
 
@@ -11,7 +11,7 @@
 ## ⚠️ STATUS AT A GLANCE (2026-06-18)
 
 - **Brand/domain:** ✅ LIVE — **New Venue Data** at **https://newvenuedata.com** (Vercel, auto-deploy on push to `main`). ⚠️ Repo folder + npm package + Vercel Root Directory stay **`licensesignal/`** — do NOT rename. Logo wordmark is split spans (`New Venue <span>Data</span>`) in navbar/footer — a blind find-replace misses it.
-- **Business entity:** Sole proprietorship operated by **Austin Bragaw** in **Missouri** (not Inc., not Florida). Both privacy and terms pages updated to reflect this. ⚠️ **Terms governing law clause still says "State of Florida"** — this must be changed to Missouri (the next fix when Session 3 was cut off).
+- **Business entity:** Sole proprietorship operated by **Austin Bragaw** in **Missouri** (not Inc., not Florida). Both privacy and terms pages updated to reflect this. ✅ Terms governing law now reads **State of Missouri** (fixed Session 4).
 - **Stack:** Next.js 16.2.9 App Router · TypeScript · Tailwind v4 · Base UI · Framer Motion v12. ~**1,040 static pages**.
 - **Database:** ✅ **Neon Serverless Postgres** via `@neondatabase/serverless` (`lib/db.ts`). Replaces `@vercel/postgres` which required pooled URLs only — Neon accepts both direct + pooled. **POSTGRES_URL** env var set in Vercel. Verified `stored: true` via the diagnostic endpoint. Tables: `users`, `sessions`, `api_keys`, `leads`, `auth_tokens` (all created idempotently on cold start).
 - **Auth:** ✅ Real email+password signup/login, per-user API keys, gated `/account`. Email verification + password reset BUILT (needs `RESEND_API_KEY` to actually send). Password-reset pages: `/forgot-password`, `/reset-password`. Verification page: `/verify-email` (GET handler).
@@ -20,7 +20,7 @@
 - **Lead capture:** ✅ ALL 3 forms now POST to `/api/lead` → Postgres + Resend notification: waitlist form, exit-intent modal, contact form. Previously all were UI mocks. Confirmed live (`stored: true`).
 - **Analytics:** ✅ `<Analytics />` from `@vercel/analytics/next` added to `app/layout.tsx`. **User needs to enable Web Analytics toggle in Vercel dashboard.**
 - **SEO:** ✅ Critical `.gitignore` fix — `coverage/` → `/coverage/` (anchored). Was silently excluding all 929 programmatic SEO pages from git (and thus Vercel). All coverage route files committed + live. Google Search Console verified. Sitemap submitted. Blog bylines fixed (all 9 posts → Austin Bragaw, Founder).
-- **Legal compliance:** ✅ Privacy policy — COPPA section, CAN-SPAM / Marketing Communications section, expanded Your Privacy Rights (CCPA/GDPR/state laws), softened security claims. Terms — 18+ requirement, sole proprietor entity. Signup form — 18+ age confirmation added. ⚠️ **Terms governing law still reads "State of Florida" — needs to be "State of Missouri."**
+- **Legal compliance:** ✅ Privacy policy — COPPA section, CAN-SPAM / Marketing Communications section, expanded Your Privacy Rights (CCPA/GDPR/state laws), softened security claims. Terms — 18+ requirement, sole proprietor entity, governing law = **State of Missouri** (✅ fixed Session 4). Signup form — 18+ age confirmation added.
 - **Georgia data:** ✅ `data-pipeline/fetch-ga.py` pulls GA DOR quarterly XLSX → `licensesignal/lib/georgia-stats.ts` (24,895 GA active licenses, 2,363 commenced last 12 months). `/expansion/georgia` shows real GA data.
 - **Data pipeline:** ✅ `build-lead-list.mjs` generalized — 3rd arg = any of 67 FL counties, "statewide", or "south_fl" (default). Validated XLSX banner auto-derives region from the data.
 - **Cron / weekly digest:** ✅ Route built at `/api/cron/weekly-digest` (gated by `CRON_SECRET`). **Needs `CRON_SECRET` in Vercel + a Monday trigger** (Vercel Cron or external). Not yet set up.
@@ -40,6 +40,35 @@
 | `ENABLE_PROSPECTS` | Set to `1` to enable the `/prospects` internal dashboard in production | LOW |
 
 `POSTGRES_URL` is already set (Neon, confirmed working).
+
+---
+
+## 🆕 SESSION 4 (2026-06-18) — data expansion, full audit & remediation, MCP server, real dashboard
+
+**Data pipeline (commits `9c5f22b`, `e2f7d2c`)**
+- **Fixed SRX/SFS classification.** DBPR stores the Special Restaurant / Special Food Service modifier in the **"Modifier"** column (live header), NOT the Series column. `seriesToLicenseType(series, modifier)` in `data-pipeline/src/lookups.mjs` now reads it (via `normalize-abt.mjs` `row['Modifier']`) → **9,546 SRX records surfaced (was 0).** SB 1262 renamed SRX→SFS in 2023.
+- **Added 3 new ABT record types** (profession-code fallback in `normalize-abt.mjs`): **TEMP_PERMIT** (bd4002lic, 2,192), **MANUFACTURER** (bd4005lic, 1,815), **BOTTLE_CLUB** (bd4014lic, 25). New `LicenseType` union values + labels/colors (`lib/utils.ts`, `lib/types.ts`, donut chart) + full `lib/license-type-info.ts` entries. New sources wired into `config.mjs` + `orchestrate.mjs` + `build-full-data.mjs`.
+- **`licensesignal/data/licenses.json` = 63,042 records** (was 59,004). Mix: APS 20,863 · COP 19,049 · SRX 9,546 · MOBILE_FOOD 2,716 · BEV 2,609 · FOOD_SERVICE 2,398 · TEMP_PERMIT 2,192 · SEATING 1,829 · MANUFACTURER 1,815 · BOTTLE_CLUB 25.
+- Search facets now include SRX/SEATING/MOBILE_FOOD; `/api/licenses/search` now filters by `license_type` + `status`. Regenerated `lib/county-stats.ts`.
+
+**Full due-diligence audit + remediation (commits `0723cef`, `a7df9c9`, `8beff57`)** — full audit report is in the Session 4 transcript.
+- **🔴 Trust purge — removed ALL fabricated content** (the #1 risk for a 0-customer business): invented `/status` uptime %s + incident log; an entirely-invented 18-month `/changelog` (fake HMAC webhooks, Slack beta, OpenAPI, sub-200ms SLAs); fabricated `/use-cases` ROI stats; fake `/podcast` episodes + `/webinars` sessions; webhooks/SDKs/"99.9% uptime SLA" sold as live (now relabeled **roadmap**).
+- **🔴 Positioning:** homepage hero re-pointed to **liquor-liability insurance agents** (was vendor-framed); sample-first CTA (→ `/sample`); founding-offer urgency line. "Talk to Sales" → **"Email Austin"** sitewide.
+- **🔴 Stats reconciliation:** Miami-Dade now reads **8,156 on BOTH `/data-coverage` and `/coverage/[county]`** (was 6,565 vs 3,847 — the audit's flagged contradiction); fixed the SRX-inflated type mix (COP 28,592→19,049 + SRX 9,546).
+- **A11y:** auth/contact form `aria-label` + `role="alert"`/`aria-live`; dark+light muted-text tokens (`--ls-fg-3/4`) raised for WCAG AA; `scope="col"` on tables.
+- **SEO:** wired up the existing-but-unused `FaqSchema` (pricing) + `DatasetSchema` (data-coverage) — verified emitting.
+- **Ops safety:** loud production `console.error` when `RESEND_API_KEY` / `STRIPE_WEBHOOK_SECRET` unset (email + plan-binding silently disabled otherwise).
+
+**MCP server — new `mcp-server/` (commit `694f756`)**
+- **Zero-dependency stdio JSON-RPC MCP server** exposing the FL data as agent tools: `search_new_venues`, `recent_filings`, `county_stats`. Thin client over the public REST API; **sandbox tier without a key**, `NVD_API_KEY` unlocks the plan tier (the funnel). `npm run smoke` drives the handshake and passes against the live API. README covers Claude Desktop + Claude Code install. A distribution play for the agent/MCP ecosystem.
+
+**Real dashboard (commit `656d05f`)**
+- `/dashboard` was a mockup (fabricated "demo@example.com / Pro Plan", dead `#` nav, "roadmap" vaporware banner). Now reads `getCurrentUser()` → **real plan + email or a Sign-in CTA**; nav points to real pages (Feed/Analytics/API Docs/Account); honest context banner. (The feed data was already real.)
+
+**Still OPEN — needs YOU (env vars in Vercel = the real revenue blockers):** `RESEND_API_KEY`, `MAILING_ADDRESS`, `STRIPE_WEBHOOK_SECRET`, `CRON_SECRET`; enable Vercel **Web Analytics** toggle.
+**Still OPEN — larger builds:** Postgres migration (36 MB `licenses.json` read at runtime), Upstash shared-store rate limiting, actually **build the webhook** (currently roadmap), full color-token sweep + button unification, mobile data-table redesign.
+
+**Outreach (Session 4):** Bellken (`aj@bellkenins.com`) emailed + Prestige follow-up sent June 18 with the regenerated June 5–17 sample. 3 agencies now in the funnel (Royal, Prestige ×2, Bellken). See §9.
 
 ---
 
@@ -256,14 +285,14 @@ AI-assisted outbound — finds FL liquor-liability insurance agents and drafts p
 
 | Prospect | Contact | Status |
 |---|---|---|
-| Royal Insurance | 954-764-1414 | ✅ Email sent (June 2026) |
-| Prestige Insurance Group | info@prestigeinsurancegrp.com | ✅ Email sent (June 2026) |
+| Royal Insurance | 954-764-1414 | ✅ Email sent (June 2026) — follow-up = CALL (no email on file) |
+| Prestige Insurance Group | info@prestigeinsurancegrp.com | ✅ Email sent (June) + follow-up sent June 18, 2026 |
 | GI Services / jmccurry@ | jmccurry@giservices.net | ❌ Bounced (550 5.4.1 — dead mailbox) |
-| Bellken Insurance | aj@bellkenins.com | ⏳ Next to contact (replacement for GI Services bounce) |
+| Bellken Insurance | aj@bellkenins.com | ✅ Email sent June 18, 2026 (1st touch, fresh June 5–17 sample) |
 
 - The bounce was `550 5.4.1` (recipient not found on Microsoft, not a sender-reputation block). Sender reputation not affected.
-- Emails sent with the `.xlsx` attached (South-FL new liquor leads, June 1–12 2026). No demo ask.
-- **Still need ~3–4 more outreach sends and follow-ups** to hit the 5-prospect validation target.
+- First batch (Royal + Prestige) sent with the June 1–12 sample. The June 18 sends (Prestige follow-up + Bellken) used the regenerated June 5–17 `.xlsx`. No demo ask.
+- **Funnel so far: 3 agencies touched (Royal, Prestige ×2, Bellken) + 1 bounce.** Target is ~20 contacts → ~5 conversations → ≥2 paying. **Next lever: find emails for the Priority-1 web-form agencies (Red Zone, Griffith, Morales, E/G) to send 3–4 more first-touches.**
 
 ---
 
