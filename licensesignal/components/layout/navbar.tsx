@@ -33,7 +33,7 @@ const SOLUTIONS: NavLink[] = [
 ]
 
 const DEVELOPERS: NavLink[] = [
-  { href: '/docs', label: 'Documentation', desc: 'REST API, webhooks, SDKs' },
+  { href: '/docs', label: 'Documentation', desc: 'REST API, examples & guides' },
   { href: '/webhook-events', label: 'Webhook Events', desc: 'Full event catalog' },
   { href: '/help', label: 'Help Center', desc: 'Guides and answers' },
   { href: '/learn', label: 'Learning Center', desc: 'Guides, tutorials, videos' },

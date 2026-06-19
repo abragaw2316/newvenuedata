@@ -46,7 +46,7 @@ const API_FEATURES = [
   'Structured JSON with typed fields — no HTML parsing',
   'Cursor-based pagination for reliable large pulls',
   'Filter by county, type, event, date range, and status',
-  'Sub-second response times, 99.9% uptime SLA on Pro+',
+  'Key-authenticated, with a live sandbox to try in the docs',
 ]
 
 function TypedText({ text, speed = 18 }: { text: string; speed?: number }) {
