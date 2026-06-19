@@ -1,0 +1,19 @@
+{
+  "name": "new-venue-data-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server exposing Florida new-venue license data (New Venue Data) as tools for AI agents. Zero-dependency stdio JSON-RPC.",
+  "bin": {
+    "new-venue-data-mcp": "src/index.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "smoke": "node test/smoke.mjs"
+  },
+  "keywords": ["mcp", "model-context-protocol", "florida", "licenses", "public-data", "leads"],
+  "license": "ISC"
+}
