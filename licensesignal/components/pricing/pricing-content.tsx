@@ -15,6 +15,7 @@ import {
 import { SectionHeading } from '@/components/shared/section-heading'
 import { TagBadge } from '@/components/shared/tag-badge'
 import { RoiCalculator } from '@/components/shared/roi-calculator'
+import { FaqSchema } from '@/components/seo/faq-schema'
 import { PRICING_PLANS, PRICING_FEATURES } from '@/lib/mock-data'
 
 const FAQ = [
@@ -61,6 +62,7 @@ export function PricingContent() {
 
   return (
     <div>
+      <FaqSchema items={FAQ} />
       {/* Hero */}
       <section className="py-20 lg:py-28 gradient-hero">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-8">

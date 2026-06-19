@@ -28,7 +28,7 @@ const USE_CASE_OPTIONS = [
 
 function FieldError({ message }: { message: string }) {
   return (
-    <span className="flex items-center gap-1 text-xs text-red-400">
+    <span role="alert" className="flex items-center gap-1 text-xs text-red-400">
       <AlertCircle className="h-3 w-3 flex-shrink-0" />
       {message}
     </span>

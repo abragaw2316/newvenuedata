@@ -7,6 +7,7 @@ import { LiveDataBadge } from '@/components/shared/live-data-badge'
 import { LicenseVolumeChart } from '@/components/charts/license-volume-chart'
 import { CountyBarChart } from '@/components/charts/county-bar-chart'
 import { CtaBanner } from '@/components/sections/cta-banner'
+import { DatasetSchema } from '@/components/seo/dataset-schema'
 import { TOTAL_LICENSEES, TOTAL_NEW_RESTAURANTS_FY } from '@/lib/real-data'
 
 export const metadata: Metadata = {
@@ -74,6 +75,14 @@ const NORMALIZATION_STEPS = [
 export default function DataCoveragePage() {
   return (
     <div>
+      <DatasetSchema
+        name="Florida Liquor & Food-Service License Filings"
+        description="Liquor and food-service license records across all 67 Florida counties, sourced from official FL DBPR public records (Alcoholic Beverages & Tobacco and Hotels & Restaurants) and refreshed daily."
+        url="/data-coverage"
+        keywords={['Florida liquor licenses', 'food-service licenses', 'FL DBPR', 'new business openings', 'liquor liability leads']}
+        spatialCoverage="Florida, United States"
+        license="https://newvenuedata.com/data-policy"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 gradient-hero">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col gap-12">
