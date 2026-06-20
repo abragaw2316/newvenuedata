@@ -146,6 +146,30 @@ export function welcomeEmail(name?: string): { subject: string; html: string } {
   }
 }
 
+// For a buyer who paid via a Stripe payment link WITHOUT signing up first — we
+// auto-create their account, so this email hands them their API key and a link to
+// set a password (they never chose one).
+export function newCustomerEmail(opts: {
+  apiKey: string
+  setupUrl: string
+  planLabel: string
+}): { subject: string; html: string } {
+  return {
+    subject: 'Welcome to New Venue Data — your account is ready',
+    html: shell('Your account is ready', `
+      <p style="margin:0 0 14px;">Thanks for subscribing to the <strong>${opts.planLabel}</strong> plan — your account is set up and ready to go.</p>
+      <p style="margin:0 0 8px;">First, set a password so you can sign in and manage your subscription:</p>
+      <p style="margin:0 0 22px;">${button(opts.setupUrl, 'Set your password')}</p>
+      <p style="margin:0 0 8px;font-size:13px;color:#a8a29e;">Or paste this link into your browser (expires in 7 days):</p>
+      <p style="margin:0 0 18px;font-size:13px;word-break:break-all;"><a href="${opts.setupUrl}" style="color:${GREEN};">${opts.setupUrl}</a></p>
+      <p style="margin:0 0 8px;">Your API key — keep it secret, it's shown only once:</p>
+      <p style="margin:0 0 18px;"><code style="display:inline-block;background:#f5f5f4;border:1px solid ${BORDER};border-radius:6px;padding:8px 10px;font-size:13px;word-break:break-all;color:${INK};">${opts.apiKey}</code></p>
+      <p style="margin:0 0 14px;">Your first weekly list of brand-new venues in your county arrives within one business day, then every Monday after.</p>
+      <p style="margin:0;">Questions? Just reply — a real person reads every email.<br/>— Austin Bragaw, New Venue Data</p>
+    `),
+  }
+}
+
 export function verifyEmailMessage(verifyUrl: string): { subject: string; html: string } {
   return {
     subject: 'Confirm your email — New Venue Data',

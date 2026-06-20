@@ -9,9 +9,10 @@
 // endpoint at https://newvenuedata.com/api/stripe/webhook, subscribe to
 // checkout.session.completed + customer.subscription.updated/deleted, copy the
 // signing secret, and set STRIPE_WEBHOOK_SECRET=whsec_... in Vercel.
-import { createHmac, timingSafeEqual } from 'node:crypto'
+import { createHmac, timingSafeEqual, randomBytes } from 'node:crypto'
 import { sql, ensureSchema, dbConfigured } from '@/lib/db'
-import { sendEmail, welcomeEmail } from '@/lib/email'
+import { sendEmail, welcomeEmail, newCustomerEmail } from '@/lib/email'
+import { hashPassword, generateApiKey, newId, createAuthToken, siteUrl } from '@/lib/auth'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
@@ -63,6 +64,33 @@ async function setPlanByCustomer(customerId: string, plan: string): Promise<void
             WHERE revoked = false AND user_id IN (SELECT id FROM users WHERE stripe_customer_id = ${customerId})`
 }
 
+const PLAN_LABEL: Record<string, string> = {
+  trial: 'Free trial',
+  county: 'County',
+  south_fl: 'South Florida',
+  statewide: 'Statewide',
+}
+
+// Auto-provision an account for a buyer who paid via a payment link WITHOUT
+// signing up first: creates the user, issues an API key, and returns a 7-day
+// "set your password" link so they can log in. Without this, a cold purchase
+// would leave the buyer with nothing (the webhook would just no-op).
+async function provisionCustomer(
+  email: string,
+  plan: string,
+  customerId: string
+): Promise<{ apiKey: string; setupUrl: string }> {
+  const userId = newId()
+  const pwHash = await hashPassword(randomBytes(24).toString('hex')) // random; unusable until they set one
+  await sql`INSERT INTO users (id, email, password_hash, name, company, plan, email_verified, stripe_customer_id)
+            VALUES (${userId}, ${email}, ${pwHash}, ${null}, ${null}, ${plan}, true, ${customerId || null})`
+  const { raw, hash, prefix } = generateApiKey()
+  await sql`INSERT INTO api_keys (id, user_id, key_hash, key_prefix, plan)
+            VALUES (${newId('key_')}, ${userId}, ${hash}, ${prefix}, ${plan})`
+  const token = await createAuthToken(userId, 'reset', 7 * 24 * 60 * 60 * 1000)
+  return { apiKey: raw, setupUrl: `${siteUrl()}/reset-password?token=${token}` }
+}
+
 const ack = (extra: Json = {}) =>
   new Response(JSON.stringify({ received: true, ...extra }), {
     status: 200,
@@ -108,12 +136,26 @@ export async function POST(req: Request): Promise<Response> {
         const email = (str(asObj(obj.customer_details).email) || str(obj.customer_email)).toLowerCase()
         const plan = planFromAmountCents(num(obj.amount_total))
         if (email) {
-          await setPlanByEmail(email, plan, str(obj.customer))
-          const { subject, html } = welcomeEmail()
-          await sendEmail({ to: email, subject, html }).catch(() => {})
+          const bound = await setPlanByEmail(email, plan, str(obj.customer))
+          if (bound) {
+            // Existing account upgraded.
+            const { subject, html } = welcomeEmail()
+            await sendEmail({ to: email, subject, html }).catch(() => {})
+          } else {
+            // Cold buyer with no account — create one so they're not left empty-handed.
+            const { apiKey, setupUrl } = await provisionCustomer(email, plan, str(obj.customer))
+            const { subject, html } = newCustomerEmail({ apiKey, setupUrl, planLabel: PLAN_LABEL[plan] || plan })
+            const res = await sendEmail({ to: email, subject, html }).catch(() => null)
+            // Loud fallback: if email is off, the founder can copy this link to onboard manually.
+            console.log(
+              `[stripe] NEW CUSTOMER provisioned: ${email} -> ${plan}` +
+                (res && res.ok ? ' (credentials emailed)' : ` (EMAIL OFF — send setup link manually: ${setupUrl})`)
+            )
+          }
         }
         break
       }
+      case 'customer.subscription.created':
       case 'customer.subscription.updated': {
         const items = asObj(obj.items)
         const first = asObj(Array.isArray(items.data) ? items.data[0] : undefined)
