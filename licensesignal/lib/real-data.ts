@@ -6,8 +6,8 @@ import type { LicenseRecord, DailyVolume, StatCardData, CountyVolume } from './t
 
 export const DATA_AS_OF = '2026-06-15'
 export const DATA_SOURCE = 'Florida DBPR — Division of Alcoholic Beverages & Tobacco and Division of Hotels & Restaurants'
-export const TOTAL_LICENSEES = 52168
-export const TOTAL_NEW_RESTAURANTS_FY = 6524
+export const TOTAL_LICENSEES = 52183
+export const TOTAL_NEW_RESTAURANTS_FY = 0
 
 export const REAL_LICENSES: LicenseRecord[] = [
   {
@@ -511,31 +511,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV2331737",
-    "licenseNumber": "BEV2331737",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "El Globo Discount",
-    "legalName": "El Globo Market LLC",
-    "dbaName": "El Globo Discount",
-    "address": {
-      "street": "1901 W 60TH ST",
-      "city": "Hialeah",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33012",
-      "lat": 25.877067549757,
-      "lng": -80.321345091246
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-07",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-07",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-07T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV7001093",
     "licenseNumber": "BEV7001093",
     "licenseType": "COP",
@@ -661,6 +636,31 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
+    "id": "lic_BEV6104655",
+    "licenseNumber": "BEV6104655",
+    "licenseType": "COP",
+    "status": "active",
+    "businessName": "Original Floridian",
+    "legalName": "Original Floridian Bar And Grill LLC",
+    "dbaName": "Original Floridian",
+    "address": {
+      "street": "31936 SAINT JOE ROAD",
+      "city": "Dade City",
+      "county": "Pasco",
+      "state": "FL",
+      "zip": "33525",
+      "lat": 28.375884424797,
+      "lng": -82.288812693147
+    },
+    "filedDate": "2026-06-29",
+    "effectiveDate": "2026-06-29",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-06-29",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-06-29T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
     "id": "lic_BEV2339059",
     "licenseNumber": "BEV2339059",
     "licenseType": "SRX",
@@ -708,31 +708,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-06-17",
     "eventType": "new_filing",
     "eventTimestamp": "2026-06-17T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV6104655",
-    "licenseNumber": "BEV6104655",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Original Floridian",
-    "legalName": "Original Floridian Bar And Grill LLC",
-    "dbaName": "Original Floridian",
-    "address": {
-      "street": "31936 SAINT JOE ROAD",
-      "city": "Dade City",
-      "county": "Pasco",
-      "state": "FL",
-      "zip": "33525",
-      "lat": 28.375884424797,
-      "lng": -82.288812693147
-    },
-    "filedDate": "2026-06-29",
-    "effectiveDate": "2026-06-29",
-    "expirationDate": "2026-09-30",
-    "issuedDate": "2026-06-29",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-29T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -1208,81 +1183,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-06-18",
     "eventType": "new_filing",
     "eventTimestamp": "2026-06-18T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV6019326",
-    "licenseNumber": "BEV6019326",
-    "licenseType": "BEV",
-    "status": "active",
-    "businessName": "Cll Social Club, INC.",
-    "legalName": "Cll Social Club, INC.",
-    "dbaName": "Cll Social Club, INC.",
-    "address": {
-      "street": "2792 DONNELLY DRIVE",
-      "city": "Lantana",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33462",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-22",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-22",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-22T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2105899",
-    "licenseNumber": "BEV2105899",
-    "licenseType": "BEV",
-    "status": "active",
-    "businessName": "Hammock Bay Golf & Country Club",
-    "legalName": "Mih Opco LLC",
-    "dbaName": "Hammock Bay Golf & Country Club",
-    "address": {
-      "street": "1370 BORGHESE LANE",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34114",
-      "lat": 25.998699271218,
-      "lng": -81.693910918311
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-03",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-06-03",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-03T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2105900",
-    "licenseNumber": "BEV2105900",
-    "licenseType": "BEV",
-    "status": "active",
-    "businessName": "Rookery At Marco",
-    "legalName": "Mih Opco LLC",
-    "dbaName": "Rookery At Marco",
-    "address": {
-      "street": "3433 CLUB CENTER BOULEVARD",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34114",
-      "lat": 26.025328488405,
-      "lng": -81.682057975627
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-24",
-    "expirationDate": null,
-    "issuedDate": "2026-06-24",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-24T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -1936,31 +1836,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV2100187",
-    "licenseNumber": "BEV2100187",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Jw Marriott Marco Island Beach Resort",
-    "legalName": "Mih Opco LLC",
-    "dbaName": "Jw Marriott Marco Island Beach Resort",
-    "address": {
-      "street": "400 SOUTH COLLIER BLVD",
-      "city": "Marco Island",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34145",
-      "lat": 25.927413969968,
-      "lng": -81.727927779794
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-03",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-06-03",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-03T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV6100161",
     "licenseNumber": "BEV6100161",
     "licenseType": "COP",
@@ -2036,31 +1911,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV2105901",
-    "licenseNumber": "BEV2105901",
-    "licenseType": "BEV",
-    "status": "active",
-    "businessName": "Cll Social Club INC",
-    "legalName": "Cll Social Club, INC",
-    "dbaName": "Cll Social Club INC",
-    "address": {
-      "street": "870 CLASSIC COURT",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34110",
-      "lat": 26.305329871375,
-      "lng": -81.805135107855
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-18",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-18",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-18T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV1625295",
     "licenseNumber": "BEV1625295",
     "licenseType": "BEV",
@@ -2083,31 +1933,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-05-21",
     "eventType": "new_filing",
     "eventTimestamp": "2026-05-21T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2105898",
-    "licenseNumber": "BEV2105898",
-    "licenseType": "BEV",
-    "status": "active",
-    "businessName": "Cll Social Club, INC.",
-    "legalName": "Cll Social Club, INC.",
-    "dbaName": "Cll Social Club, INC.",
-    "address": {
-      "street": "561 BENTLEY VILLAGE CT.",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34110",
-      "lat": 26.307088702289,
-      "lng": -81.816374231298
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-18",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-18",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-18T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2211,31 +2036,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV1625290",
-    "licenseNumber": "BEV1625290",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "Bones Bait And Tackle",
-    "legalName": "Bones Bait And Tackle INC",
-    "dbaName": "Bones Bait And Tackle",
-    "address": {
-      "street": "2426 N STATE ROAD 7",
-      "city": "Margate",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33063",
-      "lat": 26.257796181097,
-      "lng": -80.201380124921
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-15",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-15",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-15T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV3800917",
     "licenseNumber": "BEV3800917",
     "licenseType": "COP",
@@ -2258,56 +2058,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-05-19",
     "eventType": "new_filing",
     "eventTimestamp": "2026-05-19T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV1625289",
-    "licenseNumber": "BEV1625289",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "Pompano Food And Daily",
-    "legalName": "599 Petroleum LLC",
-    "dbaName": "Pompano Food And Daily",
-    "address": {
-      "street": "599 N FEDERAL HWY",
-      "city": "Pompano Beach",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33062",
-      "lat": 26.23720716564,
-      "lng": -80.102947092068
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-06",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-06",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-06T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV6014676",
-    "licenseNumber": "BEV6014676",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "Exprezo # 157",
-    "legalName": "M&A Brothers Realty No 46 INC",
-    "dbaName": "Exprezo # 157",
-    "address": {
-      "street": "111 E WOOLBRIGHT ROAD",
-      "city": "Boynton Beach",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33435",
-      "lat": 26.514601419459,
-      "lng": -80.063617415357
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-04",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-04",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-04T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2358,31 +2108,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-05-14",
     "eventType": "new_filing",
     "eventTimestamp": "2026-05-14T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2338990",
-    "licenseNumber": "BEV2338990",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "Plantabaja Market",
-    "legalName": "Jordansl9vibe LLC",
-    "dbaName": "Plantabaja Market",
-    "address": {
-      "street": "704 SW 1ST STREET",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33130",
-      "lat": 25.772729294317,
-      "lng": -80.20614117439
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-01",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-06-01",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-01T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2458,31 +2183,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-06-17",
     "eventType": "new_filing",
     "eventTimestamp": "2026-06-17T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV7408874",
-    "licenseNumber": "BEV7408874",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "Smoke Heaven",
-    "legalName": "Laxmi Ganpati LLC",
-    "dbaName": "Smoke Heaven",
-    "address": {
-      "street": "740 MASON AVE",
-      "city": "Daytona Beach",
-      "county": "Volusia",
-      "state": "FL",
-      "zip": "32114",
-      "lat": 29.222548335993,
-      "lng": -81.04078981807
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-01",
-    "expirationDate": null,
-    "issuedDate": "2026-05-01",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-01T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2761,31 +2461,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV6215474",
-    "licenseNumber": "BEV6215474",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Christians On The Water",
-    "legalName": "Christians7690 Limited Liability Company",
-    "dbaName": "Christians On The Water",
-    "address": {
-      "street": "4999 HARBOR LIGHTS DR",
-      "city": "St. Petersburg",
-      "county": "Pinellas",
-      "state": "FL",
-      "zip": "33708",
-      "lat": 27.816796735723,
-      "lng": -82.767064228236
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-04",
-    "expirationDate": "2026-09-30",
-    "issuedDate": "2026-05-04",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-04T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV6603700",
     "licenseNumber": "BEV6603700",
     "licenseType": "COP",
@@ -2836,31 +2511,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV2338988",
-    "licenseNumber": "BEV2338988",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Mister O1 Extraordinary Pizza",
-    "legalName": "Coral Gables 305 LLC",
-    "dbaName": "Mister O1 Extraordinary Pizza",
-    "address": {
-      "street": "110 ALHAMBRA CIR",
-      "city": "Coral Gables",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33134",
-      "lat": 25.752128634099,
-      "lng": -80.258637765624
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-09",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-06-09",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-09T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV5404091",
     "licenseNumber": "BEV5404091",
     "licenseType": "COP",
@@ -2883,106 +2533,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-06-03",
     "eventType": "new_filing",
     "eventTimestamp": "2026-06-03T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV6215103",
-    "licenseNumber": "BEV6215103",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Dock At Rebellion Harbour",
-    "legalName": "Uisce Beatha Spirits LLC",
-    "dbaName": "Dock At Rebellion Harbour",
-    "address": {
-      "street": "12707 49TH STREET NORTH",
-      "city": "Clearwater",
-      "county": "Pinellas",
-      "state": "FL",
-      "zip": "33762",
-      "lat": 27.887538246536,
-      "lng": -82.700265706616
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-01",
-    "expirationDate": "2026-09-30",
-    "issuedDate": "2026-06-01",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-01T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV6019109",
-    "licenseNumber": "BEV6019109",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Ebisu Japanese Fast Casual",
-    "legalName": "Ebisu Jfc INC",
-    "dbaName": "Ebisu Japanese Fast Casual",
-    "address": {
-      "street": "6779 W INDIANTOWN RD",
-      "city": "Jupiter",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33458",
-      "lat": 26.934481643949,
-      "lng": -80.138556798788
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-06-04",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-06-04",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-06-04T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2105864",
-    "licenseNumber": "BEV2105864",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Speakeasy",
-    "legalName": "2682 LLC",
-    "dbaName": "Speakeasy",
-    "address": {
-      "street": "1106 N COLLIER BLVD, UNIT 103-104",
-      "city": "Marco Island",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34145",
-      "lat": 25.955506679125,
-      "lng": -81.721298230004
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-14",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-05-14",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-14T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV3913849",
-    "licenseNumber": "BEV3913849",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Greyson",
-    "legalName": "Greyson Apollo Beach LLC",
-    "dbaName": "Greyson",
-    "address": {
-      "street": "6162 PASEO AL MAR BLVD. UNIT 103",
-      "city": "Apollo Beach",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33572",
-      "lat": 27.767803837271,
-      "lng": -82.389776896472
-    },
-    "filedDate": "2026-05-01",
-    "effectiveDate": "2026-05-19",
-    "expirationDate": "2026-09-30",
-    "issuedDate": "2026-05-19",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-19T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -3011,1090 +2561,140 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA1626463",
-    "licenseNumber": "SEA1626463",
-    "licenseType": "SEATING",
+    "id": "lic_BEV6603699",
+    "licenseNumber": "BEV6603699",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Shadow Cabaret",
-    "legalName": "Almaz Enterprise INC",
-    "dbaName": "Shadow Cabaret",
+    "businessName": "Sunset Grill",
+    "legalName": "Ddf Sunset LLC",
+    "dbaName": "Sunset Grill",
     "address": {
-      "street": "2305 NE 5 AVE",
-      "city": "Pompano Beach",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33064",
-      "lat": 26.259743819845,
-      "lng": -80.11603831342
-    },
-    "filedDate": "2026-03-19",
-    "effectiveDate": "2026-03-19",
-    "expirationDate": null,
-    "issuedDate": "2026-03-19",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-03-19T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_MFD3954503",
-    "licenseNumber": "MFD3954503",
-    "licenseType": "MOBILE_FOOD",
-    "status": "active",
-    "businessName": "La Parrillita",
-    "legalName": "Corey Wittenzellner & Colby Wittenzellner",
-    "dbaName": "La Parrillita",
-    "address": {
-      "street": "2311 W HILLSBOROUGH AVE",
-      "city": "Tampa",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33603",
-      "lat": 27.996140673458,
-      "lng": -82.483369555847
-    },
-    "filedDate": "2025-08-29",
-    "effectiveDate": "2025-08-29",
-    "expirationDate": null,
-    "issuedDate": "2025-08-29",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-29T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_PAR3912390",
-    "licenseNumber": "PAR3912390",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Mini Melts Zoo Tampa",
-    "legalName": "Zoo Tampa At Lowry Park",
-    "dbaName": "Mini Melts Zoo Tampa",
-    "address": {
-      "street": "1101 W SLIGH AVE",
-      "city": "Tampa",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33604",
-      "lat": 28.010806108804,
-      "lng": -82.471740396233
-    },
-    "filedDate": "2025-09-15",
-    "effectiveDate": "2025-09-15",
-    "expirationDate": null,
-    "issuedDate": "2025-09-15",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-15T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626448",
-    "licenseNumber": "SEA1626448",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Cajun Crab",
-    "legalName": "Top 88 INC",
-    "dbaName": "Cajun Crab",
-    "address": {
-      "street": "11401  PINES BLVD UNIT 892",
-      "city": "Pembroke Pines",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33026",
-      "lat": 26.007892552359,
-      "lng": -80.300387533536
-    },
-    "filedDate": "2026-02-27",
-    "effectiveDate": "2026-02-27",
-    "expirationDate": null,
-    "issuedDate": "2026-02-27",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-02-27T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA3919548",
-    "licenseNumber": "SEA3919548",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Cw's On Three",
-    "legalName": "Cw's Gin Joint LLC",
-    "dbaName": "Cw's On Three",
-    "address": {
-      "street": "655 N FRANKLIN ST 2200",
-      "city": "Tampa",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33602",
-      "lat": 27.94959248595,
-      "lng": -82.458712703186
-    },
-    "filedDate": "2026-05-19",
-    "effectiveDate": "2026-05-19",
-    "expirationDate": null,
-    "issuedDate": "2026-05-19",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-19T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338621",
-    "licenseNumber": "SEA2338621",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Golden Krust Caribbean Restaurant",
-    "legalName": "(The) Zayn Group INC",
-    "dbaName": "Golden Krust Caribbean Restaurant",
-    "address": {
-      "street": "9534 SW 160 ST",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33157",
-      "lat": 25.619676265806,
-      "lng": -80.347141023803
-    },
-    "filedDate": "2026-01-20",
-    "effectiveDate": "2026-01-20",
-    "expirationDate": null,
-    "issuedDate": "2026-01-20",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-20T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA3919458",
-    "licenseNumber": "SEA3919458",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Kikiriki",
-    "legalName": "Restaurant Kikiriki INC",
-    "dbaName": "Kikiriki",
-    "address": {
-      "street": "1424 E FLETCHER AVE",
-      "city": "Tampa",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33612",
-      "lat": 28.069289406487,
-      "lng": -82.443574648913
-    },
-    "filedDate": "2025-08-01",
-    "effectiveDate": "2025-08-01",
-    "expirationDate": null,
-    "issuedDate": "2025-08-01",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-01T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS3919486",
-    "licenseNumber": "NOS3919486",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Yuengling Draft Haus Concession",
-    "legalName": "Yuengling Brewing Company Of Tampa INC",
-    "dbaName": "Yuengling Draft Haus Concession",
-    "address": {
-      "street": "11109 N 30 ST",
-      "city": "Tampa",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33612",
-      "lat": 28.04741345038,
-      "lng": -82.426116431793
-    },
-    "filedDate": "2025-11-13",
-    "effectiveDate": "2025-11-13",
-    "expirationDate": null,
-    "issuedDate": "2025-11-13",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-13T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6400949",
-    "licenseNumber": "SEA6400949",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Lochside Florida",
-    "legalName": "Lochside Leisure Company LLC",
-    "dbaName": "Lochside Florida",
-    "address": {
-      "street": "1124 N SUMMIT ST",
-      "city": "Crescent City",
-      "county": "Putnam",
-      "state": "FL",
-      "zip": "32112",
-      "lat": 29.445854789152,
-      "lng": -81.510945415009
-    },
-    "filedDate": "2026-05-20",
-    "effectiveDate": "2026-05-20",
-    "expirationDate": null,
-    "issuedDate": "2026-05-20",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-05-20T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA4105478",
-    "licenseNumber": "SEA4105478",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Surf Subs",
-    "legalName": "Surf Subs LLC",
-    "dbaName": "Surf Subs",
-    "address": {
-      "street": "118 43 AVE",
-      "city": "Vero Beach",
-      "county": "Indian River",
-      "state": "FL",
-      "zip": "32968",
-      "lat": 27.601441101701,
-      "lng": -80.430480144795
-    },
-    "filedDate": "2025-07-01",
-    "effectiveDate": "2025-07-01",
-    "expirationDate": null,
-    "issuedDate": "2025-07-01",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-01T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS6023214",
-    "licenseNumber": "NOS6023214",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Tacos Wey 561",
-    "legalName": "Tacos Wey 561 LLC",
-    "dbaName": "Tacos Wey 561",
-    "address": {
-      "street": "690 GLADES RD",
-      "city": "Boca Raton",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33431",
-      "lat": 26.364781319948,
-      "lng": -80.101270037589
-    },
-    "filedDate": "2025-10-15",
-    "effectiveDate": "2025-10-15",
-    "expirationDate": null,
-    "issuedDate": "2025-10-15",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-15T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6023193",
-    "licenseNumber": "SEA6023193",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Pubbelly Sushi",
-    "legalName": "Pbs West Palm Beach LLC",
-    "dbaName": "Pubbelly Sushi",
-    "address": {
-      "street": "303 CLEMATIS ST",
-      "city": "West Palm Beach",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33401",
-      "lat": 26.71337794558,
-      "lng": -80.051985384169
-    },
-    "filedDate": "2025-08-25",
-    "effectiveDate": "2025-08-25",
-    "expirationDate": null,
-    "issuedDate": "2025-08-25",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-25T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA4607973",
-    "licenseNumber": "SEA4607973",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Millers Ale House",
-    "legalName": "Miller's Ale House, INC.",
-    "dbaName": "Millers Ale House",
-    "address": {
-      "street": "22810 VIA VILLAGIO",
-      "city": "Estero",
-      "county": "Lee",
-      "state": "FL",
-      "zip": "33928",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-08-08",
-    "effectiveDate": "2025-08-08",
-    "expirationDate": null,
-    "issuedDate": "2025-08-08",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-08T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS1306095",
-    "licenseNumber": "NOS1306095",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "876 Kitchen And Grill",
-    "legalName": "876 Kitchen And Grill LLC",
-    "dbaName": "876 Kitchen And Grill",
-    "address": {
-      "street": "2508 E 5 ST UNIT A1",
-      "city": "Panama City",
-      "county": "Bay",
-      "state": "FL",
-      "zip": "32405",
-      "lat": 30.156750104188,
-      "lng": -85.627123207101
-    },
-    "filedDate": "2025-11-19",
-    "effectiveDate": "2025-11-19",
-    "expirationDate": null,
-    "issuedDate": "2025-11-19",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-19T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816481",
-    "licenseNumber": "SEA5816481",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chipotle Mexican Grill",
-    "legalName": "Chipotle Mexican Grill Of Colorado LLC",
-    "dbaName": "Chipotle Mexican Grill",
-    "address": {
-      "street": "203 N SEMORAN BLVD",
-      "city": "Winter Park",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32792",
-      "lat": 28.597271334939,
-      "lng": -81.307088154026
-    },
-    "filedDate": "2025-10-28",
-    "effectiveDate": "2025-10-28",
-    "expirationDate": null,
-    "issuedDate": "2025-10-28",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-28T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6023273",
-    "licenseNumber": "SEA6023273",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Pubbelly Sushi",
-    "legalName": "Pbs Boca Raton LLC",
-    "dbaName": "Pubbelly Sushi",
-    "address": {
-      "street": "5377 TOWN CENTER RD STE 400",
-      "city": "Boca Raton",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33486",
-      "lat": 26.363671458828,
-      "lng": -80.127242753658
-    },
-    "filedDate": "2026-01-23",
-    "effectiveDate": "2026-01-23",
-    "expirationDate": null,
-    "issuedDate": "2026-01-23",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-23T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5815869",
-    "licenseNumber": "SEA5815869",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Mamajuana Lounge And Bar",
-    "legalName": "Mamajuana Lounge And Bar Corp",
-    "dbaName": "Mamajuana Lounge And Bar",
-    "address": {
-      "street": "5665 S ORANGE AVE",
-      "city": "Edgewood",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32809",
-      "lat": 28.475684712724,
-      "lng": -81.37029483845
-    },
-    "filedDate": "2026-01-30",
-    "effectiveDate": "2026-01-30",
-    "expirationDate": null,
-    "issuedDate": "2026-01-30",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-30T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626359",
-    "licenseNumber": "SEA1626359",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Saiko-I Sushi Lounge And Hibachi",
-    "legalName": "Seven Keys Of Broward LLC",
-    "dbaName": "Saiko-I Sushi Lounge And Hibachi",
-    "address": {
-      "street": "8160 W BROWARD BLVD",
-      "city": "Plantation",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33324",
-      "lat": 26.12069193157,
-      "lng": -80.258918465708
-    },
-    "filedDate": "2025-10-02",
-    "effectiveDate": "2025-10-02",
-    "expirationDate": null,
-    "issuedDate": "2025-10-02",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-02T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338519",
-    "licenseNumber": "SEA2338519",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chipotle Mexican Grill",
-    "legalName": "Chipotle Mexican Grill Of Colorado LLC",
-    "dbaName": "Chipotle Mexican Grill",
-    "address": {
-      "street": "5396 BISCAYNE BLVD",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33137",
-      "lat": 25.825088463678,
-      "lng": -80.186967906362
-    },
-    "filedDate": "2025-09-22",
-    "effectiveDate": "2025-09-22",
-    "expirationDate": null,
-    "issuedDate": "2025-09-22",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-22T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1901494",
-    "licenseNumber": "SEA1901494",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Pizza Joint Wood Fire Pies",
-    "legalName": "Spj Ishwer LLC",
-    "dbaName": "Pizza Joint Wood Fire Pies",
-    "address": {
-      "street": "9895 N CITRUS AVE",
-      "city": "Crystal River",
-      "county": "Citrus",
-      "state": "FL",
-      "zip": "34428",
-      "lat": 29.005819437643,
-      "lng": -82.569320238395
-    },
-    "filedDate": "2025-07-14",
-    "effectiveDate": "2025-07-14",
-    "expirationDate": null,
-    "issuedDate": "2025-07-14",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-14T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626343",
-    "licenseNumber": "SEA1626343",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Keke's Breakfast Cafe",
-    "legalName": "Kj Cafe Parkland",
-    "dbaName": "Keke's Breakfast Cafe",
-    "address": {
-      "street": "7609 STATE RD 7",
-      "city": "Parkland",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33073",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-09-08",
-    "effectiveDate": "2025-09-08",
-    "expirationDate": null,
-    "issuedDate": "2025-09-08",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-08T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816479",
-    "licenseNumber": "SEA5816479",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Raising Cane's Restaurant #0950",
-    "legalName": "Raising Cane's Restaurants LLC",
-    "dbaName": "Raising Cane's Restaurant #0950",
-    "address": {
-      "street": "8718 INTERNATIONAL DR",
-      "city": "Orlando",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32819",
-      "lat": 28.439597894997,
-      "lng": -81.471172343416
-    },
-    "filedDate": "2025-10-27",
-    "effectiveDate": "2025-10-27",
-    "expirationDate": null,
-    "issuedDate": "2025-10-27",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-27T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6605303",
-    "licenseNumber": "SEA6605303",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Avanti Argentinian Bistro",
-    "legalName": "Avanti Argentinian Bistro INC",
-    "dbaName": "Avanti Argentinian Bistro",
-    "address": {
-      "street": "9174 S US HWY 1",
+      "street": "12900 SW MIDNIGHT STREAM BOULEVARD",
       "city": "Port St Lucie",
       "county": "St. Lucie",
       "state": "FL",
-      "zip": "34952",
-      "lat": 27.293009689329,
-      "lng": -80.300942523975
-    },
-    "filedDate": "2025-07-29",
-    "effectiveDate": "2025-07-29",
-    "expirationDate": null,
-    "issuedDate": "2025-07-29",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-29T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2103938",
-    "licenseNumber": "SEA2103938",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Prime Social Reserve",
-    "legalName": "Prime Social Naples LLC",
-    "dbaName": "Prime Social Reserve",
-    "address": {
-      "street": "837 5 AVE S 3RD FLR",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34102",
-      "lat": 26.141841048589,
-      "lng": -81.795651215797
-    },
-    "filedDate": "2025-10-27",
-    "effectiveDate": "2025-10-27",
-    "expirationDate": null,
-    "issuedDate": "2025-10-27",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-27T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA4608007",
-    "licenseNumber": "SEA4608007",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chickaroo Kitchen/Auntie Anne's",
-    "legalName": "Cape Coral Kkc LLC",
-    "dbaName": "Chickaroo Kitchen/Auntie Anne's",
-    "address": {
-      "street": "1619 DEL PRADO BLVD S",
-      "city": "Cape Coral",
-      "county": "Lee",
-      "state": "FL",
-      "zip": "33390",
-      "lat": 26.621822926303,
-      "lng": -81.940642953816
-    },
-    "filedDate": "2025-11-20",
-    "effectiveDate": "2025-11-20",
-    "expirationDate": null,
-    "issuedDate": "2025-11-20",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-20T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5106154",
-    "licenseNumber": "SEA5106154",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Mcdonald's Restaurant Palmetto",
-    "legalName": "Mcdonalds's Corporation",
-    "dbaName": "Mcdonald's Restaurant Palmetto",
-    "address": {
-      "street": "2425 69 ST E",
-      "city": "Palmetto",
-      "county": "Manatee",
-      "state": "FL",
-      "zip": "34221",
+      "zip": "34987",
       "lat": null,
       "lng": null
     },
-    "filedDate": "2025-08-10",
-    "effectiveDate": "2025-08-10",
-    "expirationDate": null,
-    "issuedDate": "2025-08-10",
+    "filedDate": "2026-05-05",
+    "effectiveDate": "2026-05-11",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-05-11",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-08-10T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-05-11T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA3919489",
-    "licenseNumber": "SEA3919489",
-    "licenseType": "SEATING",
+    "id": "lic_BEV6019345",
+    "licenseNumber": "BEV6019345",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Outback Steakhouse",
-    "legalName": "Outback Steakhouse Of Florida LLC",
-    "dbaName": "Outback Steakhouse",
+    "businessName": "Turning Point",
+    "legalName": "Turning Point Of Wellington LLC",
+    "dbaName": "Turning Point",
     "address": {
-      "street": "18600 STATE ROAD 54",
-      "city": "Lutz",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33358",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-12-02",
-    "effectiveDate": "2025-12-02",
-    "expirationDate": null,
-    "issuedDate": "2025-12-02",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-02T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5815889",
-    "licenseNumber": "SEA5815889",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Outback Steakhouse-Winter Garden",
-    "legalName": "Outback Steakhouse Of Florida LLC",
-    "dbaName": "Outback Steakhouse-Winter Garden",
-    "address": {
-      "street": "16323 NEW INDEPENDENCE PKWY",
-      "city": "Winter Garden",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "34787",
-      "lat": 28.474502946903,
-      "lng": -81.627256574095
-    },
-    "filedDate": "2026-02-04",
-    "effectiveDate": "2026-02-04",
-    "expirationDate": null,
-    "issuedDate": "2026-02-04",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-02-04T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6114086",
-    "licenseNumber": "SEA6114086",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chipotle Mexican Grill Store 4669",
-    "legalName": "Chipotle Mexican Grill Of Colorado LLC",
-    "dbaName": "Chipotle Mexican Grill Store 4669",
-    "address": {
-      "street": "8004 LITTLE RD",
-      "city": "New Port Richey",
-      "county": "Pasco",
-      "state": "FL",
-      "zip": "34654",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-12-10",
-    "effectiveDate": "2025-12-10",
-    "expirationDate": null,
-    "issuedDate": "2025-12-10",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-10T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2103928",
-    "licenseNumber": "SEA2103928",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Slice Shop Naples",
-    "legalName": "Owndrum Corp",
-    "dbaName": "Slice Shop Naples",
-    "address": {
-      "street": "720 5 AVE S STE 113",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34102",
-      "lat": 26.141510237215,
-      "lng": -81.797456067647
-    },
-    "filedDate": "2025-08-04",
-    "effectiveDate": "2025-08-04",
-    "expirationDate": null,
-    "issuedDate": "2025-08-04",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-04T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS1901495",
-    "licenseNumber": "NOS1901495",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Marco's Pizza 8672",
-    "legalName": "Mize Restaurants 3 LLC",
-    "dbaName": "Marco's Pizza 8672",
-    "address": {
-      "street": "1862 N LECANTO HWY",
-      "city": "Lecanto",
-      "county": "Citrus",
-      "state": "FL",
-      "zip": "34461",
-      "lat": 28.889700033929,
-      "lng": -82.485651532016
-    },
-    "filedDate": "2025-09-24",
-    "effectiveDate": "2025-09-24",
-    "expirationDate": null,
-    "issuedDate": "2025-09-24",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-24T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816440",
-    "licenseNumber": "SEA5816440",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Singas Pizza",
-    "legalName": "Abo Pizzeria LLC",
-    "dbaName": "Singas Pizza",
-    "address": {
-      "street": "1790 W SAND LAKE RD STE B138",
-      "city": "Orlando",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32809",
-      "lat": 28.450134929971,
-      "lng": -81.404066962764
-    },
-    "filedDate": "2025-09-11",
-    "effectiveDate": "2025-09-11",
-    "expirationDate": null,
-    "issuedDate": "2025-09-11",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-11T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS1626438",
-    "licenseNumber": "NOS1626438",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Soflo Chicken And Grill",
-    "legalName": "Kage Global Industries LLC",
-    "dbaName": "Soflo Chicken And Grill",
-    "address": {
-      "street": "5201 N STATE RD 7",
-      "city": "Tamarac",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33319",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-02-17",
-    "effectiveDate": "2026-02-17",
-    "expirationDate": null,
-    "issuedDate": "2026-02-17",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-02-17T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1507251",
-    "licenseNumber": "SEA1507251",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Olive Tree Greek Grill",
-    "legalName": "Olive Tree Greek Grill INC",
-    "dbaName": "Olive Tree Greek Grill",
-    "address": {
-      "street": "5481 LAKE ANDREW DR",
-      "city": "Melbourne",
-      "county": "Brevard",
-      "state": "FL",
-      "zip": "32940",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-09-09",
-    "effectiveDate": "2025-09-09",
-    "expirationDate": null,
-    "issuedDate": "2025-09-09",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-09T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338620",
-    "licenseNumber": "SEA2338620",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Mexican",
-    "legalName": "Mexican Brickell Key LLC",
-    "dbaName": "Mexican",
-    "address": {
-      "street": "601 BRICKELL KEY DR STE 100",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33131",
-      "lat": 25.766681765423,
-      "lng": -80.185119853832
-    },
-    "filedDate": "2026-01-16",
-    "effectiveDate": "2026-01-16",
-    "expirationDate": null,
-    "issuedDate": "2026-01-16",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-16T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338580",
-    "licenseNumber": "SEA2338580",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Los Arcos Cafeteria",
-    "legalName": "Los Arcos Cafeteria INC",
-    "dbaName": "Los Arcos Cafeteria",
-    "address": {
-      "street": "348  WASHINGTON AVE",
-      "city": "Homestead",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33030",
-      "lat": 25.473002765481,
-      "lng": -80.476362006856
-    },
-    "filedDate": "2025-12-01",
-    "effectiveDate": "2025-12-01",
-    "expirationDate": null,
-    "issuedDate": "2025-12-01",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-01T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5912005",
-    "licenseNumber": "SEA5912005",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chipotle Mexican Grill",
-    "legalName": "Chipotle Mexican Grill Of Colorado LLC",
-    "dbaName": "Chipotle Mexican Grill",
-    "address": {
-      "street": "2308 E IRLO BRONSON MEMORIAL HWY",
-      "city": "Kissimmee",
-      "county": "Osceola",
-      "state": "FL",
-      "zip": "34741",
-      "lat": 28.282640114081,
-      "lng": -81.349321083202
-    },
-    "filedDate": "2025-11-05",
-    "effectiveDate": "2025-11-05",
-    "expirationDate": null,
-    "issuedDate": "2025-11-05",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-05T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338545",
-    "licenseNumber": "SEA2338545",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Ava Mediterraegean",
-    "legalName": "Ava Coconut Grove LLC",
-    "dbaName": "Ava Mediterraegean",
-    "address": {
-      "street": "2889 MCFARLANE RD, CU1 & CU2",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33133",
-      "lat": 25.727309458331,
-      "lng": -80.241288482778
-    },
-    "filedDate": "2025-10-21",
-    "effectiveDate": "2025-10-21",
-    "expirationDate": null,
-    "issuedDate": "2025-10-21",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-21T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6023356",
-    "licenseNumber": "SEA6023356",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Nine Lives Café",
-    "legalName": "Nine Lives LLC",
-    "dbaName": "Nine Lives Café",
-    "address": {
-      "street": "2032 N DIXIE HWY",
-      "city": "West Palm Beach",
+      "street": "1385 S. STATE RD 7, BUILDING 6, BAY 101 & 102",
+      "city": "Wellington",
       "county": "Palm Beach",
       "state": "FL",
-      "zip": "33407",
-      "lat": 26.731641714548,
-      "lng": -80.052906274337
+      "zip": "33414",
+      "lat": 26.665100745912,
+      "lng": -80.202698413055
     },
-    "filedDate": "2026-06-29",
-    "effectiveDate": "2026-06-29",
-    "expirationDate": null,
-    "issuedDate": "2026-06-29",
+    "filedDate": "2026-05-27",
+    "effectiveDate": "2026-06-25",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-06-25",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-29T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-25T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA5106196",
-    "licenseNumber": "SEA5106196",
-    "licenseType": "SEATING",
+    "id": "lic_BEV5602639",
+    "licenseNumber": "BEV5602639",
+    "licenseType": "COP",
     "status": "active",
-    "businessName": "Panda Express",
-    "legalName": "Panda Restaurant Group",
-    "dbaName": "Panda Express",
+    "businessName": "Aces Pub LLC",
+    "legalName": "Aces Pub LLC",
+    "dbaName": "Aces Pub LLC",
     "address": {
-      "street": "7105 SR 64 E",
-      "city": "Bradenton",
-      "county": "Manatee",
+      "street": "158 MIRACLE STRIP PARKWAY, UNIT B",
+      "city": "Fort Walton Beach",
+      "county": "Okaloosa",
       "state": "FL",
-      "zip": "34212",
-      "lat": 27.490618845077,
-      "lng": -82.467855304277
+      "zip": "32548",
+      "lat": 30.40366175685,
+      "lng": -86.606836800451
     },
-    "filedDate": "2026-03-26",
-    "effectiveDate": "2026-03-26",
-    "expirationDate": null,
-    "issuedDate": "2026-03-26",
+    "filedDate": "2026-05-04",
+    "effectiveDate": "2026-06-01",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-06-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-03-26T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-01T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA1626375",
-    "licenseNumber": "SEA1626375",
-    "licenseType": "SEATING",
+    "id": "lic_BEV3800450",
+    "licenseNumber": "BEV3800450",
+    "licenseType": "COP",
     "status": "active",
-    "businessName": "Kaluz Restaurant",
-    "legalName": "Arka Grill Company Pines LLC",
-    "dbaName": "Kaluz Restaurant",
+    "businessName": "Butlers 18 East",
+    "legalName": "Butlers 18 East LLC",
+    "dbaName": "Butlers 18 East",
     "address": {
-      "street": "10780 PINES BLVD",
-      "city": "Pembroke Pines",
-      "county": "Broward",
+      "street": "18 EAST MAIN STREET",
+      "city": "Avon Park",
+      "county": "Highlands",
       "state": "FL",
-      "zip": "33025",
-      "lat": 26.007542148228,
-      "lng": -80.295721045866
+      "zip": "33825",
+      "lat": 27.595560152042,
+      "lng": -81.501630378687
     },
-    "filedDate": "2025-11-05",
-    "effectiveDate": "2025-11-05",
-    "expirationDate": null,
-    "issuedDate": "2025-11-05",
+    "filedDate": "2026-05-12",
+    "effectiveDate": "2026-06-03",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-06-03",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-11-05T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-03T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA3919481",
-    "licenseNumber": "SEA3919481",
-    "licenseType": "SEATING",
+    "id": "lic_BEV2001641",
+    "licenseNumber": "BEV2001641",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Springhill Suites Tampa First Floor",
-    "legalName": "Dynamic Tampa LLC",
-    "dbaName": "Springhill Suites Tampa First Floor",
+    "businessName": "Paradise Restaurant & Lounge",
+    "legalName": "Paradise Restaurant & Lounge INC",
+    "dbaName": "Paradise Restaurant & Lounge",
     "address": {
-      "street": "1105 N TAMPA ST",
-      "city": "Tampa",
-      "county": "Hillsborough",
+      "street": "550 WELLS ROAD, UNIT 1",
+      "city": "Orange Park",
+      "county": "Clay",
       "state": "FL",
-      "zip": "33602",
-      "lat": 27.952307725224,
-      "lng": -82.460851559854
+      "zip": "32073",
+      "lat": 30.186547216055,
+      "lng": -81.706278395849
     },
-    "filedDate": "2025-10-27",
-    "effectiveDate": "2025-10-27",
-    "expirationDate": null,
-    "issuedDate": "2025-10-27",
+    "filedDate": "2026-05-04",
+    "effectiveDate": "2026-06-08",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-06-08",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-10-27T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-08T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA6023208",
-    "licenseNumber": "SEA6023208",
-    "licenseType": "SEATING",
+    "id": "lic_BEV6019342",
+    "licenseNumber": "BEV6019342",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Waxin's Restaurant",
-    "legalName": "Waxin's Restaurant - Wpb LLC",
-    "dbaName": "Waxin's Restaurant",
+    "businessName": "Double Knot",
+    "legalName": "76 West Delray LLC",
+    "dbaName": "Double Knot",
     "address": {
-      "street": "230 CLEMATIS ST",
-      "city": "West Palm Beach",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33401",
-      "lat": 26.713236566375,
-      "lng": -80.051076258377
-    },
-    "filedDate": "2025-09-30",
-    "effectiveDate": "2025-09-30",
-    "expirationDate": null,
-    "issuedDate": "2025-09-30",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-30T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6023258",
-    "licenseNumber": "SEA6023258",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Barcelona Wine Bar",
-    "legalName": "Barcelona Delray Beach LLC",
-    "dbaName": "Barcelona Wine Bar",
-    "address": {
-      "street": "22 W ATLANTIC AVE STE 140",
+      "street": "22 W ATLANTIC AVE.",
       "city": "Delray Beach",
       "county": "Palm Beach",
       "state": "FL",
@@ -4102,1163 +2702,313 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.461575841607,
       "lng": -80.073477514874
     },
-    "filedDate": "2025-12-23",
-    "effectiveDate": "2025-12-23",
-    "expirationDate": null,
-    "issuedDate": "2025-12-23",
+    "filedDate": "2026-05-20",
+    "effectiveDate": "2026-05-26",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-05-26",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-12-23T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-05-26T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA1626342",
-    "licenseNumber": "SEA1626342",
-    "licenseType": "SEATING",
+    "id": "lic_BEV2334083",
+    "licenseNumber": "BEV2334083",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Tropical Leaf",
-    "legalName": "1st Impression Beauty INC",
-    "dbaName": "Tropical Leaf",
+    "businessName": "Sumaq Fine Peruvian Cuisine & Bar",
+    "legalName": "Aromas Del Inka LLC",
+    "dbaName": "Sumaq Fine Peruvian Cuisine & Bar",
     "address": {
-      "street": "2501 N STATE RD 7",
-      "city": "Margate",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33063",
-      "lat": 26.258749486898,
-      "lng": -80.20176119272
-    },
-    "filedDate": "2025-08-28",
-    "effectiveDate": "2025-08-28",
-    "expirationDate": null,
-    "issuedDate": "2025-08-28",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-28T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5911898",
-    "licenseNumber": "SEA5911898",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Outback Steakhouse",
-    "legalName": "Outback Steakhouse Of Florida LLC",
-    "dbaName": "Outback Steakhouse",
-    "address": {
-      "street": "4680 MARIGOLD AVE",
-      "city": "Kissimmee",
-      "county": "Osceola",
-      "state": "FL",
-      "zip": "34758",
-      "lat": 28.145093160663,
-      "lng": -81.470763701108
-    },
-    "filedDate": "2025-07-11",
-    "effectiveDate": "2025-07-11",
-    "expirationDate": null,
-    "issuedDate": "2025-07-11",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-11T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626333",
-    "licenseNumber": "SEA1626333",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Tea Leaf & Creamery Miami",
-    "legalName": "Tea Leaf Miami LLC",
-    "dbaName": "Tea Leaf & Creamery Miami",
-    "address": {
-      "street": "601 N FEDERAL HWY STE 111",
-      "city": "Hallandale",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33009",
-      "lat": 25.974998798822,
-      "lng": -80.142002261495
-    },
-    "filedDate": "2025-08-14",
-    "effectiveDate": "2025-08-14",
-    "expirationDate": null,
-    "issuedDate": "2025-08-14",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-14T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816522",
-    "licenseNumber": "SEA5816522",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Panda Express Winter Garden",
-    "legalName": "Panda Restaurant Group",
-    "dbaName": "Panda Express Winter Garden",
-    "address": {
-      "street": "13348 HARTZOG RD",
-      "city": "Winter Garden",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "34787",
-      "lat": 28.378210095438,
-      "lng": -81.615712688059
-    },
-    "filedDate": "2025-12-12",
-    "effectiveDate": "2025-12-12",
-    "expirationDate": null,
-    "issuedDate": "2025-12-12",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-12T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338600",
-    "licenseNumber": "SEA2338600",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Crema Gourmet Espresso Bar",
-    "legalName": "All Day Cafe Brickell LLC",
-    "dbaName": "Crema Gourmet Espresso Bar",
-    "address": {
-      "street": "829 SW 1 AVE #120",
-      "city": "Miami",
+      "street": "9459-9461 S DIXIE HWY",
+      "city": "Pinecrest",
       "county": "Miami-Dade",
       "state": "FL",
-      "zip": "33130",
-      "lat": 25.766063739316,
-      "lng": -80.195232514565
+      "zip": "33156",
+      "lat": 25.682723094982,
+      "lng": -80.314600316749
     },
-    "filedDate": "2025-12-15",
-    "effectiveDate": "2025-12-15",
-    "expirationDate": null,
-    "issuedDate": "2025-12-15",
+    "filedDate": "2026-05-14",
+    "effectiveDate": "2026-05-28",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-05-28",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-12-15T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-05-28T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA3919452",
-    "licenseNumber": "SEA3919452",
-    "licenseType": "SEATING",
+    "id": "lic_BEV3913851",
+    "licenseNumber": "BEV3913851",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Aramark Corp At Jp Morgan - Highland Oaks",
-    "legalName": "Aramark Corp",
-    "dbaName": "Aramark Corp At Jp Morgan - Highland Oaks",
+    "businessName": "Bertie's Restaurant & Cocktails",
+    "legalName": "Bertie's Restaurant LLC",
+    "dbaName": "Bertie's Restaurant & Cocktails",
     "address": {
-      "street": "10420 HIGHLAND MANOR DR",
-      "city": "Tampa",
+      "street": "2086-2088 BADLANDS DRIVE",
+      "city": "Brandon",
       "county": "Hillsborough",
       "state": "FL",
-      "zip": "33610",
-      "lat": 27.98325059213,
-      "lng": -82.331892959753
+      "zip": "33511",
+      "lat": null,
+      "lng": null
     },
-    "filedDate": "2025-07-28",
-    "effectiveDate": "2025-07-28",
-    "expirationDate": null,
-    "issuedDate": "2025-07-28",
+    "filedDate": "2026-05-06",
+    "effectiveDate": "2026-05-28",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-05-28",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-07-28T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-05-28T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA2616572",
-    "licenseNumber": "SEA2616572",
-    "licenseType": "SEATING",
+    "id": "lic_BEV2612909",
+    "licenseNumber": "BEV2612909",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Whataburger",
-    "legalName": "Silvercreek Group LLC",
-    "dbaName": "Whataburger",
+    "businessName": "Dapper D's Cigars & Restaurant",
+    "legalName": "Dapper D's Cigars Downtown, LLC",
+    "dbaName": "Dapper D's Cigars & Restaurant",
     "address": {
-      "street": "5084 LENOX AVE",
+      "street": "11 NORTH OCEAN ST",
       "city": "Jacksonville",
       "county": "Duval",
       "state": "FL",
-      "zip": "32205",
-      "lat": 30.314584450368,
-      "lng": -81.732001463564
+      "zip": "32202",
+      "lat": 30.326078935489,
+      "lng": -81.656663948373
     },
-    "filedDate": "2025-12-05",
-    "effectiveDate": "2025-12-05",
-    "expirationDate": null,
-    "issuedDate": "2025-12-05",
+    "filedDate": "2026-05-11",
+    "effectiveDate": "2026-06-04",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-06-04",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-12-05T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-04T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA7407938",
-    "licenseNumber": "SEA7407938",
-    "licenseType": "SEATING",
+    "id": "lic_BEV6215488",
+    "licenseNumber": "BEV6215488",
+    "licenseType": "SRX",
     "status": "active",
-    "businessName": "Barberville Donuts INC",
-    "legalName": "Barberville Donuts INC",
-    "dbaName": "Barberville Donuts INC",
+    "businessName": "Pisco Restaurant Bar Tp",
+    "legalName": "Pisco Restaurant Bar Tp LLC",
+    "dbaName": "Pisco Restaurant Bar Tp",
     "address": {
-      "street": "1695 S US HWY 17",
-      "city": "Pierson",
-      "county": "Volusia",
-      "state": "FL",
-      "zip": "32180",
-      "lat": 29.187447426814,
-      "lng": -81.421065456227
-    },
-    "filedDate": "2025-07-10",
-    "effectiveDate": "2025-07-10",
-    "expirationDate": null,
-    "issuedDate": "2025-07-10",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-10T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6114100",
-    "licenseNumber": "SEA6114100",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Wendy's",
-    "legalName": "Wendy's Properties LLC",
-    "dbaName": "Wendy's",
-    "address": {
-      "street": "7803 DYNAMIC BLVD",
-      "city": "Wesley Chapel",
-      "county": "Pasco",
-      "state": "FL",
-      "zip": "33545",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-02-04",
-    "effectiveDate": "2026-02-04",
-    "expirationDate": null,
-    "issuedDate": "2026-02-04",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-02-04T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1507409",
-    "licenseNumber": "SEA1507409",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Cava (010372)",
-    "legalName": "Cava Holding Group",
-    "dbaName": "Cava (010372)",
-    "address": {
-      "street": "2105 VIERA BLVD STE 107",
-      "city": "Rockledge",
-      "county": "Brevard",
-      "state": "FL",
-      "zip": "32955",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-04-06",
-    "effectiveDate": "2026-04-06",
-    "expirationDate": null,
-    "issuedDate": "2026-04-06",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-04-06T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338663",
-    "licenseNumber": "SEA2338663",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Zuccaly",
-    "legalName": "Zuccaly LLC",
-    "dbaName": "Zuccaly",
-    "address": {
-      "street": "111 PALERMO AVE UNIT 122",
-      "city": "Coral Gables",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33134",
-      "lat": 25.745724111932,
-      "lng": -80.256730431645
-    },
-    "filedDate": "2026-03-11",
-    "effectiveDate": "2026-03-11",
-    "expirationDate": null,
-    "issuedDate": "2026-03-11",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-03-11T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338584",
-    "licenseNumber": "SEA2338584",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Cactus Club Cafe",
-    "legalName": "Cactus Cafe Miami Downtown INC",
-    "dbaName": "Cactus Club Cafe",
-    "address": {
-      "street": "201 S BISCAYNE BLVD STE 150",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33131",
-      "lat": 25.771813609723,
-      "lng": -80.187188697034
-    },
-    "filedDate": "2025-12-03",
-    "effectiveDate": "2025-12-03",
-    "expirationDate": null,
-    "issuedDate": "2025-12-03",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-03T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6114080",
-    "licenseNumber": "SEA6114080",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Tropical Smoothie Cafe",
-    "legalName": "Shivstone INC",
-    "dbaName": "Tropical Smoothie Cafe",
-    "address": {
-      "street": "8863 LITTLE RD",
-      "city": "New Port Richey",
-      "county": "Pasco",
-      "state": "FL",
-      "zip": "34654",
-      "lat": 28.285427363186,
-      "lng": -82.675784441607
-    },
-    "filedDate": "2025-10-30",
-    "effectiveDate": "2025-10-30",
-    "expirationDate": null,
-    "issuedDate": "2025-10-30",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-30T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816545",
-    "licenseNumber": "SEA5816545",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Solvino Cafe Gourmet",
-    "legalName": "Sun Wine INC",
-    "dbaName": "Solvino Cafe Gourmet",
-    "address": {
-      "street": "527 MAIN ST, UNIT A",
-      "city": "Windermere",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "34786",
-      "lat": 28.495358554588,
-      "lng": -81.5347851101
-    },
-    "filedDate": "2026-01-22",
-    "effectiveDate": "2026-01-22",
-    "expirationDate": null,
-    "issuedDate": "2026-01-22",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-22T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1802132",
-    "licenseNumber": "SEA1802132",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Bubble's Boba & Rolled Ice Cream",
-    "legalName": "Bubble's Boba & Rolled Ice Cream LLC",
-    "dbaName": "Bubble's Boba & Rolled Ice Cream",
-    "address": {
-      "street": "314 TAMIAMI TR UNIT 112",
-      "city": "Punta Gorda",
-      "county": "Charlotte",
-      "state": "FL",
-      "zip": "33950",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-11-10",
-    "effectiveDate": "2025-11-10",
-    "expirationDate": null,
-    "issuedDate": "2025-11-10",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-10T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS2338522",
-    "licenseNumber": "NOS2338522",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Prince St Pizza LLC",
-    "legalName": "Prince St Pizza LLC",
-    "dbaName": "Prince St Pizza LLC",
-    "address": {
-      "street": "521 LINCOLN RD",
-      "city": "Miami Beach",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33139",
-      "lat": 25.790705069968,
-      "lng": -80.133396834713
-    },
-    "filedDate": "2025-09-24",
-    "effectiveDate": "2025-09-24",
-    "expirationDate": null,
-    "issuedDate": "2025-09-24",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-24T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6502655",
-    "licenseNumber": "SEA6502655",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Cidersmith Of St Augustine",
-    "legalName": "Cidersmith LLC",
-    "dbaName": "Cidersmith Of St Augustine",
-    "address": {
-      "street": "18 ST. GEORGE ST, SUITE H",
-      "city": "Saint Augustine",
-      "county": "St. Johns",
-      "state": "FL",
-      "zip": "32084",
-      "lat": 29.897092878057,
-      "lng": -81.313487184463
-    },
-    "filedDate": "2026-01-16",
-    "effectiveDate": "2026-01-16",
-    "expirationDate": null,
-    "issuedDate": "2026-01-16",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-16T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626336",
-    "licenseNumber": "SEA1626336",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Michou Restaurant #2",
-    "legalName": "Michou Restaurant 2 INC",
-    "dbaName": "Michou Restaurant #2",
-    "address": {
-      "street": "1026 NW 9 AVE",
-      "city": "Fort Lauderdale",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33311",
-      "lat": 26.137120464312,
-      "lng": -80.153787143449
-    },
-    "filedDate": "2025-08-15",
-    "effectiveDate": "2025-08-15",
-    "expirationDate": null,
-    "issuedDate": "2025-08-15",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-15T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS6806247",
-    "licenseNumber": "NOS6806247",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Shoppes At Siesta Key",
-    "legalName": "Ssp America Srq LLC",
-    "dbaName": "Shoppes At Siesta Key",
-    "address": {
-      "street": "6000 AIRPORT CIR",
-      "city": "Sarasota",
-      "county": "Sarasota",
-      "state": "FL",
-      "zip": "34243",
-      "lat": 27.386475830947,
-      "lng": -82.554956999423
-    },
-    "filedDate": "2026-03-11",
-    "effectiveDate": "2026-03-11",
-    "expirationDate": null,
-    "issuedDate": "2026-03-11",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-03-11T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338673",
-    "licenseNumber": "SEA2338673",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Gaia",
-    "legalName": "Gaia Miami Beach LLC",
-    "dbaName": "Gaia",
-    "address": {
-      "street": "801 S POINTE DR CU2-A/CU2-B2",
-      "city": "Miami Beach",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33139",
-      "lat": 25.768319708724,
-      "lng": -80.135595001613
-    },
-    "filedDate": "2026-03-18",
-    "effectiveDate": "2026-03-18",
-    "expirationDate": null,
-    "issuedDate": "2026-03-18",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-03-18T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338742",
-    "licenseNumber": "SEA2338742",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Buccan Coral Gables",
-    "legalName": "Buccan Miracle Mile LLC",
-    "dbaName": "Buccan Coral Gables",
-    "address": {
-      "street": "100 MIRACLE MILE",
-      "city": "Coral Gables",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33134",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-04-28",
-    "effectiveDate": "2026-04-28",
-    "expirationDate": null,
-    "issuedDate": "2026-04-28",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-04-28T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6701706",
-    "licenseNumber": "SEA6701706",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Grover's",
-    "legalName": "Grover's LLC",
-    "dbaName": "Grover's",
-    "address": {
-      "street": "5614 STEWART ST",
-      "city": "Milton",
-      "county": "Santa Rosa",
-      "state": "FL",
-      "zip": "32570",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-07-21",
-    "effectiveDate": "2025-07-21",
-    "expirationDate": null,
-    "issuedDate": "2025-07-21",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-21T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338664",
-    "licenseNumber": "SEA2338664",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Vilebrequin La Plage Miami",
-    "legalName": "Sobe Center LLC",
-    "dbaName": "Vilebrequin La Plage Miami",
-    "address": {
-      "street": "1685 WASHINGTON AVE",
-      "city": "Miami Beach",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33139",
-      "lat": 25.791822035149,
-      "lng": -80.131844113604
-    },
-    "filedDate": "2026-03-11",
-    "effectiveDate": "2026-03-11",
-    "expirationDate": null,
-    "issuedDate": "2026-03-11",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-03-11T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6023202",
-    "licenseNumber": "SEA6023202",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chipotle Mexican Grill (Store #4955)",
-    "legalName": "Chipotle Mexican Grill Of Colorado LLC",
-    "dbaName": "Chipotle Mexican Grill (Store #4955)",
-    "address": {
-      "street": "2665 10 AVE N",
-      "city": "Palm Springs",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33461",
-      "lat": 26.628386854174,
-      "lng": -80.082386713083
-    },
-    "filedDate": "2025-09-16",
-    "effectiveDate": "2025-09-16",
-    "expirationDate": null,
-    "issuedDate": "2025-09-16",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-16T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA4509212",
-    "licenseNumber": "SEA4509212",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "First Watch #1093",
-    "legalName": "First Watch Restaurant INC",
-    "dbaName": "First Watch #1093",
-    "address": {
-      "street": "19260 US HWY 441",
-      "city": "Mount Dora",
-      "county": "Lake",
-      "state": "FL",
-      "zip": "32757",
-      "lat": 28.822379021863,
-      "lng": -81.635902868143
-    },
-    "filedDate": "2026-01-29",
-    "effectiveDate": "2026-01-29",
-    "expirationDate": null,
-    "issuedDate": "2026-01-29",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-29T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2338612",
-    "licenseNumber": "SEA2338612",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Frankie And Wally's",
-    "legalName": "Frankie And Wally's LLC",
-    "dbaName": "Frankie And Wally's",
-    "address": {
-      "street": "216 PALERMO AVE",
-      "city": "Coral Gables",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33134",
-      "lat": 25.745453923054,
-      "lng": -80.259119733962
-    },
-    "filedDate": "2026-01-08",
-    "effectiveDate": "2026-01-08",
-    "expirationDate": null,
-    "issuedDate": "2026-01-08",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-01-08T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626324",
-    "licenseNumber": "SEA1626324",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Pf Changs",
-    "legalName": "P.F. Chang's China Bistro INC",
-    "dbaName": "Pf Changs",
-    "address": {
-      "street": "11401 PINES BLVD #100",
-      "city": "Pembroke Pines",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33026",
-      "lat": 26.007892552359,
-      "lng": -80.300387533536
-    },
-    "filedDate": "2025-07-29",
-    "effectiveDate": "2025-07-29",
-    "expirationDate": null,
-    "issuedDate": "2025-07-29",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-29T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6309045",
-    "licenseNumber": "SEA6309045",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Carrabba's Italian Grill",
-    "legalName": "Carrabba's Italian Grill LLC",
-    "dbaName": "Carrabba's Italian Grill",
-    "address": {
-      "street": "1005 HERITAGE PASS",
-      "city": "Davenport",
-      "county": "Polk",
-      "state": "FL",
-      "zip": "33896",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-11-19",
-    "effectiveDate": "2025-11-19",
-    "expirationDate": null,
-    "issuedDate": "2025-11-19",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-19T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA4703991",
-    "licenseNumber": "SEA4703991",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Deep Brewing Company",
-    "legalName": "Deep Brewing LLC",
-    "dbaName": "Deep Brewing Company",
-    "address": {
-      "street": "2855 PABLO AVE",
-      "city": "Tallahassee",
-      "county": "Leon",
-      "state": "FL",
-      "zip": "32308",
-      "lat": 30.489186462586,
-      "lng": -84.22584767224
-    },
-    "filedDate": "2025-09-12",
-    "effectiveDate": "2025-09-12",
-    "expirationDate": null,
-    "issuedDate": "2025-09-12",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-09-12T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2001507",
-    "licenseNumber": "SEA2001507",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Anejo Cocina Mexicana",
-    "legalName": "Anejo Of Middleburg Corporation",
-    "dbaName": "Anejo Cocina Mexicana",
-    "address": {
-      "street": "1660 JEREMIAH ST",
-      "city": "Middleburg",
-      "county": "Clay",
-      "state": "FL",
-      "zip": "32068",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2025-10-07",
-    "effectiveDate": "2025-10-07",
-    "expirationDate": null,
-    "issuedDate": "2025-10-07",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-07T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6218777",
-    "licenseNumber": "SEA6218777",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Cm's Place",
-    "legalName": "Cm's Billiards INC",
-    "dbaName": "Cm's Place",
-    "address": {
-      "street": "10754 70 AVE N STE D",
-      "city": "Seminole",
-      "county": "Pinellas",
-      "state": "FL",
-      "zip": "33772",
-      "lat": 27.835912507442,
-      "lng": -82.789013667949
-    },
-    "filedDate": "2025-08-25",
-    "effectiveDate": "2025-08-25",
-    "expirationDate": null,
-    "issuedDate": "2025-08-25",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-25T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA1626386",
-    "licenseNumber": "SEA1626386",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chato S LLC",
-    "legalName": "Chato S LLC",
-    "dbaName": "Chato S LLC",
-    "address": {
-      "street": "8037 W SAMPLE RD",
-      "city": "Coral Springs",
-      "county": "Broward",
-      "state": "FL",
-      "zip": "33065",
-      "lat": 26.272298608833,
-      "lng": -80.233215423907
-    },
-    "filedDate": "2025-11-25",
-    "effectiveDate": "2025-11-25",
-    "expirationDate": null,
-    "issuedDate": "2025-11-25",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-25T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6218892",
-    "licenseNumber": "SEA6218892",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Yefsi",
-    "legalName": "Yefsi LLC",
-    "dbaName": "Yefsi",
-    "address": {
-      "street": "861 KLOSTERMAN RD E",
+      "street": "80   W LIVE OAK STREET",
       "city": "Tarpon Springs",
       "county": "Pinellas",
       "state": "FL",
       "zip": "34689",
-      "lat": 28.123039233879,
-      "lng": -82.73933559895
+      "lat": 28.154248081661,
+      "lng": -82.757924428187
     },
-    "filedDate": "2026-04-09",
-    "effectiveDate": "2026-04-09",
+    "filedDate": "2026-06-03",
+    "effectiveDate": "2026-06-03",
     "expirationDate": null,
-    "issuedDate": "2026-04-09",
+    "issuedDate": "2026-06-03",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-04-09T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-03T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA2338610",
-    "licenseNumber": "SEA2338610",
-    "licenseType": "SEATING",
+    "id": "lic_BEV6012647",
+    "licenseNumber": "BEV6012647",
+    "licenseType": "COP",
     "status": "active",
-    "businessName": "Willie's Chicken Shack",
-    "legalName": "Willies South Beach LLC",
-    "dbaName": "Willie's Chicken Shack",
+    "businessName": "Sips Cocktail Lounge",
+    "legalName": "Vivid Hospitality Group LLC",
+    "dbaName": "Sips Cocktail Lounge",
     "address": {
-      "street": "1441 WASHINGTON AVE",
-      "city": "Miami Beach",
+      "street": "335 CLEMATIS ST. SUITE 201",
+      "city": "West Palm Beach",
+      "county": "Palm Beach",
+      "state": "FL",
+      "zip": "33401",
+      "lat": 26.713391492375,
+      "lng": -80.052479841747
+    },
+    "filedDate": "2026-05-12",
+    "effectiveDate": "2026-05-20",
+    "expirationDate": null,
+    "issuedDate": "2026-05-20",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-05-20T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV1625296",
+    "licenseNumber": "BEV1625296",
+    "licenseType": "BEV",
+    "status": "active",
+    "businessName": "Nibble N Sip To -Go",
+    "legalName": "Nibble N Sip LLC",
+    "dbaName": "Nibble N Sip To -Go",
+    "address": {
+      "street": "6401 NW 28TH ST",
+      "city": "Sunrise",
+      "county": "Broward",
+      "state": "FL",
+      "zip": "33313",
+      "lat": 26.161198512229,
+      "lng": -80.23528163203
+    },
+    "filedDate": "2026-05-07",
+    "effectiveDate": "2026-05-21",
+    "expirationDate": null,
+    "issuedDate": "2026-05-21",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-05-21T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV2336549",
+    "licenseNumber": "BEV2336549",
+    "licenseType": "APS",
+    "status": "active",
+    "businessName": "12th Ave Discount LLC",
+    "legalName": "12th Ave Discount LLC",
+    "dbaName": "12th Ave Discount LLC",
+    "address": {
+      "street": "424 SW 12TH AVE, SUITE 100",
+      "city": "Miami",
       "county": "Miami-Dade",
       "state": "FL",
-      "zip": "33139",
-      "lat": 25.786871373977,
-      "lng": -80.131692079212
+      "zip": "33130",
+      "lat": 25.769334919538,
+      "lng": -80.214613707388
     },
-    "filedDate": "2026-01-05",
-    "effectiveDate": "2026-01-05",
-    "expirationDate": null,
-    "issuedDate": "2026-01-05",
+    "filedDate": "2026-05-08",
+    "effectiveDate": "2026-06-05",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-06-05",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-01-05T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-05T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA1103826",
-    "licenseNumber": "SEA1103826",
-    "licenseType": "SEATING",
+    "id": "lic_BEV6307577",
+    "licenseNumber": "BEV6307577",
+    "licenseType": "COP",
     "status": "active",
-    "businessName": "Bagels & Co.",
-    "legalName": "Gville Bagels LLC",
-    "dbaName": "Bagels & Co.",
+    "businessName": "B&B 99 Cents Store Plus, LLC",
+    "legalName": "B&B 99 Cents Store Plus, LLC",
+    "dbaName": "B&B 99 Cents Store Plus, LLC",
     "address": {
-      "street": "1111 WEST UNIVERSITY AVE RETAIL 1",
-      "city": "Gainesville",
-      "county": "Alachua",
+      "street": "2713 AVE G NW",
+      "city": "Winter Haven",
+      "county": "Polk",
       "state": "FL",
-      "zip": "32601",
-      "lat": 29.652010790559,
-      "lng": -82.33616015874
+      "zip": "33880",
+      "lat": 28.029519930036,
+      "lng": -81.766479816228
     },
-    "filedDate": "2025-11-17",
-    "effectiveDate": "2025-11-17",
-    "expirationDate": null,
-    "issuedDate": "2025-11-17",
+    "filedDate": "2026-06-16",
+    "effectiveDate": "2026-06-16",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-06-16",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-11-17T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-16T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA2338657",
-    "licenseNumber": "SEA2338657",
-    "licenseType": "SEATING",
+    "id": "lic_BEV2338997",
+    "licenseNumber": "BEV2338997",
+    "licenseType": "APS",
     "status": "active",
-    "businessName": "Sak Pase",
-    "legalName": "Sak Pase Restaurant #1 LLC",
-    "dbaName": "Sak Pase",
+    "businessName": "Midway Food Market",
+    "legalName": "2nd Avenue Food Market LLC",
+    "dbaName": "Midway Food Market",
     "address": {
-      "street": "134 N KROME AVE",
-      "city": "Homestead",
+      "street": "6391 NW 2ND AVE",
+      "city": "Miami",
       "county": "Miami-Dade",
       "state": "FL",
-      "zip": "33030",
-      "lat": 25.46863459952,
-      "lng": -80.477410707672
+      "zip": "33150",
+      "lat": 25.834276827804,
+      "lng": -80.200359441435
     },
-    "filedDate": "2026-03-02",
-    "effectiveDate": "2026-03-02",
-    "expirationDate": null,
-    "issuedDate": "2026-03-02",
+    "filedDate": "2026-05-07",
+    "effectiveDate": "2026-05-15",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-05-15",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-03-02T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-05-15T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA6218794",
-    "licenseNumber": "SEA6218794",
-    "licenseType": "SEATING",
+    "id": "lic_BEV1311824",
+    "licenseNumber": "BEV1311824",
+    "licenseType": "APS",
     "status": "active",
-    "businessName": "Caribou Coffee",
-    "legalName": "Wake Up 727 LLC",
-    "dbaName": "Caribou Coffee",
+    "businessName": "Mapco #331",
+    "legalName": "Shahid 15 LLC",
+    "dbaName": "Mapco #331",
     "address": {
-      "street": "5201 GULF BLVD",
-      "city": "St.Pete Beach",
-      "county": "Pinellas",
+      "street": "14111 PANAMA CITY BEACH PKWY",
+      "city": "Panama City Beach",
+      "county": "Bay",
       "state": "FL",
-      "zip": "33706",
-      "lat": 27.72581121999,
-      "lng": -82.741482583503
+      "zip": "32413",
+      "lat": 30.210445857115,
+      "lng": -85.849276730538
     },
-    "filedDate": "2025-10-08",
-    "effectiveDate": "2025-10-08",
-    "expirationDate": null,
-    "issuedDate": "2025-10-08",
+    "filedDate": "2026-05-20",
+    "effectiveDate": "2026-06-03",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-06-03",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-10-08T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-03T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA5106157",
-    "licenseNumber": "SEA5106157",
-    "licenseType": "SEATING",
+    "id": "lic_BEV4604959",
+    "licenseNumber": "BEV4604959",
+    "licenseType": "APS",
     "status": "active",
-    "businessName": "Rita's Italian Ice And Frozen Custard",
-    "legalName": "Wright Developing LLC",
-    "dbaName": "Rita's Italian Ice And Frozen Custard",
+    "businessName": "Mario's Meat Market And Deli",
+    "legalName": "Dk Meat Market LLC",
+    "dbaName": "Mario's Meat Market And Deli",
     "address": {
-      "street": "8523 COOPER CREEK BLVD",
-      "city": "University Park",
-      "county": "Manatee",
+      "street": "12326 S CLEVELAND AVENUE",
+      "city": "Fort Myers",
+      "county": "Lee",
       "state": "FL",
-      "zip": "34201",
-      "lat": 27.392658040634,
-      "lng": -82.453184691923
+      "zip": "33907",
+      "lat": 26.562480582549,
+      "lng": -81.872048311205
     },
-    "filedDate": "2025-08-22",
-    "effectiveDate": "2025-08-22",
-    "expirationDate": null,
-    "issuedDate": "2025-08-22",
+    "filedDate": "2026-05-06",
+    "effectiveDate": "2026-05-15",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-05-15",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-08-22T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-05-15T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_SEA4509175",
-    "licenseNumber": "SEA4509175",
-    "licenseType": "SEATING",
+    "id": "lic_BEV4704599",
+    "licenseNumber": "BEV4704599",
+    "licenseType": "APS",
     "status": "active",
-    "businessName": "Brooklyn Water Bagel",
-    "legalName": "Central Florida Bagels IV LLC",
-    "dbaName": "Brooklyn Water Bagel",
+    "businessName": "Roosters Market",
+    "legalName": "Roosters Market LLC",
+    "dbaName": "Roosters Market",
     "address": {
-      "street": "2605 S HWY 27 STE 101",
-      "city": "Clermont",
-      "county": "Lake",
+      "street": "2475 APALACHEE PKWY #104",
+      "city": "Tallahassee",
+      "county": "Leon",
       "state": "FL",
-      "zip": "34711",
-      "lat": 28.532260931821,
-      "lng": -81.734741191653
-    },
-    "filedDate": "2025-07-17",
-    "effectiveDate": "2025-07-17",
-    "expirationDate": null,
-    "issuedDate": "2025-07-17",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-17T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816521",
-    "licenseNumber": "SEA5816521",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Moon Wok Kitchen & Lounge",
-    "legalName": "Moon Wok Kitchen & Lounge",
-    "dbaName": "Moon Wok Kitchen & Lounge",
-    "address": {
-      "street": "11701 INTERNATIONAL DR SUITE 300",
-      "city": "Orlando",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32821",
-      "lat": 28.394841710103,
-      "lng": -81.464696907055
-    },
-    "filedDate": "2025-12-12",
-    "effectiveDate": "2025-12-12",
-    "expirationDate": null,
-    "issuedDate": "2025-12-12",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-12T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA2103945",
-    "licenseNumber": "SEA2103945",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Dairy Queen Grill & Chill",
-    "legalName": "Tahiti Tarpon LLC",
-    "dbaName": "Dairy Queen Grill & Chill",
-    "address": {
-      "street": "4535 TAMIAMI TRAIL E",
-      "city": "Naples",
-      "county": "Collier",
-      "state": "FL",
-      "zip": "34112",
-      "lat": 26.110498537737,
-      "lng": -81.750747209999
-    },
-    "filedDate": "2025-11-21",
-    "effectiveDate": "2025-11-21",
-    "expirationDate": null,
-    "issuedDate": "2025-11-21",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-11-21T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5816518",
-    "licenseNumber": "SEA5816518",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Seasons Of India",
-    "legalName": "Telangana House LLC",
-    "dbaName": "Seasons Of India",
-    "address": {
-      "street": "7085 S ORANGE BLOSSOM TR",
-      "city": "Orlando",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32809",
-      "lat": 28.46323343507,
-      "lng": -81.397170680308
-    },
-    "filedDate": "2025-12-09",
-    "effectiveDate": "2025-12-09",
-    "expirationDate": null,
-    "issuedDate": "2025-12-09",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-12-09T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_NOS6806225",
-    "licenseNumber": "NOS6806225",
-    "licenseType": "FOOD_SERVICE",
-    "status": "active",
-    "businessName": "Caroline's",
-    "legalName": "S.R. Lbk I LLC",
-    "dbaName": "Caroline's",
-    "address": {
-      "street": "1601 GULF OF MEXICO DR",
-      "city": "Longboat Key",
-      "county": "Sarasota",
-      "state": "FL",
-      "zip": "34228",
-      "lat": 27.352653720521,
-      "lng": -82.610362048025
-    },
-    "filedDate": "2025-10-21",
-    "effectiveDate": "2025-10-21",
-    "expirationDate": null,
-    "issuedDate": "2025-10-21",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-10-21T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA7100372",
-    "licenseNumber": "SEA7100372",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Chick-Fil-A",
-    "legalName": "Double Teamed Hospitality, INC",
-    "dbaName": "Chick-Fil-A",
-    "address": {
-      "street": "1801 OHIO AVE N",
-      "city": "Live Oak",
-      "county": "Suwannee",
-      "state": "FL",
-      "zip": "32064",
-      "lat": 30.277206651006,
-      "lng": -82.987776456538
-    },
-    "filedDate": "2025-07-02",
-    "effectiveDate": "2025-07-02",
-    "expirationDate": null,
-    "issuedDate": "2025-07-02",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-07-02T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA5203310",
-    "licenseNumber": "SEA5203310",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Tropical Smoothie Cafe Fl304",
-    "legalName": "Florida Dyne LLC",
-    "dbaName": "Tropical Smoothie Cafe Fl304",
-    "address": {
-      "street": "8410 SW HWY 200",
-      "city": "Ocala",
-      "county": "Marion",
-      "state": "FL",
-      "zip": "34481",
+      "zip": "32301",
       "lat": null,
       "lng": null
     },
-    "filedDate": "2025-12-19",
-    "effectiveDate": "2025-12-19",
-    "expirationDate": null,
-    "issuedDate": "2025-12-19",
+    "filedDate": "2026-06-12",
+    "effectiveDate": "2026-06-12",
+    "expirationDate": "2026-09-30",
+    "issuedDate": "2026-06-12",
     "eventType": "new_filing",
-    "eventTimestamp": "2025-12-19T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
-  },
-  {
-    "id": "lic_SEA6114068",
-    "licenseNumber": "SEA6114068",
-    "licenseType": "SEATING",
-    "status": "active",
-    "businessName": "Florida Cow Creamery",
-    "legalName": "Florida Cow Creamery",
-    "dbaName": "Florida Cow Creamery",
-    "address": {
-      "street": "1904 US HWY 19 N",
-      "city": "Holiday",
-      "county": "Pasco",
-      "state": "FL",
-      "zip": "34691",
-      "lat": 28.186405348058,
-      "lng": -82.739893123183
-    },
-    "filedDate": "2025-08-20",
-    "effectiveDate": "2025-08-20",
-    "expirationDate": null,
-    "issuedDate": "2025-08-20",
-    "eventType": "new_filing",
-    "eventTimestamp": "2025-08-20T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/newfood.csv"
+    "eventTimestamp": "2026-06-12T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
     "id": "lic_FDACS50015",
@@ -5277,12 +3027,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.177661000000057,
       "lng": -85.80569999999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5310,12 +3060,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.901490000000024,
       "lng": -82.40122999999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5343,12 +3093,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.14151000000004,
       "lng": -80.12090099999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-565-8555",
@@ -5376,12 +3126,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.505850000000066,
       "lng": -84.25333999999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-893-3752",
@@ -5409,12 +3159,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.366161000000034,
       "lng": -86.18169399999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-267-3962",
@@ -5442,12 +3192,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.80976000000004,
       "lng": -82.65463999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-521-4372",
@@ -5475,12 +3225,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.446358000000032,
       "lng": -82.64044199999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "352-486-2131",
@@ -5508,12 +3258,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.994050000000072,
       "lng": -82.43506999999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-679-7340",
@@ -5541,12 +3291,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.301879000000042,
       "lng": -81.76085599999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "904-786-0390",
@@ -5574,12 +3324,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.210992000000033,
       "lng": -80.12211399999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-782-6003",
@@ -5607,12 +3357,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.49292900000006,
       "lng": -81.96814499999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5640,12 +3390,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.01066300000008,
       "lng": -80.20463799999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-467-0862",
@@ -5673,12 +3423,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.39185800000007,
       "lng": -82.50676499999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "941-351-6969",
@@ -5706,12 +3456,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.31765500000006,
       "lng": -80.15698399999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-481-2266",
@@ -5739,12 +3489,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.94143900000006,
       "lng": -82.03175699999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5772,12 +3522,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.55155300000007,
       "lng": -81.57572099999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5805,12 +3555,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.960350000000062,
       "lng": -82.76973999999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-461-1817",
@@ -5838,12 +3588,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.07937000000004,
       "lng": -80.69963999999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5871,12 +3621,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.578534000000047,
       "lng": -81.41712599999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5904,12 +3654,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.79447300000004,
       "lng": -86.55793999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-682-1561",
@@ -5937,12 +3687,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.943930000000023,
       "lng": -80.20609099999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-653-2384",
@@ -5970,12 +3720,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.72651600000006,
       "lng": -87.34959599999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-587-2846",
@@ -6003,12 +3753,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.619148000000052,
       "lng": -81.99073299999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6036,12 +3786,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.011700000000076,
       "lng": -81.72661999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6069,12 +3819,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.100333000000035,
       "lng": -82.39908699999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-972-2784",
@@ -6102,12 +3852,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.02320000000003,
       "lng": -81.92479999999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6135,12 +3885,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.17558800000006,
       "lng": -80.14669199999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-565-2758",
@@ -6168,12 +3918,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.191802000000052,
       "lng": -81.71875899999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6201,12 +3951,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.111953000000028,
       "lng": -85.19630899999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-639-2371",
@@ -6234,12 +3984,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.942158000000063,
       "lng": -80.30490799999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-558-5073",
@@ -6267,12 +4017,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.03129000000007,
       "lng": -82.35498999999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-988-4439",
@@ -6300,12 +4050,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.010370000000023,
       "lng": -82.53231999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6333,12 +4083,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.82493000000005,
       "lng": -82.78661999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-393-6877",
@@ -6366,12 +4116,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.70851300000004,
       "lng": -80.22734099999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "561-798-9048",
@@ -6399,12 +4149,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.943890000000067,
       "lng": -81.22613999999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6432,12 +4182,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.297551000000055,
       "lng": -82.45412899999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "941-378-2111",
@@ -6465,12 +4215,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.652265000000057,
       "lng": -81.34857699999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-339-1593",
@@ -6498,12 +4248,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.897992000000045,
       "lng": -81.82845699999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-670-1045",
@@ -6531,12 +4281,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.109075000000075,
       "lng": -81.61812099999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-421-7621",
@@ -6564,12 +4314,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.231284000000073,
       "lng": -81.64965099999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-424-5294",
@@ -6597,12 +4347,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.760028000000034,
       "lng": -81.28223299999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-321-1371",
@@ -6630,12 +4380,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.508160000000032,
       "lng": -84.24964999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6663,12 +4413,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.273540000000025,
       "lng": -80.14948999999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "425-416-5976",
@@ -6696,12 +4446,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.41584000000006,
       "lng": -80.07625999999993
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "310-667-1093",
@@ -6729,12 +4479,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.39248900000007,
       "lng": -81.52815199999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-828-3038",
@@ -6762,12 +4512,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.89758000000006,
       "lng": -80.31445099999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-557-6466",
@@ -6795,12 +4545,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.418299000000047,
       "lng": -87.27514299999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-455-2767",
@@ -6828,12 +4578,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.733843000000036,
       "lng": -80.30239799999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-984-6520",
@@ -6861,12 +4611,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.01868600000006,
       "lng": -80.14362399999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6894,12 +4644,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.657760000000053,
       "lng": -80.32673999999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-253-6115",
@@ -6927,12 +4677,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.227130000000045,
       "lng": -80.12868999999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-942-5434",
@@ -6960,12 +4710,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.418170000000032,
       "lng": -81.40860299999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "239-657-6188",
@@ -6993,12 +4743,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.99721900000003,
       "lng": -82.86280199999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "386-935-2334",
@@ -7026,12 +4776,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.451193000000046,
       "lng": -81.70674799999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "904-764-2855",
@@ -7059,12 +4809,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.763648000000046,
       "lng": -80.14244299999996
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-535-6599",
@@ -7092,12 +4842,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.809656000000075,
       "lng": -80.21138699999995
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-905-6050",
@@ -7125,12 +4875,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.575386000000037,
       "lng": -81.81808599999994
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-773-0965",
@@ -7158,12 +4908,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.054276000000073,
       "lng": -82.01231999999999
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "352-347-6642",
@@ -7191,12 +4941,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.522125000000074,
       "lng": -80.39667199999997
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "772-464-9341",
@@ -7224,12 +4974,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.566438000000062,
       "lng": -81.29397699999998
     },
-    "filedDate": "2026-06-30",
+    "filedDate": "2026-07-01",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-06-30",
+    "issuedDate": "2026-07-01",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-06-30T00:00:00Z",
+    "eventTimestamp": "2026-07-01T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -7245,25 +4995,25 @@ export const REAL_LICENSES: LicenseRecord[] = [
 export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   {
     "county": "Miami-Dade",
-    "count": 6579,
+    "count": 6585,
     "lat": 25.61,
     "lng": -80.5
   },
   {
     "county": "Broward",
-    "count": 4348,
+    "count": 4353,
     "lat": 26.19,
     "lng": -80.45
   },
   {
     "county": "Orange",
-    "count": 3461,
+    "count": 3462,
     "lat": 28.51,
     "lng": -81.32
   },
   {
     "county": "Palm Beach",
-    "count": 3320,
+    "count": 3318,
     "lat": 26.65,
     "lng": -80.44
   },
@@ -7281,13 +5031,13 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Duval",
-    "count": 2424,
+    "count": 2423,
     "lat": 30.33,
     "lng": -81.65
   },
   {
     "county": "Lee",
-    "count": 1963,
+    "count": 1964,
     "lat": 26.57,
     "lng": -81.87
   },
@@ -7299,13 +5049,13 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Volusia",
-    "count": 1495,
+    "count": 1499,
     "lat": 29.03,
     "lng": -81.12
   },
   {
     "county": "Polk",
-    "count": 1351,
+    "count": 1350,
     "lat": 27.95,
     "lng": -81.7
   },
@@ -7317,7 +5067,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Collier",
-    "count": 1229,
+    "count": 1230,
     "lat": 26.11,
     "lng": -81.4
   },
@@ -7329,7 +5079,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Manatee",
-    "count": 956,
+    "count": 957,
     "lat": 27.48,
     "lng": -82.35
   }
@@ -7339,26 +5089,26 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-03-17",
     "liquor": 0,
-    "food": 35,
-    "total": 35
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-18",
     "liquor": 0,
-    "food": 33,
-    "total": 33
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-19",
     "liquor": 0,
-    "food": 31,
-    "total": 31
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-20",
     "liquor": 0,
-    "food": 19,
-    "total": 19
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-21",
@@ -7375,32 +5125,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-03-23",
     "liquor": 0,
-    "food": 18,
-    "total": 18
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-24",
     "liquor": 0,
-    "food": 29,
-    "total": 29
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-25",
     "liquor": 0,
-    "food": 19,
-    "total": 19
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-26",
     "liquor": 0,
-    "food": 32,
-    "total": 32
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-27",
     "liquor": 0,
-    "food": 26,
-    "total": 26
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-28",
@@ -7417,38 +5167,38 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-03-30",
     "liquor": 0,
-    "food": 18,
-    "total": 18
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-03-31",
     "liquor": 0,
-    "food": 26,
-    "total": 26
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-01",
     "liquor": 0,
-    "food": 19,
-    "total": 19
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-02",
     "liquor": 0,
-    "food": 35,
-    "total": 35
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-03",
     "liquor": 0,
-    "food": 19,
-    "total": 19
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-04",
     "liquor": 0,
-    "food": 3,
-    "total": 3
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-05",
@@ -7459,32 +5209,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-04-06",
     "liquor": 0,
-    "food": 35,
-    "total": 35
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-07",
     "liquor": 0,
-    "food": 23,
-    "total": 23
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-08",
     "liquor": 0,
-    "food": 28,
-    "total": 28
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-09",
     "liquor": 0,
-    "food": 43,
-    "total": 43
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-10",
     "liquor": 0,
-    "food": 22,
-    "total": 22
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-11",
@@ -7501,38 +5251,38 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-04-13",
     "liquor": 0,
-    "food": 34,
-    "total": 34
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-14",
     "liquor": 0,
-    "food": 20,
-    "total": 20
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-15",
     "liquor": 0,
-    "food": 30,
-    "total": 30
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-16",
     "liquor": 0,
-    "food": 13,
-    "total": 13
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-17",
     "liquor": 0,
-    "food": 22,
-    "total": 22
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-18",
     "liquor": 0,
-    "food": 1,
-    "total": 1
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-19",
@@ -7543,32 +5293,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-04-20",
     "liquor": 0,
-    "food": 25,
-    "total": 25
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-21",
     "liquor": 0,
-    "food": 36,
-    "total": 36
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-22",
     "liquor": 0,
-    "food": 28,
-    "total": 28
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-23",
     "liquor": 0,
-    "food": 27,
-    "total": 27
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-24",
     "liquor": 0,
-    "food": 26,
-    "total": 26
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-25",
@@ -7585,32 +5335,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-04-27",
     "liquor": 0,
-    "food": 26,
-    "total": 26
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-28",
     "liquor": 0,
-    "food": 40,
-    "total": 40
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-29",
     "liquor": 0,
-    "food": 24,
-    "total": 24
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-04-30",
     "liquor": 0,
-    "food": 25,
-    "total": 25
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-05-01",
-    "liquor": 26,
-    "food": 29,
-    "total": 55
+    "liquor": 0,
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-05-02",
@@ -7627,32 +5377,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-05-04",
     "liquor": 25,
-    "food": 20,
-    "total": 45
+    "food": 0,
+    "total": 25
   },
   {
     "date": "2026-05-05",
     "liquor": 12,
-    "food": 13,
-    "total": 25
+    "food": 0,
+    "total": 12
   },
   {
     "date": "2026-05-06",
     "liquor": 25,
-    "food": 34,
-    "total": 59
+    "food": 0,
+    "total": 25
   },
   {
     "date": "2026-05-07",
     "liquor": 20,
-    "food": 19,
-    "total": 39
+    "food": 0,
+    "total": 20
   },
   {
     "date": "2026-05-08",
     "liquor": 19,
-    "food": 27,
-    "total": 46
+    "food": 0,
+    "total": 19
   },
   {
     "date": "2026-05-09",
@@ -7663,38 +5413,38 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-05-10",
     "liquor": 0,
-    "food": 1,
-    "total": 1
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-05-11",
     "liquor": 16,
-    "food": 14,
-    "total": 30
+    "food": 0,
+    "total": 16
   },
   {
     "date": "2026-05-12",
     "liquor": 22,
-    "food": 26,
-    "total": 48
+    "food": 0,
+    "total": 22
   },
   {
     "date": "2026-05-13",
     "liquor": 24,
-    "food": 31,
-    "total": 55
+    "food": 0,
+    "total": 24
   },
   {
     "date": "2026-05-14",
     "liquor": 25,
-    "food": 29,
-    "total": 54
+    "food": 0,
+    "total": 25
   },
   {
     "date": "2026-05-15",
     "liquor": 22,
-    "food": 32,
-    "total": 54
+    "food": 0,
+    "total": 22
   },
   {
     "date": "2026-05-16",
@@ -7711,32 +5461,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-05-18",
     "liquor": 16,
-    "food": 24,
-    "total": 40
+    "food": 0,
+    "total": 16
   },
   {
     "date": "2026-05-19",
     "liquor": 19,
-    "food": 29,
-    "total": 48
+    "food": 0,
+    "total": 19
   },
   {
     "date": "2026-05-20",
     "liquor": 23,
-    "food": 31,
-    "total": 54
+    "food": 0,
+    "total": 23
   },
   {
     "date": "2026-05-21",
     "liquor": 15,
-    "food": 26,
-    "total": 41
+    "food": 0,
+    "total": 15
   },
   {
     "date": "2026-05-22",
     "liquor": 26,
-    "food": 20,
-    "total": 46
+    "food": 0,
+    "total": 26
   },
   {
     "date": "2026-05-23",
@@ -7758,27 +5508,27 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   },
   {
     "date": "2026-05-26",
-    "liquor": 15,
-    "food": 24,
-    "total": 39
+    "liquor": 14,
+    "food": 0,
+    "total": 14
   },
   {
     "date": "2026-05-27",
     "liquor": 29,
-    "food": 29,
-    "total": 58
+    "food": 0,
+    "total": 29
   },
   {
     "date": "2026-05-28",
     "liquor": 29,
-    "food": 27,
-    "total": 56
+    "food": 0,
+    "total": 29
   },
   {
     "date": "2026-05-29",
     "liquor": 30,
-    "food": 22,
-    "total": 52
+    "food": 0,
+    "total": 30
   },
   {
     "date": "2026-05-30",
@@ -7795,32 +5545,32 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-06-01",
     "liquor": 20,
-    "food": 31,
-    "total": 51
+    "food": 0,
+    "total": 20
   },
   {
     "date": "2026-06-02",
     "liquor": 24,
-    "food": 20,
-    "total": 44
+    "food": 0,
+    "total": 24
   },
   {
     "date": "2026-06-03",
     "liquor": 35,
-    "food": 49,
-    "total": 84
+    "food": 0,
+    "total": 35
   },
   {
     "date": "2026-06-04",
     "liquor": 20,
-    "food": 35,
-    "total": 55
+    "food": 0,
+    "total": 20
   },
   {
     "date": "2026-06-05",
     "liquor": 24,
-    "food": 36,
-    "total": 60
+    "food": 0,
+    "total": 24
   },
   {
     "date": "2026-06-06",
@@ -7837,38 +5587,38 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-06-08",
     "liquor": 18,
-    "food": 26,
-    "total": 44
+    "food": 0,
+    "total": 18
   },
   {
     "date": "2026-06-09",
     "liquor": 21,
-    "food": 26,
-    "total": 47
+    "food": 0,
+    "total": 21
   },
   {
     "date": "2026-06-10",
     "liquor": 25,
-    "food": 27,
-    "total": 52
+    "food": 0,
+    "total": 25
   },
   {
     "date": "2026-06-11",
     "liquor": 22,
-    "food": 20,
-    "total": 42
+    "food": 0,
+    "total": 22
   },
   {
     "date": "2026-06-12",
     "liquor": 21,
-    "food": 33,
-    "total": 54
+    "food": 0,
+    "total": 21
   },
   {
     "date": "2026-06-13",
     "liquor": 0,
-    "food": 1,
-    "total": 1
+    "food": 0,
+    "total": 0
   },
   {
     "date": "2026-06-14",
@@ -7879,38 +5629,38 @@ export const REAL_DAILY_VOLUME: DailyVolume[] = [
   {
     "date": "2026-06-15",
     "liquor": 20,
-    "food": 29,
-    "total": 49
+    "food": 0,
+    "total": 20
   }
 ]
 
 export const REAL_STAT_CARDS: StatCardData[] = [
   {
     "label": "New Filings (30d)",
-    "value": 1017,
+    "value": 451,
     "change": 8.4,
     "sparklineData": [
-      47,
-      52,
-      42,
-      54,
-      1,
+      21,
+      25,
+      22,
+      21,
       0,
-      49
+      0,
+      20
     ]
   },
   {
     "label": "Total Licensees Tracked",
-    "value": 52168,
+    "value": 52183,
     "change": 2.1,
     "sparklineData": [
-      47,
-      52,
-      42,
-      54,
-      1,
+      21,
+      25,
+      22,
+      21,
       0,
-      49
+      0,
+      20
     ]
   },
   {
@@ -7929,16 +5679,16 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "New Restaurants (FY)",
-    "value": 6524,
+    "value": 0,
     "change": 5.6,
     "sparklineData": [
-      47,
-      52,
-      42,
-      54,
-      1,
+      21,
+      25,
+      22,
+      21,
       0,
-      49
+      0,
+      20
     ]
   }
 ]
