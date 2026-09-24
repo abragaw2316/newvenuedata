@@ -6,8 +6,8 @@ import type { LicenseRecord, DailyVolume, StatCardData, CountyVolume } from './t
 
 export const DATA_AS_OF = '2026-06-15'
 export const DATA_SOURCE = 'Florida DBPR — Division of Alcoholic Beverages & Tobacco and Division of Hotels & Restaurants'
-export const TOTAL_LICENSEES = 52967
-export const TOTAL_NEW_RESTAURANTS_FY = 1457
+export const TOTAL_LICENSEES = 52983
+export const TOTAL_NEW_RESTAURANTS_FY = 1477
 
 export const REAL_LICENSES: LicenseRecord[] = [
   {
@@ -24,8 +24,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Marion",
       "state": "FL",
       "zip": "34482",
-      "lat": 29.236164754441,
-      "lng": -82.251218275302
+      "lat": 29.236162215989,
+      "lng": -82.251219808417
     },
     "filedDate": "2026-09-04",
     "effectiveDate": "2026-09-04",
@@ -49,8 +49,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32751",
-      "lat": 28.630378476349,
-      "lng": -81.363312219961
+      "lat": 28.630376310046,
+      "lng": -81.363314212822
     },
     "filedDate": "2026-08-27",
     "effectiveDate": "2026-09-03",
@@ -74,15 +74,15 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32210",
-      "lat": 30.251781569863,
-      "lng": -81.743132493631
+      "lat": 30.251782348536,
+      "lng": -81.743132149824
     },
     "filedDate": "2026-09-15",
-    "effectiveDate": "2026-09-15",
+    "effectiveDate": "2026-09-23",
     "expirationDate": null,
-    "issuedDate": "2026-09-15",
+    "issuedDate": "2026-09-23",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-15T00:00:00Z",
+    "eventTimestamp": "2026-09-23T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -99,8 +99,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Monroe",
       "state": "FL",
       "zip": "33037",
-      "lat": 25.090927105574,
-      "lng": -80.444876390573
+      "lat": 25.090927567619,
+      "lng": -80.444872984795
     },
     "filedDate": "2026-08-18",
     "effectiveDate": "2026-08-18",
@@ -124,8 +124,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Brevard",
       "state": "FL",
       "zip": "32931",
-      "lat": 28.317759839768,
-      "lng": -80.608993878121
+      "lat": 28.317761670556,
+      "lng": -80.608995345498
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-07-31",
@@ -149,8 +149,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32805",
-      "lat": 28.514577677645,
-      "lng": -81.393113983172
+      "lat": 28.514580180937,
+      "lng": -81.393114303106
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-07-30",
@@ -174,8 +174,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lake",
       "state": "FL",
       "zip": "34748",
-      "lat": 28.811009982077,
-      "lng": -81.876183541961
+      "lat": 28.811013612038,
+      "lng": -81.876183507554
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-07-29",
@@ -199,8 +199,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Volusia",
       "state": "FL",
       "zip": "32117",
-      "lat": 29.2256343542,
-      "lng": -81.094288475641
+      "lat": 29.225633480343,
+      "lng": -81.094289009353
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-08-11",
@@ -224,8 +224,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Okaloosa",
       "state": "FL",
       "zip": "32579",
-      "lat": 30.447773786808,
-      "lng": -86.578314440814
+      "lat": 30.447771371185,
+      "lng": -86.578316235952
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-25",
@@ -249,8 +249,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Walton",
       "state": "FL",
       "zip": "32550",
-      "lat": 30.384113589357,
-      "lng": -86.358362387428
+      "lat": 30.384113009843,
+      "lng": -86.358364226458
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-08-11",
@@ -299,8 +299,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33617",
-      "lat": 28.032689562304,
-      "lng": -82.400623718141
+      "lat": 28.03269275343,
+      "lng": -82.400625233399
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-06",
@@ -324,8 +324,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33584",
-      "lat": 27.981625448589,
-      "lng": -82.286410428457
+      "lat": 27.981624356205,
+      "lng": -82.286410808912
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -349,8 +349,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33573",
-      "lat": 27.714139091603,
-      "lng": -82.354746207617
+      "lat": 27.714139228776,
+      "lng": -82.354743669223
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -374,8 +374,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33713",
-      "lat": 27.79644475289,
-      "lng": -82.679554797905
+      "lat": 27.796445367803,
+      "lng": -82.679553706664
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -399,8 +399,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33563",
-      "lat": 28.002684741464,
-      "lng": -82.121074587138
+      "lat": 28.00268214647,
+      "lng": -82.121075913076
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -424,8 +424,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "33525",
-      "lat": 28.347627355618,
-      "lng": -82.187378356147
+      "lat": 28.347625168492,
+      "lng": -82.187376301297
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -474,8 +474,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33619",
-      "lat": 27.941174950999,
-      "lng": -82.373046298426
+      "lat": 27.941176919301,
+      "lng": -82.373044716225
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-06",
@@ -499,8 +499,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Highlands",
       "state": "FL",
       "zip": "33870",
-      "lat": 27.484512737223,
-      "lng": -81.440109120987
+      "lat": 27.484511445431,
+      "lng": -81.44011020863
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -524,8 +524,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "34653",
-      "lat": 28.25860680227,
-      "lng": -82.706189093031
+      "lat": 28.258606766908,
+      "lng": -82.706190397896
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-06",
@@ -549,8 +549,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "34691",
-      "lat": 28.185178912379,
-      "lng": -82.739919403987
+      "lat": 28.185176752384,
+      "lng": -82.739918842764
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -574,8 +574,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33701",
-      "lat": 27.779407169148,
-      "lng": -82.646657290083
+      "lat": 27.779409371586,
+      "lng": -82.646657347983
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -599,8 +599,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Citrus",
       "state": "FL",
       "zip": "34429",
-      "lat": 28.896360184102,
-      "lng": -82.585161637785
+      "lat": 28.896356695384,
+      "lng": -82.585161247547
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -624,8 +624,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hernando",
       "state": "FL",
       "zip": "34601",
-      "lat": 28.539872153859,
-      "lng": -82.402907563233
+      "lat": 28.539870913303,
+      "lng": -82.402907380527
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -649,8 +649,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33709",
-      "lat": 27.8116457772,
-      "lng": -82.728637303178
+      "lat": 27.811642737675,
+      "lng": -82.728636004227
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-06",
@@ -674,8 +674,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32256",
-      "lat": 30.220293332782,
-      "lng": -81.551859974834
+      "lat": 30.22029381881,
+      "lng": -81.551859331028
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-03",
@@ -699,8 +699,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33755",
-      "lat": 27.965574536383,
-      "lng": -82.786664630668
+      "lat": 27.965574216209,
+      "lng": -82.786664990348
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -724,8 +724,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32811",
-      "lat": 28.530603365193,
-      "lng": -81.434397590616
+      "lat": 28.530599577451,
+      "lng": -81.434398080317
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-07-28",
@@ -749,8 +749,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "34668",
-      "lat": 28.292605715647,
-      "lng": -82.709834073909
+      "lat": 28.292608675397,
+      "lng": -82.709835027533
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -774,8 +774,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33619",
-      "lat": 27.962088798392,
-      "lng": -82.401021542441
+      "lat": 27.962088346536,
+      "lng": -82.401022229758
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -824,8 +824,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Polk",
       "state": "FL",
       "zip": "33801",
-      "lat": 28.054965981652,
-      "lng": -81.946862761738
+      "lat": 28.05496904158,
+      "lng": -81.946862985862
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -849,8 +849,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hernando",
       "state": "FL",
       "zip": "34606",
-      "lat": 28.451055690399,
-      "lng": -82.595800840683
+      "lat": 28.451056833697,
+      "lng": -82.595800798434
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -874,8 +874,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33607",
-      "lat": 27.980618869315,
-      "lng": -82.484642327821
+      "lat": 27.980622849961,
+      "lng": -82.484643500215
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -899,8 +899,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Highlands",
       "state": "FL",
       "zip": "33852",
-      "lat": 27.297961186893,
-      "lng": -81.357068760868
+      "lat": 27.297963183158,
+      "lng": -81.357068732192
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -924,8 +924,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Polk",
       "state": "FL",
       "zip": "33815",
-      "lat": 28.041861301136,
-      "lng": -81.98808656047
+      "lat": 28.041860170958,
+      "lng": -81.988085102241
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -949,8 +949,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32257",
-      "lat": 30.212986395951,
-      "lng": -81.617479214821
+      "lat": 30.212986416684,
+      "lng": -81.617480104616
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-08-04",
@@ -974,8 +974,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Volusia",
       "state": "FL",
       "zip": "32127",
-      "lat": 29.109936460178,
-      "lng": -81.025909762524
+      "lat": 29.109937361639,
+      "lng": -81.025911024678
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-07-29",
@@ -999,8 +999,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32211",
-      "lat": 30.349562971127,
-      "lng": -81.596783788771
+      "lat": 30.34956057887,
+      "lng": -81.596785107304
     },
     "filedDate": "2026-08-03",
     "effectiveDate": "2026-08-13",
@@ -1024,8 +1024,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33010",
-      "lat": 25.829309156737,
-      "lng": -80.273894106511
+      "lat": 25.829306846483,
+      "lng": -80.273894368038
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-08-12",
@@ -1049,8 +1049,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Volusia",
       "state": "FL",
       "zip": "32176",
-      "lat": 29.322854384721,
-      "lng": -81.055161339489
+      "lat": 29.32285600709,
+      "lng": -81.055163138678
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-07-30",
@@ -1074,8 +1074,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "DeSoto",
       "state": "FL",
       "zip": "34266",
-      "lat": 27.191546800896,
-      "lng": -81.867578409224
+      "lat": 27.191543610122,
+      "lng": -81.867578975784
     },
     "filedDate": "2026-08-20",
     "effectiveDate": "2026-08-31",
@@ -1099,8 +1099,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33634",
-      "lat": 28.013345220744,
-      "lng": -82.562538799326
+      "lat": 28.013343658872,
+      "lng": -82.562539120022
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-07-27",
@@ -1124,8 +1124,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Manatee",
       "state": "FL",
       "zip": "34203",
-      "lat": 27.43883048713,
-      "lng": -82.546596318884
+      "lat": 27.438831509562,
+      "lng": -82.546596242377
     },
     "filedDate": "2026-08-26",
     "effectiveDate": "2026-09-17",
@@ -1149,8 +1149,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33132",
-      "lat": 25.775167275443,
-      "lng": -80.190213545409
+      "lat": 25.775167259853,
+      "lng": -80.19021296426
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-09-21",
@@ -1199,8 +1199,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sarasota",
       "state": "FL",
       "zip": "34293",
-      "lat": 27.046722246115,
-      "lng": -82.327968145887
+      "lat": 27.046722102622,
+      "lng": -82.327965943365
     },
     "filedDate": "2026-08-24",
     "effectiveDate": "2026-08-24",
@@ -1224,8 +1224,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Collier",
       "state": "FL",
       "zip": "34102",
-      "lat": 26.131144637829,
-      "lng": -81.799051619338
+      "lat": 26.131145257068,
+      "lng": -81.799052051479
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-07-30",
@@ -1249,8 +1249,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33311",
-      "lat": 26.151611713235,
-      "lng": -80.15456259439
+      "lat": 26.151613482263,
+      "lng": -80.154560845162
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-08-19",
@@ -1274,8 +1274,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33613",
-      "lat": 28.069325972469,
-      "lng": -82.451209771666
+      "lat": 28.069322030766,
+      "lng": -82.451208853487
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-06",
@@ -1299,8 +1299,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "St. Johns",
       "state": "FL",
       "zip": "32259",
-      "lat": 30.060106673856,
-      "lng": -81.518413515143
+      "lat": 30.06010700762,
+      "lng": -81.518413858312
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-09-03",
@@ -1324,8 +1324,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33411",
-      "lat": 26.690910180333,
-      "lng": -80.184415197183
+      "lat": 26.69090942063,
+      "lng": -80.184415914704
     },
     "filedDate": "2026-08-07",
     "effectiveDate": "2026-08-07",
@@ -1349,8 +1349,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33145",
-      "lat": 25.750488752581,
-      "lng": -80.232084495079
+      "lat": 25.750485388312,
+      "lng": -80.232083243895
     },
     "filedDate": "2026-08-06",
     "effectiveDate": "2026-09-04",
@@ -1374,8 +1374,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Brevard",
       "state": "FL",
       "zip": "32780",
-      "lat": 28.578179991763,
-      "lng": -80.832159263372
+      "lat": 28.5781848804,
+      "lng": -80.832159573839
     },
     "filedDate": "2026-08-18",
     "effectiveDate": "2026-09-03",
@@ -1399,8 +1399,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Escambia",
       "state": "FL",
       "zip": "32577",
-      "lat": 30.717838996735,
-      "lng": -87.349914957756
+      "lat": 30.717839694686,
+      "lng": -87.349916862448
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-08-06",
@@ -1449,8 +1449,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Okaloosa",
       "state": "FL",
       "zip": "32547",
-      "lat": 30.447810275559,
-      "lng": -86.610785281655
+      "lat": 30.447808864611,
+      "lng": -86.610786326043
     },
     "filedDate": "2026-08-07",
     "effectiveDate": "2026-08-07",
@@ -1474,8 +1474,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33015",
-      "lat": 25.93425490702,
-      "lng": -80.327209106132
+      "lat": 25.934251542493,
+      "lng": -80.327209587187
     },
     "filedDate": "2026-08-20",
     "effectiveDate": "2026-09-04",
@@ -1499,8 +1499,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sarasota",
       "state": "FL",
       "zip": "34243",
-      "lat": 27.382015025207,
-      "lng": -82.556920491033
+      "lat": 27.382017954169,
+      "lng": -82.556921343749
     },
     "filedDate": "2026-08-05",
     "effectiveDate": "2026-08-05",
@@ -1524,8 +1524,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33476",
-      "lat": 26.818327055402,
-      "lng": -80.665663858436
+      "lat": 26.818323468048,
+      "lng": -80.665662141866
     },
     "filedDate": "2026-08-05",
     "effectiveDate": "2026-08-27",
@@ -1549,8 +1549,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33142",
-      "lat": 25.803220400257,
-      "lng": -80.222796554994
+      "lat": 25.803222013812,
+      "lng": -80.222795253176
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-09-16",
@@ -1574,8 +1574,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33901",
-      "lat": 26.611266416577,
-      "lng": -81.861782487225
+      "lat": 26.611266367134,
+      "lng": -81.861783965694
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-07-31",
@@ -1599,8 +1599,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33138",
-      "lat": 25.834085225222,
-      "lng": -80.182539080162
+      "lat": 25.834083374302,
+      "lng": -80.182539416914
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-09-16",
@@ -1624,8 +1624,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33137",
-      "lat": 25.802804815721,
-      "lng": -80.189054588217
+      "lat": 25.802801125301,
+      "lng": -80.189055912769
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-08-20",
@@ -1649,8 +1649,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32218",
-      "lat": 30.488352701356,
-      "lng": -81.623578127102
+      "lat": 30.488352492142,
+      "lng": -81.623577561286
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-06",
@@ -1674,8 +1674,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32216",
-      "lat": 30.269981577999,
-      "lng": -81.558996571462
+      "lat": 30.269977795718,
+      "lng": -81.558997939527
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-06",
@@ -1699,8 +1699,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "34652",
-      "lat": 28.266398721247,
-      "lng": -82.727671493549
+      "lat": 28.266402752762,
+      "lng": -82.727671838685
     },
     "filedDate": "2026-08-27",
     "effectiveDate": "2026-08-31",
@@ -1724,8 +1724,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33020",
-      "lat": 25.99675818813,
-      "lng": -80.145138069515
+      "lat": 25.996755954546,
+      "lng": -80.145138435017
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-05",
@@ -1749,8 +1749,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lake",
       "state": "FL",
       "zip": "32159",
-      "lat": 28.957787524752,
-      "lng": -81.962763840449
+      "lat": 28.957787020729,
+      "lng": -81.962762406393
     },
     "filedDate": "2026-08-18",
     "effectiveDate": "2026-08-18",
@@ -1774,8 +1774,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33604",
-      "lat": 28.025293501738,
-      "lng": -82.482545352947
+      "lat": 28.025292791276,
+      "lng": -82.482546147784
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-25",
@@ -1799,8 +1799,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32277",
-      "lat": 30.365325030189,
-      "lng": -81.588158029938
+      "lat": 30.365327212245,
+      "lng": -81.588157004509
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-08-06",
@@ -1824,8 +1824,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33033",
-      "lat": 25.501197284565,
-      "lng": -80.444498623595
+      "lat": 25.50119617148,
+      "lng": -80.444498342962
     },
     "filedDate": "2026-08-04",
     "effectiveDate": "2026-08-14",
@@ -1849,8 +1849,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Marion",
       "state": "FL",
       "zip": "34475",
-      "lat": 29.204521287242,
-      "lng": -82.141781271722
+      "lat": 29.204519997604,
+      "lng": -82.141780800175
     },
     "filedDate": "2026-08-04",
     "effectiveDate": "2026-08-04",
@@ -1874,8 +1874,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Jefferson",
       "state": "FL",
       "zip": "32344",
-      "lat": 30.54510516005,
-      "lng": -83.876075767812
+      "lat": 30.545106062963,
+      "lng": -83.876072785211
     },
     "filedDate": "2026-08-13",
     "effectiveDate": "2026-08-13",
@@ -1899,8 +1899,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Bay",
       "state": "FL",
       "zip": "32413",
-      "lat": 30.206042042693,
-      "lng": -85.858458815674
+      "lat": 30.206041602467,
+      "lng": -85.858460477302
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-09-03",
@@ -1924,8 +1924,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33606",
-      "lat": 27.941714149338,
-      "lng": -82.462857273158
+      "lat": 27.941718252074,
+      "lng": -82.462855736271
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-08-07",
@@ -1949,8 +1949,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33155",
-      "lat": 25.73310684221,
-      "lng": -80.320946897406
+      "lat": 25.733105532906,
+      "lng": -80.320948714485
     },
     "filedDate": "2026-08-25",
     "effectiveDate": "2026-09-21",
@@ -1999,8 +1999,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Monroe",
       "state": "FL",
       "zip": "33037",
-      "lat": 25.129803482965,
-      "lng": -80.409152801792
+      "lat": 25.129807917264,
+      "lng": -80.409151585198
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-08-12",
@@ -2024,8 +2024,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33326",
-      "lat": 26.094534061356,
-      "lng": -80.370833513189
+      "lat": null,
+      "lng": null
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-07-27",
@@ -2049,8 +2049,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33618",
-      "lat": 28.080888480742,
-      "lng": -82.506818233888
+      "lat": 28.080890422789,
+      "lng": -82.506818983517
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-07-28",
@@ -2074,8 +2074,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33143",
-      "lat": 25.704421679373,
-      "lng": -80.284508653183
+      "lat": 25.704420406229,
+      "lng": -80.284507972525
     },
     "filedDate": "2026-09-02",
     "effectiveDate": "2026-09-02",
@@ -2099,8 +2099,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33172",
-      "lat": 25.773152950792,
-      "lng": -80.348188398954
+      "lat": 25.773153666214,
+      "lng": -80.348187147292
     },
     "filedDate": "2026-08-10",
     "effectiveDate": "2026-08-10",
@@ -2124,8 +2124,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33196",
-      "lat": 25.657516563728,
-      "lng": -80.432003656854
+      "lat": 25.657518638132,
+      "lng": -80.432003927375
     },
     "filedDate": "2026-09-08",
     "effectiveDate": "2026-09-08",
@@ -2149,8 +2149,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Bay",
       "state": "FL",
       "zip": "32401",
-      "lat": 30.167502695456,
-      "lng": -85.701621361917
+      "lat": 30.167499308155,
+      "lng": -85.701619281039
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -2174,8 +2174,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Indian River",
       "state": "FL",
       "zip": "32966",
-      "lat": 27.639394150181,
-      "lng": -80.506697448538
+      "lat": 27.639397275307,
+      "lng": -80.506695622754
     },
     "filedDate": "2026-08-19",
     "effectiveDate": "2026-08-31",
@@ -2224,8 +2224,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Volusia",
       "state": "FL",
       "zip": "32114",
-      "lat": 29.209136225085,
-      "lng": -81.01780485537
+      "lat": 29.20913514259,
+      "lng": -81.017806227725
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-26",
@@ -2249,8 +2249,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Brevard",
       "state": "FL",
       "zip": "32905",
-      "lat": 28.018125288192,
-      "lng": -80.621982120571
+      "lat": 28.018121797557,
+      "lng": -80.621983290834
     },
     "filedDate": "2026-09-18",
     "effectiveDate": "2026-09-18",
@@ -2274,8 +2274,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Citrus",
       "state": "FL",
       "zip": "34429",
-      "lat": 28.883860458593,
-      "lng": -82.582992526423
+      "lat": 28.883857546355,
+      "lng": -82.582992381569
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-09-16",
@@ -2299,8 +2299,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32817",
-      "lat": 28.568434753316,
-      "lng": -81.273195857175
+      "lat": 28.568436387971,
+      "lng": -81.273198986461
     },
     "filedDate": "2026-08-05",
     "effectiveDate": "2026-08-21",
@@ -2324,8 +2324,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sarasota",
       "state": "FL",
       "zip": "34231",
-      "lat": 27.26540542376,
-      "lng": -82.527350506736
+      "lat": 27.265403460004,
+      "lng": -82.527348617839
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-08-15",
@@ -2349,8 +2349,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32830",
-      "lat": 28.36762770319,
-      "lng": -81.520300008324
+      "lat": 28.367631700088,
+      "lng": -81.520299321404
     },
     "filedDate": "2026-08-14",
     "effectiveDate": "2026-08-14",
@@ -2374,8 +2374,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32818",
-      "lat": 28.551936972556,
-      "lng": -81.469444070868
+      "lat": 28.551938915269,
+      "lng": -81.46944453925
     },
     "filedDate": "2026-09-01",
     "effectiveDate": "2026-09-01",
@@ -2399,8 +2399,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33062",
-      "lat": 26.250069688715,
-      "lng": -80.100881717391
+      "lat": 26.250065544222,
+      "lng": -80.100883796885
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-09-01",
@@ -2424,8 +2424,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33612",
-      "lat": 28.039519020988,
-      "lng": -82.459364277113
+      "lat": 28.039520428522,
+      "lng": -82.45936478783
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-08-21",
@@ -2449,8 +2449,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33127",
-      "lat": 25.799967798814,
-      "lng": -80.196384775428
+      "lat": 25.799969592652,
+      "lng": -80.19638306288
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-09-21",
@@ -2474,8 +2474,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sumter",
       "state": "FL",
       "zip": "32162",
-      "lat": 28.844279270191,
-      "lng": -82.02285348049
+      "lat": 28.844276956076,
+      "lng": -82.022852527083
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-08-04",
@@ -2499,8 +2499,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33619",
-      "lat": 27.949210444217,
-      "lng": -82.354229949339
+      "lat": 27.949213605511,
+      "lng": -82.354228759725
     },
     "filedDate": "2026-08-17",
     "effectiveDate": "2026-09-22",
@@ -2524,8 +2524,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "34787",
-      "lat": 28.54714453794,
-      "lng": -81.642444414974
+      "lat": 28.547146920534,
+      "lng": -81.642446868865
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-07-31",
@@ -2549,8 +2549,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Volusia",
       "state": "FL",
       "zip": "32118",
-      "lat": 29.22724630491,
-      "lng": -81.007087881782
+      "lat": 29.227247688038,
+      "lng": -81.007087864801
     },
     "filedDate": "2026-08-21",
     "effectiveDate": "2026-09-01",
@@ -2574,8 +2574,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "34134",
-      "lat": 26.330434505379,
-      "lng": -81.836757592089
+      "lat": 26.33043030313,
+      "lng": -81.8367586796
     },
     "filedDate": "2026-08-03",
     "effectiveDate": "2026-08-05",
@@ -2599,8 +2599,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Brevard",
       "state": "FL",
       "zip": "32951",
-      "lat": 28.012954922467,
-      "lng": -80.531712396919
+      "lat": 28.01295883274,
+      "lng": -80.531713083546
     },
     "filedDate": "2026-08-11",
     "effectiveDate": "2026-08-17",
@@ -2608,31 +2608,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-08-17",
     "eventType": "new_filing",
     "eventTimestamp": "2026-08-17T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2612954",
-    "licenseNumber": "BEV2612954",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Stars Caribbean Restaurant",
-    "legalName": "Stars Caribbean Queen LLC",
-    "dbaName": "Stars Caribbean Restaurant",
-    "address": {
-      "street": "1901 BLANDING BLVD",
-      "city": "Jacksonville",
-      "county": "Duval",
-      "state": "FL",
-      "zip": "32210",
-      "lat": 30.283896705665,
-      "lng": -81.725276183683
-    },
-    "filedDate": "2026-08-05",
-    "effectiveDate": "2026-08-12",
-    "expirationDate": null,
-    "issuedDate": "2026-08-12",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-08-12T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2649,8 +2624,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Monroe",
       "state": "FL",
       "zip": "33050",
-      "lat": 24.789933702451,
-      "lng": -80.889142585047
+      "lat": 24.789936374671,
+      "lng": -80.889143372852
     },
     "filedDate": "2026-08-04",
     "effectiveDate": "2026-09-17",
@@ -2674,8 +2649,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Osceola",
       "state": "FL",
       "zip": "34743",
-      "lat": 28.344717408146,
-      "lng": -81.360468618492
+      "lat": 28.344718902118,
+      "lng": -81.360470081518
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-14",
@@ -2724,8 +2699,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33133",
-      "lat": 25.72756153235,
-      "lng": -80.241760727458
+      "lat": 25.727561213918,
+      "lng": -80.241761686787
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-08-25",
@@ -2749,8 +2724,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32257",
-      "lat": 30.195107823896,
-      "lng": -81.623102807542
+      "lat": 30.1951103669,
+      "lng": -81.623103960676
     },
     "filedDate": "2026-07-29",
     "effectiveDate": "2026-07-29",
@@ -2774,8 +2749,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Escambia",
       "state": "FL",
       "zip": "32504",
-      "lat": 30.474565828578,
-      "lng": -87.198179440441
+      "lat": 30.474568159153,
+      "lng": -87.198180197904
     },
     "filedDate": "2026-07-31",
     "effectiveDate": "2026-09-17",
@@ -2799,8 +2774,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33460",
-      "lat": 26.616578399208,
-      "lng": -80.053630886735
+      "lat": 26.616579319234,
+      "lng": -80.053632057714
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-08-11",
@@ -2824,8 +2799,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32257",
-      "lat": 30.200809427424,
-      "lng": -81.615984069108
+      "lat": 30.200812630503,
+      "lng": -81.615985289618
     },
     "filedDate": "2026-08-21",
     "effectiveDate": "2026-08-21",
@@ -2849,8 +2824,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32206",
-      "lat": 30.35997239034,
-      "lng": -81.649194873033
+      "lat": 30.359969213128,
+      "lng": -81.649193174677
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-08-26",
@@ -2874,8 +2849,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sarasota",
       "state": "FL",
       "zip": "34293",
-      "lat": 27.049957742427,
-      "lng": -82.398075786286
+      "lat": 27.04996052387,
+      "lng": -82.398075354951
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-07-29",
@@ -2899,8 +2874,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "33542",
-      "lat": 28.234965124305,
-      "lng": -82.182475515303
+      "lat": 28.234964422035,
+      "lng": -82.182475872718
     },
     "filedDate": "2026-08-04",
     "effectiveDate": "2026-08-12",
@@ -2924,8 +2899,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Volusia",
       "state": "FL",
       "zip": "32127",
-      "lat": 29.089628320148,
-      "lng": -80.93230118189
+      "lat": 29.089628756379,
+      "lng": -80.932299289985
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -2949,8 +2924,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sarasota",
       "state": "FL",
       "zip": "34231",
-      "lat": 27.252911958319,
-      "lng": -82.515458010371
+      "lat": 27.252911455964,
+      "lng": -82.515458283505
     },
     "filedDate": "2026-08-19",
     "effectiveDate": "2026-08-27",
@@ -2974,8 +2949,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33904",
-      "lat": 26.565209336932,
-      "lng": -81.944016847593
+      "lat": 26.565210767736,
+      "lng": -81.944017328472
     },
     "filedDate": "2026-08-27",
     "effectiveDate": "2026-08-27",
@@ -2999,8 +2974,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lake",
       "state": "FL",
       "zip": "32757",
-      "lat": 28.801993967312,
-      "lng": -81.625210127163
+      "lat": 28.801992864828,
+      "lng": -81.625210192049
     },
     "filedDate": "2026-08-24",
     "effectiveDate": "2026-09-08",
@@ -3008,6 +2983,31 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-09-08",
     "eventType": "new_filing",
     "eventTimestamp": "2026-09-08T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV4503517",
+    "licenseNumber": "BEV4503517",
+    "licenseType": "APS",
+    "status": "active",
+    "businessName": "7-Eleven Store #42056a",
+    "legalName": "7 Eleven INC And Aariv Ambe INC",
+    "dbaName": "7-Eleven Store #42056a",
+    "address": {
+      "street": "995 N US HIGHWAY 27/441",
+      "city": "Lady Lake",
+      "county": "Lake",
+      "state": "FL",
+      "zip": "32159",
+      "lat": 28.894423452731,
+      "lng": -81.908519248812
+    },
+    "filedDate": "2026-07-30",
+    "effectiveDate": "2026-09-14",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-09-14",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-09-14T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -3024,8 +3024,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33323",
-      "lat": 26.14490851313,
-      "lng": -80.323889848565
+      "lat": 26.144906555124,
+      "lng": -80.323889792291
     },
     "filedDate": "2026-08-21",
     "effectiveDate": "2026-08-21",
@@ -3049,8 +3049,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Polk",
       "state": "FL",
       "zip": "33884",
-      "lat": 27.994050501499,
-      "lng": -81.688548931728
+      "lat": 27.99405160367,
+      "lng": -81.688549220365
     },
     "filedDate": "2026-08-21",
     "effectiveDate": "2026-08-21",
@@ -3074,8 +3074,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33914",
-      "lat": 26.602301026498,
-      "lng": -81.975272930832
+      "lat": 26.6023017691,
+      "lng": -81.975272801303
     },
     "filedDate": "2026-09-17",
     "effectiveDate": "2026-09-17",
@@ -3099,8 +3099,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "34695",
-      "lat": 27.990833121872,
-      "lng": -82.68818910206
+      "lat": 27.990833426613,
+      "lng": -82.688190927523
     },
     "filedDate": "2026-08-13",
     "effectiveDate": "2026-08-13",
@@ -3124,8 +3124,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33322",
-      "lat": 26.159502590344,
-      "lng": -80.257143259356
+      "lat": 26.159499831797,
+      "lng": -80.257143215762
     },
     "filedDate": "2026-08-26",
     "effectiveDate": "2026-08-26",
@@ -3149,8 +3149,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32809",
-      "lat": 28.472294264788,
-      "lng": -81.396587785009
+      "lat": 28.47229780083,
+      "lng": -81.396589404697
     },
     "filedDate": "2026-09-04",
     "effectiveDate": "2026-09-04",
@@ -3174,8 +3174,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33316",
-      "lat": 26.100836642783,
-      "lng": -80.117043800585
+      "lat": 26.100832670593,
+      "lng": -80.117042730235
     },
     "filedDate": "2026-09-10",
     "effectiveDate": "2026-09-10",
@@ -3224,8 +3224,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33032",
-      "lat": 25.51853680254,
-      "lng": -80.427413102944
+      "lat": 25.518535509538,
+      "lng": -80.427415310988
     },
     "filedDate": "2026-07-23",
     "effectiveDate": "2026-07-23",
@@ -3249,8 +3249,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Manatee",
       "state": "FL",
       "zip": "34203",
-      "lat": 27.446993878675,
-      "lng": -82.521914711073
+      "lat": 27.44699138496,
+      "lng": -82.521916313226
     },
     "filedDate": "2026-07-10",
     "effectiveDate": "2026-07-10",
@@ -3274,8 +3274,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32218",
-      "lat": 30.430993560431,
-      "lng": -81.644499032802
+      "lat": 30.430994103455,
+      "lng": -81.644499786836
     },
     "filedDate": "2026-07-09",
     "effectiveDate": "2026-07-09",
@@ -3349,8 +3349,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32810",
-      "lat": 28.611011723929,
-      "lng": -81.468055094499
+      "lat": 28.611011019027,
+      "lng": -81.468056967609
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-07-30",
@@ -3424,8 +3424,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Marion",
       "state": "FL",
       "zip": "34470",
-      "lat": 29.190318179333,
-      "lng": -82.135903243584
+      "lat": 29.190317491407,
+      "lng": -82.135904187444
     },
     "filedDate": "2026-07-09",
     "effectiveDate": "2026-07-09",
@@ -3449,8 +3449,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Marion",
       "state": "FL",
       "zip": "34470",
-      "lat": 29.190318179333,
-      "lng": -82.135903243584
+      "lat": 29.190317491407,
+      "lng": -82.135904187444
     },
     "filedDate": "2026-07-09",
     "effectiveDate": "2026-07-09",
@@ -3474,8 +3474,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Marion",
       "state": "FL",
       "zip": "34470",
-      "lat": 29.190318179333,
-      "lng": -82.135903243584
+      "lat": 29.190317491407,
+      "lng": -82.135904187444
     },
     "filedDate": "2026-07-09",
     "effectiveDate": "2026-07-09",
@@ -3499,8 +3499,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Marion",
       "state": "FL",
       "zip": "34470",
-      "lat": 29.190318179333,
-      "lng": -82.135903243584
+      "lat": 29.190317491407,
+      "lng": -82.135904187444
     },
     "filedDate": "2026-07-24",
     "effectiveDate": "2026-07-24",
@@ -3524,8 +3524,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Indian River",
       "state": "FL",
       "zip": "32966",
-      "lat": 27.643165468111,
-      "lng": -80.446525878172
+      "lat": 27.643162014201,
+      "lng": -80.446525652315
     },
     "filedDate": "2026-07-17",
     "effectiveDate": "2026-07-17",
@@ -3574,8 +3574,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33125",
-      "lat": 25.776320869379,
-      "lng": -80.219834813369
+      "lat": 25.776323359186,
+      "lng": -80.219834719863
     },
     "filedDate": "2026-08-14",
     "effectiveDate": "2026-08-14",
@@ -3599,8 +3599,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "St. Lucie",
       "state": "FL",
       "zip": "34950",
-      "lat": 27.426899191063,
-      "lng": -80.326004757719
+      "lat": 27.426896917343,
+      "lng": -80.326003400026
     },
     "filedDate": "2026-08-21",
     "effectiveDate": "2026-08-21",
@@ -3624,8 +3624,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33127",
-      "lat": 25.8022161989,
-      "lng": -80.199217787785
+      "lat": 25.802212687205,
+      "lng": -80.199218185159
     },
     "filedDate": "2026-09-11",
     "effectiveDate": "2026-09-11",
@@ -3649,8 +3649,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Sarasota",
       "state": "FL",
       "zip": "34236",
-      "lat": 27.336402682662,
-      "lng": -82.53996259984
+      "lat": 27.336402717801,
+      "lng": -82.539960955912
     },
     "filedDate": "2026-09-16",
     "effectiveDate": "2026-09-16",
@@ -3699,8 +3699,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33931",
-      "lat": 26.451026310066,
-      "lng": -81.949309970438
+      "lat": 26.451027501687,
+      "lng": -81.949311035336
     },
     "filedDate": "2026-07-13",
     "effectiveDate": "2026-07-13",
@@ -3724,8 +3724,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33444",
-      "lat": 26.466712197481,
-      "lng": -80.071128822192
+      "lat": 26.466712853114,
+      "lng": -80.071129087068
     },
     "filedDate": "2026-08-06",
     "effectiveDate": "2026-08-06",
@@ -3749,8 +3749,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33611",
-      "lat": 27.893752137951,
-      "lng": -82.506404913686
+      "lat": 27.893754287292,
+      "lng": -82.506406832205
     },
     "filedDate": "2026-08-10",
     "effectiveDate": "2026-08-10",
@@ -3824,8 +3824,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33767",
-      "lat": 27.971215583902,
-      "lng": -82.828866459413
+      "lat": 27.971214406091,
+      "lng": -82.828866768156
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -3849,8 +3849,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33767",
-      "lat": 27.971215583902,
-      "lng": -82.828866459413
+      "lat": 27.971214406091,
+      "lng": -82.828866768156
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -3874,8 +3874,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33767",
-      "lat": 27.971215583902,
-      "lng": -82.828866459413
+      "lat": 27.971214406091,
+      "lng": -82.828866768156
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -3899,8 +3899,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "34134",
-      "lat": 26.350230353685,
-      "lng": -81.809929796754
+      "lat": 26.350225288138,
+      "lng": -81.809931865163
     },
     "filedDate": "2026-08-10",
     "effectiveDate": "2026-08-10",
@@ -3974,8 +3974,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32703",
-      "lat": 28.669419332132,
-      "lng": -81.447744841153
+      "lat": 28.669420542528,
+      "lng": -81.447743393446
     },
     "filedDate": "2026-09-18",
     "effectiveDate": "2026-09-18",
@@ -3999,8 +3999,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33781",
-      "lat": 27.843089724011,
-      "lng": -82.700082727009
+      "lat": 27.843092477493,
+      "lng": -82.700082222011
     },
     "filedDate": "2026-09-02",
     "effectiveDate": "2026-09-02",
@@ -4024,8 +4024,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33414",
-      "lat": 26.651138460176,
-      "lng": -80.208668773309
+      "lat": 26.651141424718,
+      "lng": -80.208667243779
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -4049,8 +4049,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "33762",
-      "lat": 27.894087215993,
-      "lng": -82.673576508043
+      "lat": 27.894089739682,
+      "lng": -82.673577336726
     },
     "filedDate": "2026-07-22",
     "effectiveDate": "2026-07-22",
@@ -4074,8 +4074,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lake",
       "state": "FL",
       "zip": "34737",
-      "lat": 28.713649289594,
-      "lng": -81.772794087288
+      "lat": 28.713646723531,
+      "lng": -81.772792874903
     },
     "filedDate": "2026-07-13",
     "effectiveDate": "2026-07-13",
@@ -4099,8 +4099,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32218",
-      "lat": 30.482219904531,
-      "lng": -81.637356538145
+      "lat": 30.482220890861,
+      "lng": -81.637354981859
     },
     "filedDate": "2026-09-11",
     "effectiveDate": "2026-09-11",
@@ -4149,8 +4149,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33612",
-      "lat": 28.05470809786,
-      "lng": -82.457853329491
+      "lat": 28.0547097297,
+      "lng": -82.457853691418
     },
     "filedDate": "2026-09-11",
     "effectiveDate": "2026-09-11",
@@ -4174,8 +4174,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32804",
-      "lat": 28.587441309505,
-      "lng": -81.393884136193
+      "lat": 28.58743772602,
+      "lng": -81.393884328659
     },
     "filedDate": "2026-09-22",
     "effectiveDate": "2026-09-22",
@@ -4199,8 +4199,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Baker",
       "state": "FL",
       "zip": "32063",
-      "lat": 30.319217373661,
-      "lng": -82.124835596348
+      "lat": 30.319213391801,
+      "lng": -82.124836058243
     },
     "filedDate": "2026-09-03",
     "effectiveDate": "2026-09-03",
@@ -4224,8 +4224,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33907",
-      "lat": 26.553843950839,
-      "lng": -81.871848414891
+      "lat": 26.553845528539,
+      "lng": -81.87184760953
     },
     "filedDate": "2026-08-31",
     "effectiveDate": "2026-08-31",
@@ -4249,8 +4249,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33904",
-      "lat": 26.564686449668,
-      "lng": -81.94545963518
+      "lat": 26.564689472949,
+      "lng": -81.945461337845
     },
     "filedDate": "2026-07-30",
     "effectiveDate": "2026-07-30",
@@ -4274,8 +4274,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32207",
-      "lat": 30.311455738883,
-      "lng": -81.655760743152
+      "lat": 30.31145526565,
+      "lng": -81.655759267799
     },
     "filedDate": "2026-07-08",
     "effectiveDate": "2026-07-08",
@@ -4399,8 +4399,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33065",
-      "lat": 26.271306031442,
-      "lng": -80.250278373119
+      "lat": 26.271307968667,
+      "lng": -80.250277016036
     },
     "filedDate": "2026-09-10",
     "effectiveDate": "2026-09-10",
@@ -4424,8 +4424,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "34695",
-      "lat": 27.990861562107,
-      "lng": -82.695369539331
+      "lat": 27.990862751345,
+      "lng": -82.695370510466
     },
     "filedDate": "2026-08-10",
     "effectiveDate": "2026-08-10",
@@ -4449,8 +4449,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33351",
-      "lat": 26.182679581222,
-      "lng": -80.251671898158
+      "lat": 26.182676695116,
+      "lng": -80.251670728459
     },
     "filedDate": "2026-08-06",
     "effectiveDate": "2026-08-06",
@@ -4524,8 +4524,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32219",
-      "lat": 30.387525993959,
-      "lng": -81.732842351054
+      "lat": 30.387525533093,
+      "lng": -81.732840534422
     },
     "filedDate": "2026-07-09",
     "effectiveDate": "2026-07-09",
@@ -4549,8 +4549,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Duval",
       "state": "FL",
       "zip": "32207",
-      "lat": 30.315472269145,
-      "lng": -81.654658731403
+      "lat": 30.315473857886,
+      "lng": -81.65466023273
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-07-27",
@@ -4574,8 +4574,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33435",
-      "lat": 26.514482266852,
-      "lng": -80.05829112358
+      "lat": 26.514483538492,
+      "lng": -80.058290503353
     },
     "filedDate": "2026-07-08",
     "effectiveDate": "2026-07-08",
@@ -4599,8 +4599,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "33525",
-      "lat": 28.347109887436,
-      "lng": -82.187621330171
+      "lat": 28.347109894074,
+      "lng": -82.187619757762
     },
     "filedDate": "2026-08-26",
     "effectiveDate": "2026-08-26",
@@ -4624,8 +4624,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33607",
-      "lat": 27.960795704063,
-      "lng": -82.523978542229
+      "lat": 27.960795803207,
+      "lng": -82.5239804101
     },
     "filedDate": "2026-08-27",
     "effectiveDate": "2026-08-27",
@@ -4649,8 +4649,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Lee",
       "state": "FL",
       "zip": "33916",
-      "lat": 26.633574827848,
-      "lng": -81.857297932307
+      "lat": 26.63357098804,
+      "lng": -81.857299568342
     },
     "filedDate": "2026-08-10",
     "effectiveDate": "2026-08-10",
@@ -4674,8 +4674,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Alachua",
       "state": "FL",
       "zip": "32603",
-      "lat": 29.652119274176,
-      "lng": -82.340587519154
+      "lat": 29.652120320101,
+      "lng": -82.340588382967
     },
     "filedDate": "2026-08-06",
     "effectiveDate": "2026-08-06",
@@ -4699,8 +4699,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Hillsborough",
       "state": "FL",
       "zip": "33547",
-      "lat": 27.85404841341,
-      "lng": -82.256015870938
+      "lat": 27.854046817985,
+      "lng": -82.256016702943
     },
     "filedDate": "2026-07-28",
     "effectiveDate": "2026-07-28",
@@ -4724,8 +4724,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "33523",
-      "lat": 28.372356423065,
-      "lng": -82.190338882193
+      "lat": 28.372354601172,
+      "lng": -82.190339512132
     },
     "filedDate": "2026-08-03",
     "effectiveDate": "2026-08-03",
@@ -4749,8 +4749,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33311",
-      "lat": 26.151120922051,
-      "lng": -80.174887617034
+      "lat": 26.151119857048,
+      "lng": -80.174887269505
     },
     "filedDate": "2026-07-13",
     "effectiveDate": "2026-07-13",
@@ -4774,8 +4774,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Manatee",
       "state": "FL",
       "zip": "34221",
-      "lat": 27.57375157498,
-      "lng": -82.509976808198
+      "lat": 27.573755297056,
+      "lng": -82.509976318623
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-08-12",
@@ -4799,8 +4799,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Miami-Dade",
       "state": "FL",
       "zip": "33131",
-      "lat": 25.763341273253,
-      "lng": -80.191368753168
+      "lat": 25.763344753412,
+      "lng": -80.191368762298
     },
     "filedDate": "2026-08-14",
     "effectiveDate": "2026-08-14",
@@ -4824,8 +4824,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Alachua",
       "state": "FL",
       "zip": "32605",
-      "lat": 29.654406129169,
-      "lng": -82.572731496888
+      "lat": 29.654406232952,
+      "lng": -82.572731135364
     },
     "filedDate": "2026-07-22",
     "effectiveDate": "2026-07-22",
@@ -4849,8 +4849,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pasco",
       "state": "FL",
       "zip": "33542",
-      "lat": 28.251853043333,
-      "lng": -82.185867675854
+      "lat": 28.251855289776,
+      "lng": -82.185866438283
     },
     "filedDate": "2026-07-15",
     "effectiveDate": "2026-07-15",
@@ -4874,8 +4874,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Collier",
       "state": "FL",
       "zip": "34114",
-      "lat": 26.064731082053,
-      "lng": -81.698389667437
+      "lat": 26.064729676717,
+      "lng": -81.698391333597
     },
     "filedDate": "2026-08-03",
     "effectiveDate": "2026-08-03",
@@ -4899,8 +4899,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Manatee",
       "state": "FL",
       "zip": "34221",
-      "lat": 27.57375157498,
-      "lng": -82.509976808198
+      "lat": 27.573755297056,
+      "lng": -82.509976318623
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-08-12",
@@ -4924,8 +4924,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33405",
-      "lat": 26.667837377785,
-      "lng": -80.058685399059
+      "lat": 26.667840681954,
+      "lng": -80.058686925575
     },
     "filedDate": "2026-09-04",
     "effectiveDate": "2026-09-04",
@@ -4949,8 +4949,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32830",
-      "lat": 28.377427758649,
-      "lng": -81.507663872089
+      "lat": 28.377427504751,
+      "lng": -81.507664025524
     },
     "filedDate": "2026-07-17",
     "effectiveDate": "2026-07-17",
@@ -4974,8 +4974,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Manatee",
       "state": "FL",
       "zip": "34202",
-      "lat": 27.395174172405,
-      "lng": -82.434627457215
+      "lat": 27.395176947693,
+      "lng": -82.434624344908
     },
     "filedDate": "2026-07-10",
     "effectiveDate": "2026-07-10",
@@ -4999,8 +4999,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Monroe",
       "state": "FL",
       "zip": "33040",
-      "lat": 24.554678864541,
-      "lng": -81.790176386301
+      "lat": 24.554681480416,
+      "lng": -81.790177987815
     },
     "filedDate": "2026-09-16",
     "effectiveDate": "2026-09-16",
@@ -5024,8 +5024,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Gadsden",
       "state": "FL",
       "zip": "32333",
-      "lat": 30.625751187505,
-      "lng": -84.415388459549
+      "lat": 30.625754567813,
+      "lng": -84.415388164955
     },
     "filedDate": "2026-07-16",
     "effectiveDate": "2026-07-16",
@@ -5049,8 +5049,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Pinellas",
       "state": "FL",
       "zip": "34683",
-      "lat": 28.077098079985,
-      "lng": -82.766927357598
+      "lat": 28.077096524101,
+      "lng": -82.766926722012
     },
     "filedDate": "2026-08-20",
     "effectiveDate": "2026-08-20",
@@ -5099,8 +5099,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33498",
-      "lat": 26.384014137686,
-      "lng": -80.203659585748
+      "lat": 26.384011403288,
+      "lng": -80.203659094226
     },
     "filedDate": "2026-09-04",
     "effectiveDate": "2026-09-04",
@@ -5124,8 +5124,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Broward",
       "state": "FL",
       "zip": "33316",
-      "lat": 26.100402644031,
-      "lng": -80.123935061826
+      "lat": 26.100402028148,
+      "lng": -80.123935279044
     },
     "filedDate": "2026-08-12",
     "effectiveDate": "2026-08-12",
@@ -5149,8 +5149,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32805",
-      "lat": 28.514577677645,
-      "lng": -81.393113983172
+      "lat": 28.514580180937,
+      "lng": -81.393114303106
     },
     "filedDate": "2026-07-17",
     "effectiveDate": "2026-07-17",
@@ -5174,8 +5174,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Orange",
       "state": "FL",
       "zip": "32819",
-      "lat": 28.450716474685,
-      "lng": -81.488106742501
+      "lat": 28.450718476953,
+      "lng": -81.4881057705
     },
     "filedDate": "2026-07-27",
     "effectiveDate": "2026-07-27",
@@ -5199,8 +5199,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33458",
-      "lat": 26.891196403657,
-      "lng": -80.11796526436
+      "lat": 26.891198406417,
+      "lng": -80.117964041181
     },
     "filedDate": "2026-07-14",
     "effectiveDate": "2026-07-14",
@@ -5249,8 +5249,8 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "county": "Palm Beach",
       "state": "FL",
       "zip": "33401",
-      "lat": 26.724310599809,
-      "lng": -80.083727874976
+      "lat": 26.724311588221,
+      "lng": -80.083726895706
     },
     "filedDate": "2026-09-10",
     "effectiveDate": "2026-09-10",
@@ -5277,12 +5277,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.177661000000057,
       "lng": -85.80569999999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5310,12 +5310,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.901490000000024,
       "lng": -82.40122999999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5343,12 +5343,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.14151000000004,
       "lng": -80.12090099999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-565-8555",
@@ -5376,12 +5376,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.505850000000066,
       "lng": -84.25333999999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-893-3752",
@@ -5409,12 +5409,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.366161000000034,
       "lng": -86.18169399999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-267-3962",
@@ -5442,12 +5442,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.80976000000004,
       "lng": -82.65463999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-521-4372",
@@ -5475,12 +5475,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.446358000000032,
       "lng": -82.64044199999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "352-486-2131",
@@ -5508,12 +5508,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.994050000000072,
       "lng": -82.43506999999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-679-7340",
@@ -5541,12 +5541,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.301879000000042,
       "lng": -81.76085599999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "904-786-0390",
@@ -5574,12 +5574,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.210992000000033,
       "lng": -80.12211399999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-782-6003",
@@ -5607,12 +5607,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.49292900000006,
       "lng": -81.96814499999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5640,12 +5640,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.01066300000008,
       "lng": -80.20463799999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-467-0862",
@@ -5673,12 +5673,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.39185800000007,
       "lng": -82.50676499999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "941-351-6969",
@@ -5706,12 +5706,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.31765500000006,
       "lng": -80.15698399999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-481-2266",
@@ -5739,12 +5739,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.94143900000006,
       "lng": -82.03175699999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5772,12 +5772,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.55155300000007,
       "lng": -81.57572099999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5805,12 +5805,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.960350000000062,
       "lng": -82.76973999999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-461-1817",
@@ -5838,12 +5838,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.07937000000004,
       "lng": -80.69963999999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5871,12 +5871,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.578534000000047,
       "lng": -81.41712599999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5904,12 +5904,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.79447300000004,
       "lng": -86.55793999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-682-1561",
@@ -5937,12 +5937,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.943930000000023,
       "lng": -80.20609099999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-653-2384",
@@ -5970,12 +5970,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.72651600000006,
       "lng": -87.34959599999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-587-2846",
@@ -6003,12 +6003,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.619148000000052,
       "lng": -81.99073299999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6036,12 +6036,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.011700000000076,
       "lng": -81.72661999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6069,12 +6069,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.100333000000035,
       "lng": -82.39908699999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-972-2784",
@@ -6102,12 +6102,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.02320000000003,
       "lng": -81.92479999999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6135,12 +6135,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.17558800000006,
       "lng": -80.14669199999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-565-2758",
@@ -6168,12 +6168,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.191802000000052,
       "lng": -81.71875899999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6201,12 +6201,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.111953000000028,
       "lng": -85.19630899999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-639-2371",
@@ -6234,12 +6234,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.942158000000063,
       "lng": -80.30490799999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-558-5073",
@@ -6267,12 +6267,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.03129000000007,
       "lng": -82.35498999999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-988-4439",
@@ -6300,12 +6300,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.010370000000023,
       "lng": -82.53231999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6333,12 +6333,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.82493000000005,
       "lng": -82.78661999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-393-6877",
@@ -6366,12 +6366,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.70851300000004,
       "lng": -80.22734099999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "561-798-9048",
@@ -6399,12 +6399,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.943890000000067,
       "lng": -81.22613999999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6432,12 +6432,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.297551000000055,
       "lng": -82.45412899999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "941-378-2111",
@@ -6465,12 +6465,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.652265000000057,
       "lng": -81.34857699999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-339-1593",
@@ -6498,12 +6498,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.897992000000045,
       "lng": -81.82845699999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-670-1045",
@@ -6531,12 +6531,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.109075000000075,
       "lng": -81.61812099999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-421-7621",
@@ -6564,12 +6564,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.231284000000073,
       "lng": -81.64965099999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-424-5294",
@@ -6597,12 +6597,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.39248900000007,
       "lng": -81.52815199999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-716-5135",
@@ -6630,12 +6630,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.760028000000034,
       "lng": -81.28223299999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-321-1371",
@@ -6663,12 +6663,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.508160000000032,
       "lng": -84.24964999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6696,12 +6696,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.273540000000025,
       "lng": -80.14948999999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-968-7114",
@@ -6729,12 +6729,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.41584000000006,
       "lng": -80.07625999999993
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "310-667-1093",
@@ -6762,12 +6762,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.39248900000007,
       "lng": -81.52815199999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-718-5474",
@@ -6795,12 +6795,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.89758000000006,
       "lng": -80.31445099999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-557-6466",
@@ -6828,12 +6828,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.418299000000047,
       "lng": -87.27514299999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-455-2767",
@@ -6861,12 +6861,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.733843000000036,
       "lng": -80.30239799999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-984-6520",
@@ -6894,12 +6894,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.01868600000006,
       "lng": -80.14362399999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6927,12 +6927,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.657760000000053,
       "lng": -80.32673999999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-253-6115",
@@ -6960,12 +6960,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.418170000000032,
       "lng": -81.40860299999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "239-657-6188",
@@ -6993,12 +6993,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.99721900000003,
       "lng": -82.86280199999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "386-935-2334",
@@ -7026,12 +7026,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.451193000000046,
       "lng": -81.70674799999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "904-764-2855",
@@ -7059,12 +7059,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.763648000000046,
       "lng": -80.14244299999996
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-535-6599",
@@ -7092,12 +7092,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.809656000000075,
       "lng": -80.21138699999995
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-905-6050",
@@ -7125,12 +7125,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.575386000000037,
       "lng": -81.81808599999994
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-773-0965",
@@ -7158,12 +7158,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.054276000000073,
       "lng": -82.01231999999999
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "352-347-6642",
@@ -7191,12 +7191,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.522125000000074,
       "lng": -80.39667199999997
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "772-464-9341",
@@ -7224,12 +7224,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.566438000000062,
       "lng": -81.29397699999998
     },
-    "filedDate": "2026-09-23",
+    "filedDate": "2026-09-24",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-09-23",
+    "issuedDate": "2026-09-24",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-23T00:00:00Z",
+    "eventTimestamp": "2026-09-24T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -7245,37 +7245,37 @@ export const REAL_LICENSES: LicenseRecord[] = [
 export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   {
     "county": "Miami-Dade",
-    "count": 6707,
+    "count": 6714,
     "lat": 25.61,
     "lng": -80.5
   },
   {
     "county": "Broward",
-    "count": 4431,
+    "count": 4434,
     "lat": 26.19,
     "lng": -80.45
   },
   {
     "county": "Orange",
-    "count": 3523,
+    "count": 3526,
     "lat": 28.51,
     "lng": -81.32
   },
   {
     "county": "Palm Beach",
-    "count": 3375,
+    "count": 3376,
     "lat": 26.65,
     "lng": -80.44
   },
   {
     "county": "Hillsborough",
-    "count": 2951,
+    "count": 2952,
     "lat": 27.91,
     "lng": -82.3
   },
   {
     "county": "Pinellas",
-    "count": 2842,
+    "count": 2843,
     "lat": 27.88,
     "lng": -82.74
   },
@@ -7305,7 +7305,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Polk",
-    "count": 1367,
+    "count": 1368,
     "lat": 27.95,
     "lng": -81.7
   },
@@ -7901,7 +7901,7 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "Total Licensees Tracked",
-    "value": 52967,
+    "value": 52983,
     "change": 2.1,
     "sparklineData": [
       0,
@@ -7929,7 +7929,7 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "New Restaurants (FY)",
-    "value": 1457,
+    "value": 1477,
     "change": 5.6,
     "sparklineData": [
       0,
