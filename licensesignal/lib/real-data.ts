@@ -6,35 +6,10 @@ import type { LicenseRecord, DailyVolume, StatCardData, CountyVolume } from './t
 
 export const DATA_AS_OF = '2026-06-15'
 export const DATA_SOURCE = 'Florida DBPR — Division of Alcoholic Beverages & Tobacco and Division of Hotels & Restaurants'
-export const TOTAL_LICENSEES = 53227
-export const TOTAL_NEW_RESTAURANTS_FY = 1980
+export const TOTAL_LICENSEES = 53231
+export const TOTAL_NEW_RESTAURANTS_FY = 2003
 
 export const REAL_LICENSES: LicenseRecord[] = [
-  {
-    "id": "lic_BEV5814867",
-    "licenseNumber": "BEV5814867",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "7-Eleven Store #37203h",
-    "legalName": "7 Eleven INC",
-    "dbaName": "7-Eleven Store #37203h",
-    "address": {
-      "street": "13896 LANDSTAR BLVD",
-      "city": "Orlando",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32824",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-10-08",
-    "effectiveDate": "2026-10-09",
-    "expirationDate": "2027-09-30",
-    "issuedDate": "2026-10-09",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-09T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
   {
     "id": "lic_BEV3913939",
     "licenseNumber": "BEV3913939",
@@ -2911,6 +2886,56 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
+    "id": "lic_BEV3913913",
+    "licenseNumber": "BEV3913913",
+    "licenseType": "SRX",
+    "status": "active",
+    "businessName": "El Paladar Jibaro Bar Restaurant LLC",
+    "legalName": "El Paladar Jibaro Bar Restaurant LLC",
+    "dbaName": "El Paladar Jibaro Bar Restaurant LLC",
+    "address": {
+      "street": "122 PIERCE CHRISTIE DR",
+      "city": "Valrico",
+      "county": "Hillsborough",
+      "state": "FL",
+      "zip": "33594",
+      "lat": 27.938254478892,
+      "lng": -82.260350916504
+    },
+    "filedDate": "2026-08-27",
+    "effectiveDate": "2026-10-22",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-22",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-22T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV2337017",
+    "licenseNumber": "BEV2337017",
+    "licenseType": "APS",
+    "status": "active",
+    "businessName": "Ft Market",
+    "legalName": "Ft Market Corp",
+    "dbaName": "Ft Market",
+    "address": {
+      "street": "9601 SW 160TH ST",
+      "city": "Miami",
+      "county": "Miami-Dade",
+      "state": "FL",
+      "zip": "33157",
+      "lat": 25.620153710387,
+      "lng": -80.34799366808
+    },
+    "filedDate": "2026-08-28",
+    "effectiveDate": "2026-10-22",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-10-22",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-22T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
     "id": "lic_BEV6307602",
     "licenseNumber": "BEV6307602",
     "licenseType": "BEV",
@@ -2933,31 +2958,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-09-24",
     "eventType": "new_filing",
     "eventTimestamp": "2026-09-24T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV3913913",
-    "licenseNumber": "BEV3913913",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "El Paladar Jibaro Bar Restaurant LLC",
-    "legalName": "El Paladar Jibaro Bar Restaurant LLC",
-    "dbaName": "El Paladar Jibaro Bar Restaurant LLC",
-    "address": {
-      "street": "122 PIERCE CHRISTIE DR",
-      "city": "Valrico",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33594",
-      "lat": 27.938254478892,
-      "lng": -82.260350916504
-    },
-    "filedDate": "2026-08-27",
-    "effectiveDate": "2026-10-05",
-    "expirationDate": null,
-    "issuedDate": "2026-10-05",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-05T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2986,28 +2986,28 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV2337017",
-    "licenseNumber": "BEV2337017",
+    "id": "lic_BEV4503769",
+    "licenseNumber": "BEV4503769",
     "licenseType": "APS",
     "status": "active",
-    "businessName": "Ft Market",
-    "legalName": "Ft Market Corp",
-    "dbaName": "Ft Market",
+    "businessName": "Drift Cafe",
+    "legalName": "Drift Cafe LLC",
+    "dbaName": "Drift Cafe",
     "address": {
-      "street": "9601 SW 160TH ST",
-      "city": "Miami",
-      "county": "Miami-Dade",
+      "street": "16937 LAKESIDE DRIVE",
+      "city": "Montverde",
+      "county": "Lake",
       "state": "FL",
-      "zip": "33157",
-      "lat": 25.620153710387,
-      "lng": -80.34799366808
+      "zip": "34756",
+      "lat": 28.601113794753,
+      "lng": -81.674222747931
     },
-    "filedDate": "2026-08-28",
-    "effectiveDate": "2026-09-14",
-    "expirationDate": null,
-    "issuedDate": "2026-09-14",
+    "filedDate": "2026-09-09",
+    "effectiveDate": "2026-10-15",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-15",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-09-14T00:00:00Z",
+    "eventTimestamp": "2026-10-15T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -5265,13 +5265,13 @@ export const REAL_LICENSES: LicenseRecord[] = [
 export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   {
     "county": "Miami-Dade",
-    "count": 6744,
+    "count": 6743,
     "lat": 25.61,
     "lng": -80.5
   },
   {
     "county": "Broward",
-    "count": 4461,
+    "count": 4460,
     "lat": 26.19,
     "lng": -80.45
   },
@@ -5283,7 +5283,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Palm Beach",
-    "count": 3398,
+    "count": 3399,
     "lat": 26.65,
     "lng": -80.44
   },
@@ -5295,19 +5295,19 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Pinellas",
-    "count": 2860,
+    "count": 2859,
     "lat": 27.88,
     "lng": -82.74
   },
   {
     "county": "Duval",
-    "count": 2468,
+    "count": 2467,
     "lat": 30.33,
     "lng": -81.65
   },
   {
     "county": "Lee",
-    "count": 2000,
+    "count": 2001,
     "lat": 26.57,
     "lng": -81.87
   },
@@ -5331,7 +5331,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Sarasota",
-    "count": 1336,
+    "count": 1337,
     "lat": 27.18,
     "lng": -82.36
   },
@@ -5349,7 +5349,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Manatee",
-    "count": 980,
+    "count": 982,
     "lat": 27.48,
     "lng": -82.35
   }
@@ -5921,7 +5921,7 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "Total Licensees Tracked",
-    "value": 53227,
+    "value": 53231,
     "change": 2.1,
     "sparklineData": [
       0,
@@ -5949,7 +5949,7 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "New Restaurants (FY)",
-    "value": 1980,
+    "value": 2003,
     "change": 5.6,
     "sparklineData": [
       0,
