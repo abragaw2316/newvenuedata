@@ -12,9 +12,9 @@ export const SIGNAL_UNIVERSE = {
 
 export const BUSINESS_SIGNALS: BusinessSignal[] = [
   {
-    "id": "corp_L26000550980",
+    "id": "corp_L26000551950",
     "signalType": "registration",
-    "businessName": "Allay Atelier LLC",
+    "businessName": "True North Capital Partners LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -27,14 +27,14 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551180",
+    "id": "corp_P26000051560",
     "signalType": "registration",
-    "businessName": "Sofa King Chill, LLC",
-    "category": "LLC",
+    "businessName": "Miss Jensen Beach Fishing, INC.",
+    "category": "Profit Corp",
     "detail": "New Florida business registered with the state",
     "city": "",
     "county": "",
-    "date": "2027-01-01",
+    "date": "2026-12-01",
     "value": null,
     "phone": null,
     "sourceLabel": "FL Division of Corporations (Sunbiz)",
@@ -42,9 +42,24 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550950",
+    "id": "corp_L26000552050",
     "signalType": "registration",
-    "businessName": "3343 Alice LLC",
+    "businessName": "Hope Investments LLC",
+    "category": "LLC",
+    "detail": "New Florida business registered with the state",
+    "city": "",
+    "county": "",
+    "date": "2026-11-15",
+    "value": null,
+    "phone": null,
+    "sourceLabel": "FL Division of Corporations (Sunbiz)",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": "corp_L26000551870",
+    "signalType": "registration",
+    "businessName": "25 Front Street, LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -57,29 +72,14 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551130",
+    "id": "corp_L26000552140",
     "signalType": "registration",
-    "businessName": "Dragonfly Trace Organic Inspection Services, LLC",
+    "businessName": "Kilo Romeo Bravo LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
     "county": "",
     "date": "2026-11-01",
-    "value": null,
-    "phone": null,
-    "sourceLabel": "FL Division of Corporations (Sunbiz)",
-    "lat": null,
-    "lng": null
-  },
-  {
-    "id": "corp_L26000551280",
-    "signalType": "registration",
-    "businessName": "A Pinch Of Flowers, LLC",
-    "category": "LLC",
-    "detail": "New Florida business registered with the state",
-    "city": "",
-    "county": "",
-    "date": "2026-10-31",
     "value": null,
     "phone": null,
     "sourceLabel": "FL Division of Corporations (Sunbiz)",
@@ -98,6 +98,21 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "value": null,
     "phone": null,
     "sourceLabel": "DBPR Alcoholic Beverages & Tobacco",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": "corp_L26000552130",
+    "signalType": "registration",
+    "businessName": "Jj Real Estate Properties, LLC",
+    "category": "LLC",
+    "detail": "New Florida business registered with the state",
+    "city": "",
+    "county": "",
+    "date": "2026-10-30",
+    "value": null,
+    "phone": null,
+    "sourceLabel": "FL Division of Corporations (Sunbiz)",
     "lat": null,
     "lng": null
   },
@@ -162,9 +177,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550920",
+    "id": "corp_L26000551850",
     "signalType": "registration",
-    "businessName": "Colorado Circle LLC",
+    "businessName": "Paula'S Sunshine Cleaning LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -177,9 +192,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550960",
+    "id": "corp_L26000551860",
     "signalType": "registration",
-    "businessName": "Zavelsky Law, Pllc",
+    "businessName": "Idea House LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -192,9 +207,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550970",
+    "id": "corp_L26000551880",
     "signalType": "registration",
-    "businessName": "Axiom Gear, LLC",
+    "businessName": "Mz Perkys Devil Drip, LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -207,9 +222,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550990",
+    "id": "corp_L26000551890",
     "signalType": "registration",
-    "businessName": "Get Azuli LLC",
+    "businessName": "Velasco English Teaching & Consulting LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -222,9 +237,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551000",
+    "id": "corp_L26000551900",
     "signalType": "registration",
-    "businessName": "Laz Benitez Rooter Plumbing LLC",
+    "businessName": "Beached Home Care LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -237,9 +252,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551010",
+    "id": "corp_L26000551910",
     "signalType": "registration",
-    "businessName": "Figueroa Real Estate LLC",
+    "businessName": "Jacquie Properties LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -252,9 +267,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551020",
+    "id": "corp_L26000551920",
     "signalType": "registration",
-    "businessName": "J&L Rodrigues LLC",
+    "businessName": "Apollo Group Swfl LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -267,9 +282,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551030",
+    "id": "corp_L26000551930",
     "signalType": "registration",
-    "businessName": "Tobby Quinn'S Tractor & Tree Service, LLC",
+    "businessName": "Veltrea Holdings LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -282,9 +297,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551040",
+    "id": "corp_L26000551940",
     "signalType": "registration",
-    "businessName": "Arigon Credit LLC",
+    "businessName": "Ariiis Services LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -297,9 +312,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551060",
+    "id": "corp_L26000551970",
     "signalType": "registration",
-    "businessName": "Festive Faces LLC",
+    "businessName": "Pokeshop 305 LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -312,9 +327,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551070",
+    "id": "corp_L26000551980",
     "signalType": "registration",
-    "businessName": "Uncle As Youth Fishing Charter LLC",
+    "businessName": "K&R Express Logistics LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -327,9 +342,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551080",
+    "id": "corp_L26000551990",
     "signalType": "registration",
-    "businessName": "Hills Heavy Haul LLC",
+    "businessName": "The Hangout Spot LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -342,9 +357,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551090",
+    "id": "corp_L26000552000",
     "signalType": "registration",
-    "businessName": "Right Track Exam Prep LLC",
+    "businessName": "Nialvik, LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -357,9 +372,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551100",
+    "id": "corp_L26000552010",
     "signalType": "registration",
-    "businessName": "Infomeus LLC",
+    "businessName": "A3m Group LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -372,9 +387,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551110",
+    "id": "corp_L26000552020",
     "signalType": "registration",
-    "businessName": "Arvenza Group LLC",
+    "businessName": "The Landscaping Society LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -387,9 +402,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551120",
+    "id": "corp_L26000552030",
     "signalType": "registration",
-    "businessName": "Just B Services, LLC",
+    "businessName": "Pawfessionals Pet Concierge LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -402,9 +417,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551140",
+    "id": "corp_L26000552040",
     "signalType": "registration",
-    "businessName": "Fioramanti Farms LLC",
+    "businessName": "Free Parking Rentals LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -417,9 +432,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551150",
+    "id": "corp_L26000552060",
     "signalType": "registration",
-    "businessName": "Weens Wear LLC",
+    "businessName": "Restorations Comfort Home LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -432,9 +447,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551160",
+    "id": "corp_L26000552070",
     "signalType": "registration",
-    "businessName": "Ferre Al Mayor LLC",
+    "businessName": "Palm Route Logistics LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -447,9 +462,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551170",
+    "id": "corp_L26000552080",
     "signalType": "registration",
-    "businessName": "Carnage Sports & Fitness LLC",
+    "businessName": "Hantradingllc",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -462,9 +477,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551190",
+    "id": "corp_L26000552090",
     "signalType": "registration",
-    "businessName": "Coliga LLC",
+    "businessName": "Kloss Martino LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -477,9 +492,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551200",
+    "id": "corp_L26000552100",
     "signalType": "registration",
-    "businessName": "Fat Kicks LLC",
+    "businessName": "J D Roofing Materials Supplies LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -492,9 +507,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551210",
+    "id": "corp_L26000552110",
     "signalType": "registration",
-    "businessName": "Ilan Construction Solutions LLC",
+    "businessName": "Nestoria LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -507,9 +522,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551220",
+    "id": "corp_L26000552120",
     "signalType": "registration",
-    "businessName": "Pretty Af Customs LLC",
+    "businessName": "Sugar Fork Tractor Service LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -522,9 +537,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551230",
+    "id": "corp_L26000552150",
     "signalType": "registration",
-    "businessName": "Ceramic Ventures, LLC",
+    "businessName": "Gracey Maritime Strategy LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -537,9 +552,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551240",
+    "id": "corp_L26000552160",
     "signalType": "registration",
-    "businessName": "Valdes House LLC",
+    "businessName": "Cuttin' L'S Outdoor Services, LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -552,9 +567,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551250",
+    "id": "corp_L26000552170",
     "signalType": "registration",
-    "businessName": "Infinity Construction Group LLC",
+    "businessName": "Pst Miami LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -567,9 +582,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551260",
+    "id": "corp_L26000552180",
     "signalType": "registration",
-    "businessName": "Peter Rivera Tax And Accounting LLC",
+    "businessName": "Beets Solutions LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -582,9 +597,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000551270",
+    "id": "corp_L26000552190",
     "signalType": "registration",
-    "businessName": "Trinielec Supply LLC",
+    "businessName": "Quokka Consulting LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -597,10 +612,25 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550900",
+    "id": "corp_L26000552200",
     "signalType": "registration",
-    "businessName": "Calme Property Group LLC",
+    "businessName": "Vetor Cycles LLC",
     "category": "LLC",
+    "detail": "New Florida business registered with the state",
+    "city": "",
+    "county": "",
+    "date": "2026-10-28",
+    "value": null,
+    "phone": null,
+    "sourceLabel": "FL Division of Corporations (Sunbiz)",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": "corp_P26000051570",
+    "signalType": "registration",
+    "businessName": "Cefwell INC",
+    "category": "Profit Corp",
     "detail": "New Florida business registered with the state",
     "city": "",
     "county": "",
@@ -612,10 +642,10 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550930",
+    "id": "corp_P26000051580",
     "signalType": "registration",
-    "businessName": "1take LLC",
-    "category": "LLC",
+    "businessName": "Trainwithmandy INC.",
+    "category": "Profit Corp",
     "detail": "New Florida business registered with the state",
     "city": "",
     "county": "",
@@ -627,24 +657,9 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550940",
+    "id": "corp_L26000551960",
     "signalType": "registration",
-    "businessName": "Gifthaus LLC",
-    "category": "LLC",
-    "detail": "New Florida business registered with the state",
-    "city": "",
-    "county": "",
-    "date": "2026-10-27",
-    "value": null,
-    "phone": null,
-    "sourceLabel": "FL Division of Corporations (Sunbiz)",
-    "lat": null,
-    "lng": null
-  },
-  {
-    "id": "corp_L26000551050",
-    "signalType": "registration",
-    "businessName": "G & M Construction Solution LLC",
+    "businessName": "J & J Lawn Pros LLC",
     "category": "LLC",
     "detail": "New Florida business registered with the state",
     "city": "",
@@ -657,14 +672,14 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "corp_L26000550890",
+    "id": "corp_P26000051590",
     "signalType": "registration",
-    "businessName": "Legacy Networking Ventures,LLC",
-    "category": "LLC",
+    "businessName": "Atc Heating And Air INC",
+    "category": "Profit Corp",
     "detail": "New Florida business registered with the state",
     "city": "",
     "county": "",
-    "date": "2026-10-22",
+    "date": "2026-10-26",
     "value": null,
     "phone": null,
     "sourceLabel": "FL Division of Corporations (Sunbiz)",
@@ -683,21 +698,6 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "value": null,
     "phone": null,
     "sourceLabel": "DBPR Alcoholic Beverages & Tobacco",
-    "lat": null,
-    "lng": null
-  },
-  {
-    "id": "corp_L26000550910",
-    "signalType": "registration",
-    "businessName": "Ysl Health Advisors LLC",
-    "category": "LLC",
-    "detail": "New Florida business registered with the state",
-    "city": "",
-    "county": "",
-    "date": "2026-10-21",
-    "value": null,
-    "phone": null,
-    "sourceLabel": "FL Division of Corporations (Sunbiz)",
     "lat": null,
     "lng": null
   },
@@ -927,6 +927,21 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
+    "id": "lic_BEV7601776",
+    "signalType": "license",
+    "businessName": "Static Age Pinball Arcade",
+    "category": "Beer & wine, on premises",
+    "detail": "New 2COP liquor license filed",
+    "city": "Freeport",
+    "county": "Walton",
+    "date": "2026-09-29",
+    "value": null,
+    "phone": null,
+    "sourceLabel": "DBPR Alcoholic Beverages & Tobacco",
+    "lat": null,
+    "lng": null
+  },
+  {
     "id": "lic_BEV1625412",
     "signalType": "license",
     "businessName": "Yuly Meat And Produce INC",
@@ -972,13 +987,13 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "lic_BEV2339171",
+    "id": "lic_BEV2705479",
     "signalType": "license",
-    "businessName": "Regine Variety Store LLC",
+    "businessName": "Maco Store",
     "category": "Package beer & wine (off-premises)",
     "detail": "New 2APS liquor license filed",
-    "city": "Miami",
-    "county": "Miami-Dade",
+    "city": "Pensacola",
+    "county": "Escambia",
     "date": "2026-09-23",
     "value": null,
     "phone": null,
@@ -987,13 +1002,13 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "lic_BEV2705479",
+    "id": "lic_BEV2339171",
     "signalType": "license",
-    "businessName": "Maco Store",
+    "businessName": "Regine Variety Store LLC",
     "category": "Package beer & wine (off-premises)",
     "detail": "New 2APS liquor license filed",
-    "city": "Pensacola",
-    "county": "Escambia",
+    "city": "Miami",
+    "county": "Miami-Dade",
     "date": "2026-09-23",
     "value": null,
     "phone": null,
@@ -1062,6 +1077,21 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
+    "id": "permit_orl_BLD202618068",
+    "signalType": "permit",
+    "businessName": "Pp - Storey Park Ii - Apartments",
+    "category": "Commercial buildout",
+    "detail": "$83,600 · Building Permit",
+    "city": "Orlando",
+    "county": "Orange",
+    "date": "2026-09-22",
+    "value": 83600,
+    "phone": null,
+    "sourceLabel": "City of Orlando (building permits)",
+    "lat": null,
+    "lng": null
+  },
+  {
     "id": "permit_orl_BLD202618061",
     "signalType": "permit",
     "businessName": "Pp - Storey Park Ii - Apartments",
@@ -1107,15 +1137,15 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "permit_orl_BLD202618068",
+    "id": "permit_orl_BLD202618058",
     "signalType": "permit",
     "businessName": "Pp - Storey Park Ii - Apartments",
     "category": "Commercial buildout",
-    "detail": "$83,600 · Building Permit",
+    "detail": "$148,350 · Building Permit",
     "city": "Orlando",
     "county": "Orange",
     "date": "2026-09-22",
-    "value": 83600,
+    "value": 148350,
     "phone": null,
     "sourceLabel": "City of Orlando (building permits)",
     "lat": null,
@@ -1146,21 +1176,6 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "county": "Orange",
     "date": "2026-09-22",
     "value": 100,
-    "phone": null,
-    "sourceLabel": "City of Orlando (building permits)",
-    "lat": null,
-    "lng": null
-  },
-  {
-    "id": "permit_orl_BLD202618058",
-    "signalType": "permit",
-    "businessName": "Pp - Storey Park Ii - Apartments",
-    "category": "Commercial buildout",
-    "detail": "$148,350 · Building Permit",
-    "city": "Orlando",
-    "county": "Orange",
-    "date": "2026-09-22",
-    "value": 148350,
     "phone": null,
     "sourceLabel": "City of Orlando (building permits)",
     "lat": null,
@@ -1317,6 +1332,21 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
+    "id": "lic_BEV7408919",
+    "signalType": "license",
+    "businessName": "Bee Fly Grab N Go Cafe",
+    "category": "Beer & wine, on premises",
+    "detail": "New 2COP liquor license filed",
+    "city": "New Smyrna Beach",
+    "county": "Volusia",
+    "date": "2026-09-10",
+    "value": null,
+    "phone": null,
+    "sourceLabel": "DBPR Alcoholic Beverages & Tobacco",
+    "lat": null,
+    "lng": null
+  },
+  {
     "id": "lic_BEV5303050",
     "signalType": "license",
     "businessName": "Grove Xxiii",
@@ -1452,36 +1482,6 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "lic_BEV7408916",
-    "signalType": "license",
-    "businessName": "Hungry Pig Supply Co",
-    "category": "Package beer & wine (off-premises)",
-    "detail": "New 2APS liquor license filed",
-    "city": "New Smyrna Beach",
-    "county": "Volusia",
-    "date": "2026-09-03",
-    "value": null,
-    "phone": null,
-    "sourceLabel": "DBPR Alcoholic Beverages & Tobacco",
-    "lat": null,
-    "lng": null
-  },
-  {
-    "id": "lic_BEV2105921",
-    "signalType": "license",
-    "businessName": "Desirable Creations LLC",
-    "category": "Package beer & wine (off-premises)",
-    "detail": "New 2APS liquor license filed",
-    "city": "Naples",
-    "county": "Collier",
-    "date": "2026-09-03",
-    "value": null,
-    "phone": null,
-    "sourceLabel": "DBPR Alcoholic Beverages & Tobacco",
-    "lat": null,
-    "lng": null
-  },
-  {
     "id": "permit_orl_BLD202617362",
     "signalType": "permit",
     "businessName": "Pp - Storey Park Ii - Apartments",
@@ -1542,21 +1542,6 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "lng": null
   },
   {
-    "id": "permit_orl_BLD202615117",
-    "signalType": "permit",
-    "businessName": "Pp - Sunpark Industrial - Fire Pump House",
-    "category": "Commercial buildout",
-    "detail": "$250,000 · Building Permit",
-    "city": "Orlando",
-    "county": "Orange",
-    "date": "2026-06-15",
-    "value": 250000,
-    "phone": null,
-    "sourceLabel": "City of Orlando (building permits)",
-    "lat": null,
-    "lng": null
-  },
-  {
     "id": "permit_orl_BLD202615115",
     "signalType": "permit",
     "businessName": "Pp - Sunpark Industrial Building B",
@@ -1566,6 +1551,21 @@ export const BUSINESS_SIGNALS: BusinessSignal[] = [
     "county": "Orange",
     "date": "2026-06-15",
     "value": 31843615,
+    "phone": null,
+    "sourceLabel": "City of Orlando (building permits)",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "id": "permit_orl_BLD202615117",
+    "signalType": "permit",
+    "businessName": "Pp - Sunpark Industrial - Fire Pump House",
+    "category": "Commercial buildout",
+    "detail": "$250,000 · Building Permit",
+    "city": "Orlando",
+    "county": "Orange",
+    "date": "2026-06-15",
+    "value": 250000,
     "phone": null,
     "sourceLabel": "City of Orlando (building permits)",
     "lat": null,
