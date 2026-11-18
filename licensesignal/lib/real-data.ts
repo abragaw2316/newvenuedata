@@ -6,8 +6,8 @@ import type { LicenseRecord, DailyVolume, StatCardData, CountyVolume } from './t
 
 export const DATA_AS_OF = '2026-06-15'
 export const DATA_SOURCE = 'Florida DBPR — Division of Alcoholic Beverages & Tobacco and Division of Hotels & Restaurants'
-export const TOTAL_LICENSEES = 53419
-export const TOTAL_NEW_RESTAURANTS_FY = 2434
+export const TOTAL_LICENSEES = 53420
+export const TOTAL_NEW_RESTAURANTS_FY = 2457
 
 export const REAL_LICENSES: LicenseRecord[] = [
   {
@@ -158,31 +158,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-10-23",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-23T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV1508152",
-    "licenseNumber": "BEV1508152",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Dottie's Restaurant",
-    "legalName": "Mindot INC",
-    "dbaName": "Dottie's Restaurant",
-    "address": {
-      "street": "5275 BABCOCK ST, STE 5 AND 6",
-      "city": "Palm Bay",
-      "county": "Brevard",
-      "state": "FL",
-      "zip": "32905",
-      "lat": 28.018121797557,
-      "lng": -80.621983290834
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-09-18",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-09-18",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-09-18T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -511,31 +486,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV3913924",
-    "licenseNumber": "BEV3913924",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Valencia Lakes Poa",
-    "legalName": "Valencia Lakes Property Owners Association, INC",
-    "dbaName": "Valencia Lakes Poa",
-    "address": {
-      "street": "16003 VALENCIA CLUB DRIVE",
-      "city": "Wimauma",
-      "county": "Hillsborough",
-      "state": "FL",
-      "zip": "33598",
-      "lat": 27.732150338517,
-      "lng": -82.328322883249
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-10-07",
-    "expirationDate": "2027-09-30",
-    "issuedDate": "2026-10-07",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-07T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV3913934",
     "licenseNumber": "BEV3913934",
     "licenseType": "BEV",
@@ -786,31 +736,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV6215533",
-    "licenseNumber": "BEV6215533",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "La Focaccia Doro",
-    "legalName": "La Focaccia Doro LLC",
-    "dbaName": "La Focaccia Doro",
-    "address": {
-      "street": "483 MANDALAY AVE, #106",
-      "city": "Clearwater",
-      "county": "Pinellas",
-      "state": "FL",
-      "zip": "33767",
-      "lat": 27.981353208621,
-      "lng": -82.826977885878
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-10-15",
-    "expirationDate": "2027-09-30",
-    "issuedDate": "2026-10-15",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-15T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV5903982",
     "licenseNumber": "BEV5903982",
     "licenseType": "COP",
@@ -833,6 +758,31 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-10-05",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-05T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV2339176",
+    "licenseNumber": "BEV2339176",
+    "licenseType": "BEV",
+    "status": "active",
+    "businessName": "El Tranvia Catering Corp",
+    "legalName": "El Tranvia Catering Corp",
+    "dbaName": "El Tranvia Catering Corp",
+    "address": {
+      "street": "17856 S DIXIE HWY",
+      "city": "Miami",
+      "county": "Miami-Dade",
+      "state": "FL",
+      "zip": "33157",
+      "lat": 25.603321047581,
+      "lng": -80.352159346853
+    },
+    "filedDate": "2026-09-29",
+    "effectiveDate": "2026-11-17",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-11-17",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-11-17T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -955,31 +905,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "filedDate": "2026-10-01",
     "effectiveDate": "2026-10-26",
     "expirationDate": "2027-09-30",
-    "issuedDate": "2026-10-26",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-26T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2339176",
-    "licenseNumber": "BEV2339176",
-    "licenseType": "BEV",
-    "status": "active",
-    "businessName": "El Tranvia Catering Corp",
-    "legalName": "El Tranvia Catering Corp",
-    "dbaName": "El Tranvia Catering Corp",
-    "address": {
-      "street": "17856 S DIXIE HWY",
-      "city": "Miami",
-      "county": "Miami-Dade",
-      "state": "FL",
-      "zip": "33157",
-      "lat": 25.603321047581,
-      "lng": -80.352159346853
-    },
-    "filedDate": "2026-09-29",
-    "effectiveDate": "2026-10-26",
-    "expirationDate": null,
     "issuedDate": "2026-10-26",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-26T00:00:00Z",
@@ -1233,56 +1158,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-10-26",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-26T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV5404108",
-    "licenseNumber": "BEV5404108",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Take Two Kitchen",
-    "legalName": "Bad Boy Sushi LLC",
-    "dbaName": "Take Two Kitchen",
-    "address": {
-      "street": "82205 OVERSEAS HWY",
-      "city": "Islamorada",
-      "county": "Monroe",
-      "state": "FL",
-      "zip": "33036",
-      "lat": 24.923323118943,
-      "lng": -80.629195999914
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-10-08",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-10-08",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-08T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV5814731",
-    "licenseNumber": "BEV5814731",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Divino Pizzeria",
-    "legalName": "La Tua Pasta LLC",
-    "dbaName": "Divino Pizzeria",
-    "address": {
-      "street": "360 E HORATIO AVE, SUITE 300",
-      "city": "Maitland",
-      "county": "Orange",
-      "state": "FL",
-      "zip": "32751",
-      "lat": 28.627441469738,
-      "lng": -81.362566955549
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-10-13",
-    "expirationDate": "2027-09-30",
-    "issuedDate": "2026-10-13",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-13T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2086,31 +1961,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV6019409",
-    "licenseNumber": "BEV6019409",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "El Sitio Restaurant & Bakery",
-    "legalName": "El Sitio Restaurant & Bakery 2 LLC",
-    "dbaName": "El Sitio Restaurant & Bakery",
-    "address": {
-      "street": "11150 OKEECHOBEE BLVD, BLDG A - SUITE E",
-      "city": "Royal Palm Beach",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33411",
-      "lat": 26.707413175348,
-      "lng": -80.219566532805
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-10-12",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-10-12",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-12T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV5815267",
     "licenseNumber": "BEV5815267",
     "licenseType": "SRX",
@@ -2361,6 +2211,31 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
+    "id": "lic_BEV6215562",
+    "licenseNumber": "BEV6215562",
+    "licenseType": "COP",
+    "status": "active",
+    "businessName": "Merci Café",
+    "legalName": "Alpin Cup LLC",
+    "dbaName": "Merci Café",
+    "address": {
+      "street": "2710 US 19 ALT, SUITE 101",
+      "city": "Palm Harbor",
+      "county": "Pinellas",
+      "state": "FL",
+      "zip": "34683",
+      "lat": null,
+      "lng": null
+    },
+    "filedDate": "2026-11-02",
+    "effectiveDate": "2026-11-17",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-11-17",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
     "id": "lic_BEV7408928",
     "licenseNumber": "BEV7408928",
     "licenseType": "COP",
@@ -2433,31 +2308,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-10-06",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-06T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV6215562",
-    "licenseNumber": "BEV6215562",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Merci Café",
-    "legalName": "Alpin Cup LLC",
-    "dbaName": "Merci Café",
-    "address": {
-      "street": "2710 US 19 ALT, SUITE 101",
-      "city": "Palm Harbor",
-      "county": "Pinellas",
-      "state": "FL",
-      "zip": "34683",
-      "lat": null,
-      "lng": null
-    },
-    "filedDate": "2026-11-02",
-    "effectiveDate": "2026-11-13",
-    "expirationDate": null,
-    "issuedDate": "2026-11-13",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-11-13T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2711,31 +2561,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV6019410",
-    "licenseNumber": "BEV6019410",
-    "licenseType": "COP",
-    "status": "active",
-    "businessName": "Bamby Restaurant & Bar INC",
-    "legalName": "Bamby Restaurant & Bar INC",
-    "dbaName": "Bamby Restaurant & Bar INC",
-    "address": {
-      "street": "6011 S DIXIE HIGHWAY",
-      "city": "West Palm Beach",
-      "county": "Palm Beach",
-      "state": "FL",
-      "zip": "33405",
-      "lat": 26.660878889985,
-      "lng": -80.055879964139
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-10-14",
-    "expirationDate": "2027-03-31",
-    "issuedDate": "2026-10-14",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-10-14T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV6104807",
     "licenseNumber": "BEV6104807",
     "licenseType": "APS",
@@ -2808,31 +2633,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-10-02",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-02T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
-    "id": "lic_BEV2611111",
-    "licenseNumber": "BEV2611111",
-    "licenseType": "APS",
-    "status": "active",
-    "businessName": "Mojo Station",
-    "legalName": "Mojo Station LLC",
-    "dbaName": "Mojo Station",
-    "address": {
-      "street": "4389 UNIVERSITY BLVD SOUTH",
-      "city": "Jacksonville",
-      "county": "Duval",
-      "state": "FL",
-      "zip": "32216",
-      "lat": 30.277606313689,
-      "lng": -81.602846681443
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-09-30",
-    "expirationDate": "2027-09-30",
-    "issuedDate": "2026-09-30",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-09-30T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -2911,31 +2711,6 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
-    "id": "lic_BEV6502480",
-    "licenseNumber": "BEV6502480",
-    "licenseType": "SRX",
-    "status": "active",
-    "businessName": "Cajun Crab Hut",
-    "legalName": "Flourish Boil Shack LLC",
-    "dbaName": "Cajun Crab Hut",
-    "address": {
-      "street": "2125 US HIGHWAY 1 SOUTH, SUITE A",
-      "city": "Saint Augustine",
-      "county": "St. Johns",
-      "state": "FL",
-      "zip": "32086",
-      "lat": 29.85980720839,
-      "lng": -81.323075523348
-    },
-    "filedDate": "2026-09-18",
-    "effectiveDate": "2026-09-18",
-    "expirationDate": null,
-    "issuedDate": "2026-09-18",
-    "eventType": "new_filing",
-    "eventTimestamp": "2026-09-18T00:00:00Z",
-    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
-  },
-  {
     "id": "lic_BEV2105923",
     "licenseNumber": "BEV2105923",
     "licenseType": "APS",
@@ -3008,6 +2783,231 @@ export const REAL_LICENSES: LicenseRecord[] = [
     "issuedDate": "2026-10-08",
     "eventType": "new_filing",
     "eventTimestamp": "2026-10-08T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV2612980",
+    "licenseNumber": "BEV2612980",
+    "licenseType": "COP",
+    "status": "active",
+    "businessName": "Mr V's Seafood Bar & Grill",
+    "legalName": "Mr V's Seafood Bar & Grill LLC",
+    "dbaName": "Mr V's Seafood Bar & Grill",
+    "address": {
+      "street": "5674 TIMUQUANA ROAD",
+      "city": "Jacksonville",
+      "county": "Duval",
+      "state": "FL",
+      "zip": "32210",
+      "lat": 30.247314922678,
+      "lng": -81.729885508467
+    },
+    "filedDate": "2026-09-24",
+    "effectiveDate": "2026-10-21",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-21",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-21T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV5815260",
+    "licenseNumber": "BEV5815260",
+    "licenseType": "BEV",
+    "status": "active",
+    "businessName": "Central Florida Catering And Bar",
+    "legalName": "Central Florida Catering And Bar LLC",
+    "dbaName": "Central Florida Catering And Bar",
+    "address": {
+      "street": "1020 W MICHIGAN ST",
+      "city": "Orlando",
+      "county": "Orange",
+      "state": "FL",
+      "zip": "32805",
+      "lat": 28.514580180937,
+      "lng": -81.393114303106
+    },
+    "filedDate": "2026-09-24",
+    "effectiveDate": "2026-10-15",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-15",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-15T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV5104234",
+    "licenseNumber": "BEV5104234",
+    "licenseType": "APS",
+    "status": "active",
+    "businessName": "Lavish & Love, LLC",
+    "legalName": "Lavish & Love, LLC",
+    "dbaName": "Lavish & Love, LLC",
+    "address": {
+      "street": "5516 WHITEHEAD ST",
+      "city": "Bradenton",
+      "county": "Manatee",
+      "state": "FL",
+      "zip": "34203",
+      "lat": 27.442963538841,
+      "lng": -82.491518840102
+    },
+    "filedDate": "2026-09-22",
+    "effectiveDate": "2026-09-22",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-09-22",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-09-22T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV4703444",
+    "licenseNumber": "BEV4703444",
+    "licenseType": "COP",
+    "status": "active",
+    "businessName": "Bowden's",
+    "legalName": "Tlc Fifty-Three LLC",
+    "dbaName": "Bowden's",
+    "address": {
+      "street": "619 S WOODWARD AVE # C 102,103,104",
+      "city": "Tallahassee",
+      "county": "Leon",
+      "state": "FL",
+      "zip": "32304",
+      "lat": null,
+      "lng": null
+    },
+    "filedDate": "2026-10-15",
+    "effectiveDate": "2026-11-03",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-11-03",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-11-03T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV3913925",
+    "licenseNumber": "BEV3913925",
+    "licenseType": "APS",
+    "status": "active",
+    "businessName": "Cvs Pharmacy # 3257",
+    "legalName": "Holiday Cvs, L.L.C.",
+    "dbaName": "Cvs Pharmacy # 3257",
+    "address": {
+      "street": "704 W DR MARTIN LUTHER KING JR BLVD",
+      "city": "Seffner",
+      "county": "Hillsborough",
+      "state": "FL",
+      "zip": "33584",
+      "lat": 27.981511177571,
+      "lng": -82.28605417626
+    },
+    "filedDate": "2026-09-21",
+    "effectiveDate": "2026-10-15",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-15",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-15T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV6806026",
+    "licenseNumber": "BEV6806026",
+    "licenseType": "SRX",
+    "status": "active",
+    "businessName": "Village On The Isle",
+    "legalName": "Southwest Florida Retirement Center INC",
+    "dbaName": "Village On The Isle",
+    "address": {
+      "street": "914 TAMIAMI TRAIL SOUTH",
+      "city": "Venice",
+      "county": "Sarasota",
+      "state": "FL",
+      "zip": "34285",
+      "lat": 27.084625459509,
+      "lng": -82.43919409904
+    },
+    "filedDate": "2026-10-08",
+    "effectiveDate": "2026-11-04",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-11-04",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-11-04T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV6215551",
+    "licenseNumber": "BEV6215551",
+    "licenseType": "APS",
+    "status": "active",
+    "businessName": "Jkl Board & Brie INC/Graze Craze Largo",
+    "legalName": "Jkl Board & Brie INC",
+    "dbaName": "Jkl Board & Brie INC/Graze Craze Largo",
+    "address": {
+      "street": "2480 EAST BAY DR",
+      "city": "Largo",
+      "county": "Pinellas",
+      "state": "FL",
+      "zip": "33771",
+      "lat": 27.916628833576,
+      "lng": -82.76115154022
+    },
+    "filedDate": "2026-10-05",
+    "effectiveDate": "2026-10-05",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-05",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-05T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV6215538",
+    "licenseNumber": "BEV6215538",
+    "licenseType": "COP",
+    "status": "active",
+    "businessName": "Idyll Vice",
+    "legalName": "Dripvine LLC",
+    "dbaName": "Idyll Vice",
+    "address": {
+      "street": "667 CENTRAL AVE",
+      "city": "St. Petersburg",
+      "county": "Pinellas",
+      "state": "FL",
+      "zip": "33701",
+      "lat": 27.771226671226,
+      "lng": -82.642891240657
+    },
+    "filedDate": "2026-09-25",
+    "effectiveDate": "2026-10-01",
+    "expirationDate": "2027-09-30",
+    "issuedDate": "2026-10-01",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-01T00:00:00Z",
+    "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
+  },
+  {
+    "id": "lic_BEV1625406",
+    "licenseNumber": "BEV1625406",
+    "licenseType": "COP",
+    "status": "active",
+    "businessName": "Kin Kao Kitchen",
+    "legalName": "Saylee LLC",
+    "dbaName": "Kin Kao Kitchen",
+    "address": {
+      "street": "898 N FEDERAL HWY",
+      "city": "Pompano Beach",
+      "county": "Broward",
+      "state": "FL",
+      "zip": "33062",
+      "lat": 26.239162881729,
+      "lng": -80.102391762376
+    },
+    "filedDate": "2026-09-21",
+    "effectiveDate": "2026-10-13",
+    "expirationDate": "2027-03-31",
+    "issuedDate": "2026-10-13",
+    "eventType": "new_filing",
+    "eventTimestamp": "2026-10-13T00:00:00Z",
     "sourceUrl": "https://www2.myfloridalicense.com/sto/file_download/extracts/bd4006lic.csv"
   },
   {
@@ -5277,12 +5277,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.177661000000057,
       "lng": -85.80569999999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5310,12 +5310,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.901490000000024,
       "lng": -82.40122999999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5343,12 +5343,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.14151000000004,
       "lng": -80.12090099999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-565-8555",
@@ -5376,12 +5376,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.505850000000066,
       "lng": -84.25333999999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-893-3752",
@@ -5409,12 +5409,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.366161000000034,
       "lng": -86.18169399999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-267-3962",
@@ -5442,12 +5442,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.80976000000004,
       "lng": -82.65463999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-521-4372",
@@ -5475,12 +5475,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.446358000000032,
       "lng": -82.64044199999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "352-486-2131",
@@ -5508,12 +5508,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.994050000000072,
       "lng": -82.43506999999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-679-7340",
@@ -5541,12 +5541,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.301879000000042,
       "lng": -81.76085599999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "904-786-0390",
@@ -5574,12 +5574,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.210992000000033,
       "lng": -80.12211399999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-782-6003",
@@ -5607,12 +5607,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.49292900000006,
       "lng": -81.96814499999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5640,12 +5640,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.01066300000008,
       "lng": -80.20463799999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-467-0862",
@@ -5673,12 +5673,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.39185800000007,
       "lng": -82.50676499999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "941-351-6969",
@@ -5706,12 +5706,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.31765500000006,
       "lng": -80.15698399999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-688-1188",
@@ -5739,12 +5739,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.94143900000006,
       "lng": -82.03175699999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5772,12 +5772,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.55155300000007,
       "lng": -81.57572099999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5805,12 +5805,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.960350000000062,
       "lng": -82.76973999999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-461-1817",
@@ -5838,12 +5838,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.07937000000004,
       "lng": -80.69963999999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5871,12 +5871,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.578534000000047,
       "lng": -81.41712599999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -5904,12 +5904,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.79447300000004,
       "lng": -86.55793999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-682-1561",
@@ -5937,12 +5937,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.943930000000023,
       "lng": -80.20609099999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-653-2384",
@@ -5970,12 +5970,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.72651600000006,
       "lng": -87.34959599999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-587-2846",
@@ -6003,12 +6003,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.619148000000052,
       "lng": -81.99073299999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6036,12 +6036,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.011700000000076,
       "lng": -81.72661999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6069,12 +6069,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.100333000000035,
       "lng": -82.39908699999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-688-1188",
@@ -6102,12 +6102,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.02320000000003,
       "lng": -81.92479999999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6135,12 +6135,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.17558800000006,
       "lng": -80.14669199999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-565-2758",
@@ -6168,12 +6168,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.191802000000052,
       "lng": -81.71875899999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6201,12 +6201,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.111953000000028,
       "lng": -85.19630899999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-639-2371",
@@ -6234,12 +6234,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.942158000000063,
       "lng": -80.30490799999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-558-5073",
@@ -6267,12 +6267,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.03129000000007,
       "lng": -82.35498999999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-985-4439",
@@ -6300,12 +6300,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.010370000000023,
       "lng": -82.53231999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6333,12 +6333,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.82493000000005,
       "lng": -82.78661999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "727-393-6877",
@@ -6366,12 +6366,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.70851300000004,
       "lng": -80.22734099999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "561-798-9048",
@@ -6399,12 +6399,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.943890000000067,
       "lng": -81.22613999999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6432,12 +6432,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.297551000000055,
       "lng": -82.45412899999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-688-1188",
@@ -6465,12 +6465,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.652265000000057,
       "lng": -81.34857699999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-339-1593",
@@ -6498,12 +6498,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.897992000000045,
       "lng": -81.82845699999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-670-1045",
@@ -6531,12 +6531,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.109075000000075,
       "lng": -81.61812099999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-421-7621",
@@ -6564,12 +6564,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.231284000000073,
       "lng": -81.64965099999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-424-5294",
@@ -6597,12 +6597,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.39248900000007,
       "lng": -81.52815199999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-716-5135",
@@ -6630,12 +6630,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.760028000000034,
       "lng": -81.28223299999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-321-1371",
@@ -6663,12 +6663,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.508160000000032,
       "lng": -84.24964999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6696,12 +6696,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.273540000000025,
       "lng": -80.14948999999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "954-968-7114",
@@ -6729,12 +6729,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.41584000000006,
       "lng": -80.07625999999993
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-688-1188",
@@ -6762,12 +6762,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.39248900000007,
       "lng": -81.52815199999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "407-718-5474",
@@ -6795,12 +6795,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.89758000000006,
       "lng": -80.31445099999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-557-6466",
@@ -6828,12 +6828,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.418299000000047,
       "lng": -87.27514299999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "850-455-2767",
@@ -6861,12 +6861,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.733843000000036,
       "lng": -80.30239799999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-984-6520",
@@ -6894,12 +6894,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.01868600000006,
       "lng": -80.14362399999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -6927,12 +6927,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.657760000000053,
       "lng": -80.32673999999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-253-6115",
@@ -6960,12 +6960,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 26.418170000000032,
       "lng": -81.40860299999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "239-657-6188",
@@ -6993,12 +6993,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.99721900000003,
       "lng": -82.86280199999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "386-935-2334",
@@ -7026,12 +7026,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 30.451193000000046,
       "lng": -81.70674799999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "904-764-2855",
@@ -7059,12 +7059,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.763648000000046,
       "lng": -80.14244299999996
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-535-6599",
@@ -7092,12 +7092,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.809656000000075,
       "lng": -80.21138699999995
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-905-6050",
@@ -7125,12 +7125,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 27.575386000000037,
       "lng": -81.81808599999994
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "863-773-0965",
@@ -7158,12 +7158,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 29.054276000000073,
       "lng": -82.01231999999999
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "352-347-6642",
@@ -7191,12 +7191,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 28.566438000000062,
       "lng": -81.29397699999998
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "813-910-6878",
@@ -7224,12 +7224,12 @@ export const REAL_LICENSES: LicenseRecord[] = [
       "lat": 25.897452000000044,
       "lng": -80.24706099999997
     },
-    "filedDate": "2026-11-17",
+    "filedDate": "2026-11-18",
     "effectiveDate": null,
     "expirationDate": null,
-    "issuedDate": "2026-11-17",
+    "issuedDate": "2026-11-18",
     "eventType": "new_filing",
-    "eventTimestamp": "2026-11-17T00:00:00Z",
+    "eventTimestamp": "2026-11-18T00:00:00Z",
     "sourceUrl": "https://gis.fdacs.gov/mapping/rest/services/DFS/DFS_FOOD_SAFETY_FACILITIES_PUBLIC_VIEW/MapServer/0",
     "enrichment": {
       "phone": "305-681-0625",
@@ -7245,19 +7245,19 @@ export const REAL_LICENSES: LicenseRecord[] = [
 export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   {
     "county": "Miami-Dade",
-    "count": 6776,
+    "count": 6773,
     "lat": 25.61,
     "lng": -80.5
   },
   {
     "county": "Broward",
-    "count": 4467,
+    "count": 4465,
     "lat": 26.19,
     "lng": -80.45
   },
   {
     "county": "Orange",
-    "count": 3558,
+    "count": 3559,
     "lat": 28.51,
     "lng": -81.32
   },
@@ -7275,13 +7275,13 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Pinellas",
-    "count": 2866,
+    "count": 2868,
     "lat": 27.88,
     "lng": -82.74
   },
   {
     "county": "Duval",
-    "count": 2473,
+    "count": 2474,
     "lat": 30.33,
     "lng": -81.65
   },
@@ -7293,31 +7293,31 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Brevard",
-    "count": 1548,
+    "count": 1546,
     "lat": 28.3,
     "lng": -80.7
   },
   {
     "county": "Volusia",
-    "count": 1541,
+    "count": 1542,
     "lat": 29.03,
     "lng": -81.12
   },
   {
     "county": "Polk",
-    "count": 1384,
+    "count": 1383,
     "lat": 27.95,
     "lng": -81.7
   },
   {
     "county": "Sarasota",
-    "count": 1342,
+    "count": 1343,
     "lat": 27.18,
     "lng": -82.36
   },
   {
     "county": "Collier",
-    "count": 1257,
+    "count": 1258,
     "lat": 26.11,
     "lng": -81.4
   },
@@ -7329,7 +7329,7 @@ export const REAL_COUNTY_VOLUME: CountyVolume[] = [
   },
   {
     "county": "Manatee",
-    "count": 987,
+    "count": 989,
     "lat": 27.48,
     "lng": -82.35
   }
@@ -7901,7 +7901,7 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "Total Licensees Tracked",
-    "value": 53419,
+    "value": 53420,
     "change": 2.1,
     "sparklineData": [
       0,
@@ -7929,7 +7929,7 @@ export const REAL_STAT_CARDS: StatCardData[] = [
   },
   {
     "label": "New Restaurants (FY)",
-    "value": 2434,
+    "value": 2457,
     "change": 5.6,
     "sparklineData": [
       0,
